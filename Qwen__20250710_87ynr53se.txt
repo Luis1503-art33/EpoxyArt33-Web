@@ -1,0 +1,40 @@
+/EpoxyArt33-Web/
+├── /public/
+│   └── /translations/
+│       ├── es.json
+│       └── en.json
+│   └── logo.png
+│
+├── /resources/
+│   └── /views/
+│       └── /pages/
+│           ├── home.blade.php
+│           ├── about.blade.php
+│           ├── services.blade.php
+│           ├── process.blade.php
+│           ├── pricing.blade.php
+│           ├── faq.blade.php
+│           └── contact.blade.php
+│
+│   └── /js/
+│       ├── app.js
+│       ├── i18n.js
+│       └── components/
+│           ├── HeroSection.vue
+│           ├── AboutSection.vue
+│           ├── ProcessSection.vue
+│           ├── BenefitsSection.vue
+│           ├── PricingTable.vue
+│           ├── FAQSection.vue
+│           ├── ContactFooter.vue
+│           ├── WhatsAppButton.vue
+│           ├── FooterSection.vue
+│           └── LanguageSwitcher.vue
+│
+├── /routes/
+│   └── web.php
+├── webpack.mix.js
+├── package.json
+├── tailwind.config.js
+├── .env.example
+├── README.md
