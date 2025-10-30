@@ -283,7 +283,7 @@ const Showroom = () => {
               <h2 className="text-4xl font-bold text-gray-900">Request Free Samples</h2>
             </div>
             <p className="text-xl text-gray-600">
-              Want to see and feel the quality for yourself? Request free samples of our Targinol Flake or Quartz systems.
+              Want to see and feel the quality for yourself? Request free samples of our Torginol Flake or Quartz systems.
             </p>
           </div>
 
