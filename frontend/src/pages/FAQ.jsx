@@ -22,7 +22,7 @@ const FAQ = () => {
     },
     {
       question: 'What is the Flake system and how does it work?',
-      answer: 'The Flake system uses decorative colored flakes that are broadcast onto the epoxy base. It provides slip-resistant texture, hides imperfections, and creates a beautiful, durable finish. We use premium Targinol flakes.'
+      answer: 'The Flake system uses decorative colored flakes that are broadcast onto the epoxy base. It provides slip-resistant texture, hides imperfections, and creates a beautiful, durable finish. We use premium Torginol flakes.'
     },
     {
       question: 'What is the difference between metallic epoxy and Flake system?',
