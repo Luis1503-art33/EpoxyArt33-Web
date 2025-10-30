@@ -260,7 +260,7 @@ const MetallicEpoxy = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Primer Layer</h3>
-                <p className="text-gray-600">High-bond primer creates maximum adhesion between concrete and metallic epoxy.</p>
+                <p className="text-gray-600">MVB primer for humidity control and maximum adhesion between concrete and metallic epoxy.</p>
               </div>
             </div>
 
@@ -270,7 +270,7 @@ const MetallicEpoxy = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Metallic Epoxy Application</h3>
-                <p className="text-gray-600">Metallic pigments are carefully applied and manipulated to create the desired pattern.</p>
+                <p className="text-gray-600">100% solid metallic epoxy with pigments carefully applied and manipulated to create the desired pattern.</p>
               </div>
             </div>
 
@@ -279,7 +279,7 @@ const MetallicEpoxy = () => {
                 4
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Clear Topcoat Sealing</h3>
+                <h3 className="text-xl font-bold mb-2">Polyaspartic Clear Seal</h3>
                 <p className="text-gray-600">High-gloss, UV-resistant Polyaspartic clear coat protects the metallic beauty for years to come.</p>
               </div>
             </div>
