@@ -108,20 +108,20 @@ const FAQ = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-yellow-600 to-yellow-700">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            ¿Tienes Más Preguntas?
+            Have More Questions?
           </h2>
           <p className="text-xl text-yellow-100 mb-8">
-            Contáctanos directamente y con gusto responderemos todas tus dudas.
+            Contact us directly and we'll gladly answer all your questions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
               <Button size="lg" className="bg-white text-yellow-700 hover:bg-gray-100">
-                Enviar Mensaje
+                Send Message
               </Button>
             </Link>
             <a href="tel:2392761462">
               <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-yellow-700">
-                Llamar (239) 276-1462
+                Call (239) 276-1462
               </Button>
             </a>
           </div>
