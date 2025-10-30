@@ -47,7 +47,7 @@ const FlakeSystem = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">What is a Flake Epoxy System?</h2>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-              A Flake epoxy system (also called chip flooring) consists of colored decorative flakes broadcast onto a wet epoxy base coat, then sealed with a clear topcoat. The flakes create a multi-dimensional, textured finish that's both beautiful and functional.
+              A Flake epoxy system (also called chip flooring) consists of colored decorative flakes broadcast onto a wet epoxy base coat, then sealed with a clear Polyaspartic topcoat. The flakes create a multi-dimensional, textured finish that's both beautiful and functional.
             </p>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
               We use premium <strong>Torginol flakes</strong>—the industry leader in quality decorative epoxy flakes. With hundreds of color combinations available, you can customize your floor to match any style.
