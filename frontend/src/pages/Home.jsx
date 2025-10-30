@@ -305,7 +305,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto mb-12">
             <BeforeAfterSlider 
               beforeImage="https://images.unsplash.com/photo-1581141849291-7d079f8a9e36?w=800"
-              afterImage="/images/projects/proj1.jpg"
+              afterImage="/images/projects/garage-flake-1.jpg"
               altText="Garage Floor Transformation"
             />
           </div>
