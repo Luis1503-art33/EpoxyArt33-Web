@@ -274,7 +274,7 @@ const Home = () => {
                 <Clock className="w-8 h-8 text-amber-700" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Fast Turnaround</h3>
-              <p className="text-gray-600">Most projects completed within 2-3 days with minimal disruption to your schedule.</p>
+              <p className="text-gray-600">Most projects completed within 1 day with minimal disruption to your schedule.</p>
             </div>
           </div>
 
