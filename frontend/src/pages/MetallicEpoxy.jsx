@@ -280,7 +280,7 @@ const MetallicEpoxy = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Clear Topcoat Sealing</h3>
-                <p className="text-gray-600">High-gloss, UV-resistant clear coat protects the metallic beauty for years to come.</p>
+                <p className="text-gray-600">High-gloss, UV-resistant Polyaspartic clear coat protects the metallic beauty for years to come.</p>
               </div>
             </div>
           </div>
