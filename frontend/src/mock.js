@@ -92,29 +92,22 @@ export const galleryItems = [
     id: 3,
     title: 'Commercial Kitchen Floor',
     category: 'Commercial',
-    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/znsfiwpi_IMG-20251027-WA0049.jpg',
+    image: '/images/gallery/commercial-kitchen.jpg',
     description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
   },
   {
     id: 4,
     title: 'Industrial Warehouse Floor',
     category: 'Industrial',
-    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/rh06c918_IMG-20251027-WA0023.jpg',
+    image: '/images/gallery/industrial-warehouse.jpg',
     description: 'Solid color epoxy coating for warehouse facility'
   },
   {
     id: 5,
     title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
-    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/gh8abup7_Floor%20Coating%20Metallic%20%2853%29.HEIC',
+    image: '/images/gallery/commercial-metallic.jpg',
     description: 'Stunning metallic epoxy finish for commercial showroom'
-  },
-  {
-    id: 6,
-    title: 'Modern Garage Installation',
-    category: 'Residential',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    description: 'Contemporary garage floor with premium finish'
   }
 ];
 
