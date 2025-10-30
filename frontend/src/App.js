@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           {/* Service Pages - Coming Soon */}
           <Route path="/garage-floor-coating" element={<Services />} />
           <Route path="/metallic-epoxy" element={<Services />} />
@@ -27,7 +31,6 @@ function App() {
           {/* Additional Pages - Coming Soon */}
           <Route path="/why" element={<Home />} />
           <Route path="/faq" element={<Home />} />
-          <Route path="/blog" element={<Home />} />
           <Route path="/showroom" element={<Home />} />
           <Route path="/privacy" element={<Home />} />
         </Routes>
