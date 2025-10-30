@@ -74,7 +74,7 @@ export const testimonials = [
 ];
 
 export const galleryItems = [
-  // Pool Decks (5 images)
+  // Pool Decks (5 images) - Residential
   {
     id: 1,
     title: 'Pool Deck Resurfacing - Naples',
@@ -110,7 +110,7 @@ export const galleryItems = [
     image: '/images/gallery/pool-deck-5.jpg',
     description: 'Close-up of slip-resistant pool deck coating'
   },
-  // Garage Floors (5 images)
+  // Garage Floors (5 images) - Residential
   {
     id: 6,
     title: 'Residential Garage - Naples',
@@ -146,24 +146,46 @@ export const galleryItems = [
     image: '/images/gallery/garage-5.jpg',
     description: 'Seamless garage floor with flake system'
   },
-  // Commercial (2 images)
+  // Commercial Kitchens (4 images) - Commercial
   {
     id: 11,
-    title: 'Commercial Kitchen Floor',
+    title: 'Commercial Kitchen Floor - Naples',
     category: 'Commercial',
     image: '/images/gallery/commercial-kitchen.jpg',
     description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
   },
   {
     id: 12,
+    title: 'Restaurant Kitchen - Fort Myers',
+    category: 'Commercial',
+    image: '/images/gallery/kitchen-quartz-1.jpg',
+    description: 'Professional quartz flooring for commercial kitchen'
+  },
+  {
+    id: 13,
+    title: 'Food Service Kitchen - SWFL',
+    category: 'Commercial',
+    image: '/images/gallery/kitchen-quartz-2.jpg',
+    description: 'Durable quartz epoxy for high-traffic kitchen'
+  },
+  {
+    id: 14,
+    title: 'Commercial Kitchen Installation',
+    category: 'Commercial',
+    image: '/images/gallery/kitchen-quartz-3.jpg',
+    description: 'Food-safe quartz system for commercial use'
+  },
+  // Commercial Metallic (1 image) - Commercial
+  {
+    id: 15,
     title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
     image: '/images/gallery/commercial-metallic.jpg',
     description: 'Stunning metallic epoxy finish for commercial showroom'
   },
-  // Industrial (1 image)
+  // Industrial (1 image) - Industrial
   {
-    id: 13,
+    id: 16,
     title: 'Industrial Warehouse Floor',
     category: 'Industrial',
     image: '/images/gallery/industrial-warehouse.jpg',
