@@ -83,7 +83,7 @@ const Services = () => {
     {
       id: 5,
       title: 'Pool Deck Resurfacing',
-      description: 'Transform your pool area with safe, beautiful, heat-reflective epoxy coatings. Perfect for Florida's climate.',
+      description: 'Transform your pool area with safe, beautiful, heat-reflective epoxy coatings. Perfect for Florida climate.',
       icon: Waves,
       link: '/pool-deck-resurfacing',
       features: [
