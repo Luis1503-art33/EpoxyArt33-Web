@@ -8,6 +8,12 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import FAQ from "./pages/FAQ";
 import Showroom from "./pages/Showroom";
+import GarageFloorCoating from "./pages/GarageFloorCoating";
+import MetallicEpoxy from "./pages/MetallicEpoxy";
+import FlakeSystem from "./pages/FlakeSystem";
+import QuartzSystem from "./pages/QuartzSystem";
+import PoolDeckResurfacing from "./pages/PoolDeckResurfacing";
+import CommercialEpoxy from "./pages/CommercialEpoxy";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { Toaster } from "./components/ui/sonner";
 
