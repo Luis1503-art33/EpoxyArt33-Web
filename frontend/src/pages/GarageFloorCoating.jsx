@@ -177,8 +177,8 @@ const GarageFloorCoating = () => {
                   <p className="text-gray-600">Luxury 3D Effects</p>
                 </div>
                 <img 
-                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400" 
-                  alt="Metallic System" 
+                  src="/images/projects/metallic-silver-1.jpg" 
+                  alt="Metallic System Garage" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-6">
