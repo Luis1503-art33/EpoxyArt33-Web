@@ -9,64 +9,64 @@ import { Button } from '../components/ui/button';
 const FAQ = () => {
   const faqs = [
     {
-      question: '¿Cuánto tiempo toma instalar un piso de epoxy?',
-      answer: 'La mayoría de proyectos residenciales se completan en 1 día. Proyectos comerciales más grandes pueden tomar 2-3 días dependiendo del tamaño y complejidad.'
+      question: 'How long does it take to install an epoxy floor?',
+      answer: 'Most residential projects are completed within 1 day. Larger commercial projects may take 2-3 days depending on size and complexity.'
     },
     {
-      question: '¿Cuánto dura un piso de epoxy?',
-      answer: 'Con el mantenimiento adecuado, nuestros pisos de epoxy pueden durar 15-20+ años. Usamos solo materiales de la más alta calidad para garantizar longevidad.'
+      question: 'How long does an epoxy floor last?',
+      answer: 'With proper maintenance, our epoxy floors can last 15-20+ years. We use only the highest quality materials to ensure longevity.'
     },
     {
-      question: '¿El epoxy es resistente al agua y químicos?',
-      answer: 'Sí, el epoxy es 100% impermeable y altamente resistente a químicos, aceites, gasolina y productos de limpieza. Es ideal para garajes, cocinas comerciales y áreas de piscina.'
+      question: 'Is epoxy resistant to water and chemicals?',
+      answer: 'Yes, epoxy is 100% waterproof and highly resistant to chemicals, oils, gasoline, and cleaning products. It is ideal for garages, commercial kitchens, and pool areas.'
     },
     {
-      question: '¿Qué es el sistema Flake y cómo funciona?',
-      answer: 'El sistema Flake utiliza hojuelas decorativas de colores que se esparcen sobre la base de epoxy. Proporciona textura antideslizante, oculta imperfecciones y crea un acabado hermoso y duradero. Usamos flakes premium de Targinol.'
+      question: 'What is the Flake system and how does it work?',
+      answer: 'The Flake system uses decorative colored flakes that are broadcast onto the epoxy base. It provides slip-resistant texture, hides imperfections, and creates a beautiful, durable finish. We use premium Targinol flakes.'
     },
     {
-      question: '¿Cuál es la diferencia entre epoxy metálico y sistema Flake?',
-      answer: 'El epoxy metálico crea efectos 3D únicos con pigmentos metálicos, ideal para espacios de lujo. El sistema Flake ofrece textura antideslizante con hojuelas decorativas, perfecto para garajes y pool decks.'
+      question: 'What is the difference between metallic epoxy and Flake system?',
+      answer: 'Metallic epoxy creates unique 3D effects with metallic pigments, ideal for luxury spaces. The Flake system offers slip-resistant texture with decorative flakes, perfect for garages and pool decks.'
     },
     {
-      question: '¿Puedo instalar epoxy sobre mi piso existente?',
-      answer: 'En la mayoría de casos sí. Instalamos epoxy sobre concreto, baldosas y otros pisos existentes. Hacemos una evaluación gratuita para determinar si su piso actual es adecuado.'
+      question: 'Can I install epoxy over my existing floor?',
+      answer: 'In most cases yes. We install epoxy over concrete, tiles, and other existing floors. We do a free evaluation to determine if your current floor is suitable.'
     },
     {
-      question: '¿El epoxy es seguro para interiores y mascotas?',
-      answer: 'Absolutamente. Una vez curado (24-48 horas), el epoxy es completamente seguro, no tóxico y no emite VOCs. Es seguro para niños y mascotas.'
+      question: 'Is epoxy safe for indoors and pets?',
+      answer: 'Absolutely. Once cured (24-48 hours), epoxy is completely safe, non-toxic, and does not emit VOCs. It is safe for children and pets.'
     },
     {
-      question: '¿Qué mantenimiento requiere un piso de epoxy?',
-      answer: 'Muy poco. Simplemente barra y trapeé regularmente con agua y jabón suave. No necesita sellado ni tratamientos especiales. El epoxy es uno de los pisos más fáciles de mantener.'
+      question: 'What maintenance does an epoxy floor require?',
+      answer: 'Very little. Simply sweep and mop regularly with water and mild soap. No sealing or special treatments needed. Epoxy is one of the easiest floors to maintain.'
     },
     {
-      question: '¿El epoxy se vuelve resbaladizo cuando está mojado?',
-      answer: 'Nuestros sistemas Flake y Quartz proporcionan excelente tracción incluso cuando están mojados. Para áreas de piscina, agregamos textura anti-deslizante adicional.'
+      question: 'Does epoxy become slippery when wet?',
+      answer: 'Our Flake and Quartz systems provide excellent traction even when wet. For pool areas, we add additional anti-slip texture.'
     },
     {
-      question: '¿Ofrecen garantía?',
-      answer: 'Sí, ofrecemos garantía integral en todos nuestros trabajos. La garantía específica varía según el tipo de proyecto. Contáctenos para detalles.'
+      question: 'Do you offer a warranty?',
+      answer: 'Yes, we offer comprehensive warranty on all our work. The specific warranty varies depending on the type of project. Contact us for details.'
     },
     {
-      question: '¿Cuánto cuesta un piso de epoxy?',
-      answer: 'El costo varía según el tamaño, tipo de sistema (Flake, Metálico, Quartz) y condición del piso existente. Ofrecemos cotizaciones gratuitas. Llame al (239) 276-1462 para una evaluación sin compromiso.'
+      question: 'How much does an epoxy floor cost?',
+      answer: 'Cost varies based on size, system type (Flake, Metallic, Quartz), and existing floor condition. We offer free quotes. Call (239) 276-1462 for a no-obligation evaluation.'
     },
     {
-      question: '¿En qué áreas de SWFL trabajan?',
-      answer: 'Servimos toda el área de Southwest Florida incluyendo Naples, Marco Island, Fort Myers, Cape Coral, Estero y Bonita Springs.'
+      question: 'What areas of SWFL do you serve?',
+      answer: 'We serve all of Southwest Florida including Naples, Marco Island, Fort Myers, Cape Coral, Estero, and Bonita Springs.'
     },
     {
-      question: '¿Puedo elegir colores personalizados?',
-      answer: 'Sí, ofrecemos una amplia gama de colores y diseños personalizados. Para sistemas Flake usamos productos Targinol con cientos de combinaciones de colores disponibles.'
+      question: 'Can I choose custom colors?',
+      answer: 'Yes, we offer a wide range of custom colors and designs. For Flake systems we use Targinol products with hundreds of color combinations available.'
     },
     {
-      question: '¿Qué es el sistema de Quartz?',
-      answer: 'El sistema Quartz es nuestro sistema más duradero, perfecto para áreas de alto tráfico comercial e industrial. Combina arena de cuarzo con resina epoxy para máxima resistencia al impacto y químicos.'
+      question: 'What is the Quartz system?',
+      answer: 'The Quartz system is our most durable system, perfect for high-traffic commercial and industrial areas. It combines quartz sand with epoxy resin for maximum impact and chemical resistance.'
     },
     {
-      question: '¿Cuánto tiempo debo esperar antes de usar el piso?',
-      answer: 'Puede caminar sobre el piso después de 24 horas. Para tráfico pesado y vehículos, recomendamos esperar 48-72 horas para curado completo.'
+      question: 'How long should I wait before using the floor?',
+      answer: 'You can walk on the floor after 24 hours. For heavy traffic and vehicles, we recommend waiting 48-72 hours for complete curing.'
     }
   ];
 
