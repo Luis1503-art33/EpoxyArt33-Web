@@ -41,11 +41,11 @@ function App() {
           <Route path="/quartz-system" element={<QuartzSystem />} />
           <Route path="/pool-deck-resurfacing" element={<PoolDeckResurfacing />} />
           <Route path="/commercial-epoxy" element={<CommercialEpoxy />} />
-          <Route path="/industrial-epoxy" element={<Services />} />
-          <Route path="/concrete-repair" element={<Services />} />
-          {/* Additional Pages - Coming Soon */}
-          <Route path="/why" element={<Home />} />
-          <Route path="/privacy" element={<Home />} />
+          <Route path="/industrial-epoxy" element={<IndustrialEpoxy />} />
+          <Route path="/concrete-repair" element={<ConcreteRepair />} />
+          {/* Additional Pages */}
+          <Route path="/why" element={<WhyEpoxyArt33 />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
         <WhatsAppButton />
       </BrowserRouter>
