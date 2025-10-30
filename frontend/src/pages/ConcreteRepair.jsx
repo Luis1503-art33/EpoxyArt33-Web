@@ -103,6 +103,47 @@ const ConcreteRepair = () => {
         </div>
       </section>
 
+      {/* Real Before/After Transformation */}
+      <section className="py-16 bg-gradient-to-b from-yellow-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              From Damaged to <span className="text-yellow-600">Flawless</span>
+            </h2>
+            <p className="text-xl text-gray-600">See the complete transformation - repair + epoxy coating</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="relative">
+              <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold z-10">
+                BEFORE
+              </div>
+              <img 
+                src="/images/projects/garage-before.jpg" 
+                alt="Damaged concrete garage floor before repair" 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                Stained, damaged concrete with multiple issues
+              </p>
+            </div>
+            <div className="relative">
+              <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-bold z-10">
+                AFTER
+              </div>
+              <img 
+                src="/images/projects/garage-after.jpg" 
+                alt="Beautiful epoxy floor after repair and coating" 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                Professionally repaired and coated with Flake System epoxy
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Repair Process */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
