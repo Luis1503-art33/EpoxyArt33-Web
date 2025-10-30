@@ -290,6 +290,36 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Before/After Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              See the <span className="text-yellow-600">Transformation</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              From dull, damaged concrete to stunning epoxy floors. Slide to see the difference.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto mb-12">
+            <BeforeAfterSlider 
+              beforeImage="https://images.unsplash.com/photo-1581141849291-7d079f8a9e36?w=800"
+              afterImage="/images/projects/proj1.jpg"
+              altText="Garage Floor Transformation"
+            />
+          </div>
+
+          <div className="text-center">
+            <Link to="/gallery">
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+                View Full Gallery <ChevronRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto">
