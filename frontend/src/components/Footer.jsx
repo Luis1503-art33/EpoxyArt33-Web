@@ -19,7 +19,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/profile.php?id=61559227113329" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/epoxyart33" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Instagram">
+              <a href="https://instagram.com/epoxy_art33" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://www.google.com/maps/search/EpoxyArt33+Naples+FL" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Google Business">
