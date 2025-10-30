@@ -240,8 +240,8 @@ const CommercialEpoxy = () => {
               <CardContent className="pt-6">
                 <h3 className="text-2xl font-bold mb-4 text-center">Metallic System</h3>
                 <img 
-                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400" 
-                  alt="Metallic" 
+                  src="/images/projects/metallic-silver-1.jpg" 
+                  alt="Metallic Epoxy for Commercial" 
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
                 <p className="text-gray-700 mb-4">
