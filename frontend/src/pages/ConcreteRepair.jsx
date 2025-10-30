@@ -193,8 +193,8 @@ const ConcreteRepair = () => {
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-bold mb-2">Preparation</h3>
-              <p className="text-gray-600">Clean, grind, and prep damaged areas for optimal repair bonding</p>
+              <h3 className="text-xl font-bold mb-2">Grind & Prep</h3>
+              <p className="text-gray-600">Diamond grind and prep damaged areas for optimal repair bonding</p>
             </div>
             
             <div className="text-center">
