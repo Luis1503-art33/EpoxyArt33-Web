@@ -54,35 +54,35 @@ export const galleryItems = [
     id: 1,
     title: 'Pool Deck Resurfacing - Naples',
     category: 'Residential',
-    image: '/images/gallery/pool-deck.heic',
+    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/75epkv8r_pool%20deck%20resurfacing%20%2865%29.HEIC',
     description: 'Beautiful flake system pool deck with slip-resistant finish'
   },
   {
     id: 2,
     title: 'Garage Floor Coating - SWFL',
     category: 'Residential',
-    image: '/images/gallery/garage-floor.heic',
+    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/fmvuv47h_Garage%20Floor%20Epoxy%20%28282%29.HEIC',
     description: 'Professional flake epoxy garage floor installation'
   },
   {
     id: 3,
     title: 'Commercial Kitchen Floor',
     category: 'Commercial',
-    image: '/images/gallery/commercial-kitchen.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/znsfiwpi_IMG-20251027-WA0049.jpg',
     description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
   },
   {
     id: 4,
     title: 'Industrial Warehouse Floor',
     category: 'Industrial',
-    image: '/images/gallery/industrial-warehouse.jpg',
+    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/rh06c918_IMG-20251027-WA0023.jpg',
     description: 'Solid color epoxy coating for warehouse facility'
   },
   {
     id: 5,
     title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
-    image: '/images/gallery/commercial-metallic.heic',
+    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/gh8abup7_Floor%20Coating%20Metallic%20%2853%29.HEIC',
     description: 'Stunning metallic epoxy finish for commercial showroom'
   },
   {
