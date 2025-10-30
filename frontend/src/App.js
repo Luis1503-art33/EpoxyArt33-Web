@@ -30,13 +30,13 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/showroom" element={<Showroom />} />
-          {/* Service Pages - Coming Soon */}
-          <Route path="/garage-floor-coating" element={<Services />} />
-          <Route path="/metallic-epoxy" element={<Services />} />
-          <Route path="/flake-system" element={<Services />} />
-          <Route path="/quartz-system" element={<Services />} />
-          <Route path="/pool-deck-resurfacing" element={<Services />} />
-          <Route path="/commercial-epoxy" element={<Services />} />
+          {/* Service Pages */}
+          <Route path="/garage-floor-coating" element={<GarageFloorCoating />} />
+          <Route path="/metallic-epoxy" element={<MetallicEpoxy />} />
+          <Route path="/flake-system" element={<FlakeSystem />} />
+          <Route path="/quartz-system" element={<QuartzSystem />} />
+          <Route path="/pool-deck-resurfacing" element={<PoolDeckResurfacing />} />
+          <Route path="/commercial-epoxy" element={<CommercialEpoxy />} />
           <Route path="/industrial-epoxy" element={<Services />} />
           <Route path="/concrete-repair" element={<Services />} />
           {/* Additional Pages - Coming Soon */}
