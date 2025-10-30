@@ -149,10 +149,10 @@ const Showroom = () => {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Palette className="w-10 h-10 text-yellow-600" />
-              <h2 className="text-4xl font-bold text-gray-900">Targinol Flake Systems</h2>
+              <h2 className="text-4xl font-bold text-gray-900">Torginol Flake Systems</h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We use premium Targinol flake products - the industry leader in decorative epoxy flakes. 
+              We use premium Torginol flake products - the industry leader in decorative epoxy flakes. 
               Beautiful, durable, and available in hundreds of custom color combinations.
             </p>
           </div>
