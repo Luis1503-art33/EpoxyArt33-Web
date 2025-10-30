@@ -272,7 +272,7 @@ const GarageFloorCoating = () => {
                 2
               </div>
               <h3 className="text-xl font-bold mb-2">Primer Application</h3>
-              <p className="text-gray-600">Industrial-grade primer for maximum adhesion</p>
+              <p className="text-gray-600">MVB primer for humidity control and maximum adhesion</p>
             </div>
             
             <div className="text-center">
@@ -280,14 +280,14 @@ const GarageFloorCoating = () => {
                 3
               </div>
               <h3 className="text-xl font-bold mb-2">Epoxy & Flakes</h3>
-              <p className="text-gray-600">Premium epoxy base with your chosen flake color</p>
+              <p className="text-gray-600">100% solid epoxy base with your chosen Torginol flake color</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 4
               </div>
-              <h3 className="text-xl font-bold mb-2">Clear Topcoat</h3>
+              <h3 className="text-xl font-bold mb-2">Polyaspartic Topcoat</h3>
               <p className="text-gray-600">UV-resistant, high-gloss Polyaspartic seal</p>
             </div>
           </div>
