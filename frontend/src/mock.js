@@ -52,39 +52,45 @@ export const testimonials = [
 export const galleryItems = [
   {
     id: 1,
-    title: 'Luxury Garage Floor',
+    title: 'Pool Deck Resurfacing - Naples',
     category: 'Residential',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80'
+    image: '/images/gallery/pool-deck.heic',
+    description: 'Beautiful flake system pool deck with slip-resistant finish'
   },
   {
     id: 2,
-    title: 'Commercial Showroom',
-    category: 'Commercial',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80'
+    title: 'Garage Floor Coating - SWFL',
+    category: 'Residential',
+    image: '/images/gallery/garage-floor.heic',
+    description: 'Professional flake epoxy garage floor installation'
   },
   {
     id: 3,
-    title: 'Industrial Facility',
-    category: 'Industrial',
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&q=80'
+    title: 'Commercial Kitchen Floor',
+    category: 'Commercial',
+    image: '/images/gallery/commercial-kitchen.jpg',
+    description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
   },
   {
     id: 4,
-    title: 'Modern Basement',
-    category: 'Residential',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80'
+    title: 'Industrial Warehouse Floor',
+    category: 'Industrial',
+    image: '/images/gallery/industrial-warehouse.jpg',
+    description: 'Solid color epoxy coating for warehouse facility'
   },
   {
     id: 5,
-    title: 'Retail Space',
+    title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80'
+    image: '/images/gallery/commercial-metallic.heic',
+    description: 'Stunning metallic epoxy finish for commercial showroom'
   },
   {
     id: 6,
-    title: 'Warehouse Floor',
-    category: 'Industrial',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80'
+    title: 'Modern Garage Installation',
+    category: 'Residential',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    description: 'Contemporary garage floor with premium finish'
   }
 ];
 
