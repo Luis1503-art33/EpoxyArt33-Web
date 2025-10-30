@@ -221,9 +221,16 @@ const Showroom = () => {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">{sample.name}</CardTitle>
+                  {sample.code && (
+                    <CardDescription>
+                      <Badge variant="outline" className="border-yellow-600 text-yellow-700 mt-2">
+                        Targinol {sample.code}
+                      </Badge>
+                    </CardDescription>
+                  )}
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{sample.color}</p>
+                  <p className="text-gray-600 mb-4">{sample.description || sample.color}</p>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Heavy-duty durability</li>
                     <li>• Chemical resistant</li>
