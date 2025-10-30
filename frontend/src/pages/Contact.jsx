@@ -23,10 +23,28 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    toast.success('Message sent! We\'ll contact you within 24 hours.');
-    setFormData({ name: '', email: '', phone: '', service: '', location: '', message: '' });
+    try {
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${BACKEND_URL}/api/quotes`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success('Message sent! We\'ll contact you within 24 hours.');
+        setFormData({ name: '', email: '', phone: '', service: '', location: '', message: '' });
+      } else {
+        toast.error('Failed to send message. Please try again or call us directly.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('Failed to send message. Please try again or call us directly.');
+    }
   };
 
   return (
