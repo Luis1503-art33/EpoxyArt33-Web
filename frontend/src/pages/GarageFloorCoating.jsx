@@ -214,8 +214,8 @@ const GarageFloorCoating = () => {
                   <p className="text-gray-600">Clean & Simple</p>
                 </div>
                 <img 
-                  src="https://images.unsplash.com/photo-1581141849291-7d079f8a9e36?w=400" 
-                  alt="Solid Color System" 
+                  src="/images/projects/garage-solid-color.jpg" 
+                  alt="Solid Color System Garage" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-6">
