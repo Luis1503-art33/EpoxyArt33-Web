@@ -462,6 +462,24 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Newsletter Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-yellow-400 to-yellow-500">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <Mail className="w-16 h-16 text-black mx-auto mb-6" />
+            <h2 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+              Get Exclusive Offers & Tips
+            </h2>
+            <p className="text-xl text-gray-900 mb-8">
+              Join our newsletter for epoxy flooring tips, special promotions, and inspiration. No spam, unsubscribe anytime.
+            </p>
+            <div className="flex justify-center">
+              <NewsletterSignup />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
