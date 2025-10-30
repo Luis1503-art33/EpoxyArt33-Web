@@ -110,7 +110,7 @@ export const galleryItems = [
     image: '/images/gallery/pool-deck-5.jpg',
     description: 'Close-up of slip-resistant pool deck coating'
   },
-  // Garage Floors (5 images) - Residential
+  // Garage Floors Flake (5 images) - Residential
   {
     id: 6,
     title: 'Residential Garage - Naples',
@@ -146,30 +146,66 @@ export const galleryItems = [
     image: '/images/gallery/garage-5.jpg',
     description: 'Seamless garage floor with flake system'
   },
-  // Commercial Kitchens (4 images) - Commercial
+  // Metallic Epoxy Garages & Countertops (5 images) - Residential
   {
     id: 11,
+    title: 'Stunning Metallic Garage - Naples',
+    category: 'Residential',
+    image: '/images/gallery/metallic-garage-1.jpg',
+    description: 'Breathtaking metallic epoxy garage floor installation'
+  },
+  {
+    id: 12,
+    title: 'Luxury Metallic Garage Floor',
+    category: 'Residential',
+    image: '/images/gallery/metallic-garage-2.jpg',
+    description: 'High-end metallic epoxy with 3D effects'
+  },
+  {
+    id: 13,
+    title: 'Metallic Epoxy Showroom Garage',
+    category: 'Residential',
+    image: '/images/gallery/metallic-garage-3.jpg',
+    description: 'Premium metallic finish for luxury garage'
+  },
+  {
+    id: 14,
+    title: 'Custom Metallic Garage - Fort Myers',
+    category: 'Residential',
+    image: '/images/gallery/metallic-garage-4.jpg',
+    description: 'Unique metallic epoxy garage design'
+  },
+  {
+    id: 15,
+    title: 'Metallic Epoxy Countertop',
+    category: 'Residential',
+    image: '/images/gallery/metallic-countertop.jpg',
+    description: 'Stunning metallic epoxy countertop installation'
+  },
+  // Commercial Kitchens (4 images) - Commercial
+  {
+    id: 16,
     title: 'Commercial Kitchen Floor - Naples',
     category: 'Commercial',
     image: '/images/gallery/commercial-kitchen.jpg',
     description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
   },
   {
-    id: 12,
+    id: 17,
     title: 'Restaurant Kitchen - Fort Myers',
     category: 'Commercial',
     image: '/images/gallery/kitchen-quartz-1.jpg',
     description: 'Professional quartz flooring for commercial kitchen'
   },
   {
-    id: 13,
+    id: 18,
     title: 'Food Service Kitchen - SWFL',
     category: 'Commercial',
     image: '/images/gallery/kitchen-quartz-2.jpg',
     description: 'Durable quartz epoxy for high-traffic kitchen'
   },
   {
-    id: 14,
+    id: 19,
     title: 'Commercial Kitchen Installation',
     category: 'Commercial',
     image: '/images/gallery/kitchen-quartz-3.jpg',
@@ -177,7 +213,7 @@ export const galleryItems = [
   },
   // Commercial Metallic (1 image) - Commercial
   {
-    id: 15,
+    id: 20,
     title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
     image: '/images/gallery/commercial-metallic.jpg',
@@ -185,7 +221,7 @@ export const galleryItems = [
   },
   // Industrial (1 image) - Industrial
   {
-    id: 16,
+    id: 21,
     title: 'Industrial Warehouse Floor',
     category: 'Industrial',
     image: '/images/gallery/industrial-warehouse.jpg',
