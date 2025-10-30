@@ -6,6 +6,8 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import FAQ from "./pages/FAQ";
+import WhatsAppButton from "./components/WhatsAppButton";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/faq" element={<FAQ />} />
           {/* Service Pages - Coming Soon */}
           <Route path="/garage-floor-coating" element={<Services />} />
           <Route path="/metallic-epoxy" element={<Services />} />
@@ -30,10 +33,10 @@ function App() {
           <Route path="/concrete-repair" element={<Services />} />
           {/* Additional Pages - Coming Soon */}
           <Route path="/why" element={<Home />} />
-          <Route path="/faq" element={<Home />} />
           <Route path="/showroom" element={<Home />} />
           <Route path="/privacy" element={<Home />} />
         </Routes>
+        <WhatsAppButton />
       </BrowserRouter>
       <Toaster position="top-right" />
     </div>
