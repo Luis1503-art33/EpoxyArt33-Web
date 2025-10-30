@@ -171,7 +171,7 @@ const Showroom = () => {
                   <CardTitle className="text-xl">{sample.name}</CardTitle>
                   <CardDescription>
                     <Badge variant="outline" className="border-yellow-600 text-yellow-700 mt-2">
-                      Targinol {sample.code}
+                      Torginol {sample.code}
                     </Badge>
                   </CardDescription>
                 </CardHeader>
@@ -237,7 +237,7 @@ const Showroom = () => {
                   {sample.code && (
                     <CardDescription>
                       <Badge variant="outline" className="border-yellow-600 text-yellow-700 mt-2">
-                        Targinol {sample.code}
+                        Torginol {sample.code}
                       </Badge>
                     </CardDescription>
                   )}
