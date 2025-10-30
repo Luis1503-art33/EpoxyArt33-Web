@@ -78,6 +78,15 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="/showroom"
+              className={`font-medium transition-colors ${
+                isActive('/showroom') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+              }`}
+            >
+              Showroom
+            </Link>
+
+            <Link
               to="/why"
               className={`font-medium transition-colors ${
                 isActive('/why') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
