@@ -288,7 +288,7 @@ const GarageFloorCoating = () => {
                 4
               </div>
               <h3 className="text-xl font-bold mb-2">Clear Topcoat</h3>
-              <p className="text-gray-600">UV-resistant, high-gloss polyurethane seal</p>
+              <p className="text-gray-600">UV-resistant, high-gloss Polyaspartic seal</p>
             </div>
           </div>
         </div>
