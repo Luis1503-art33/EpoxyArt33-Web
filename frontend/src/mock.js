@@ -78,36 +78,85 @@ export const galleryItems = [
     id: 1,
     title: 'Pool Deck Resurfacing - Naples',
     category: 'Residential',
-    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/75epkv8r_pool%20deck%20resurfacing%20%2865%29.HEIC',
+    image: '/images/gallery/pool-deck-1.jpg',
     description: 'Beautiful flake system pool deck with slip-resistant finish'
   },
   {
     id: 2,
-    title: 'Garage Floor Coating - SWFL',
+    title: 'Complete Pool Area - SWFL',
     category: 'Residential',
-    image: 'https://customer-assets.emergentagent.com/job_epoxy-masters/artifacts/fmvuv47h_Garage%20Floor%20Epoxy%20%28282%29.HEIC',
-    description: 'Professional flake epoxy garage floor installation'
+    image: '/images/gallery/pool-deck-2.jpg',
+    description: 'Full pool deck and lanai epoxy installation'
   },
   {
     id: 3,
+    title: 'Screened Pool Enclosure',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-3.jpg',
+    description: 'Premium flake epoxy for screened pool area'
+  },
+  {
+    id: 4,
+    title: 'Luxury Pool Deck - Marco Island',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-4.jpg',
+    description: 'High-end pool deck with seamless flake finish'
+  },
+  {
+    id: 5,
+    title: 'Pool Deck Detail View',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-5.jpg',
+    description: 'Close-up of slip-resistant pool deck coating'
+  },
+  {
+    id: 6,
     title: 'Commercial Kitchen Floor',
     category: 'Commercial',
     image: '/images/gallery/commercial-kitchen.jpg',
     description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
   },
   {
-    id: 4,
+    id: 7,
     title: 'Industrial Warehouse Floor',
     category: 'Industrial',
     image: '/images/gallery/industrial-warehouse.jpg',
     description: 'Solid color epoxy coating for warehouse facility'
   },
   {
-    id: 5,
+    id: 8,
     title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
     image: '/images/gallery/commercial-metallic.jpg',
     description: 'Stunning metallic epoxy finish for commercial showroom'
+  },
+  {
+    id: 9,
+    title: 'Residential Garage - Fort Myers',
+    category: 'Residential',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    description: 'Professional garage floor with flake system'
+  },
+  {
+    id: 10,
+    title: 'Commercial Showroom',
+    category: 'Commercial',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+    description: 'High-gloss epoxy for retail space'
+  },
+  {
+    id: 11,
+    title: 'Industrial Manufacturing',
+    category: 'Industrial',
+    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&q=80',
+    description: 'Heavy-duty industrial epoxy flooring'
+  },
+  {
+    id: 12,
+    title: 'Residential Basement',
+    category: 'Residential',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+    description: 'Modern basement epoxy coating'
   }
 ];
 
