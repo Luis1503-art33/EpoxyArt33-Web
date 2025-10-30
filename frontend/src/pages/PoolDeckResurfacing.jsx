@@ -324,22 +324,22 @@ const PoolDeckResurfacing = () => {
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-bold mb-2">Prime Surface</h3>
-              <p className="text-gray-600">Apply bonding primer for maximum adhesion</p>
+              <h3 className="text-xl font-bold mb-2">MVB Primer</h3>
+              <p className="text-gray-600">Moisture Vapor Barrier for humidity control and maximum adhesion</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-bold mb-2">Apply System</h3>
-              <p className="text-gray-600">Epoxy base with your chosen flakes or quartz</p>
+              <h3 className="text-xl font-bold mb-2">Polyaspartic + Flake</h3>
+              <p className="text-gray-600">Polyaspartic with color tint and Torginol flakes - prevents yellowing from sun</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 4
               </div>
-              <h3 className="text-xl font-bold mb-2">Seal & Protect</h3>
-              <p className="text-gray-600">UV-resistant Polyaspartic topcoat for long-lasting beauty</p>
+              <h3 className="text-xl font-bold mb-2">Clear Polyaspartic Seal</h3>
+              <p className="text-gray-600">UV-resistant Polyaspartic topcoat for long-lasting beauty and sun protection</p>
             </div>
           </div>
         </div>
