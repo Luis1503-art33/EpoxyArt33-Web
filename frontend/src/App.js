@@ -14,6 +14,10 @@ import FlakeSystem from "./pages/FlakeSystem";
 import QuartzSystem from "./pages/QuartzSystem";
 import PoolDeckResurfacing from "./pages/PoolDeckResurfacing";
 import CommercialEpoxy from "./pages/CommercialEpoxy";
+import IndustrialEpoxy from "./pages/IndustrialEpoxy";
+import ConcreteRepair from "./pages/ConcreteRepair";
+import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { Toaster } from "./components/ui/sonner";
 
