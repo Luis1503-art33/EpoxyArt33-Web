@@ -43,12 +43,42 @@ const Showroom = () => {
   };
 
   const flakeSamples = [
-    { name: 'Classic Gray', colors: 'Black, White, Gray Mix', image: '/images/gallery/garage-1.jpg' },
-    { name: 'Ocean Blue', colors: 'Blue, Teal, White', image: '/images/gallery/pool-deck-1.jpg' },
-    { name: 'Desert Tan', colors: 'Tan, Brown, Beige', image: '/images/gallery/pool-deck-2.jpg' },
-    { name: 'Midnight Black', colors: 'Black, Silver, Charcoal', image: '/images/gallery/garage-2.jpg' },
-    { name: 'Coastal Blend', colors: 'Blue, Gray, White', image: '/images/gallery/pool-deck-3.jpg' },
-    { name: 'Neutral Mix', colors: 'Beige, White, Tan', image: '/images/gallery/garage-3.jpg' }
+    { 
+      name: 'FB-506 Rapids', 
+      code: 'FB-506',
+      description: 'Dynamic blend of blues and whites creating a river rapids effect',
+      image: '/images/samples/targinol-rapids-506.jpg' 
+    },
+    { 
+      name: 'FB-310 Orbit', 
+      code: 'FB-310',
+      description: 'Modern gray and silver tones with subtle color accents',
+      image: '/images/samples/targinol-orbit-310.jpg' 
+    },
+    { 
+      name: 'FB-411 Domino', 
+      code: 'FB-411',
+      description: 'Classic black and white contrast for timeless elegance',
+      image: '/images/samples/targinol-domino-411.jpg' 
+    },
+    { 
+      name: 'FB-421 Shoreline', 
+      code: 'FB-421',
+      description: 'Coastal blend of blues, grays and whites for beach vibes',
+      image: '/images/samples/targinol-shorline-421.jpg' 
+    },
+    { 
+      name: 'FB-513 Coyote', 
+      code: 'FB-513',
+      description: 'Natural desert tones with tan, beige and brown accents',
+      image: '/images/samples/targinol-coyote-513.jpg' 
+    },
+    { 
+      name: 'Custom Blend', 
+      code: 'Custom',
+      description: 'Mix any colors - hundreds of combinations available',
+      image: '/images/gallery/garage-3.jpg' 
+    }
   ];
 
   const quartzSamples = [
