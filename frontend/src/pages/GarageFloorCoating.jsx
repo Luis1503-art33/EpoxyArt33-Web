@@ -140,8 +140,8 @@ const GarageFloorCoating = () => {
                   <p className="text-gray-600">Most Popular for Garages</p>
                 </div>
                 <img 
-                  src="/images/samples/targinol-domino-411.jpg" 
-                  alt="Flake System" 
+                  src="/images/projects/garage-flake-1.jpg" 
+                  alt="Flake System Garage" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-6">
