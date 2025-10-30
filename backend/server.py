@@ -73,6 +73,16 @@ class BlogPost(BaseModel):
     publishedAt: datetime
     updatedAt: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
+# Newsletter Models
+class NewsletterSubscription(BaseModel):
+    email: EmailStr
+
+class NewsletterResponse(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    email: str
+    subscribedAt: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    status: str = "active"
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
