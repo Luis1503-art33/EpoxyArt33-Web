@@ -273,8 +273,8 @@ const CommercialEpoxy = () => {
               <CardContent className="pt-6">
                 <h3 className="text-2xl font-bold mb-4 text-center">Quartz System</h3>
                 <img 
-                  src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400" 
-                  alt="Quartz" 
+                  src="/images/projects/hero-quartz.jpg" 
+                  alt="Quartz System for Commercial" 
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
                 <p className="text-gray-700 mb-4">
