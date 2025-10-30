@@ -187,6 +187,39 @@ async def get_blog_post(slug: str):
     
     return BlogPost(**post)
 
+# Newsletter Endpoints
+@api_router.post("/newsletter", response_model=NewsletterResponse)
+async def subscribe_newsletter(subscription: NewsletterSubscription):
+    """Subscribe to newsletter"""
+    # Check if email already exists
+    existing = await db.newsletter.find_one({"email": subscription.email}, {"_id": 0})
+    if existing:
+        # Return existing subscription
+        if isinstance(existing['subscribedAt'], str):
+            existing['subscribedAt'] = datetime.fromisoformat(existing['subscribedAt'])
+        return NewsletterResponse(**existing)
+    
+    # Create new subscription
+    sub_obj = NewsletterResponse(email=subscription.email)
+    doc = sub_obj.model_dump()
+    doc['subscribedAt'] = doc['subscribedAt'].isoformat()
+    
+    await db.newsletter.insert_one(doc)
+    logger.info(f"New newsletter subscription: {subscription.email}")
+    return sub_obj
+
+@api_router.get("/newsletter", response_model=List[NewsletterResponse])
+async def get_newsletter_subscriptions():
+    """Get all newsletter subscriptions (admin endpoint)"""
+    subscriptions = await db.newsletter.find({}, {"_id": 0}).sort("subscribedAt", -1).to_list(1000)
+    
+    # Convert ISO string timestamps back to datetime objects
+    for sub in subscriptions:
+        if isinstance(sub['subscribedAt'], str):
+            sub['subscribedAt'] = datetime.fromisoformat(sub['subscribedAt'])
+    
+    return subscriptions
+
 # Include the router in the main app
 app.include_router(api_router)
 
