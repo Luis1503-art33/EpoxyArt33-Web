@@ -25,27 +25,51 @@ export const services = [
 export const testimonials = [
   {
     id: 1,
-    name: 'Michael Roberts',
+    name: 'Robert Thompson',
     location: 'Naples, FL',
     rating: 5,
-    text: 'Absolutely stunning work! They transformed my garage into a showroom-quality space. The attention to detail and professionalism exceeded all expectations.',
-    project: 'Residential Garage'
+    text: 'The metallic epoxy floor in my showroom garage is absolutely stunning. EpoxyArt33 delivered beyond my expectations. True professionals!',
+    project: 'Metallic Garage Floor'
   },
   {
     id: 2,
-    name: 'Sarah Martinez',
-    location: 'Bonita Springs, FL',
+    name: 'Maria Gonzalez',
+    location: 'Marco Island, FL',
     rating: 5,
-    text: 'Our retail store floor looks incredible. The team was professional, efficient, and the result is beyond what we imagined. Highly recommend!',
-    project: 'Commercial Retail'
+    text: 'Our pool deck looks amazing and is much safer now. The flake system they installed is perfect for our Florida weather. Highly recommend!',
+    project: 'Pool Deck Resurfacing'
   },
   {
     id: 3,
     name: 'David Chen',
-    location: 'Marco Island, FL',
+    location: 'Fort Myers, FL',
     rating: 5,
-    text: 'Best investment for my warehouse. The epoxy coating is holding up perfectly under heavy use. Professional service from start to finish.',
+    text: 'We had our restaurant kitchen done with quartz epoxy. It is extremely durable and easy to clean. Best investment we made this year!',
+    project: 'Commercial Kitchen'
+  },
+  {
+    id: 4,
+    name: 'Jennifer Martinez',
+    location: 'Bonita Springs, FL',
+    rating: 5,
+    text: 'My garage went from drab to fab! The flake epoxy system is gorgeous and so easy to maintain. Worth every penny!',
+    project: 'Residential Garage'
+  },
+  {
+    id: 5,
+    name: 'Michael Anderson',
+    location: 'Cape Coral, FL',
+    rating: 5,
+    text: 'Our warehouse floor is holding up perfectly under heavy equipment. The solid color epoxy they installed is extremely durable.',
     project: 'Industrial Warehouse'
+  },
+  {
+    id: 6,
+    name: 'Lisa Roberts',
+    location: 'Estero, FL',
+    rating: 5,
+    text: 'The metallic epoxy in our showroom attracts customers constantly. Everyone asks about the floor! Amazing work by EpoxyArt33.',
+    project: 'Commercial Showroom'
   }
 ];
 
