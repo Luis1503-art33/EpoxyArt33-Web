@@ -134,6 +134,39 @@ const PoolDeckResurfacing = () => {
         </div>
       </section>
 
+      {/* Real Pool Deck Projects */}
+      <section className="py-16 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Pool Deck Installations</h2>
+            <p className="text-xl text-gray-600">Real projects in Southwest Florida</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-8">
+            <div>
+              <img 
+                src="/images/projects/pool-deck-1.jpg" 
+                alt="Pool Deck with Flake System - Full View" 
+                className="w-full h-auto rounded-lg shadow-xl"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                Complete pool deck with Flake System - slip-resistant and beautiful
+              </p>
+            </div>
+            <div>
+              <img 
+                src="/images/projects/pool-deck-2.jpg" 
+                alt="Pool Deck Flake System Close-up" 
+                className="w-full h-auto rounded-lg shadow-xl"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                Detail view - Full broadcast Torginol flakes for maximum safety
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Recommended Systems */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
