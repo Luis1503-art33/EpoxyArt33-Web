@@ -107,9 +107,22 @@ const Showroom = () => {
       image: '/images/samples/quartz-dalmatian-1007.jpg' 
     },
     { 
-      name: 'Custom Quartz', 
-      color: 'Match any color - Custom blends available',
-      image: '/images/gallery/kitchen-quartz-2.jpg' 
+      name: 'QB-1010 Twilight', 
+      code: 'QB-1010',
+      description: 'Elegant blend of dark and light quartz for sophisticated spaces',
+      image: '/images/samples/quartz-twilight-1010.jpg' 
+    },
+    { 
+      name: 'QB-2005 Equinox', 
+      code: 'QB-2005',
+      description: 'Balanced neutral tones perfect for commercial applications',
+      image: '/images/samples/quartz-equinox-2005.jpg' 
+    },
+    { 
+      name: 'QB-2006 Icicle', 
+      code: 'QB-2006',
+      description: 'Cool white and silver tones creating a clean, modern look',
+      image: '/images/samples/quartz-icicle-2006.jpg' 
     }
   ];
 
