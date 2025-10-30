@@ -339,7 +339,7 @@ const PoolDeckResurfacing = () => {
                 4
               </div>
               <h3 className="text-xl font-bold mb-2">Seal & Protect</h3>
-              <p className="text-gray-600">UV-resistant topcoat for long-lasting beauty</p>
+              <p className="text-gray-600">UV-resistant Polyaspartic topcoat for long-lasting beauty</p>
             </div>
           </div>
         </div>
