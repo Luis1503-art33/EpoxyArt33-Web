@@ -113,6 +113,35 @@ const ConcreteRepair = () => {
             <p className="text-xl text-gray-600">See the complete transformation - repair + epoxy coating</p>
           </div>
           
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+            <div className="relative">
+              <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold z-10">
+                BEFORE - Crack Repair
+              </div>
+              <img 
+                src="/images/projects/repair-before.jpg" 
+                alt="Garage floor with cracks marked for repair" 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                Multiple cracks and joints marked and prepared for professional repair
+              </p>
+            </div>
+            <div className="relative">
+              <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-bold z-10">
+                AFTER - Repaired + Coated
+              </div>
+              <img 
+                src="/images/projects/repair-after.jpg" 
+                alt="Repaired floor with Flake System coating" 
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                All cracks repaired and sealed with Torginol Flake System
+              </p>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="relative">
               <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold z-10">
