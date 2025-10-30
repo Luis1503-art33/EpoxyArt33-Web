@@ -139,7 +139,7 @@ const Showroom = () => {
             EpoxyArt33 Showroom
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Explore our premium Targinol Flake Systems and Quartz options. Request free samples for your project.
+            Explore our premium Torginol Flake Systems and Quartz options. Request free samples for your project.
           </p>
         </div>
       </section>
