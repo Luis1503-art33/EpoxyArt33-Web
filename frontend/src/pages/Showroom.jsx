@@ -132,13 +132,13 @@ const Showroom = () => {
                   <CardTitle className="text-xl">{sample.name}</CardTitle>
                   <CardDescription>
                     <Badge variant="outline" className="border-yellow-600 text-yellow-700 mt-2">
-                      Targinol Premium
+                      Targinol {sample.code}
                     </Badge>
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm mb-3">
-                    <strong>Colors:</strong> {sample.colors}
+                    {sample.description}
                   </p>
                   <ul className="text-sm text-gray-600 space-y-1 mb-4">
                     <li>• Slip-resistant texture</li>
