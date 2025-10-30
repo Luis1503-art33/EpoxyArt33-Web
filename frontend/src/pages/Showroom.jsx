@@ -339,7 +339,7 @@ const Showroom = () => {
                       className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-yellow-600"
                     >
                       <option value="">Select sample type</option>
-                      <option value="flake">Targinol Flake System</option>
+                      <option value="flake">Torginol Flake System</option>
                       <option value="quartz">Quartz System</option>
                       <option value="both">Both Flake & Quartz</option>
                     </select>
