@@ -190,7 +190,7 @@ const Showroom = () => {
           </div>
 
           <div className="mt-12 bg-yellow-50 border-2 border-yellow-200 rounded-lg p-6 max-w-4xl mx-auto">
-            <h3 className="font-bold text-xl text-gray-900 mb-3">Why Targinol Flakes?</h3>
+            <h3 className="font-bold text-xl text-gray-900 mb-3">Why Torginol Flakes?</h3>
             <div className="grid md:grid-cols-2 gap-4 text-gray-700">
               <div>
                 <strong>✓ Premium Quality:</strong> Industrial-grade decorative flakes
