@@ -211,9 +211,45 @@ export const galleryItems = [
     image: '/images/gallery/kitchen-quartz-3.jpg',
     description: 'Food-safe quartz system for commercial use'
   },
-  // Commercial Metallic (1 image) - Commercial
+  // Commercial Flake & Solid Color (5 images) - Commercial
   {
     id: 20,
+    title: 'Commercial Space - Flake System',
+    category: 'Commercial',
+    image: '/images/gallery/commercial-flake-1.jpg',
+    description: 'Professional flake epoxy for commercial facility'
+  },
+  {
+    id: 21,
+    title: 'Retail Store - Flake Coating',
+    category: 'Commercial',
+    image: '/images/gallery/commercial-flake-2.jpg',
+    description: 'Decorative flake system for retail space'
+  },
+  {
+    id: 22,
+    title: 'Commercial Solid Color - Naples',
+    category: 'Commercial',
+    image: '/images/gallery/commercial-solid-1.jpg',
+    description: 'Clean solid color epoxy for office space'
+  },
+  {
+    id: 23,
+    title: 'Professional Office Floor',
+    category: 'Commercial',
+    image: '/images/gallery/commercial-solid-2.jpg',
+    description: 'Solid epoxy coating for commercial office'
+  },
+  {
+    id: 24,
+    title: 'Commercial Facility - SWFL',
+    category: 'Commercial',
+    image: '/images/gallery/commercial-solid-3.jpg',
+    description: 'Durable solid color for commercial use'
+  },
+  // Commercial Metallic (1 image) - Commercial
+  {
+    id: 25,
     title: 'Metallic Epoxy Commercial Space',
     category: 'Commercial',
     image: '/images/gallery/commercial-metallic.jpg',
@@ -221,7 +257,7 @@ export const galleryItems = [
   },
   // Industrial (1 image) - Industrial
   {
-    id: 21,
+    id: 26,
     title: 'Industrial Warehouse Floor',
     category: 'Industrial',
     image: '/images/gallery/industrial-warehouse.jpg',
