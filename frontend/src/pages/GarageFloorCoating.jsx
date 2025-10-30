@@ -263,8 +263,8 @@ const GarageFloorCoating = () => {
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-2">Surface Preparation</h3>
-              <p className="text-gray-600">Diamond grinding, crack repair, and thorough cleaning</p>
+              <h3 className="text-xl font-bold mb-2">Grind & Repair</h3>
+              <p className="text-gray-600">Diamond grind concrete and repair any cracks or damage</p>
             </div>
             
             <div className="text-center">
