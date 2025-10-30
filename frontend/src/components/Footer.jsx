@@ -22,7 +22,7 @@ const Footer = () => {
               <a href="https://instagram.com/epoxy_art33" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.google.com/maps/search/EpoxyArt33+Naples+FL" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Google Business">
+              <a href="https://www.google.com/maps/place/EpoxyArt33.llc/@26.5890753,-82.5104911,9z/data=!3m1!4b1!4m6!3m5!1s0xa1b7e7669350223d:0x430bcad060a86d2f!8m2!3d26.590594!4d-81.851101!16s%2Fg%2F11xkzl1tvp?entry=ttu&g_ep=EgoyMDI1MTAyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors" aria-label="Google Business">
                 <MapPin className="w-5 h-5" />
               </a>
             </div>
