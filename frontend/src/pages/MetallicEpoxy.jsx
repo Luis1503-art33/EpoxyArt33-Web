@@ -249,8 +249,8 @@ const MetallicEpoxy = () => {
                 1
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Surface Preparation</h3>
-                <p className="text-gray-600">Diamond grinding and crack repair ensure a perfect canvas for the metallic effects.</p>
+                <h3 className="text-xl font-bold mb-2">Grind & Repair</h3>
+                <p className="text-gray-600">Diamond grind concrete and repair any cracks or damage to ensure a perfect canvas.</p>
               </div>
             </div>
 
