@@ -58,7 +58,7 @@ const FAQ = () => {
     },
     {
       question: 'Can I choose custom colors?',
-      answer: 'Yes, we offer a wide range of custom colors and designs. For Flake systems we use Targinol products with hundreds of color combinations available.'
+      answer: 'Yes, we offer a wide range of custom colors and designs. For Flake systems we use Torginol products with hundreds of color combinations available.'
     },
     {
       question: 'What is the Quartz system?',
