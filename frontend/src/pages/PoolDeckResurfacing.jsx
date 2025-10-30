@@ -326,8 +326,8 @@ const PoolDeckResurfacing = () => {
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-2">Clean & Prep</h3>
-              <p className="text-gray-600">Power wash and repair any cracks or damage</p>
+              <h3 className="text-xl font-bold mb-2">Grind & Repair</h3>
+              <p className="text-gray-600">Diamond grind concrete and repair any cracks or damage</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
@@ -340,8 +340,8 @@ const PoolDeckResurfacing = () => {
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-bold mb-2">Polyaspartic + Flake</h3>
-              <p className="text-gray-600">Polyaspartic with color tint and Torginol flakes - prevents yellowing from sun</p>
+              <h3 className="text-xl font-bold mb-2">Polyaspartic + Flake/Quartz</h3>
+              <p className="text-gray-600">Polyaspartic with color tint and flakes or Quartz - prevents yellowing from sun</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
