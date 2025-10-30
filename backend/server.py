@@ -37,6 +37,42 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# Quote/Contact Models
+class QuoteRequest(BaseModel):
+    name: str
+    email: EmailStr
+    phone: str
+    service: str
+    location: Optional[str] = None
+    message: str
+
+class QuoteResponse(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    email: str
+    phone: str
+    service: str
+    location: Optional[str] = None
+    message: str
+    status: str = "pending"
+    createdAt: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    updatedAt: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+# Blog Models
+class BlogPost(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    slug: str
+    title: str
+    excerpt: str
+    content: str
+    author: str
+    category: str
+    tags: List[str]
+    imageUrl: str
+    readTime: int
+    publishedAt: datetime
+    updatedAt: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
