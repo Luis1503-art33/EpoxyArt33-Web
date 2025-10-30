@@ -119,18 +119,18 @@ const Home = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Robert Johnson',
+      name: 'Robert Thompson',
       location: 'Naples, FL',
       rating: 5,
-      text: 'Absolutely stunning work! The metallic epoxy floor in my garage is a showstopper. Everyone who sees it is amazed.',
+      text: 'The metallic epoxy floor in my showroom garage is absolutely stunning. EpoxyArt33 delivered beyond my expectations!',
       project: 'Metallic Garage Floor'
     },
     {
       id: 2,
-      name: 'Maria Rodriguez',
+      name: 'Maria Gonzalez',
       location: 'Marco Island, FL',
       rating: 5,
-      text: 'Professional team, excellent results. My pool deck looks incredible and is much safer now. Highly recommend!',
+      text: 'Our pool deck looks amazing and is much safer now. The flake system is perfect for our Florida weather!',
       project: 'Pool Deck Resurfacing'
     },
     {
@@ -138,8 +138,8 @@ const Home = () => {
       name: 'David Chen',
       location: 'Fort Myers, FL',
       rating: 5,
-      text: 'Our commercial showroom floor exceeded expectations. Beautiful, durable, and installed quickly. Great value!',
-      project: 'Commercial Epoxy'
+      text: 'Restaurant kitchen done with quartz epoxy - extremely durable and easy to clean. Best investment!',
+      project: 'Commercial Kitchen'
     }
   ];
 
