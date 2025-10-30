@@ -77,13 +77,13 @@ const FAQ = () => {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-4xl text-center">
           <Badge className="mb-6 bg-yellow-100 text-yellow-800 hover:bg-yellow-200 px-4 py-1.5">
-            Preguntas Frecuentes
+            Frequently Asked Questions
           </Badge>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            FAQ - Preguntas Frecuentes
+            FAQ - Frequently Asked Questions
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Respuestas a las preguntas más comunes sobre pisos de epoxy en Southwest Florida.
+            Answers to the most common questions about epoxy floors in Southwest Florida.
           </p>
         </div>
       </section>
