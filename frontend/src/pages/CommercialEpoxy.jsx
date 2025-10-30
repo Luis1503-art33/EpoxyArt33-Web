@@ -151,6 +151,49 @@ const CommercialEpoxy = () => {
         </div>
       </section>
 
+      {/* Real Commercial Projects */}
+      <section className="py-16 bg-gradient-to-b from-yellow-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Commercial Installations</h2>
+            <p className="text-xl text-gray-600">Professional flooring solutions for businesses across SWFL</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div>
+              <img 
+                src="/images/projects/commercial-kitchen-1.jpg" 
+                alt="Commercial Kitchen Epoxy Floor" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl"
+              />
+              <p className="text-center text-gray-600 mt-4 font-semibold">
+                Commercial Kitchen - Solid Color System
+              </p>
+            </div>
+            <div>
+              <img 
+                src="/images/projects/commercial-hallway-1.jpg" 
+                alt="Commercial Hallway with Flake System" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl"
+              />
+              <p className="text-center text-gray-600 mt-4 font-semibold">
+                Commercial Hallway - Flake System
+              </p>
+            </div>
+            <div>
+              <img 
+                src="/images/projects/commercial-kitchen-2.jpg" 
+                alt="Restaurant Kitchen Epoxy" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl"
+              />
+              <p className="text-center text-gray-600 mt-4 font-semibold">
+                Restaurant Kitchen - Food-Safe Coating
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* System Options */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
