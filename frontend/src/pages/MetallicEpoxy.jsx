@@ -13,7 +13,10 @@ const MetallicEpoxy = () => {
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-20">
-        <div className="absolute inset-0 bg-[url('/images/projects/hero-metallic.jpg')] opacity-50 bg-cover bg-center"></div>
+        <div 
+          className="absolute inset-0 opacity-50 bg-cover bg-center"
+          style={{ backgroundImage: `url('/images/projects/hero-metallic.jpg')` }}
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
