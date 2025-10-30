@@ -232,8 +232,8 @@ const PoolDeckResurfacing = () => {
                   <p className="text-gray-600">Heavy-Duty Option</p>
                 </div>
                 <img 
-                  src="https://images.unsplash.com/photo-1560185127-bc36ce01f6e5?w=400" 
-                  alt="Pool Deck Quartz" 
+                  src="/images/projects/pool-deck-quartz.jpg" 
+                  alt="Pool Deck Quartz System" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-6">
