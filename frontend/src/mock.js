@@ -89,9 +89,9 @@ export const galleryItems = [
 ];
 
 export const stats = [
-  { label: 'Projects Completed', value: '150+' },
+  { label: 'Projects Completed', value: '500+' },
   { label: 'Years Experience', value: '3+' },
-  { label: 'Happy Clients', value: '140+' },
+  { label: 'Happy Clients', value: '500+' },
   { label: 'Satisfaction Rate', value: '100%' }
 ];
 
