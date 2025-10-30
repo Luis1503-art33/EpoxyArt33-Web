@@ -53,6 +53,26 @@ const QuartzSystem = () => {
         </div>
       </section>
 
+      {/* Real Quartz Installation */}
+      <section className="py-16 bg-gradient-to-b from-yellow-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industrial-Grade Quartz Installation</h2>
+            <p className="text-xl text-gray-600">Real commercial project in SWFL</p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src="/images/projects/hero-quartz.jpg" 
+              alt="Commercial Quartz System Installation" 
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+            <p className="text-center text-gray-600 mt-4 italic">
+              Heavy-duty Quartz System - Commercial space with maximum durability
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Grid */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
