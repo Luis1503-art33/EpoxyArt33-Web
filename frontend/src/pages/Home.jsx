@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -18,15 +21,14 @@ import {
   MapPin,
   CheckCircle2,
   ChevronRight,
-  Menu,
-  X
+  Sparkles,
+  Droplets,
+  Hammer
 } from 'lucide-react';
-import { services, testimonials, galleryItems, stats, benefits } from '../mock';
+import { stats, benefits } from '../mock';
 import { toast } from 'sonner';
 
 const Home = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('All');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,107 +37,125 @@ const Home = () => {
     message: ''
   });
 
-  const iconMap = {
-    home: HomeIcon,
-    building: Building2,
-    factory: Factory,
-    award: Award,
-    users: Users,
-    shield: Shield,
-    clock: Clock
-  };
-
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Mock submission
     toast.success('Quote request submitted! We\'ll contact you within 24 hours.');
     setFormData({ name: '', email: '', phone: '', service: '', message: '' });
   };
 
-  const filteredGallery = selectedCategory === 'All' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory);
+  const featuredServices = [
+    {
+      id: 1,
+      title: 'Garage Floor Coating',
+      description: 'Transform your garage into a stunning, durable space that adds value to your home.',
+      icon: HomeIcon,
+      link: '/garage-floor-coating',
+      features: ['Slip Resistant', 'Easy to Clean', 'Chemical Resistant']
+    },
+    {
+      id: 2,
+      title: 'Metallic Epoxy',
+      description: 'Create breathtaking 3D metallic effects that make your floors a work of art.',
+      icon: Sparkles,
+      link: '/metallic-epoxy',
+      features: ['Unique Designs', 'Luxurious Look', 'Seamless Finish']
+    },
+    {
+      id: 3,
+      title: 'Flake System',
+      description: 'Decorative flake floors perfect for garages, patios, and commercial spaces.',
+      icon: Droplets,
+      link: '/flake-system',
+      features: ['UV Resistant', 'Customizable', 'High Durability']
+    },
+    {
+      id: 4,
+      title: 'Pool Deck Resurfacing',
+      description: 'Non-slip, beautiful surfaces perfect for Florida pool areas.',
+      icon: Building2,
+      link: '/pool-deck-resurfacing',
+      features: ['Heat Reflective', 'Waterproof', 'Safe Surface']
+    },
+    {
+      id: 5,
+      title: 'Commercial Epoxy',
+      description: 'Heavy-duty flooring solutions for retail, offices, and commercial spaces.',
+      icon: Building2,
+      link: '/commercial-epoxy',
+      features: ['Fast Installation', 'Low Maintenance', 'Professional Look']
+    },
+    {
+      id: 6,
+      title: 'Industrial Epoxy',
+      description: 'Maximum durability for warehouses, factories, and industrial facilities.',
+      icon: Factory,
+      link: '/industrial-epoxy',
+      features: ['Heavy Traffic', 'Chemical Proof', 'Long Lasting']
+    }
+  ];
 
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setMobileMenuOpen(false);
+  const testimonials = [
+    {
+      id: 1,
+      name: 'Robert Johnson',
+      location: 'Naples, FL',
+      rating: 5,
+      text: 'Absolutely stunning work! The metallic epoxy floor in my garage is a showstopper. Everyone who sees it is amazed.',
+      project: 'Metallic Garage Floor'
+    },
+    {
+      id: 2,
+      name: 'Maria Rodriguez',
+      location: 'Marco Island, FL',
+      rating: 5,
+      text: 'Professional team, excellent results. My pool deck looks incredible and is much safer now. Highly recommend!',
+      project: 'Pool Deck Resurfacing'
+    },
+    {
+      id: 3,
+      name: 'David Chen',
+      location: 'Fort Myers, FL',
+      rating: 5,
+      text: 'Our commercial showroom floor exceeded expectations. Beautiful, durable, and installed quickly. Great value!',
+      project: 'Commercial Epoxy'
+    }
+  ];
+
+  const scrollToQuote = () => {
+    document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-2">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">EF</span>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Elite Epoxy Floors</h1>
-                <p className="text-xs text-gray-600">Naples, FL</p>
-              </div>
-            </div>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-amber-700 transition-colors font-medium">Services</button>
-              <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-amber-700 transition-colors font-medium">Gallery</button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-gray-700 hover:text-amber-700 transition-colors font-medium">Testimonials</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-amber-700 transition-colors font-medium">Contact</button>
-              <Button onClick={() => scrollToSection('quote')} className="bg-amber-700 hover:bg-amber-800 text-white">
-                Get Free Quote
-              </Button>
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              {mobileMenuOpen ? <X /> : <Menu />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
-            <nav className="container mx-auto px-4 py-4 flex flex-col space-y-3">
-              <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-amber-700 transition-colors font-medium">Services</button>
-              <button onClick={() => scrollToSection('gallery')} className="text-left text-gray-700 hover:text-amber-700 transition-colors font-medium">Gallery</button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-left text-gray-700 hover:text-amber-700 transition-colors font-medium">Testimonials</button>
-              <button onClick={() => scrollToSection('contact')} className="text-left text-gray-700 hover:text-amber-700 transition-colors font-medium">Contact</button>
-              <Button onClick={() => scrollToSection('quote')} className="bg-amber-700 hover:bg-amber-800 text-white w-full">
-                Get Free Quote
-              </Button>
-            </nav>
-          </div>
-        )}
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 px-4 py-1.5">
-              #1 Epoxy Flooring in Naples, FL
+            <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 px-4 py-1.5 text-base">
+              Premium Epoxy Flooring in SWFL
             </Badge>
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Transform Your Floors Into
-              <span className="block text-amber-700">Works of Art</span>
-            </h2>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              Art Beneath
+              <span className="block text-amber-700">Your Feet</span>
+            </h1>
             <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Premium epoxy flooring solutions for residential, commercial, and industrial spaces in Southwest Florida. Exceptional quality, stunning results.
+              Transform your floors with EpoxyArt33's premium epoxy solutions. Serving Naples, Marco Island, Fort Myers, and all of Southwest Florida.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={() => scrollToSection('quote')} size="lg" className="bg-amber-700 hover:bg-amber-800 text-white text-lg px-8 py-6">
+              <Button onClick={scrollToQuote} size="lg" className="bg-amber-700 hover:bg-amber-800 text-white text-lg px-8 py-6">
                 Get Free Estimate <ChevronRight className="ml-2" />
               </Button>
-              <Button onClick={() => scrollToSection('gallery')} size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 hover:border-amber-700 hover:text-amber-700 text-lg px-8 py-6">
-                View Our Work
-              </Button>
+              <Link to="/gallery">
+                <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 hover:border-amber-700 hover:text-amber-700 text-lg px-8 py-6">
+                  View Our Work
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -151,17 +171,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* Featured Services Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Specialized epoxy solutions tailored to your unique needs</p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Specialized epoxy solutions for every need in Southwest Florida</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {services.map((service) => {
-              const Icon = iconMap[service.icon];
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {featuredServices.map((service) => {
+              const Icon = service.icon;
               return (
                 <Card key={service.id} className="border-2 border-gray-200 hover:border-amber-700 hover:shadow-xl transition-all duration-300 group">
                   <CardHeader>
@@ -172,7 +192,7 @@ const Home = () => {
                     <CardDescription className="text-gray-600 text-base">{service.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-4">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-gray-700">
                           <CheckCircle2 className="w-5 h-5 text-amber-700 mr-2 flex-shrink-0" />
@@ -180,10 +200,23 @@ const Home = () => {
                         </li>
                       ))}
                     </ul>
+                    <Link to={service.link}>
+                      <Button variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white">
+                        Learn More
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               );
             })}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/services">
+              <Button size="lg" className="bg-amber-700 hover:bg-amber-800 text-white">
+                View All Services <ChevronRight className="ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -192,72 +225,57 @@ const Home = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Choose Elite Epoxy Floors</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Experience the difference that quality and expertise make</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {benefits.map((benefit, index) => {
-              const Icon = iconMap[benefit.icon];
-              return (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Icon className="w-8 h-8 text-amber-700" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Portfolio</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Explore our stunning epoxy flooring installations</p>
-            
-            <div className="flex flex-wrap justify-center gap-3">
-              {['All', 'Residential', 'Commercial', 'Industrial'].map((category) => (
-                <Button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  variant={selectedCategory === category ? 'default' : 'outline'}
-                  className={selectedCategory === category ? 'bg-amber-700 hover:bg-amber-800' : 'hover:border-amber-700 hover:text-amber-700'}
-                >
-                  {category}
-                </Button>
-              ))}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Award className="w-8 h-8 text-amber-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Premium Quality Materials</h3>
+              <p className="text-gray-600">We use only the highest-grade epoxy systems that ensure longevity and beauty.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Users className="w-8 h-8 text-amber-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Installation</h3>
+              <p className="text-gray-600">Our skilled technicians bring 3+ years of specialized experience to every project.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Shield className="w-8 h-8 text-amber-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Satisfaction Guaranteed</h3>
+              <p className="text-gray-600">We stand behind our work with comprehensive warranty coverage for your peace of mind.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Clock className="w-8 h-8 text-amber-700" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Fast Turnaround</h3>
+              <p className="text-gray-600">Most projects completed within 2-3 days with minimal disruption to your schedule.</p>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {filteredGallery.map((item) => (
-              <div key={item.id} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <Badge className="w-fit mb-2 bg-amber-700">{item.category}</Badge>
-                  <h3 className="text-white text-xl font-bold">{item.title}</h3>
-                </div>
-              </div>
-            ))}
+          <div className="text-center mt-12">
+            <Link to="/why">
+              <Button size="lg" variant="outline" className="border-2 border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white">
+                Learn More About Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Don't just take our word for it</p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Real reviews from satisfied customers across Southwest Florida</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -284,8 +302,24 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Service Areas */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-amber-700">
+        <div className="container mx-auto">
+          <div className="text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Proudly Serving Southwest Florida</h2>
+            <p className="text-xl text-amber-100 mb-6">Naples • Marco Island • Estero • Bonita Beach • Fort Myers • Cape Coral • SWFL</p>
+            <a href="tel:2392761462">
+              <Button size="lg" className="bg-white text-amber-700 hover:bg-gray-100">
+                <Phone className="mr-2" />
+                Call Us: (239) 276-1462
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Quote Form */}
-      <section id="quote" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="quote" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Get Your Free Quote</h2>
@@ -344,9 +378,14 @@ const Home = () => {
                       className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-amber-700"
                     >
                       <option value="">Select a service</option>
-                      <option value="residential">Residential Epoxy</option>
+                      <option value="garage">Garage Floor Coating</option>
+                      <option value="metallic">Metallic Epoxy</option>
+                      <option value="flake">Flake System</option>
+                      <option value="quartz">Quartz System</option>
+                      <option value="pool">Pool Deck Resurfacing</option>
                       <option value="commercial">Commercial Epoxy</option>
                       <option value="industrial">Industrial Epoxy</option>
+                      <option value="concrete">Concrete Repair</option>
                     </select>
                   </div>
                 </div>
@@ -373,101 +412,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-            <p className="text-xl text-gray-600">We're here to answer your questions</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center border-2 border-gray-200 hover:shadow-xl transition-shadow">
-              <CardContent className="pt-8">
-                <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-7 h-7 text-amber-700" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
-                <p className="text-gray-600">(239) 555-0100</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-2 border-gray-200 hover:shadow-xl transition-shadow">
-              <CardContent className="pt-8">
-                <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-7 h-7 text-amber-700" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Email Us</h3>
-                <p className="text-gray-600">info@eliteepoxyfl.com</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-2 border-gray-200 hover:shadow-xl transition-shadow">
-              <CardContent className="pt-8">
-                <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-7 h-7 text-amber-700" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Visit Us</h3>
-                <p className="text-gray-600">Naples, FL 34102</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-amber-600 to-amber-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">EF</span>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">Elite Epoxy Floors</h3>
-                </div>
-              </div>
-              <p className="text-gray-400 text-sm">Premium epoxy flooring solutions in Southwest Florida.</p>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">Residential Epoxy</li>
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">Commercial Epoxy</li>
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">Industrial Epoxy</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">About Us</li>
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">Gallery</li>
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">Testimonials</li>
-                <li className="hover:text-amber-500 transition-colors cursor-pointer">Contact</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Service Area</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>Naples, FL</li>
-                <li>Bonita Springs, FL</li>
-                <li>Marco Island, FL</li>
-                <li>Fort Myers, FL</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Elite Epoxy Floors. All rights reserved. | Serving Naples & Southwest Florida
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
