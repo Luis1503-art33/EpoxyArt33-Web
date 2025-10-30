@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import FAQ from "./pages/FAQ";
+import Showroom from "./pages/Showroom";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { Toaster } from "./components/ui/sonner";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/showroom" element={<Showroom />} />
           {/* Service Pages - Coming Soon */}
           <Route path="/garage-floor-coating" element={<Services />} />
           <Route path="/metallic-epoxy" element={<Services />} />
@@ -33,7 +35,6 @@ function App() {
           <Route path="/concrete-repair" element={<Services />} />
           {/* Additional Pages - Coming Soon */}
           <Route path="/why" element={<Home />} />
-          <Route path="/showroom" element={<Home />} />
           <Route path="/privacy" element={<Home />} />
         </Routes>
         <WhatsAppButton />
