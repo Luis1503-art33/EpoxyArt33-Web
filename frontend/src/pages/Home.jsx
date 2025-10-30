@@ -41,10 +41,28 @@ const Home = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    toast.success('Quote request submitted! We\'ll contact you within 24 hours.');
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    try {
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${BACKEND_URL}/api/quotes`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success('Quote request submitted! We\'ll contact you within 24 hours.');
+        setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+      } else {
+        toast.error('Failed to submit request. Please try again or call us directly.');
+      }
+    } catch (error) {
+      console.error('Error submitting quote:', error);
+      toast.error('Failed to submit request. Please try again or call us directly.');
+    }
   };
 
   const featuredServices = [
