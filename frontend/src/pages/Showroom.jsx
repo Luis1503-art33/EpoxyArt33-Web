@@ -74,17 +74,43 @@ const Showroom = () => {
       image: '/images/samples/targinol-coyote-513.jpg' 
     },
     { 
-      name: 'Custom Blend', 
-      code: 'Custom',
-      description: 'Mix any colors - hundreds of combinations available',
-      image: '/images/gallery/garage-3.jpg' 
+      name: 'FB-807 Tidewave', 
+      code: 'FB-807',
+      description: 'Ocean-inspired blues creating waves of color and depth',
+      image: '/images/samples/targinol-tidewave-807.jpg' 
+    },
+    { 
+      name: 'FB-908 Stargazer', 
+      code: 'FB-908',
+      description: 'Deep space-inspired blend with dark tones and metallic accents',
+      image: '/images/samples/targinol-stargazer-908.jpg' 
+    },
+    { 
+      name: 'FB-960 Bean', 
+      code: 'FB-960',
+      description: 'Rich coffee and cream tones for warm, inviting spaces',
+      image: '/images/samples/targinol-bean-960.jpg' 
     }
   ];
 
   const quartzSamples = [
-    { name: 'Clear Quartz', color: 'Transparent with colored quartz', image: '/images/gallery/commercial-kitchen.jpg' },
-    { name: 'Beige Quartz', color: 'Natural beige with sand tones', image: '/images/gallery/kitchen-quartz-1.jpg' },
-    { name: 'Gray Quartz', color: 'Contemporary gray finish', image: '/images/gallery/kitchen-quartz-2.jpg' }
+    { 
+      name: 'QB-1003 Solstice', 
+      code: 'QB-1003',
+      description: 'Premium quartz system with natural sand tones and texture',
+      image: '/images/samples/quartz-solstice-1003.jpg' 
+    },
+    { 
+      name: 'QB-1007 Dalmatian', 
+      code: 'QB-1007',
+      description: 'Bold black and white quartz for striking visual contrast',
+      image: '/images/samples/quartz-dalmatian-1007.jpg' 
+    },
+    { 
+      name: 'Custom Quartz', 
+      color: 'Match any color - Custom blends available',
+      image: '/images/gallery/kitchen-quartz-2.jpg' 
+    }
   ];
 
   return (
