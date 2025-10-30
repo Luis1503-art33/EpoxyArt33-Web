@@ -56,6 +56,26 @@ const MetallicEpoxy = () => {
         </div>
       </section>
 
+      {/* Real Project Showcase */}
+      <section className="py-16 bg-gradient-to-b from-gray-900 to-black text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Real Metallic Epoxy Installation</h2>
+            <p className="text-xl text-gray-300">Silver Storm Metallic - Residential Garage in SWFL</p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <img 
+              src="/images/projects/metallic-silver-1.jpg" 
+              alt="Metallic Epoxy Silver Storm Installation" 
+              className="w-full h-auto rounded-lg shadow-2xl border-4 border-yellow-500"
+            />
+            <p className="text-center text-gray-400 mt-6 italic text-lg">
+              Stunning 3D metallic effects create a unique, luxury finish that transforms any space
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Grid */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
