@@ -41,13 +41,22 @@ const PoolDeckResurfacing = () => {
         </div>
       </section>
 
-      {/* Why Choose Epoxy for Pool Decks */}
+      {/* Why Choose Our System for Pool Decks */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Why Epoxy for Pool Decks?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Why Our Pool Deck System is Different</h2>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-              Traditional concrete pool decks crack, stain, and become slippery when wet. Epoxy coating creates a beautiful, safe, and durable surface that's perfect for pool areas. Our systems are specifically designed to withstand SWFL's intense sun, pool chemicals, and constant water exposure.
+              Traditional concrete pool decks crack, stain, and become slippery when wet. Our specialized pool deck system uses <strong>Polyaspartic with color tint and Torginol flakes</strong> instead of traditional epoxy base. Why? Because Polyaspartic won't yellow or fade under Florida's intense UV rays.
+            </p>
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 mb-6">
+              <h3 className="text-2xl font-bold text-blue-900 mb-3">The Florida Sun Problem</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Standard epoxy-based systems can yellow and fade when exposed to constant sunlight and UV radiation. For pool decks that are exposed to the sun all day, we use Polyaspartic throughout the system - not just as a topcoat. This ensures your pool deck stays beautiful and maintains its color for years, even under SWFL's harsh sun.
+              </p>
+            </div>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Our pool deck system is specifically engineered to withstand SWFL's intense sun, pool chemicals, constant water exposure, and high traffic - all while staying slip-resistant and beautiful.
             </p>
           </div>
         </div>
