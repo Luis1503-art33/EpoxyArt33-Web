@@ -290,7 +290,7 @@ export const benefits = [
   },
   {
     title: 'Fast Turnaround',
-    description: 'Most projects completed within 2-3 days with minimal disruption to your schedule.',
+    description: 'Most projects completed within 1 day with minimal disruption to your schedule.',
     icon: 'clock'
   }
 ];
