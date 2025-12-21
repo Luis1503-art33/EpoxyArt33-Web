@@ -434,30 +434,49 @@ const Home = () => {
       {/* Testimonials */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Real reviews from satisfied customers across Southwest Florida</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Real reviews from satisfied customers across Southwest Florida</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-white border-2 border-gray-200 hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center space-x-1 mb-2">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-amber-500 text-amber-500" />
-                    ))}
-                  </div>
-                  <CardTitle className="text-lg">{testimonial.name}</CardTitle>
-                  <CardDescription className="text-gray-600">
-                    <MapPin className="w-4 h-4 inline mr-1" />{testimonial.location}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 mb-3">"{testimonial.text}"</p>
-                  <Badge variant="outline" className="border-amber-700 text-amber-700">{testimonial.project}</Badge>
-                </CardContent>
-              </Card>
+            {testimonials.map((testimonial, index) => (
+              <ScrollReveal key={testimonial.id} delay={index * 0.15} direction="up">
+                <Card3D>
+                  <Card className="bg-white border-2 border-gray-200 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 h-full">
+                    <CardHeader>
+                      <motion.div 
+                        className="flex items-center space-x-1 mb-2"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                      >
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <motion.div
+                            key={i}
+                            initial={{ scale: 0, rotate: -180 }}
+                            whileInView={{ scale: 1, rotate: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: i * 0.1, type: "spring", stiffness: 200 }}
+                          >
+                            <Star className="w-5 h-5 fill-amber-500 text-amber-500" />
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                      <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                      <CardDescription className="text-gray-600">
+                        <MapPin className="w-4 h-4 inline mr-1" />{testimonial.location}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-700 mb-3">"{testimonial.text}"</p>
+                      <Badge variant="outline" className="border-amber-700 text-amber-700">{testimonial.project}</Badge>
+                    </CardContent>
+                  </Card>
+                </Card3D>
+              </ScrollReveal>
             ))}
           </div>
         </div>
