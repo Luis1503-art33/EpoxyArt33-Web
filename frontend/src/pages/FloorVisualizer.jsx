@@ -1,469 +1,174 @@
-import React, { useState, useRef, Suspense, useCallback } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment, ContactShadows, Html } from '@react-three/drei';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import ScrollReveal from '../components/ScrollReveal';
 import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Input } from '../components/ui/input';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { 
-  Upload, 
-  RotateCcw, 
-  ZoomIn, 
-  ZoomOut, 
-  Palette, 
-  Camera,
-  Download,
-  ChevronRight,
   Search,
+  ChevronRight,
+  Eye,
+  Palette,
   X,
-  Sparkles,
-  Eye
+  Check
 } from 'lucide-react';
 
-// Torginol Color Catalog - Complete Collection
-const torginolColors = {
-  garage: [
-    { id: 'domino', name: 'Domino', colors: ['#1a1a1a', '#ffffff', '#4a4a4a'], type: 'blend' },
-    { id: 'saddle-tan', name: 'Saddle Tan', colors: ['#8B7355', '#D4A574', '#5C4033'], type: 'blend' },
-    { id: 'graphite', name: 'Graphite', colors: ['#4a4a4a', '#2d2d2d', '#666666'], type: 'blend' },
-    { id: 'mocha', name: 'Mocha', colors: ['#6B4423', '#8B6914', '#4A3728'], type: 'blend' },
-    { id: 'outback', name: 'Outback', colors: ['#C4A35A', '#8B7355', '#D4A574'], type: 'blend' },
-    { id: 'nightfall', name: 'Nightfall', colors: ['#1a1a2e', '#16213e', '#0f3460'], type: 'blend' },
-  ],
-  greystone: [
-    { id: 'greystone-1', name: 'Silver Storm', colors: ['#A8A8A8', '#787878', '#D8D8D8'], type: 'blend' },
-    { id: 'greystone-2', name: 'Pewter', colors: ['#8E9196', '#5C5D60', '#B4B5B7'], type: 'blend' },
-    { id: 'greystone-3', name: 'Charcoal Mist', colors: ['#5C5C5C', '#3D3D3D', '#7A7A7A'], type: 'blend' },
-    { id: 'greystone-4', name: 'Granite', colors: ['#676767', '#9E9E9E', '#4A4A4A'], type: 'blend' },
-    { id: 'greystone-5', name: 'Slate', colors: ['#708090', '#4A5568', '#94A3B8'], type: 'blend' },
-    { id: 'greystone-6', name: 'Dove', colors: ['#D6D6D6', '#B8B8B8', '#F0F0F0'], type: 'blend' },
-  ],
-  brownstone: [
-    { id: 'brownstone-1', name: 'Autumn', colors: ['#8B4513', '#A0522D', '#D2691E'], type: 'blend' },
-    { id: 'brownstone-2', name: 'Caramel', colors: ['#C68E17', '#8B6914', '#DAA520'], type: 'blend' },
-    { id: 'brownstone-3', name: 'Espresso', colors: ['#3C2415', '#5C4033', '#2D1810'], type: 'blend' },
-    { id: 'brownstone-4', name: 'Terra Cotta', colors: ['#E2725B', '#C4A35A', '#8B4513'], type: 'blend' },
-    { id: 'brownstone-5', name: 'Sahara', colors: ['#C2B280', '#8B7355', '#D4A574'], type: 'blend' },
-    { id: 'brownstone-6', name: 'Chestnut', colors: ['#954535', '#6B4423', '#B87333'], type: 'blend' },
-  ],
-  marble: [
-    { id: 'marble-1', name: 'Carrara White', colors: ['#FAFAFA', '#E8E8E8', '#D0D0D0'], type: 'blend' },
-    { id: 'marble-2', name: 'Calacatta Gold', colors: ['#F5F5DC', '#DAA520', '#FFFFF0'], type: 'blend' },
-    { id: 'marble-3', name: 'Emperador Dark', colors: ['#3D2914', '#5C4033', '#8B6914'], type: 'blend' },
-    { id: 'marble-4', name: 'Crema Marfil', colors: ['#FFFDD0', '#F5DEB3', '#DEB887'], type: 'blend' },
-    { id: 'marble-5', name: 'Nero Marquina', colors: ['#1A1A1A', '#FFFFFF', '#2D2D2D'], type: 'blend' },
-    { id: 'marble-6', name: 'Statuario', colors: ['#F8F8FF', '#C0C0C0', '#DCDCDC'], type: 'blend' },
-  ],
-  terrazzo: [
-    { id: 'terrazzo-1', name: 'Venice', colors: ['#F5F5DC', '#CD853F', '#8B4513', '#2F4F4F'], type: 'terrazzo' },
-    { id: 'terrazzo-2', name: 'Milano', colors: ['#DCDCDC', '#696969', '#A9A9A9', '#1C1C1C'], type: 'terrazzo' },
-    { id: 'terrazzo-3', name: 'Roma', colors: ['#FFF8DC', '#DAA520', '#B8860B', '#8B7355'], type: 'terrazzo' },
-    { id: 'terrazzo-4', name: 'Firenze', colors: ['#FAF0E6', '#D2691E', '#8B4513', '#5C4033'], type: 'terrazzo' },
-    { id: 'terrazzo-5', name: 'Napoli', colors: ['#F0F0F0', '#4682B4', '#5F9EA0', '#708090'], type: 'terrazzo' },
-    { id: 'terrazzo-6', name: 'Palermo', colors: ['#FFFAF0', '#BC8F8F', '#CD5C5C', '#8B0000'], type: 'terrazzo' },
-  ],
-  solid: [
-    { id: 'black', name: 'Black', colors: ['#1A1A1A'], type: 'solid' },
-    { id: 'white', name: 'White', colors: ['#FAFAFA'], type: 'solid' },
-    { id: 'dark-grey', name: 'Dark Grey', colors: ['#4A4A4A'], type: 'solid' },
-    { id: 'medium-grey', name: 'Medium Grey', colors: ['#808080'], type: 'solid' },
-    { id: 'light-grey', name: 'Light Grey', colors: ['#C0C0C0'], type: 'solid' },
-    { id: 'beige', name: 'Beige', colors: ['#D4A574'], type: 'solid' },
-    { id: 'tan', name: 'Tan', colors: ['#C4A35A'], type: 'solid' },
-    { id: 'brown', name: 'Brown', colors: ['#6B4423'], type: 'solid' },
-    { id: 'red', name: 'Safety Red', colors: ['#CC0000'], type: 'solid' },
-    { id: 'blue', name: 'Royal Blue', colors: ['#4169E1'], type: 'solid' },
-    { id: 'green', name: 'Forest Green', colors: ['#228B22'], type: 'solid' },
-    { id: 'yellow', name: 'Safety Yellow', colors: ['#FFD700'], type: 'solid' },
-  ],
-  quartz: [
-    { id: 'quartz-tan', name: 'Tan Quartz', colors: ['#C4A35A', '#8B7355'], type: 'quartz' },
-    { id: 'quartz-grey', name: 'Grey Quartz', colors: ['#808080', '#A9A9A9'], type: 'quartz' },
-    { id: 'quartz-brown', name: 'Brown Quartz', colors: ['#6B4423', '#8B6914'], type: 'quartz' },
-    { id: 'quartz-black', name: 'Black Quartz', colors: ['#2D2D2D', '#4A4A4A'], type: 'quartz' },
-    { id: 'quartz-white', name: 'White Quartz', colors: ['#F0F0F0', '#DCDCDC'], type: 'quartz' },
-    { id: 'quartz-blend', name: 'Natural Blend', colors: ['#C4A35A', '#808080', '#6B4423'], type: 'quartz' },
-  ],
-};
-
-// 3D Garage Floor Component
-function GarageFloor({ color, pattern }) {
-  const floorRef = useRef();
+// Real Torginol Flake Blends with actual images from their CDN
+const torginolBlends = [
+  // Garage Collection - Most Popular
+  { id: 'FB-4208', name: 'Acadia', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4208.webp', category: 'garage', colors: ['grey', 'brown'] },
+  { id: 'FB-4107', name: 'Agate', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4107.webp', category: 'garage', colors: ['brown', 'neutral'] },
+  { id: 'FB-4202', name: 'Alameda', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4202.webp', category: 'garage', colors: ['grey', 'light'] },
+  { id: 'FB-4204', name: 'Anchorage', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4204.webp', category: 'garage', colors: ['grey', 'dark'] },
+  { id: 'FB-4216', name: 'Armadillo', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4216.webp', category: 'garage', colors: ['grey', 'brown'] },
+  { id: 'FB-4112', name: 'Blacktop', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4112.webp', category: 'garage', colors: ['black', 'dark'] },
+  { id: 'FB-4101', name: 'Blue Granite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4101.webp', category: 'garage', colors: ['blue', 'grey'] },
+  { id: 'FB-4110', name: 'Claystone', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4110.webp', category: 'garage', colors: ['brown', 'neutral'] },
+  { id: 'FB-4214', name: 'Denali', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4214.webp', category: 'garage', colors: ['grey', 'white'] },
+  { id: 'FB-4210', name: 'Europa', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4210.webp', category: 'garage', colors: ['brown', 'grey'] },
+  { id: 'FB-4211', name: 'Husky', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4211.webp', category: 'garage', colors: ['grey', 'dark'] },
+  { id: 'FB-4205', name: 'Juneau', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4205.webp', category: 'garage', colors: ['grey', 'neutral'] },
+  { id: 'FB-4206', name: 'Klondike', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4206.webp', category: 'garage', colors: ['brown', 'grey'] },
+  { id: 'FB-4201', name: 'Plateau', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4201.webp', category: 'garage', colors: ['brown', 'neutral'] },
+  { id: 'FB-4102', name: 'Quartzite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4102.webp', category: 'garage', colors: ['grey', 'brown'] },
+  { id: 'FB-4108', name: 'Sandstone', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4108.webp', category: 'garage', colors: ['brown', 'neutral'] },
+  { id: 'FB-4106', name: 'Shale', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4106.webp', category: 'garage', colors: ['grey', 'brown'] },
+  { id: 'FB-4105', name: 'Slate', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4105.webp', category: 'garage', colors: ['grey', 'dark'] },
+  { id: 'FB-4103', name: 'Travertine', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4103.webp', category: 'garage', colors: ['brown', 'light'] },
+  { id: 'FB-4104', name: 'Turquoise', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4104.webp', category: 'garage', colors: ['blue', 'green'] },
+  { id: 'FB-4215', name: 'Yosemite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4215.webp', category: 'garage', colors: ['brown', 'grey'] },
+  { id: 'FB-4212', name: 'Yukon', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4212.webp', category: 'garage', colors: ['grey', 'brown'] },
   
-  // Create gradient/pattern based on color selection
-  const getFloorColor = () => {
-    if (color.colors.length === 1) {
-      return color.colors[0];
-    }
-    return color.colors[0]; // Primary color for 3D
-  };
+  // Colorful/Special
+  { id: 'FB-4209', name: 'Gumball', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4209.webp', category: 'colorful', colors: ['variegated'] },
+  { id: 'FB-4203', name: 'Jawbreaker', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4203.webp', category: 'colorful', colors: ['variegated'] },
+  { id: 'FB-4213', name: 'Rosebud', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4213.webp', category: 'colorful', colors: ['pink', 'red'] },
+  { id: 'FB-4219', name: 'Taffy', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4219.webp', category: 'colorful', colors: ['pink', 'light'] },
+];
 
-  return (
-    <mesh ref={floorRef} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
-      <planeGeometry args={[10, 8]} />
-      <meshStandardMaterial 
-        color={getFloorColor()} 
-        roughness={0.3}
-        metalness={0.1}
-      />
-    </mesh>
-  );
-}
+// Demo scene images
+const sceneImages = [
+  { id: 'garage-01', name: 'Garage 01', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/RESIDENTIAL_GARAGE_SCENE_01/thumb.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/envs/garage.jpg' },
+  { id: 'garage-03', name: 'Garage 03', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/RESIDENTIAL_GARAGE_SCENE_03/thumb.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/envs/garage.jpg' },
+  { id: 'garage-06', name: 'Garage 06', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/RESIDENTIAL_GARAGE_SCENE_06/thumb.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/envs/garage.jpg' },
+  { id: 'warehouse', name: 'Warehouse', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/envs/warehouse.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/envs/warehouse.jpg' },
+  { id: 'automotive', name: 'Auto Shop', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/COMMERCIAL_AUTOMOTIVE_GARAGE/thumb.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/COMMERCIAL_AUTOMOTIVE_GARAGE/thumb.jpg' },
+  { id: 'kitchen', name: 'Kitchen', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/COMMERCIAL_KITCHEN_01/thumb.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/COMMERCIAL_KITCHEN_01/thumb.jpg' },
+];
 
-// 3D Garage Walls
-function GarageWalls() {
-  return (
-    <group>
-      {/* Back Wall */}
-      <mesh position={[0, 2, -4]} receiveShadow>
-        <boxGeometry args={[10, 4, 0.2]} />
-        <meshStandardMaterial color="#E8E8E8" />
-      </mesh>
-      {/* Left Wall */}
-      <mesh position={[-5, 2, 0]} rotation={[0, Math.PI / 2, 0]} receiveShadow>
-        <boxGeometry args={[8, 4, 0.2]} />
-        <meshStandardMaterial color="#F0F0F0" />
-      </mesh>
-      {/* Right Wall */}
-      <mesh position={[5, 2, 0]} rotation={[0, -Math.PI / 2, 0]} receiveShadow>
-        <boxGeometry args={[8, 4, 0.2]} />
-        <meshStandardMaterial color="#F0F0F0" />
-      </mesh>
-      {/* Ceiling */}
-      <mesh position={[0, 4, 0]} rotation={[Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[10, 8]} />
-        <meshStandardMaterial color="#FFFFFF" />
-      </mesh>
-    </group>
-  );
-}
+// Color filter options
+const colorFilters = [
+  { id: 'all', name: 'All Colors' },
+  { id: 'grey', name: 'Grey' },
+  { id: 'brown', name: 'Brown' },
+  { id: 'blue', name: 'Blue' },
+  { id: 'black', name: 'Black' },
+  { id: 'light', name: 'Light' },
+  { id: 'dark', name: 'Dark' },
+  { id: 'neutral', name: 'Neutral' },
+  { id: 'variegated', name: 'Colorful' },
+];
 
-// Garage Door
-function GarageDoor() {
-  return (
-    <group position={[0, 1.75, 4]}>
-      {/* Door Frame */}
-      <mesh>
-        <boxGeometry args={[8, 3.5, 0.1]} />
-        <meshStandardMaterial color="#D0D0D0" />
-      </mesh>
-      {/* Door Panels */}
-      {[0, 1, 2, 3].map((i) => (
-        <mesh key={i} position={[0, 1.3 - i * 0.85, 0.06]}>
-          <boxGeometry args={[7.8, 0.8, 0.05]} />
-          <meshStandardMaterial color="#B8B8B8" />
-        </mesh>
-      ))}
-    </group>
-  );
-}
-
-// Simple Car Silhouette
-function CarSilhouette() {
-  return (
-    <group position={[0, 0.4, 0]}>
-      {/* Car Body */}
-      <mesh position={[0, 0.3, 0]} castShadow>
-        <boxGeometry args={[2, 0.6, 4]} />
-        <meshStandardMaterial color="#2D2D2D" transparent opacity={0.3} />
-      </mesh>
-      {/* Car Top */}
-      <mesh position={[0, 0.7, -0.3]} castShadow>
-        <boxGeometry args={[1.8, 0.5, 2]} />
-        <meshStandardMaterial color="#2D2D2D" transparent opacity={0.3} />
-      </mesh>
-    </group>
-  );
-}
-
-// Workbench
-function Workbench() {
-  return (
-    <group position={[-4, 0, -3]}>
-      <mesh position={[0, 0.45, 0]} castShadow>
-        <boxGeometry args={[1.5, 0.9, 0.6]} />
-        <meshStandardMaterial color="#4A4A4A" />
-      </mesh>
-      <mesh position={[0, 0.95, 0]}>
-        <boxGeometry args={[1.6, 0.05, 0.7]} />
-        <meshStandardMaterial color="#8B4513" />
-      </mesh>
-    </group>
-  );
-}
-
-// Tool Cabinet
-function ToolCabinet() {
-  return (
-    <group position={[4, 0, -3]}>
-      <mesh position={[0, 0.75, 0]} castShadow>
-        <boxGeometry args={[1, 1.5, 0.5]} />
-        <meshStandardMaterial color="#CC0000" />
-      </mesh>
-    </group>
-  );
-}
-
-// Floor Pattern Overlay for Flake Effect
-function FlakePattern({ color }) {
-  const patternRef = useRef();
-  
-  useFrame(() => {
-    if (patternRef.current) {
-      // Subtle animation for visual interest
-    }
-  });
-
-  if (color.colors.length <= 1) return null;
-
-  return (
-    <group ref={patternRef}>
-      {color.colors.slice(1).map((c, i) => (
-        Array.from({ length: 50 }).map((_, j) => (
-          <mesh 
-            key={`${i}-${j}`}
-            position={[
-              (Math.random() - 0.5) * 9,
-              0.01 + i * 0.001,
-              (Math.random() - 0.5) * 7
-            ]}
-            rotation={[-Math.PI / 2, 0, Math.random() * Math.PI]}
-          >
-            <planeGeometry args={[0.1 + Math.random() * 0.1, 0.05 + Math.random() * 0.05]} />
-            <meshStandardMaterial color={c} transparent opacity={0.8} />
-          </mesh>
-        ))
-      ))}
-    </group>
-  );
-}
-
-// Main 3D Scene
-function GarageScene({ selectedColor, showCar }) {
-  return (
-    <>
-      <ambientLight intensity={0.5} />
-      <directionalLight 
-        position={[5, 10, 5]} 
-        intensity={1} 
-        castShadow
-        shadow-mapSize={[2048, 2048]}
-      />
-      <pointLight position={[0, 3, 0]} intensity={0.5} />
-      
-      <GarageFloor color={selectedColor} />
-      <FlakePattern color={selectedColor} />
-      <GarageWalls />
-      <GarageDoor />
-      {showCar && <CarSilhouette />}
-      <Workbench />
-      <ToolCabinet />
-      
-      <ContactShadows 
-        position={[0, 0, 0]} 
-        opacity={0.4} 
-        scale={15} 
-        blur={2} 
-        far={10} 
-      />
-      
-      <OrbitControls 
-        enablePan={true}
-        enableZoom={true}
-        enableRotate={true}
-        minPolarAngle={0.2}
-        maxPolarAngle={Math.PI / 2 - 0.1}
-        minDistance={5}
-        maxDistance={20}
-      />
-      
-      <Environment preset="apartment" />
-    </>
-  );
-}
-
-// Color Swatch Component
-function ColorSwatch({ color, isSelected, onClick }) {
-  return (
-    <motion.button
-      onClick={onClick}
-      className={`relative rounded-lg overflow-hidden border-2 transition-all ${
-        isSelected ? 'border-yellow-500 ring-2 ring-yellow-500 ring-offset-2' : 'border-gray-200 hover:border-gray-400'
-      }`}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <div className="w-16 h-16 flex">
-        {color.colors.map((c, i) => (
-          <div 
-            key={i} 
-            className="flex-1 h-full" 
-            style={{ backgroundColor: c }}
-          />
-        ))}
-      </div>
-      <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors" />
-    </motion.button>
-  );
-}
-
-// Photo Upload Component with Floor Detection
-function PhotoUploader({ onImageSelect }) {
-  const [isDragging, setIsDragging] = useState(false);
-  const fileInputRef = useRef(null);
-
-  const handleDrop = useCallback((e) => {
-    e.preventDefault();
-    setIsDragging(false);
-    const file = e.dataTransfer.files[0];
-    if (file && file.type.startsWith('image/')) {
-      const reader = new FileReader();
-      reader.onload = (e) => onImageSelect(e.target.result);
-      reader.readAsDataURL(file);
-    }
-  }, [onImageSelect]);
-
-  const handleFileSelect = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => onImageSelect(e.target.result);
-      reader.readAsDataURL(file);
-    }
-  };
-
-  return (
-    <div
-      className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors ${
-        isDragging ? 'border-yellow-500 bg-yellow-50' : 'border-gray-300 hover:border-gray-400'
-      }`}
-      onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
-      onDragLeave={() => setIsDragging(false)}
-      onDrop={handleDrop}
-    >
-      <Upload className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-      <p className="text-gray-600 mb-2">Drag & drop your garage photo here</p>
-      <p className="text-sm text-gray-400 mb-4">or</p>
-      <Button 
-        variant="outline" 
-        onClick={() => fileInputRef.current?.click()}
-      >
-        Browse Files
-      </Button>
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept="image/*"
-        className="hidden"
-        onChange={handleFileSelect}
-      />
+// Flake Swatch Component
+const FlakeSwatch = ({ blend, isSelected, onClick }) => (
+  <motion.button
+    onClick={onClick}
+    className={`relative rounded-lg overflow-hidden border-2 transition-all group ${
+      isSelected 
+        ? 'border-yellow-500 ring-2 ring-yellow-500 ring-offset-2 scale-105' 
+        : 'border-gray-200 hover:border-yellow-400'
+    }`}
+    whileHover={{ scale: isSelected ? 1.05 : 1.03 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    <img 
+      src={blend.image} 
+      alt={blend.name}
+      className="w-full h-20 object-cover"
+      loading="lazy"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-2">
+      <span className="text-white text-xs font-medium truncate">{blend.name}</span>
     </div>
-  );
-}
-
-// Photo Visualizer with Color Overlay
-function PhotoVisualizer({ image, selectedColor, onClose }) {
-  const canvasRef = useRef(null);
-
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-    >
-      <div className="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden">
-        <div className="p-4 border-b flex items-center justify-between">
-          <h3 className="text-lg font-bold">Your Space with {selectedColor.name}</h3>
-          <Button variant="ghost" size="sm" onClick={onClose}>
-            <X className="w-5 h-5" />
-          </Button>
-        </div>
-        <div className="p-4">
-          <div className="relative">
-            <img 
-              src={image} 
-              alt="Your space" 
-              className="w-full h-auto rounded-lg"
-              style={{ 
-                filter: `sepia(20%) saturate(80%)`,
-              }}
-            />
-            <div 
-              className="absolute inset-0 rounded-lg mix-blend-overlay"
-              style={{ 
-                background: `linear-gradient(to bottom, transparent 40%, ${selectedColor.colors[0]}80 100%)`,
-              }}
-            />
-          </div>
-          <p className="text-sm text-gray-500 mt-4 text-center">
-            * This is an approximation. Actual results may vary. Contact us for a free on-site consultation.
-          </p>
-        </div>
+    {isSelected && (
+      <div className="absolute top-1 right-1 w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
+        <Check className="w-3 h-3 text-black" />
       </div>
-    </motion.div>
-  );
-}
+    )}
+  </motion.button>
+);
+
+// Scene Selector Component
+const SceneSelector = ({ scenes, selectedScene, onSelect }) => (
+  <div className="grid grid-cols-3 gap-2">
+    {scenes.map(scene => (
+      <motion.button
+        key={scene.id}
+        onClick={() => onSelect(scene)}
+        className={`relative rounded-lg overflow-hidden border-2 transition-all ${
+          selectedScene?.id === scene.id
+            ? 'border-yellow-500'
+            : 'border-gray-200 hover:border-gray-400'
+        }`}
+        whileHover={{ scale: 1.02 }}
+      >
+        <img 
+          src={scene.thumb} 
+          alt={scene.name}
+          className="w-full h-16 object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <span className="text-white text-xs font-medium">{scene.name}</span>
+        </div>
+      </motion.button>
+    ))}
+  </div>
+);
 
 // Main Visualizer Page
 const FloorVisualizer = () => {
-  const [selectedColor, setSelectedColor] = useState(torginolColors.garage[0]);
-  const [activeCategory, setActiveCategory] = useState('garage');
+  const [selectedBlend, setSelectedBlend] = useState(torginolBlends[0]);
+  const [selectedScene, setSelectedScene] = useState(sceneImages[0]);
+  const [colorFilter, setColorFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [showCar, setShowCar] = useState(true);
-  const [uploadedImage, setUploadedImage] = useState(null);
-  const [showPhotoVisualizer, setShowPhotoVisualizer] = useState(false);
+  const [showFullscreen, setShowFullscreen] = useState(false);
 
-  const categories = [
-    { id: 'garage', name: 'Garage Collection' },
-    { id: 'greystone', name: 'Greystone' },
-    { id: 'brownstone', name: 'Brownstone' },
-    { id: 'marble', name: 'Marble' },
-    { id: 'terrazzo', name: 'Terrazzo' },
-    { id: 'solid', name: 'Solid Colors' },
-    { id: 'quartz', name: 'Quartz' },
-  ];
-
-  const filteredColors = torginolColors[activeCategory]?.filter(
-    color => color.name.toLowerCase().includes(searchQuery.toLowerCase())
-  ) || [];
-
-  const allColors = Object.values(torginolColors).flat();
-  const searchResults = searchQuery 
-    ? allColors.filter(c => c.name.toLowerCase().includes(searchQuery.toLowerCase()))
-    : [];
+  // Filter blends
+  const filteredBlends = torginolBlends.filter(blend => {
+    const matchesSearch = blend.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         blend.id.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesColor = colorFilter === 'all' || blend.colors.includes(colorFilter);
+    return matchesSearch && matchesColor;
+  });
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       <SEO 
-        title="3D Floor Visualizer Naples FL | See Your Epoxy Floor | EpoxyArt33"
-        description="Visualize your new epoxy floor before installation! Try Torginol flakes and quartz colors in our 3D garage visualizer. Upload your own photo. Free tool from EpoxyArt33 Naples FL."
-        keywords="epoxy floor visualizer, garage floor preview, Torginol color selector, 3D floor viewer, epoxy color picker Naples, floor design tool SWFL"
+        title="Floor Visualizer Naples FL | See Torginol Flakes | EpoxyArt33"
+        description="Visualize Torginol flake colors on your garage floor. Browse real flake samples and see them in realistic garage scenes. Free visualizer tool from EpoxyArt33 Naples FL."
+        keywords="Torginol floor visualizer, epoxy flake colors, garage floor preview, flake color selector, epoxy design tool Naples, floor coating visualizer SWFL"
         url="/visualizer"
       />
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-28 pb-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="pt-28 pb-6 px-4 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="container mx-auto max-w-6xl">
           <ScrollReveal>
             <div className="text-center">
-              <Badge className="mb-4 bg-yellow-500 text-black">
+              <Badge className="mb-3 bg-yellow-500 text-black">
                 <Eye className="w-4 h-4 mr-2 inline" />
-                Interactive Tool
+                Floor Design Tool
               </Badge>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-                3D Floor <span className="text-yellow-500">Visualizer</span>
+              <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+                Torginol <span className="text-yellow-500">Floor Visualizer</span>
               </h1>
-              <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                See exactly how your new epoxy floor will look. Choose from our complete Torginol catalog 
-                and visualize it in a realistic 3D garage environment.
+              <p className="text-gray-300 max-w-2xl mx-auto">
+                Browse real Torginol flake samples and visualize how they'll look in your space
               </p>
             </div>
           </ScrollReveal>
@@ -471,214 +176,200 @@ const FloorVisualizer = () => {
       </section>
 
       {/* Main Visualizer */}
-      <section className="flex-1 py-8 px-4 sm:px-6 lg:px-8">
+      <section className="flex-1 py-6 px-4">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* 3D Viewer */}
-            <div className="lg:col-span-2">
+          <div className="grid lg:grid-cols-12 gap-6">
+            
+            {/* Preview Area */}
+            <div className="lg:col-span-8 space-y-4">
+              {/* Main Preview */}
               <Card className="overflow-hidden">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="flex items-center gap-2">
-                      <Sparkles className="w-5 h-5 text-yellow-500" />
-                      {selectedColor.name}
-                    </CardTitle>
-                    <div className="flex gap-2">
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        onClick={() => setShowCar(!showCar)}
-                      >
-                        {showCar ? 'Hide Car' : 'Show Car'}
-                      </Button>
+                <div className="relative">
+                  {/* Scene Image */}
+                  <div className="relative h-[400px] lg:h-[500px] overflow-hidden">
+                    <img 
+                      src={selectedScene.thumb}
+                      alt={selectedScene.name}
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Floor Overlay with Blend Pattern */}
+                    <div 
+                      className="absolute inset-0"
+                      style={{
+                        background: `linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.3) 100%)`,
+                      }}
+                    />
+                    {/* Floor texture overlay */}
+                    <div 
+                      className="absolute bottom-0 left-0 right-0 h-[60%]"
+                      style={{
+                        backgroundImage: `url(${selectedBlend.image})`,
+                        backgroundSize: '400px',
+                        backgroundRepeat: 'repeat',
+                        opacity: 0.85,
+                        mixBlendMode: 'multiply',
+                        maskImage: 'linear-gradient(to top, black 0%, black 70%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to top, black 0%, black 70%, transparent 100%)',
+                      }}
+                    />
+                  </div>
+                  
+                  {/* Selected Blend Info Overlay */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur rounded-lg p-3 shadow-lg">
+                    <div className="flex items-center gap-3">
+                      <img 
+                        src={selectedBlend.image} 
+                        alt={selectedBlend.name}
+                        className="w-12 h-12 rounded-lg object-cover border-2 border-yellow-500"
+                      />
+                      <div>
+                        <p className="font-bold text-gray-900">{selectedBlend.name}</p>
+                        <p className="text-xs text-gray-500">{selectedBlend.id}</p>
+                      </div>
                     </div>
                   </div>
-                </CardHeader>
-                <CardContent className="p-0">
-                  <div className="h-[500px] bg-gray-100 relative">
-                    <Canvas
-                      shadows
-                      camera={{ position: [8, 6, 8], fov: 50 }}
-                      gl={{ preserveDrawingBuffer: true }}
-                    >
-                      <Suspense fallback={
-                        <Html center>
-                          <div className="text-gray-500">Loading 3D Scene...</div>
-                        </Html>
-                      }>
-                        <GarageScene selectedColor={selectedColor} showCar={showCar} />
-                      </Suspense>
-                    </Canvas>
-                    
-                    {/* Controls Overlay */}
-                    <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg p-3 text-sm text-gray-600">
-                      <p className="font-medium mb-1">Controls:</p>
-                      <p>🖱️ Left click + drag: Rotate</p>
-                      <p>🖱️ Right click + drag: Pan</p>
-                      <p>🖱️ Scroll: Zoom</p>
-                    </div>
-                  </div>
-                </CardContent>
+
+                  {/* Fullscreen Button */}
+                  <button 
+                    onClick={() => setShowFullscreen(true)}
+                    className="absolute top-4 right-4 bg-white/90 hover:bg-white p-2 rounded-lg shadow-lg transition-colors"
+                  >
+                    <Eye className="w-5 h-5" />
+                  </button>
+                </div>
               </Card>
 
-              {/* Color Preview Bar */}
-              <Card className="mt-4">
+              {/* Scene Selector */}
+              <Card>
                 <CardContent className="p-4">
-                  <div className="flex items-center gap-4">
-                    <span className="text-sm font-medium text-gray-600">Selected Color:</span>
-                    <div className="flex items-center gap-2">
-                      <div className="flex rounded-lg overflow-hidden border-2 border-gray-200">
-                        {selectedColor.colors.map((c, i) => (
-                          <div 
-                            key={i} 
-                            className="w-8 h-8" 
-                            style={{ backgroundColor: c }}
-                          />
-                        ))}
-                      </div>
-                      <span className="font-bold">{selectedColor.name}</span>
-                      <Badge variant="outline" className="text-xs">
-                        {selectedColor.type}
-                      </Badge>
-                    </div>
-                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <Palette className="w-4 h-4" />
+                    Select Scene
+                  </h3>
+                  <SceneSelector 
+                    scenes={sceneImages}
+                    selectedScene={selectedScene}
+                    onSelect={setSelectedScene}
+                  />
                 </CardContent>
               </Card>
 
-              {/* Upload Your Photo */}
-              <Card className="mt-4">
-                <CardHeader>
-                  <CardTitle className="text-lg flex items-center gap-2">
-                    <Camera className="w-5 h-5" />
-                    Visualize Your Own Space
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {!uploadedImage ? (
-                    <PhotoUploader onImageSelect={setUploadedImage} />
-                  ) : (
-                    <div className="space-y-4">
-                      <div className="relative rounded-lg overflow-hidden">
-                        <img 
-                          src={uploadedImage} 
-                          alt="Your space" 
-                          className="w-full h-48 object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                        <Button 
-                          size="sm"
-                          className="absolute bottom-3 right-3 bg-yellow-500 hover:bg-yellow-600 text-black"
-                          onClick={() => setShowPhotoVisualizer(true)}
-                        >
-                          <Eye className="w-4 h-4 mr-2" />
-                          Preview with {selectedColor.name}
-                        </Button>
+              {/* Selected Blend Details */}
+              <Card className="bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200">
+                <CardContent className="p-4">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                      <img 
+                        src={selectedBlend.image} 
+                        alt={selectedBlend.name}
+                        className="w-20 h-20 rounded-xl object-cover border-4 border-white shadow-lg"
+                      />
+                      <div>
+                        <h3 className="text-xl font-bold text-gray-900">{selectedBlend.name}</h3>
+                        <p className="text-sm text-gray-600">Torginol {selectedBlend.id}</p>
+                        <div className="flex gap-1 mt-1">
+                          {selectedBlend.colors.map(color => (
+                            <Badge key={color} variant="outline" className="text-xs capitalize">
+                              {color}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        onClick={() => setUploadedImage(null)}
-                      >
-                        <RotateCcw className="w-4 h-4 mr-2" />
-                        Upload Different Photo
-                      </Button>
                     </div>
-                  )}
+                    <Button 
+                      className="bg-amber-600 hover:bg-amber-700 text-white"
+                      onClick={() => window.location.href = `/contact?blend=${selectedBlend.id}`}
+                    >
+                      Get Quote for This Color
+                      <ChevronRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Color Selector Sidebar */}
-            <div className="space-y-4">
-              {/* Search */}
+            {/* Sidebar - Flake Selector */}
+            <div className="lg:col-span-4 space-y-4">
+              {/* Search & Filter */}
               <Card>
-                <CardContent className="p-4">
+                <CardContent className="p-4 space-y-4">
+                  {/* Search */}
                   <div className="relative">
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
                     <Input
-                      placeholder="Search colors..."
+                      placeholder="Search blends..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="pl-10"
                     />
                   </div>
-                  {searchQuery && searchResults.length > 0 && (
-                    <div className="mt-3 max-h-48 overflow-y-auto">
-                      <p className="text-xs text-gray-500 mb-2">Search Results:</p>
-                      <div className="grid grid-cols-4 gap-2">
-                        {searchResults.slice(0, 8).map(color => (
-                          <ColorSwatch
-                            key={color.id}
-                            color={color}
-                            isSelected={selectedColor.id === color.id}
-                            onClick={() => {
-                              setSelectedColor(color);
-                              setSearchQuery('');
-                            }}
-                          />
-                        ))}
-                      </div>
+                  
+                  {/* Color Filter */}
+                  <div>
+                    <p className="text-xs font-medium text-gray-500 mb-2">Filter by Color:</p>
+                    <div className="flex flex-wrap gap-1">
+                      {colorFilters.map(filter => (
+                        <button
+                          key={filter.id}
+                          onClick={() => setColorFilter(filter.id)}
+                          className={`px-2 py-1 text-xs rounded-full transition-colors ${
+                            colorFilter === filter.id
+                              ? 'bg-yellow-500 text-black font-medium'
+                              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                          }`}
+                        >
+                          {filter.name}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Flake Grid */}
+              <Card className="max-h-[600px] overflow-hidden flex flex-col">
+                <CardContent className="p-4 flex-1 overflow-y-auto">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="font-semibold text-gray-900">Torginol Flake Blends</h3>
+                    <Badge variant="outline">{filteredBlends.length} options</Badge>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-2">
+                    {filteredBlends.map(blend => (
+                      <FlakeSwatch
+                        key={blend.id}
+                        blend={blend}
+                        isSelected={selectedBlend.id === blend.id}
+                        onClick={() => setSelectedBlend(blend)}
+                      />
+                    ))}
+                  </div>
+
+                  {filteredBlends.length === 0 && (
+                    <div className="text-center py-8 text-gray-500">
+                      <p>No blends match your search</p>
                     </div>
                   )}
                 </CardContent>
               </Card>
 
-              {/* Category Tabs */}
-              <Card>
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-lg flex items-center gap-2">
-                    <Palette className="w-5 h-5" />
-                    Torginol Colors
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Tabs value={activeCategory} onValueChange={setActiveCategory}>
-                    <TabsList className="flex flex-wrap h-auto gap-1 bg-transparent p-0 mb-4">
-                      {categories.map(cat => (
-                        <TabsTrigger
-                          key={cat.id}
-                          value={cat.id}
-                          className="text-xs px-2 py-1 data-[state=active]:bg-yellow-500 data-[state=active]:text-black"
-                        >
-                          {cat.name}
-                        </TabsTrigger>
-                      ))}
-                    </TabsList>
-
-                    {categories.map(cat => (
-                      <TabsContent key={cat.id} value={cat.id} className="mt-0">
-                        <div className="grid grid-cols-3 gap-2">
-                          {torginolColors[cat.id]?.map(color => (
-                            <div key={color.id} className="text-center">
-                              <ColorSwatch
-                                color={color}
-                                isSelected={selectedColor.id === color.id}
-                                onClick={() => setSelectedColor(color)}
-                              />
-                              <p className="text-xs mt-1 text-gray-600 truncate">{color.name}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </TabsContent>
-                    ))}
-                  </Tabs>
-                </CardContent>
-              </Card>
-
               {/* CTA */}
-              <Card className="bg-gradient-to-br from-amber-600 to-amber-700 text-white">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-lg mb-2">Love This Color?</h3>
-                  <p className="text-amber-100 text-sm mb-4">
-                    Get a free quote for your garage floor with this exact color and finish.
+              <Card className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-lg mb-2">Love What You See?</h3>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Get a free quote for your project with this exact Torginol blend.
                   </p>
                   <Button 
-                    className="w-full bg-white text-amber-700 hover:bg-gray-100"
+                    className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold"
                     onClick={() => window.location.href = '/contact'}
                   >
-                    Get Free Quote
+                    Request Free Quote
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>
+                  <p className="text-xs text-gray-400 mt-3 text-center">
+                    Or call us: (239) 276-1462
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -686,14 +377,58 @@ const FloorVisualizer = () => {
         </div>
       </section>
 
-      {/* Photo Visualizer Modal */}
+      {/* Fullscreen Preview Modal */}
       <AnimatePresence>
-        {showPhotoVisualizer && uploadedImage && (
-          <PhotoVisualizer 
-            image={uploadedImage}
-            selectedColor={selectedColor}
-            onClose={() => setShowPhotoVisualizer(false)}
-          />
+        {showFullscreen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black z-50 flex items-center justify-center"
+            onClick={() => setShowFullscreen(false)}
+          >
+            <button 
+              className="absolute top-4 right-4 text-white bg-white/20 hover:bg-white/30 p-2 rounded-full z-10"
+              onClick={() => setShowFullscreen(false)}
+            >
+              <X className="w-6 h-6" />
+            </button>
+            
+            <div className="relative w-full h-full">
+              <img 
+                src={selectedScene.thumb}
+                alt={selectedScene.name}
+                className="w-full h-full object-cover"
+              />
+              <div 
+                className="absolute bottom-0 left-0 right-0 h-[60%]"
+                style={{
+                  backgroundImage: `url(${selectedBlend.image})`,
+                  backgroundSize: '500px',
+                  backgroundRepeat: 'repeat',
+                  opacity: 0.85,
+                  mixBlendMode: 'multiply',
+                  maskImage: 'linear-gradient(to top, black 0%, black 70%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to top, black 0%, black 70%, transparent 100%)',
+                }}
+              />
+              
+              {/* Info Overlay */}
+              <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur rounded-xl p-4 shadow-2xl">
+                <div className="flex items-center gap-4">
+                  <img 
+                    src={selectedBlend.image} 
+                    alt={selectedBlend.name}
+                    className="w-16 h-16 rounded-lg object-cover border-2 border-yellow-500"
+                  />
+                  <div>
+                    <p className="font-bold text-xl text-gray-900">{selectedBlend.name}</p>
+                    <p className="text-sm text-gray-500">Torginol {selectedBlend.id}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
 
