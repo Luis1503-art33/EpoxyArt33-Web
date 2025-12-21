@@ -402,16 +402,36 @@ const Home = () => {
       </section>
 
       {/* Before/After Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              See the <span className="text-yellow-600">Transformation</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From dull, damaged concrete to stunning epoxy floors. Slide to see the difference.
-            </p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <motion.h2 
+                className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                See the <motion.span 
+                  className="text-yellow-600"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                >Transformation</motion.span>
+              </motion.h2>
+              <motion.p 
+                className="text-xl text-gray-600 max-w-2xl mx-auto"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                From dull, damaged concrete to stunning epoxy floors. Slide to see the difference.
+              </motion.p>
+            </div>
+          </ScrollReveal>
           
           <div className="max-w-4xl mx-auto mb-12">
             <BeforeAfterSlider 
@@ -421,13 +441,17 @@ const Home = () => {
             />
           </div>
 
-          <div className="text-center">
-            <Link to="/gallery">
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
-                View Full Gallery <ChevronRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-          </div>
+          <ScrollReveal delay={0.3}>
+            <div className="text-center">
+              <Link to="/gallery">
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold shadow-lg hover:shadow-xl transition-shadow">
+                    View Full Gallery <ChevronRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </motion.div>
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
