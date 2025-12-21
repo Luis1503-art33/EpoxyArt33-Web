@@ -68,11 +68,12 @@ const FlakeSwatch = ({ blend, isSelected, onClick }) => (
     <img 
       src={blend.image} 
       alt={blend.name}
-      className="w-full h-20 object-cover"
+      className="w-full h-16 object-cover"
       loading="lazy"
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-2">
-      <span className="text-white text-xs font-medium truncate">{blend.name}</span>
+    <div className="bg-white px-2 py-1.5 text-left">
+      <p className="text-xs font-semibold text-gray-900 truncate">{blend.name}</p>
+      <p className="text-[10px] text-gray-500">{blend.id}</p>
     </div>
     {isSelected && (
       <div className="absolute top-1 right-1 w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
