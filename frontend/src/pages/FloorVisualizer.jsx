@@ -44,17 +44,13 @@ const sceneImages = [
   { id: 'kitchen', name: 'Kitchen', thumb: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/COMMERCIAL_KITCHEN_01/thumb.jpg', full: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/static/torginol/COMMERCIAL_KITCHEN_01/thumb.jpg' },
 ];
 
-// Color filter options
+// Color filter options - Simplified
 const colorFilters = [
-  { id: 'all', name: 'All Colors' },
+  { id: 'all', name: 'All' },
   { id: 'grey', name: 'Grey' },
   { id: 'brown', name: 'Brown' },
-  { id: 'blue', name: 'Blue' },
-  { id: 'black', name: 'Black' },
-  { id: 'light', name: 'Light' },
   { id: 'dark', name: 'Dark' },
-  { id: 'neutral', name: 'Neutral' },
-  { id: 'variegated', name: 'Colorful' },
+  { id: 'light', name: 'Light' },
 ];
 
 // Flake Swatch Component
