@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import NewsletterSignup from '../components/NewsletterSignup';
+import AnimatedCounter from '../components/AnimatedCounter';
+import Card3D from '../components/Card3D';
+import ScrollReveal from '../components/ScrollReveal';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
