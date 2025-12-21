@@ -53,6 +53,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://epoxyart33.com/products</loc>
+    <lastmod>2025-12-21T15:16:08.822Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://epoxyart33.com/privacy</loc>
     <lastmod>2025-12-21T15:16:08.822Z</lastmod>
     <changefreq>yearly</changefreq>
