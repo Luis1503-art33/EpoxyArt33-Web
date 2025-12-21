@@ -350,49 +350,54 @@ const Home = () => {
       {/* Why Choose Us */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Experience the difference that quality and expertise make</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33?</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Experience the difference that quality and expertise make</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Award className="w-8 h-8 text-amber-700" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Premium Quality Materials</h3>
-              <p className="text-gray-600">We use only the highest-grade epoxy systems that ensure longevity and beauty.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Users className="w-8 h-8 text-amber-700" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Installation</h3>
-              <p className="text-gray-600">Our skilled technicians bring 3+ years of specialized experience to every project.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Shield className="w-8 h-8 text-amber-700" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Satisfaction Guaranteed</h3>
-              <p className="text-gray-600">We stand behind our work with comprehensive warranty coverage for your peace of mind.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Clock className="w-8 h-8 text-amber-700" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Fast Turnaround</h3>
-              <p className="text-gray-600">Most projects completed within 1 day with minimal disruption to your schedule.</p>
-            </div>
+            {[
+              { icon: Award, title: 'Premium Quality Materials', desc: 'We use only the highest-grade epoxy systems that ensure longevity and beauty.' },
+              { icon: Users, title: 'Expert Installation', desc: 'Our skilled technicians bring 3+ years of specialized experience to every project.' },
+              { icon: Shield, title: 'Satisfaction Guaranteed', desc: 'We stand behind our work with comprehensive warranty coverage for your peace of mind.' },
+              { icon: Clock, title: 'Fast Turnaround', desc: 'Most projects completed within 1 day with minimal disruption to your schedule.' }
+            ].map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <ScrollReveal key={index} delay={index * 0.1} direction="up">
+                  <motion.div 
+                    className="text-center"
+                    whileHover={{ y: -10 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                  >
+                    <motion.div 
+                      className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                      whileHover={{ rotate: 360, scale: 1.1 }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      <Icon className="w-8 h-8 text-amber-700" />
+                    </motion.div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
+                    <p className="text-gray-600">{benefit.desc}</p>
+                  </motion.div>
+                </ScrollReveal>
+              );
+            })}
           </div>
 
-          <div className="text-center mt-12">
-            <Link to="/why">
-              <Button size="lg" variant="outline" className="border-2 border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white">
-                Learn More About Us
-              </Button>
-            </Link>
-          </div>
+          <ScrollReveal delay={0.5}>
+            <div className="text-center mt-12">
+              <Link to="/why">
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-amber-700 shadow-lg">
+                    Learn More About Us <ChevronRight className="ml-2" />
+                  </Button>
+                </motion.div>
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
