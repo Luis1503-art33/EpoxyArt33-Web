@@ -105,6 +105,15 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="/visualizer"
+              className={`font-medium transition-colors ${
+                isActive('/visualizer') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+              }`}
+            >
+              3D Visualizer
+            </Link>
+
+            <Link
               to="/faq"
               className={`font-medium transition-colors ${
                 isActive('/faq') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
@@ -212,6 +221,14 @@ const Navbar = () => {
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
               Products
+            </Link>
+
+            <Link
+              to="/visualizer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
+            >
+              3D Visualizer
             </Link>
 
             <Link
