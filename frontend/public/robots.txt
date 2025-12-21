@@ -1,0 +1,34 @@
+# EpoxyArt33 - Robots.txt
+# https://epoxyart33.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Priority Pages
+Allow: /
+Allow: /services
+Allow: /gallery
+Allow: /contact
+Allow: /blog
+Allow: /showroom
+
+# Service Pages
+Allow: /garage-floor-coating
+Allow: /metallic-epoxy
+Allow: /flake-system
+Allow: /quartz-system
+Allow: /pool-deck-resurfacing
+Allow: /commercial-epoxy
+Allow: /industrial-epoxy
+Allow: /concrete-repair
+
+# Disallow admin/backend paths (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Sitemap
+Sitemap: https://epoxyart33.com/sitemap.xml
