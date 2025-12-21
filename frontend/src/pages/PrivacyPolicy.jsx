@@ -1,10 +1,17 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO 
+        title="Privacy Policy | EpoxyArt33"
+        description="EpoxyArt33 privacy policy. Learn how we collect, use, and protect your information when you use our epoxy flooring services in Southwest Florida."
+        keywords="privacy policy, EpoxyArt33 privacy, data protection, SWFL flooring company"
+        url="/privacy"
+      />
       <Navbar />
       
       <div className="container mx-auto px-4 py-16">
