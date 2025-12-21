@@ -18,6 +18,7 @@ import IndustrialEpoxy from "./pages/IndustrialEpoxy";
 import ConcreteRepair from "./pages/ConcreteRepair";
 import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Products from "./pages/Products";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { Toaster } from "./components/ui/sonner";
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/showroom" element={<Showroom />} />
+          <Route path="/products" element={<Products />} />
           {/* Service Pages */}
           <Route path="/garage-floor-coating" element={<GarageFloorCoating />} />
           <Route path="/metallic-epoxy" element={<MetallicEpoxy />} />
