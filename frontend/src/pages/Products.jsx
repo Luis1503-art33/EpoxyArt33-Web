@@ -31,45 +31,45 @@ const Products = () => {
       name: 'Torginol',
       tagline: 'Industry Leader in Decorative Flooring',
       website: 'https://torginol.com',
-      description: 'Torginol es el fabricante líder en materiales decorativos para pisos. Con más de 40 años de experiencia, sus productos son reconocidos mundialmente por su calidad superior y durabilidad excepcional.',
+      description: 'Torginol is the leading manufacturer of decorative flooring materials. With over 40 years of experience, their products are recognized worldwide for superior quality and exceptional durability.',
       logo: '/images/logos/torginol-logo.svg',
       color: 'from-blue-600 to-blue-800',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
       products: [
         {
-          name: 'Flakes Decorativos',
-          description: 'Hojuelas de polímero de alta calidad disponibles en cientos de colores y mezclas personalizadas.',
+          name: 'Decorative Flakes',
+          description: 'High-quality polymer flakes available in hundreds of colors and custom blends.',
           benefits: [
-            'Más de 200 colores disponibles',
-            'Mezclas personalizadas únicas',
-            'Resistencia a químicos y abrasión',
-            'Superficie antideslizante',
-            'Fácil mantenimiento'
+            'Over 200 colors available',
+            'Unique custom blends',
+            'Chemical & abrasion resistant',
+            'Slip-resistant surface',
+            'Easy maintenance'
           ],
           icon: Palette
         },
         {
           name: 'Quartz Broadcast',
-          description: 'Agregados de cuarzo-resina para máxima durabilidad y resistencia al deslizamiento.',
+          description: 'Resin-quartz aggregates for maximum durability and slip resistance.',
           benefits: [
-            'Más de 40 colores',
-            'Grados para broadcast (40-S) y llana (25-A)',
-            'Extremadamente duradero',
-            'Ideal para alto tráfico',
-            'Resistente a productos químicos'
+            'Over 40 colors',
+            'Broadcast (40-S) and trowel (25-A) grades',
+            'Extremely durable',
+            'Ideal for high traffic',
+            'Chemical resistant'
           ],
           icon: Shield
         },
         {
-          name: 'Pigmentos Metálicos',
-          description: 'Pigmentos especiales para crear efectos metálicos 3D únicos y espectaculares.',
+          name: 'Metallic Pigments',
+          description: 'Special pigments to create unique and spectacular 3D metallic effects.',
           benefits: [
-            'Efectos 3D brillantes',
-            'Patrones únicos irrepetibles',
-            'Acabado tipo mármol',
-            'Alta reflectividad',
-            'Durabilidad superior'
+            'Brilliant 3D effects',
+            'Unique unrepeatable patterns',
+            'Marble-like finish',
+            'High reflectivity',
+            'Superior durability'
           ],
           icon: Sparkles
         }
@@ -78,9 +78,9 @@ const Products = () => {
     {
       id: 'chemtec',
       name: 'Chemtec',
-      tagline: 'Epoxy 100% Sólidos de Calidad Premium',
+      tagline: 'Premium Quality 100% Solids Epoxy with MVB',
       website: 'https://epoxychemtec.com',
-      description: 'Chemtec es un fabricante canadiense especializado en recubrimientos epóxicos de alta calidad. Su línea CHEM 100 representa lo mejor en tecnología de epoxy 100% sólidos sin VOCs.',
+      description: 'Chemtec is a Canadian manufacturer specializing in high-quality epoxy coatings. Their CHEM 100 line represents the best in 100% solids epoxy technology with built-in Moisture Vapor Barrier (MVB) protection.',
       logo: '/images/logos/chemtec-logo.svg',
       color: 'from-green-600 to-green-800',
       bgColor: 'bg-green-50',
@@ -88,37 +88,37 @@ const Products = () => {
       products: [
         {
           name: 'CHEM 100 Fast Cure',
-          description: 'Epoxy 100% sólidos de curado rápido para proyectos con tiempo limitado.',
+          description: '100% solids epoxy with fast cure for projects with limited time. Includes MVB technology.',
           benefits: [
-            '100% sólidos - sin VOCs',
-            'Curado rápido en 24 horas',
-            'Cobertura: 200 ft²/galón',
-            'Certificado para contacto con alimentos',
-            'Adhiere al concreto perfectamente'
+            '100% solids - zero VOCs',
+            'Built-in MVB protection',
+            'Fast cure in 24 hours',
+            'Coverage: 200 ft²/gallon',
+            'Food contact certified'
           ],
           icon: Zap
         },
         {
           name: 'CHEM 100 Slow Cure',
-          description: 'Epoxy 100% sólidos con tiempo de trabajo extendido para proyectos grandes.',
+          description: '100% solids epoxy with extended working time for large projects. Includes MVB technology.',
           benefits: [
-            '100% sólidos - cero diluyentes',
-            'Mayor tiempo de trabajo',
-            'Ideal para áreas grandes',
-            'Nivelación superior',
-            'Acabado profesional'
+            '100% solids - zero solvents',
+            'Built-in MVB protection',
+            'Extended working time',
+            'Ideal for large areas',
+            'Professional finish'
           ],
           icon: Clock
         },
         {
           name: 'Crack Filler',
-          description: 'Relleno de grietas de alta resistencia para preparación perfecta del concreto.',
+          description: 'High-strength crack filler for perfect concrete preparation.',
           benefits: [
-            'Rellena grietas profundas',
-            'Alta resistencia a compresión',
-            'Curado rápido',
-            'Compatible con epoxy',
-            'Acabado liso'
+            'Fills deep cracks',
+            'High compressive strength',
+            'Fast cure',
+            'Epoxy compatible',
+            'Smooth finish'
           ],
           icon: Shield
         }
@@ -127,47 +127,47 @@ const Products = () => {
     {
       id: 'florida-paint',
       name: 'Florida Paints',
-      tagline: 'Polyaspartic 98% Sólidos - Tecnología de Florida',
+      tagline: '98% Solids Polyaspartic - Florida Technology',
       website: 'https://floridapaints.com',
-      description: 'Florida Paints es un fabricante estadounidense que produce el Flo-Spartic, un polyaspartic de 98.5% sólidos diseñado específicamente para resistir el clima de Florida y áreas con alta exposición UV.',
+      description: 'Florida Paints is an American manufacturer that produces Flo-Spartic, a 98.5% solids polyaspartic specifically designed to withstand Florida climate and areas with high UV exposure.',
       logo: '/images/logos/florida-paint-logo.svg',
       color: 'from-orange-500 to-red-600',
       bgColor: 'bg-orange-50',
       borderColor: 'border-orange-200',
       products: [
         {
-          name: 'Flo-Spartic 98% Sólidos',
-          description: 'Recubrimiento polyaspartic de ultra alto contenido sólido para máxima protección UV.',
+          name: 'Flo-Spartic 98% Solids',
+          description: 'Ultra-high solids polyaspartic coating for maximum UV protection.',
           benefits: [
-            '98.5% sólidos - casi cero VOCs',
-            'NO amarillea con el sol',
-            'Resistencia UV superior',
-            'Curado en 6 horas',
-            'Ideal para pool decks y exteriores'
+            '98.5% solids - near zero VOCs',
+            'Will NOT yellow in sun',
+            'Superior UV resistance',
+            'Cures in 6 hours',
+            'Perfect for pool decks & exteriors'
           ],
           icon: Sun
         },
         {
           name: 'Color Pods',
-          description: 'Sistema de tintado para crear acabados opacos o translúcidos personalizados.',
+          description: 'Tinting system to create custom opaque or translucent finishes.',
           benefits: [
-            'Colores personalizados',
-            'Fácil mezcla',
-            'Acabados únicos',
-            'Compatible con Flo-Spartic',
-            'Consistencia garantizada'
+            'Custom colors',
+            'Easy mixing',
+            'Unique finishes',
+            'Flo-Spartic compatible',
+            'Guaranteed consistency'
           ],
           icon: Palette
         },
         {
           name: 'Speed-Fill',
-          description: 'Relleno de poliurea de curado ultra rápido para reparaciones de concreto.',
+          description: 'Ultra-fast curing polyurea filler for concrete repairs.',
           benefits: [
-            'Curado en minutos',
-            'Alta flexibilidad',
-            'Resistente a impactos',
-            'Fácil aplicación',
-            'Compatible con todos los sistemas'
+            'Cures in minutes',
+            'High flexibility',
+            'Impact resistant',
+            'Easy application',
+            'Compatible with all systems'
           ],
           icon: Zap
         }
@@ -178,23 +178,23 @@ const Products = () => {
   const whyPremiumProducts = [
     {
       icon: Shield,
-      title: 'Durabilidad Garantizada',
-      description: 'Nuestros productos premium duran 3x más que las alternativas económicas del mercado.'
+      title: 'Guaranteed Durability',
+      description: 'Our premium products last 3x longer than cheap market alternatives.'
     },
     {
       icon: Award,
-      title: 'Certificaciones',
-      description: 'Todos nuestros productos cumplen con las normas más estrictas de calidad y seguridad.'
+      title: 'Certifications',
+      description: 'All our products meet the strictest quality and safety standards.'
     },
     {
       icon: Factory,
-      title: 'Fabricantes Reconocidos',
-      description: 'Trabajamos exclusivamente con marcas líderes de la industria con décadas de experiencia.'
+      title: 'Recognized Manufacturers',
+      description: 'We work exclusively with industry-leading brands with decades of experience.'
     },
     {
       icon: Droplets,
-      title: 'Resistencia Superior',
-      description: 'Resistencia a químicos, agua, aceites y abrasión para cualquier ambiente.'
+      title: 'MVB Protection',
+      description: 'All our epoxies include Moisture Vapor Barrier technology to prevent delamination.'
     }
   ];
 
@@ -202,8 +202,8 @@ const Products = () => {
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="Premium Epoxy Products Naples FL | Torginol, Chemtec, Florida Paints | EpoxyArt33"
-        description="We use only premium epoxy products: Torginol flakes & quartz, Chemtec 100% solids epoxy, Florida Paints 98% polyaspartic. Professional-grade materials for lasting results in SWFL."
-        keywords="Torginol flakes Naples, Chemtec epoxy Fort Myers, Florida Paints polyaspartic, 100% solids epoxy, premium epoxy products SWFL, professional floor coating materials"
+        description="We use only premium epoxy products: Torginol flakes & quartz, Chemtec 100% solids epoxy with MVB, Florida Paints 98% polyaspartic. Professional-grade materials for lasting results in SWFL."
+        keywords="Torginol flakes Naples, Chemtec epoxy Fort Myers, Florida Paints polyaspartic, 100% solids epoxy, MVB moisture vapor barrier, premium epoxy products SWFL, professional floor coating materials"
         url="/products"
       />
       <SchemaMarkup 
@@ -234,7 +234,7 @@ const Products = () => {
               >
                 <Badge className="mb-6 bg-yellow-500 text-black hover:bg-yellow-400 px-6 py-2 text-sm font-bold">
                   <Sparkles className="w-4 h-4 mr-2 inline" />
-                  Materiales Premium
+                  Premium Materials
                 </Badge>
               </motion.div>
               
@@ -244,7 +244,7 @@ const Products = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Productos de <span className="text-yellow-500">Calidad Superior</span>
+                Superior <span className="text-yellow-500">Quality Products</span>
               </motion.h1>
               
               <motion.p 
@@ -253,8 +253,8 @@ const Products = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                En EpoxyArt33 utilizamos exclusivamente productos premium de los fabricantes más reconocidos de la industria. 
-                La calidad de nuestros materiales es la base de resultados excepcionales.
+                At EpoxyArt33, we exclusively use premium products from the most recognized manufacturers in the industry. 
+                The quality of our materials is the foundation of exceptional results.
               </motion.p>
 
               <motion.div
@@ -284,10 +284,10 @@ const Products = () => {
           <ScrollReveal>
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                ¿Por Qué Usamos Solo Productos Premium?
+                Why We Only Use Premium Products
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                La diferencia entre un piso epóxico que dura 5 años y uno que dura 20+ años está en la calidad de los materiales.
+                The difference between an epoxy floor that lasts 5 years and one that lasts 20+ years is in the quality of materials.
               </p>
             </div>
           </ScrollReveal>
@@ -308,6 +308,37 @@ const Products = () => {
                 </motion.div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MVB Feature Banner */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-amber-600 to-amber-700">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                <Droplets className="w-8 h-8 text-amber-600" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white">All Our Epoxies Include MVB Technology</h3>
+                <p className="text-amber-100">Moisture Vapor Barrier protection prevents 80% of common floor failures in Florida</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="bg-white/20 backdrop-blur rounded-lg px-4 py-2 text-center">
+                <div className="text-2xl font-bold text-white">100%</div>
+                <div className="text-xs text-amber-100">Solids</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur rounded-lg px-4 py-2 text-center">
+                <div className="text-2xl font-bold text-white">0</div>
+                <div className="text-xs text-amber-100">VOCs</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur rounded-lg px-4 py-2 text-center">
+                <div className="text-2xl font-bold text-white">25+</div>
+                <div className="text-xs text-amber-100">Years</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -369,7 +400,7 @@ const Products = () => {
                           </CardDescription>
                         </CardHeader>
                         <CardContent>
-                          <h4 className="font-semibold text-gray-900 mb-3 text-sm uppercase tracking-wide">Beneficios:</h4>
+                          <h4 className="font-semibold text-gray-900 mb-3 text-sm uppercase tracking-wide">Benefits:</h4>
                           <ul className="space-y-2">
                             {product.benefits.map((benefit, benefitIndex) => (
                               <motion.li 
@@ -396,31 +427,31 @@ const Products = () => {
         </section>
       ))}
 
-      {/* MVB Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-700 to-amber-900 text-white">
+      {/* What is MVB Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto max-w-6xl">
           <ScrollReveal>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge className="mb-6 bg-white text-amber-800 hover:bg-gray-100">
+                <Badge className="mb-6 bg-yellow-500 text-black hover:bg-yellow-400">
                   <Shield className="w-4 h-4 mr-2 inline" />
-                  Tecnología Especializada
+                  Critical Technology
                 </Badge>
                 <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                  MVB: Barrera de Vapor de Humedad
+                  What is MVB? <span className="text-yellow-500">Moisture Vapor Barrier</span>
                 </h2>
-                <p className="text-amber-100 text-lg mb-6">
-                  En Florida, la humedad del concreto es uno de los mayores enemigos de los pisos epóxicos. 
-                  Por eso utilizamos sistemas MVB (Moisture Vapor Barrier) de 100% sólidos que bloquean 
-                  completamente la migración de humedad desde el substrato.
+                <p className="text-gray-300 text-lg mb-6">
+                  In Florida, concrete moisture is one of the biggest enemies of epoxy floors. 
+                  That's why ALL our epoxy systems include MVB (Moisture Vapor Barrier) technology 
+                  that completely blocks moisture migration from the substrate.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Bloquea hasta 25 lbs de presión de vapor',
-                    'Previene delaminación y burbujas',
-                    'Extiende la vida útil 3x',
-                    'Obligatorio en sótanos y losas sobre tierra',
-                    'Garantía extendida incluida'
+                    'Blocks up to 25 lbs of vapor pressure',
+                    'Prevents delamination and bubbles',
+                    'Extends lifespan 3x',
+                    'Mandatory for basements and slabs on grade',
+                    'Extended warranty included'
                   ].map((item, index) => (
                     <motion.li 
                       key={index}
@@ -430,8 +461,8 @@ const Products = () => {
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
                     >
-                      <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                        <Check className="w-4 h-4 text-amber-700" />
+                      <div className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Check className="w-4 h-4 text-black" />
                       </div>
                       <span>{item}</span>
                     </motion.li>
@@ -446,27 +477,27 @@ const Products = () => {
               >
                 <div className="text-center">
                   <Droplets className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
-                  <h3 className="text-2xl font-bold mb-4">¿Por Qué es Crítico el MVB?</h3>
-                  <p className="text-amber-100 mb-6">
-                    El 80% de las fallas en pisos epóxicos en Florida se deben a problemas de humedad. 
-                    Nuestro sistema MVB elimina este riesgo por completo.
+                  <h3 className="text-2xl font-bold mb-4">Why is MVB Critical?</h3>
+                  <p className="text-gray-300 mb-6">
+                    80% of epoxy floor failures in Florida are due to moisture problems. 
+                    Our MVB system eliminates this risk completely.
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div className="bg-white/10 rounded-lg p-4">
+                      <div className="text-3xl font-bold text-yellow-400">80%</div>
+                      <div className="text-sm text-gray-400">Failures Prevented</div>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-4">
+                      <div className="text-3xl font-bold text-yellow-400">25 lbs</div>
+                      <div className="text-sm text-gray-400">Vapor Blocked</div>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-4">
+                      <div className="text-3xl font-bold text-yellow-400">3x</div>
+                      <div className="text-sm text-gray-400">Longer Life</div>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-4">
                       <div className="text-3xl font-bold text-yellow-400">100%</div>
-                      <div className="text-sm text-amber-200">Sólidos</div>
-                    </div>
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <div className="text-3xl font-bold text-yellow-400">0</div>
-                      <div className="text-sm text-amber-200">VOCs</div>
-                    </div>
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <div className="text-3xl font-bold text-yellow-400">25+</div>
-                      <div className="text-sm text-amber-200">Años de Vida</div>
-                    </div>
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <div className="text-3xl font-bold text-yellow-400">24h</div>
-                      <div className="text-sm text-amber-200">Curado</div>
+                      <div className="text-sm text-gray-400">Our Projects</div>
                     </div>
                   </div>
                 </div>
@@ -477,29 +508,29 @@ const Products = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-amber-700">
         <div className="container mx-auto max-w-4xl text-center">
           <ScrollReveal>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              ¿Listo Para Un Piso de Calidad Premium?
+              Ready For A Premium Quality Floor?
             </h2>
-            <p className="text-xl text-gray-400 mb-8">
-              Contáctenos hoy para una consulta gratuita y descubra cómo nuestros productos premium 
-              pueden transformar su espacio.
+            <p className="text-xl text-amber-100 mb-8">
+              Contact us today for a free consultation and discover how our premium products 
+              can transform your space.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold w-full sm:w-auto">
-                    Solicitar Cotización Gratis
+                  <Button size="lg" className="bg-white text-amber-700 hover:bg-gray-100 font-bold w-full sm:w-auto">
+                    Get Free Quote
                     <ChevronRight className="ml-2 w-5 h-5" />
                   </Button>
                 </motion.div>
               </Link>
               <Link to="/gallery">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 w-full sm:w-auto">
-                    Ver Nuestros Proyectos
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-amber-700 w-full sm:w-auto">
+                    View Our Projects
                   </Button>
                 </motion.div>
               </Link>
