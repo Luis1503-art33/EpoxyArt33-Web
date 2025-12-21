@@ -8,6 +8,8 @@ import NewsletterSignup from '../components/NewsletterSignup';
 import AnimatedCounter from '../components/AnimatedCounter';
 import Card3D from '../components/Card3D';
 import ScrollReveal from '../components/ScrollReveal';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
