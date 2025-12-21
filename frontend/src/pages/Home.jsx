@@ -268,50 +268,73 @@ const Home = () => {
       {/* Featured Services Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Specialized epoxy solutions for every need in Southwest Florida</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Specialized epoxy solutions for every need in Southwest Florida</p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {featuredServices.map((service) => {
+            {featuredServices.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={service.id} className="border-2 border-gray-200 hover:border-amber-700 hover:shadow-xl transition-all duration-300 group">
-                  <CardHeader>
-                    <div className="w-14 h-14 bg-amber-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-700 transition-colors">
-                      <Icon className="w-7 h-7 text-amber-700 group-hover:text-white transition-colors" />
-                    </div>
-                    <CardTitle className="text-2xl text-gray-900">{service.title}</CardTitle>
-                    <CardDescription className="text-gray-600 text-base">{service.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 mb-4">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-gray-700">
-                          <CheckCircle2 className="w-5 h-5 text-amber-700 mr-2 flex-shrink-0" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Link to={service.link}>
-                      <Button variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white">
-                        Learn More
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
+                <ScrollReveal key={service.id} delay={index * 0.1} direction="up">
+                  <Card3D className="h-full">
+                    <Card className="border-2 border-gray-200 hover:border-amber-700 hover:shadow-2xl transition-all duration-300 group h-full">
+                      <CardHeader>
+                        <motion.div 
+                          className="w-14 h-14 bg-amber-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-700 transition-colors"
+                          whileHover={{ rotate: 360 }}
+                          transition={{ duration: 0.6 }}
+                        >
+                          <Icon className="w-7 h-7 text-amber-700 group-hover:text-white transition-colors" />
+                        </motion.div>
+                        <CardTitle className="text-2xl text-gray-900">{service.title}</CardTitle>
+                        <CardDescription className="text-gray-600 text-base">{service.description}</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <ul className="space-y-2 mb-4">
+                          {service.features.map((feature, idx) => (
+                            <motion.li 
+                              key={idx} 
+                              className="flex items-center text-gray-700"
+                              initial={{ opacity: 0, x: -10 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              transition={{ delay: idx * 0.1 }}
+                              viewport={{ once: true }}
+                            >
+                              <CheckCircle2 className="w-5 h-5 text-amber-700 mr-2 flex-shrink-0" />
+                              {feature}
+                            </motion.li>
+                          ))}
+                        </ul>
+                        <Link to={service.link}>
+                          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                            <Button variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white">
+                              Learn More
+                            </Button>
+                          </motion.div>
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  </Card3D>
+                </ScrollReveal>
               );
             })}
           </div>
 
-          <div className="text-center mt-12">
-            <Link to="/services">
-              <Button size="lg" className="bg-amber-700 hover:bg-amber-800 text-white">
-                View All Services <ChevronRight className="ml-2" />
-              </Button>
-            </Link>
-          </div>
+          <ScrollReveal delay={0.4}>
+            <div className="text-center mt-12">
+              <Link to="/services">
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Button size="lg" className="bg-amber-700 hover:bg-amber-800 text-white shadow-lg">
+                    View All Services <ChevronRight className="ml-2" />
+                  </Button>
+                </motion.div>
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
