@@ -96,6 +96,15 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="/products"
+              className={`font-medium transition-colors ${
+                isActive('/products') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+              }`}
+            >
+              Products
+            </Link>
+
+            <Link
               to="/faq"
               className={`font-medium transition-colors ${
                 isActive('/faq') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
