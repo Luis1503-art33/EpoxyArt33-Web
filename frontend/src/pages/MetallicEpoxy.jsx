@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Sparkles, Palette, Eye, Home, Building2 } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Sparkles, Palette, Eye, Home, Building2 } from 'lucide-react';
 const MetallicEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Metallic Epoxy Flooring Naples FL | 3D Metallic Floors SWFL | EpoxyArt33"
+        description="Stunning 3D metallic epoxy floors in Naples, Fort Myers & SWFL. Unique swirling patterns, luxury finishes. Perfect for homes, showrooms & commercial spaces. Free quotes! (239) 276-1462"
+        keywords="metallic epoxy Naples, 3D epoxy floor Fort Myers, metallic floor coating SWFL, luxury epoxy flooring, designer epoxy floors Cape Coral, metallic garage floor Naples, custom metallic epoxy"
+        url="/metallic-epoxy"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Metallic Epoxy Flooring",
+          "description": "Luxury 3D metallic epoxy flooring with stunning visual effects",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

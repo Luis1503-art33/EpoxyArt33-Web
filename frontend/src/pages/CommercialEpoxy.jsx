@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Building2, Store, Trophy, Clock } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Building2, Store, Trophy, Clock } from 'lucide-react';
 const CommercialEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Commercial Epoxy Flooring Naples FL | Business Floors SWFL | EpoxyArt33"
+        description="Professional commercial epoxy flooring in Naples, Fort Myers & SWFL. Retail, offices, restaurants, showrooms. Durable, low maintenance, fast installation. Free quotes! (239) 276-1462"
+        keywords="commercial epoxy flooring Naples, business floor coating Fort Myers, retail epoxy floor SWFL, restaurant epoxy flooring, office epoxy floor Cape Coral, showroom flooring Naples, commercial floor coating"
+        url="/commercial-epoxy"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Commercial Epoxy Flooring",
+          "description": "Professional epoxy flooring solutions for commercial businesses",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

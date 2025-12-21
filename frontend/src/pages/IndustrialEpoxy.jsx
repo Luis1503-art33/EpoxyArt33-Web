@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Factory, Zap, Shield, Wrench, Clock, Award } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Factory, Zap, Shield, Wrench, Clock, Award } from 'lucide-react'
 const IndustrialEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Industrial Epoxy Flooring Naples FL | Warehouse Floors SWFL | EpoxyArt33"
+        description="Heavy-duty industrial epoxy flooring in Naples, Fort Myers & SWFL. Warehouses, manufacturing, factories. Chemical resistant, 20+ year lifespan. Free assessment! (239) 276-1462"
+        keywords="industrial epoxy flooring Naples, warehouse floor coating Fort Myers, factory epoxy floor SWFL, heavy duty epoxy floor, manufacturing floor coating, industrial floor repair Naples, chemical resistant flooring"
+        url="/industrial-epoxy"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Industrial Epoxy Flooring",
+          "description": "Heavy-duty industrial epoxy flooring for warehouses and manufacturing facilities",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

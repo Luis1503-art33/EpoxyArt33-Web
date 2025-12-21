@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Wrench, Shield, Clock, Award, Users, Star } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Wrench, Shield, Clock, Award, Users, Star } from 'lucide-react';
 const ConcreteRepair = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Concrete Repair Naples FL | Crack Repair & Restoration SWFL | EpoxyArt33"
+        description="Professional concrete repair in Naples, Fort Myers & SWFL. Fix cracks, spalling, uneven slabs before epoxy coating. Complete repair + epoxy packages. Free assessment! (239) 276-1462"
+        keywords="concrete repair Naples, crack repair Fort Myers, concrete restoration SWFL, spalling repair, concrete leveling Cape Coral, garage floor repair Naples, concrete crack filling"
+        url="/concrete-repair"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Concrete Repair & Restoration",
+          "description": "Professional concrete repair services including crack filling, spalling repair, and surface restoration",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

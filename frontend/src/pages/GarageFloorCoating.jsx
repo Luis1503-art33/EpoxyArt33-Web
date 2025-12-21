@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Star, Shield, Clock, Palette, Sparkles } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Star, Shield, Clock, Palette, Sparkles } from 'lucide-react';
 const GarageFloorCoating = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Garage Floor Coating Naples FL | Epoxy Garage Floors SWFL | EpoxyArt33"
+        description="Premium garage floor coating in Naples, Fort Myers & SWFL. Flake, metallic & solid epoxy options. Slip-resistant, easy to clean. 1-day installation. Free estimates! (239) 276-1462"
+        keywords="garage floor coating Naples, epoxy garage floor Fort Myers, garage floor epoxy SWFL, Torginol flake garage, garage floor coating Cape Coral, residential garage epoxy, garage floor refinishing Naples"
+        url="/garage-floor-coating"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Garage Floor Coating",
+          "description": "Premium epoxy garage floor coating services in Southwest Florida",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

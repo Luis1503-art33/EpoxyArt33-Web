@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Droplets, Sun, Shield, Users, Sparkles } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Droplets, Sun, Shield, Users, Sparkles } from 'lucide-react';
 const PoolDeckResurfacing = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Pool Deck Resurfacing Naples FL | Epoxy Pool Decks SWFL | EpoxyArt33"
+        description="Slip-resistant pool deck resurfacing in Naples, Marco Island & SWFL. UV-resistant Polyaspartic coating won't yellow. Waterproof, beautiful & safe. Free quotes! (239) 276-1462"
+        keywords="pool deck resurfacing Naples, epoxy pool deck Fort Myers, pool deck coating SWFL, slip resistant pool deck, pool deck repair Marco Island, Polyaspartic pool deck, cool deck coating Naples"
+        url="/pool-deck-resurfacing"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Pool Deck Resurfacing",
+          "description": "Slip-resistant, UV-resistant pool deck resurfacing with Polyaspartic coating",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

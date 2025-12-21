@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Shield, Sparkles, Home, Droplets } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Shield, Sparkles, Home, Droplets } from 'lucide-react';
 const FlakeSystem = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Torginol Flake Epoxy System Naples FL | Chip Flooring SWFL | EpoxyArt33"
+        description="Premium Torginol flake epoxy flooring in Naples, Fort Myers & SWFL. Hundreds of colors, slip-resistant, easy to clean. Perfect for garages & pool decks. Free quotes! (239) 276-1462"
+        keywords="flake epoxy flooring Naples, Torginol flakes Fort Myers, chip floor coating SWFL, decorative epoxy flakes, garage flake floor Cape Coral, vinyl chip flooring Naples, epoxy flake system"
+        url="/flake-system"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Torginol Flake Epoxy System",
+          "description": "Decorative flake epoxy flooring with hundreds of color options",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Shield, Zap, Factory, Sparkles, Building2 } from 'lucide-react';
@@ -9,6 +11,21 @@ import { Check, Shield, Zap, Factory, Sparkles, Building2 } from 'lucide-react';
 const QuartzSystem = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Quartz Epoxy System Naples FL | Heavy-Duty Flooring SWFL | EpoxyArt33"
+        description="Industrial-strength quartz epoxy flooring in Naples, Fort Myers & SWFL. Maximum durability for commercial kitchens, warehouses & high-traffic areas. Free quotes! (239) 276-1462"
+        keywords="quartz epoxy flooring Naples, quartz floor coating Fort Myers, heavy duty epoxy SWFL, commercial kitchen flooring, industrial quartz floor Cape Coral, broadcast quartz epoxy Naples, epoxy quartz system"
+        url="/quartz-system"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Service",
+          "name": "Quartz Epoxy System",
+          "description": "Industrial-strength quartz epoxy flooring for maximum durability",
+          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
+          "areaServed": "Southwest Florida"
+        }}
+      />
       <Navbar />
       
       {/* Hero Section */}
