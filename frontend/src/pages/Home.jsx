@@ -158,40 +158,110 @@ const Home = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 px-4 py-1.5 text-base">
-              Premium Epoxy Flooring in SWFL
-            </Badge>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 px-4 py-1.5 text-base">
+                Premium Epoxy Flooring in SWFL
+              </Badge>
+            </motion.div>
+            
+            <motion.h1 
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               Art Beneath
-              <span className="block text-amber-700">Your Feet</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+              <motion.span 
+                className="block text-amber-700"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                Your Feet
+              </motion.span>
+            </motion.h1>
+            
+            <motion.p 
+              className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
               Transform your floors with EpoxyArt33's premium epoxy solutions. Serving Naples, Marco Island, Fort Myers, and all of Southwest Florida.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={scrollToQuote} size="lg" className="bg-amber-700 hover:bg-amber-800 text-white text-lg px-8 py-6">
-                Get Free Estimate <ChevronRight className="ml-2" />
-              </Button>
-              <Link to="/gallery">
-                <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 hover:border-amber-700 hover:text-amber-700 text-lg px-8 py-6">
-                  View Our Work
+            </motion.p>
+            
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Button onClick={scrollToQuote} size="lg" className="bg-amber-700 hover:bg-amber-800 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-shadow">
+                  Get Free Estimate <ChevronRight className="ml-2" />
                 </Button>
+              </motion.div>
+              <Link to="/gallery">
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 hover:border-amber-700 hover:text-amber-700 text-lg px-8 py-6">
+                    View Our Work
+                  </Button>
+                </motion.div>
               </Link>
-            </div>
+            </motion.div>
           </div>
 
-          {/* Stats */}
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-amber-700 mb-2">{stat.value}</div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          {/* Stats with Animated Counters */}
+          <ScrollReveal>
+            <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+                whileHover={{ y: -5, scale: 1.05 }}
+              >
+                <div className="text-4xl font-bold text-amber-700 mb-2">
+                  <AnimatedCounter end={500} suffix="+" />
+                </div>
+                <div className="text-gray-600 font-medium">Projects Completed</div>
+              </motion.div>
+              
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+                whileHover={{ y: -5, scale: 1.05 }}
+              >
+                <div className="text-4xl font-bold text-amber-700 mb-2">
+                  <AnimatedCounter end={500} suffix="+" />
+                </div>
+                <div className="text-gray-600 font-medium">Happy Clients</div>
+              </motion.div>
+              
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+                whileHover={{ y: -5, scale: 1.05 }}
+              >
+                <div className="text-4xl font-bold text-amber-700 mb-2">
+                  <AnimatedCounter end={3} suffix="+" />
+                </div>
+                <div className="text-gray-600 font-medium">Years Experience</div>
+              </motion.div>
+              
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+                whileHover={{ y: -5, scale: 1.05 }}
+              >
+                <div className="text-4xl font-bold text-amber-700 mb-2">
+                  <AnimatedCounter end={100} suffix="%" />
+                </div>
+                <div className="text-gray-600 font-medium">Satisfaction Rate</div>
+              </motion.div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
