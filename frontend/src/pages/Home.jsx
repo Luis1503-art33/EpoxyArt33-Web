@@ -157,6 +157,13 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="EpoxyArt33 | Premium Epoxy Flooring Naples, Fort Myers, SWFL"
+        description="Transform your floors with EpoxyArt33's premium epoxy solutions. Garage floors, metallic epoxy, pool decks, commercial flooring. 500+ projects in Southwest Florida. Free estimates! Call (239) 276-1462"
+        keywords="epoxy flooring Naples FL, garage floor coating Fort Myers, pool deck resurfacing Marco Island, metallic epoxy SWFL, commercial epoxy flooring Cape Coral, industrial epoxy Bonita Springs, Torginol flakes, polyaspartic coating, concrete repair Naples"
+        url="/"
+      />
+      <SchemaMarkup />
       <Navbar />
 
       {/* Hero Section */}
