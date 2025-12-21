@@ -310,7 +310,7 @@ const FloorVisualizer = () => {
               <Card className="max-h-[600px] overflow-hidden flex flex-col">
                 <CardContent className="p-4 flex-1 overflow-y-auto">
                   <div className="flex items-center justify-between mb-3">
-                    <h3 className="font-semibold text-gray-900">Torginol Flake Blends</h3>
+                    <h3 className="font-semibold text-gray-900">Most Popular Blends</h3>
                     <Badge variant="outline">{filteredBlends.length} options</Badge>
                   </div>
                   
