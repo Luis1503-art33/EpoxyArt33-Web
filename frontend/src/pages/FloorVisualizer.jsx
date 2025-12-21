@@ -17,37 +17,21 @@ import {
   Check
 } from 'lucide-react';
 
-// Real Torginol Flake Blends with actual images from their CDN
+// Most Popular Torginol Flake Blends - Top 12 Best Sellers
 const torginolBlends = [
-  // Garage Collection - Most Popular
-  { id: 'FB-4208', name: 'Acadia', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4208.webp', category: 'garage', colors: ['grey', 'brown'] },
-  { id: 'FB-4107', name: 'Agate', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4107.webp', category: 'garage', colors: ['brown', 'neutral'] },
-  { id: 'FB-4202', name: 'Alameda', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4202.webp', category: 'garage', colors: ['grey', 'light'] },
-  { id: 'FB-4204', name: 'Anchorage', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4204.webp', category: 'garage', colors: ['grey', 'dark'] },
-  { id: 'FB-4216', name: 'Armadillo', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4216.webp', category: 'garage', colors: ['grey', 'brown'] },
-  { id: 'FB-4112', name: 'Blacktop', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4112.webp', category: 'garage', colors: ['black', 'dark'] },
-  { id: 'FB-4101', name: 'Blue Granite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4101.webp', category: 'garage', colors: ['blue', 'grey'] },
-  { id: 'FB-4110', name: 'Claystone', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4110.webp', category: 'garage', colors: ['brown', 'neutral'] },
-  { id: 'FB-4214', name: 'Denali', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4214.webp', category: 'garage', colors: ['grey', 'white'] },
-  { id: 'FB-4210', name: 'Europa', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4210.webp', category: 'garage', colors: ['brown', 'grey'] },
-  { id: 'FB-4211', name: 'Husky', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4211.webp', category: 'garage', colors: ['grey', 'dark'] },
-  { id: 'FB-4205', name: 'Juneau', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4205.webp', category: 'garage', colors: ['grey', 'neutral'] },
-  { id: 'FB-4206', name: 'Klondike', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4206.webp', category: 'garage', colors: ['brown', 'grey'] },
-  { id: 'FB-4201', name: 'Plateau', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4201.webp', category: 'garage', colors: ['brown', 'neutral'] },
-  { id: 'FB-4102', name: 'Quartzite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4102.webp', category: 'garage', colors: ['grey', 'brown'] },
-  { id: 'FB-4108', name: 'Sandstone', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4108.webp', category: 'garage', colors: ['brown', 'neutral'] },
-  { id: 'FB-4106', name: 'Shale', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4106.webp', category: 'garage', colors: ['grey', 'brown'] },
-  { id: 'FB-4105', name: 'Slate', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4105.webp', category: 'garage', colors: ['grey', 'dark'] },
-  { id: 'FB-4103', name: 'Travertine', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4103.webp', category: 'garage', colors: ['brown', 'light'] },
-  { id: 'FB-4104', name: 'Turquoise', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4104.webp', category: 'garage', colors: ['blue', 'green'] },
-  { id: 'FB-4215', name: 'Yosemite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4215.webp', category: 'garage', colors: ['brown', 'grey'] },
-  { id: 'FB-4212', name: 'Yukon', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4212.webp', category: 'garage', colors: ['grey', 'brown'] },
-  
-  // Colorful/Special
-  { id: 'FB-4209', name: 'Gumball', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4209.webp', category: 'colorful', colors: ['variegated'] },
-  { id: 'FB-4203', name: 'Jawbreaker', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4203.webp', category: 'colorful', colors: ['variegated'] },
-  { id: 'FB-4213', name: 'Rosebud', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4213.webp', category: 'colorful', colors: ['pink', 'red'] },
-  { id: 'FB-4219', name: 'Taffy', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4219.webp', category: 'colorful', colors: ['pink', 'light'] },
+  // Most Popular for Garages
+  { id: 'FB-4105', name: 'Slate', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4105.webp', category: 'popular', colors: ['grey', 'dark'], description: 'Classic dark grey blend - #1 seller' },
+  { id: 'FB-4102', name: 'Quartzite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4102.webp', category: 'popular', colors: ['grey', 'brown'], description: 'Natural stone look - Best seller' },
+  { id: 'FB-4108', name: 'Sandstone', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4108.webp', category: 'popular', colors: ['brown', 'neutral'], description: 'Warm earth tones - Popular choice' },
+  { id: 'FB-4112', name: 'Blacktop', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4112.webp', category: 'popular', colors: ['black', 'dark'], description: 'Bold black blend - Modern look' },
+  { id: 'FB-4106', name: 'Shale', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4106.webp', category: 'popular', colors: ['grey', 'brown'], description: 'Neutral grey-brown - Versatile' },
+  { id: 'FB-4103', name: 'Travertine', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4103.webp', category: 'popular', colors: ['brown', 'light'], description: 'Light tan blend - Bright spaces' },
+  { id: 'FB-4110', name: 'Claystone', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4110.webp', category: 'popular', colors: ['brown', 'neutral'], description: 'Rich brown tones - Elegant' },
+  { id: 'FB-4107', name: 'Agate', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4107.webp', category: 'popular', colors: ['brown', 'neutral'], description: 'Multi-tone brown - Natural' },
+  { id: 'FB-4101', name: 'Blue Granite', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4101.webp', category: 'popular', colors: ['blue', 'grey'], description: 'Blue accent - Unique style' },
+  { id: 'FB-4211', name: 'Husky', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4211.webp', category: 'popular', colors: ['grey', 'dark'], description: 'Charcoal grey - Industrial' },
+  { id: 'FB-4214', name: 'Denali', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4214.webp', category: 'popular', colors: ['grey', 'white'], description: 'Light grey-white - Clean look' },
+  { id: 'FB-4212', name: 'Yukon', image: 'https://cdn.floor-wiz.com/shared_assets/core/latest/assets/images/blends/FB-4212.webp', category: 'popular', colors: ['grey', 'brown'], description: 'Grey-brown mix - All-around' },
 ];
 
 // Demo scene images
