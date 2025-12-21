@@ -207,6 +207,14 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="/products"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
+            >
+              Products
+            </Link>
+
+            <Link
               to="/faq"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
