@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Badge } from '../components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { Link } from 'react-router-dom';
@@ -72,6 +74,19 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Epoxy Flooring FAQ Naples FL | Common Questions SWFL | EpoxyArt33"
+        description="Answers to frequently asked questions about epoxy flooring in Naples & SWFL. Installation time, durability, maintenance, costs, warranty & more. Expert answers from EpoxyArt33."
+        keywords="epoxy flooring FAQ Naples, epoxy floor questions Fort Myers, garage floor FAQ SWFL, epoxy maintenance questions, epoxy cost questions, flooring FAQ Naples"
+        url="/faq"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "FAQPage",
+          "name": "EpoxyArt33 FAQ",
+          "description": "Frequently asked questions about epoxy flooring"
+        }}
+      />
       <Navbar />
 
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">

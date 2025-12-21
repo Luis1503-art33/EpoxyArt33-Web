@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
@@ -144,6 +146,13 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Epoxy Flooring Services Naples FL | All Systems SWFL | EpoxyArt33"
+        description="Complete epoxy flooring services in Naples, Fort Myers & SWFL. Garage floors, metallic, flake, quartz, pool decks, commercial & industrial. Free quotes! (239) 276-1462"
+        keywords="epoxy flooring services Naples, floor coating Fort Myers, garage floor service SWFL, metallic epoxy service, flake system installation, quartz epoxy, commercial flooring, industrial epoxy"
+        url="/services"
+      />
+      <SchemaMarkup />
       <Navbar />
 
       {/* Hero Section */}

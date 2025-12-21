@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Check, Award, Users, Clock, Shield, Star, Heart, Wrench } from 'lucide-react';
@@ -9,6 +11,13 @@ import { Check, Award, Users, Clock, Shield, Star, Heart, Wrench } from 'lucide-
 const WhyEpoxyArt33 = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
+      <SEO 
+        title="Why Choose EpoxyArt33 | Best Epoxy Flooring Naples FL | SWFL"
+        description="Discover why 500+ SWFL clients choose EpoxyArt33. Premium materials, expert craftsmen, fast turnaround, quality guarantee. Naples, Fort Myers & Southwest Florida."
+        keywords="why choose EpoxyArt33, best epoxy company Naples, top flooring contractor Fort Myers, trusted epoxy installer SWFL, quality epoxy flooring, premium floor coating"
+        url="/why"
+      />
+      <SchemaMarkup />
       <Navbar />
       
       <section className="relative bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 text-black py-20">

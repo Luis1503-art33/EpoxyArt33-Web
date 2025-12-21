@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
@@ -128,6 +130,13 @@ const Showroom = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Epoxy Showroom Naples FL | Torginol Flake Samples SWFL | EpoxyArt33"
+        description="Browse Torginol flake & quartz epoxy samples at EpoxyArt33. Hundreds of colors available. Request free samples for your Naples, Fort Myers or SWFL project!"
+        keywords="epoxy showroom Naples, Torginol flake samples Fort Myers, quartz epoxy samples SWFL, epoxy color samples, flake flooring options, quartz flooring colors Naples"
+        url="/showroom"
+      />
+      <SchemaMarkup />
       <Navbar />
 
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">

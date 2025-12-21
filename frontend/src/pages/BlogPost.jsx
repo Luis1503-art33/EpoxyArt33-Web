@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
@@ -50,6 +52,24 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={post ? `${post.title} | EpoxyArt33 Blog` : "Blog Post | EpoxyArt33"}
+        description={post ? post.excerpt : "Read our latest epoxy flooring article"}
+        keywords={post ? post.tags.join(', ') : "epoxy flooring, Naples FL"}
+        url={`/blog/${slug}`}
+        type="article"
+      />
+      {post && (
+        <SchemaMarkup 
+          data={{
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "author": { "@type": "Person", "name": post.author },
+            "datePublished": post.publishedAt
+          }}
+        />
+      )}
       <Navbar />
 
       <section className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 import { galleryItems } from '../mock';
@@ -14,6 +16,19 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Epoxy Flooring Gallery Naples FL | Project Photos SWFL | EpoxyArt33"
+        description="Browse stunning epoxy floor installations in Naples, Fort Myers & SWFL. Garage floors, metallic epoxy, pool decks, commercial projects. 500+ completed projects. Get inspired!"
+        keywords="epoxy flooring gallery Naples, epoxy floor photos Fort Myers, garage floor pictures SWFL, metallic epoxy gallery, pool deck photos, before after epoxy floors, epoxy project gallery"
+        url="/gallery"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "ImageGallery",
+          "name": "EpoxyArt33 Project Gallery",
+          "description": "Gallery of epoxy flooring installations in Southwest Florida"
+        }}
+      />
       <Navbar />
 
       {/* Hero Section */}

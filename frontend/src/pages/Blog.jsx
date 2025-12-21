@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
@@ -16,6 +18,19 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Epoxy Flooring Blog Naples FL | Tips & Guides SWFL | EpoxyArt33"
+        description="Expert tips, guides & trends for epoxy flooring in Southwest Florida. Learn about garage floors, metallic epoxy, pool decks, maintenance tips & more from EpoxyArt33."
+        keywords="epoxy flooring blog Naples, epoxy floor tips Fort Myers, garage floor guide SWFL, metallic epoxy information, pool deck blog, epoxy maintenance tips, floor coating articles"
+        url="/blog"
+      />
+      <SchemaMarkup 
+        data={{
+          "@type": "Blog",
+          "name": "EpoxyArt33 Blog",
+          "description": "Expert tips, trends and guides for epoxy flooring in Southwest Florida"
+        }}
+      />
       <Navbar />
 
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">

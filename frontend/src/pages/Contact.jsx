@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import SchemaMarkup from '../components/SchemaMarkup';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
@@ -49,6 +51,13 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Contact EpoxyArt33 | Free Epoxy Floor Quote Naples FL | SWFL"
+        description="Get a free epoxy flooring quote in Naples, Fort Myers & SWFL. Call (239) 276-1462 or fill out our form. Serving Naples, Marco Island, Cape Coral & all of Southwest Florida."
+        keywords="epoxy flooring quote Naples, contact epoxy company Fort Myers, free estimate SWFL, epoxy floor consultation, Naples flooring contractor, Marco Island epoxy, Cape Coral floor coating"
+        url="/contact"
+      />
+      <SchemaMarkup />
       <Navbar />
 
       {/* Hero Section */}
