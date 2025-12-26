@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ChevronDown, Menu, X, Phone } from 'lucide-react';
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from './ui/navigation-menu';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,18 +9,18 @@ const Navbar = () => {
   const location = useLocation();
 
   const services = [
-    { name: 'All Services', path: '/services' },
-    { name: 'Garage Floor Coating', path: '/garage-floor-coating' },
-    { name: 'Metallic Epoxy', path: '/metallic-epoxy' },
-    { name: 'Flake System', path: '/flake-system' },
-    { name: 'Quartz System', path: '/quartz-system' },
-    { name: 'Pool Deck Resurfacing', path: '/pool-deck-resurfacing' },
-    { name: 'Commercial Epoxy', path: '/commercial-epoxy' },
-    { name: 'Industrial Epoxy', path: '/industrial-epoxy' },
-    { name: 'Concrete Repair', path: '/concrete-repair' },
+    { name: 'All Services', path: '/services.html' },
+    { name: 'Garage Floor Coating', path: '/garage-floor-coating.html' },
+    { name: 'Metallic Epoxy', path: '/metallic-epoxy.html' },
+    { name: 'Flake System', path: '/flake-system.html' },
+    { name: 'Quartz System', path: '/quartz-system.html' },
+    { name: 'Pool Deck Resurfacing', path: '/pool-deck-resurfacing.html' },
+    { name: 'Commercial Epoxy', path: '/commercial-epoxy.html' },
+    { name: 'Industrial Epoxy', path: '/industrial-epoxy.html' },
+    { name: 'Concrete Repair', path: '/concrete-repair.html' },
   ];
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => location.pathname === path || location.pathname === path.replace('.html', '');
 
   return (
     <header className="fixed top-0 w-full bg-white/98 backdrop-blur-sm border-b border-gray-200 z-50 shadow-sm">
@@ -69,72 +61,72 @@ const Navbar = () => {
             </div>
 
             <Link
-              to="/gallery"
+              to="/gallery.html"
               className={`font-medium transition-colors ${
-                isActive('/gallery') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/gallery.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               Gallery
             </Link>
 
             <Link
-              to="/showroom"
+              to="/showroom.html"
               className={`font-medium transition-colors ${
-                isActive('/showroom') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/showroom.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               Showroom
             </Link>
 
             <Link
-              to="/why"
+              to="/why-epoxyart33.html"
               className={`font-medium transition-colors ${
-                isActive('/why') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/why-epoxyart33.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               Why EpoxyArt33
             </Link>
 
             <Link
-              to="/products"
+              to="/products.html"
               className={`font-medium transition-colors ${
-                isActive('/products') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/products.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               Products
             </Link>
 
             <Link
-              to="/visualizer"
+              to="/visualizer.html"
               className={`font-medium transition-colors ${
-                isActive('/visualizer') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/visualizer.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               3D Visualizer
             </Link>
 
             <Link
-              to="/faq"
+              to="/faq.html"
               className={`font-medium transition-colors ${
-                isActive('/faq') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/faq.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               FAQ
             </Link>
 
             <Link
-              to="/blog"
+              to="/blog.html"
               className={`font-medium transition-colors ${
-                isActive('/blog') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/blog.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               Blog
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact.html"
               className={`font-medium transition-colors ${
-                isActive('/contact') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+                isActive('/contact.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
               }`}
             >
               Contact
@@ -192,7 +184,7 @@ const Navbar = () => {
             </div>
 
             <Link
-              to="/gallery"
+              to="/gallery.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -200,7 +192,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/showroom"
+              to="/showroom.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -208,7 +200,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/why"
+              to="/why-epoxyart33.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -216,7 +208,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/products"
+              to="/products.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -224,7 +216,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/visualizer"
+              to="/visualizer.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -232,7 +224,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/faq"
+              to="/faq.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -240,7 +232,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/blog"
+              to="/blog.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
@@ -248,7 +240,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact.html"
               onClick={() => setMobileMenuOpen(false)}
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
