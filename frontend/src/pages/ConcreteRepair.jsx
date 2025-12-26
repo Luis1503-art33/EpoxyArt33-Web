@@ -20,10 +20,11 @@ const ConcreteRepair = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/concrete-repair#service",
           "name": "Concrete Repair & Restoration",
           "description": "Professional concrete repair services including crack filling, spalling repair, and surface restoration",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Concrete Repair"
         }}
       />
       <Navbar />

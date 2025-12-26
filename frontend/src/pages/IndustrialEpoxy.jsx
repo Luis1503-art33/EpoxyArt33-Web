@@ -20,10 +20,11 @@ const IndustrialEpoxy = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/industrial-epoxy#service",
           "name": "Industrial Epoxy Flooring",
           "description": "Heavy-duty industrial epoxy flooring for warehouses and manufacturing facilities",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Industrial Epoxy Flooring"
         }}
       />
       <Navbar />

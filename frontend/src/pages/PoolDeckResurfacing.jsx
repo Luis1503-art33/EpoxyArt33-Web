@@ -20,10 +20,11 @@ const PoolDeckResurfacing = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/pool-deck-resurfacing#service",
           "name": "Pool Deck Resurfacing",
           "description": "Slip-resistant, UV-resistant pool deck resurfacing with Polyaspartic coating",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Pool Deck Resurfacing"
         }}
       />
       <Navbar />

@@ -20,10 +20,11 @@ const MetallicEpoxy = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/metallic-epoxy#service",
           "name": "Metallic Epoxy Flooring",
           "description": "Luxury 3D metallic epoxy flooring with stunning visual effects",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Metallic Epoxy Flooring"
         }}
       />
       <Navbar />

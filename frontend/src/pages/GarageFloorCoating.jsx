@@ -20,10 +20,11 @@ const GarageFloorCoating = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/garage-floor-coating#service",
           "name": "Garage Floor Coating",
           "description": "Premium epoxy garage floor coating services in Southwest Florida",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Garage Floor Epoxy Coating"
         }}
       />
       <Navbar />

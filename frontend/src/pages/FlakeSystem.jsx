@@ -20,10 +20,11 @@ const FlakeSystem = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/flake-system#service",
           "name": "Torginol Flake Epoxy System",
           "description": "Decorative flake epoxy flooring with hundreds of color options",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Flake Epoxy System"
         }}
       />
       <Navbar />

@@ -20,10 +20,11 @@ const QuartzSystem = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/quartz-system#service",
           "name": "Quartz Epoxy System",
           "description": "Industrial-strength quartz epoxy flooring for maximum durability",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Quartz Epoxy System"
         }}
       />
       <Navbar />

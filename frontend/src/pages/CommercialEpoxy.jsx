@@ -20,10 +20,11 @@ const CommercialEpoxy = () => {
       <SchemaMarkup 
         data={{
           "@type": "Service",
+          "@id": "https://epoxyart33.com/commercial-epoxy#service",
           "name": "Commercial Epoxy Flooring",
           "description": "Professional epoxy flooring solutions for commercial businesses",
-          "provider": { "@type": "LocalBusiness", "name": "EpoxyArt33" },
-          "areaServed": "Southwest Florida"
+          "areaServed": "Southwest Florida",
+          "serviceType": "Commercial Epoxy Flooring"
         }}
       />
       <Navbar />
