@@ -411,13 +411,21 @@ const Products = () => {
               {/* Supplier Header */}
               <div className={`rounded-2xl ${supplier.bgColor} ${supplier.borderColor} border-2 p-8 mb-12`}>
                 <div className="flex flex-col md:flex-row items-center gap-6">
-                  {/* Logo Placeholder - SVG Brand Icon */}
+                  {/* Logo - Real image or gradient fallback */}
                   <motion.div 
-                    className={`w-32 h-32 rounded-xl bg-gradient-to-br ${supplier.color} flex items-center justify-center shadow-lg`}
-                    whileHover={{ scale: 1.05, rotate: 2 }}
+                    className={`w-40 h-32 rounded-xl overflow-hidden shadow-lg flex items-center justify-center ${supplier.hasRealLogo ? 'bg-white p-2' : `bg-gradient-to-br ${supplier.color}`}`}
+                    whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <span className="text-white text-3xl font-bold">{supplier.name.charAt(0)}</span>
+                    {supplier.hasRealLogo ? (
+                      <img 
+                        src={supplier.logo} 
+                        alt={`${supplier.name} logo`}
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <span className="text-white text-3xl font-bold">{supplier.name.charAt(0)}</span>
+                    )}
                   </motion.div>
                   
                   <div className="flex-1 text-center md:text-left">
