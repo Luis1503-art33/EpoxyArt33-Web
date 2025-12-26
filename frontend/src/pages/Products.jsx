@@ -317,14 +317,17 @@ const Products = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <Badge variant="outline" className="border-blue-400 text-blue-400 px-4 py-2">
+                <Badge variant="outline" className="border-red-400 text-red-400 px-4 py-2">
                   Torginol Partner
                 </Badge>
                 <Badge variant="outline" className="border-green-400 text-green-400 px-4 py-2">
                   Chemtec Certified
                 </Badge>
-                <Badge variant="outline" className="border-orange-400 text-orange-400 px-4 py-2">
+                <Badge variant="outline" className="border-teal-400 text-teal-400 px-4 py-2">
                   Florida Paints Pro
+                </Badge>
+                <Badge variant="outline" className="border-purple-400 text-purple-400 px-4 py-2">
+                  Premera Authorized
                 </Badge>
               </motion.div>
             </div>
