@@ -63,6 +63,7 @@ const BlogPost = () => {
         <SchemaMarkup 
           data={{
             "@type": "BlogPosting",
+            "@id": `https://epoxyart33.com/blog/${slug}#post`,
             "headline": post.title,
             "description": post.excerpt,
             "author": { "@type": "Person", "name": post.author },

@@ -28,6 +28,7 @@ const Gallery = () => {
       <SchemaMarkup 
         data={{
           "@type": "ImageGallery",
+          "@id": "https://epoxyart33.com/gallery#gallery",
           "name": "EpoxyArt33 Project Gallery",
           "description": "Gallery of epoxy flooring installations in Southwest Florida"
         }}

@@ -209,6 +209,7 @@ const Products = () => {
       <SchemaMarkup 
         data={{
           "@type": "Product",
+          "@id": "https://epoxyart33.com/products#products",
           "name": "Premium Epoxy Flooring Products",
           "description": "Professional-grade epoxy flooring products from Torginol, Chemtec, and Florida Paints",
           "brand": ["Torginol", "Chemtec", "Florida Paints"]

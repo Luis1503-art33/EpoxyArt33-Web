@@ -27,6 +27,7 @@ const Blog = () => {
       <SchemaMarkup 
         data={{
           "@type": "Blog",
+          "@id": "https://epoxyart33.com/blog#blog",
           "name": "EpoxyArt33 Blog",
           "description": "Expert tips, trends and guides for epoxy flooring in Southwest Florida"
         }}

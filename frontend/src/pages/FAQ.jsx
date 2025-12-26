@@ -83,6 +83,7 @@ const FAQ = () => {
       <SchemaMarkup 
         data={{
           "@type": "FAQPage",
+          "@id": "https://epoxyart33.com/faq#faqpage",
           "name": "EpoxyArt33 FAQ",
           "description": "Frequently asked questions about epoxy flooring"
         }}
