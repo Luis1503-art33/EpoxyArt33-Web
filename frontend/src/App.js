@@ -28,7 +28,35 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          {/* Home */}
           <Route path="/" element={<Home />} />
+          
+          {/* Main Pages with .html */}
+          <Route path="/services.html" element={<Services />} />
+          <Route path="/gallery.html" element={<Gallery />} />
+          <Route path="/contact.html" element={<Contact />} />
+          <Route path="/blog.html" element={<Blog />} />
+          <Route path="/blog/:slug.html" element={<BlogPost />} />
+          <Route path="/faq.html" element={<FAQ />} />
+          <Route path="/showroom.html" element={<Showroom />} />
+          <Route path="/products.html" element={<Products />} />
+          <Route path="/visualizer.html" element={<FloorVisualizer />} />
+          
+          {/* Service Pages with .html */}
+          <Route path="/garage-floor-coating.html" element={<GarageFloorCoating />} />
+          <Route path="/metallic-epoxy.html" element={<MetallicEpoxy />} />
+          <Route path="/flake-system.html" element={<FlakeSystem />} />
+          <Route path="/quartz-system.html" element={<QuartzSystem />} />
+          <Route path="/pool-deck-resurfacing.html" element={<PoolDeckResurfacing />} />
+          <Route path="/commercial-epoxy.html" element={<CommercialEpoxy />} />
+          <Route path="/industrial-epoxy.html" element={<IndustrialEpoxy />} />
+          <Route path="/concrete-repair.html" element={<ConcreteRepair />} />
+          
+          {/* Additional Pages with .html */}
+          <Route path="/why-epoxyart33.html" element={<WhyEpoxyArt33 />} />
+          <Route path="/privacy.html" element={<PrivacyPolicy />} />
+
+          {/* Legacy routes (redirects for old URLs without .html) */}
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
@@ -38,7 +66,6 @@ function App() {
           <Route path="/showroom" element={<Showroom />} />
           <Route path="/products" element={<Products />} />
           <Route path="/visualizer" element={<FloorVisualizer />} />
-          {/* Service Pages */}
           <Route path="/garage-floor-coating" element={<GarageFloorCoating />} />
           <Route path="/metallic-epoxy" element={<MetallicEpoxy />} />
           <Route path="/flake-system" element={<FlakeSystem />} />
@@ -47,7 +74,6 @@ function App() {
           <Route path="/commercial-epoxy" element={<CommercialEpoxy />} />
           <Route path="/industrial-epoxy" element={<IndustrialEpoxy />} />
           <Route path="/concrete-repair" element={<ConcreteRepair />} />
-          {/* Additional Pages */}
           <Route path="/why" element={<WhyEpoxyArt33 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
