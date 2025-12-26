@@ -32,13 +32,13 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4 text-lg">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/garage-floor-coating" className="hover:text-amber-500 transition-colors">Garage Floor Coating</Link></li>
-              <li><Link to="/metallic-epoxy" className="hover:text-amber-500 transition-colors">Metallic Epoxy</Link></li>
-              <li><Link to="/flake-system" className="hover:text-amber-500 transition-colors">Flake System</Link></li>
-              <li><Link to="/quartz-system" className="hover:text-amber-500 transition-colors">Quartz System</Link></li>
-              <li><Link to="/pool-deck-resurfacing" className="hover:text-amber-500 transition-colors">Pool Deck Resurfacing</Link></li>
-              <li><Link to="/commercial-epoxy" className="hover:text-amber-500 transition-colors">Commercial Epoxy</Link></li>
-              <li><Link to="/industrial-epoxy" className="hover:text-amber-500 transition-colors">Industrial Epoxy</Link></li>
+              <li><Link to="/garage-floor-coating.html" className="hover:text-amber-500 transition-colors">Garage Floor Coating</Link></li>
+              <li><Link to="/metallic-epoxy.html" className="hover:text-amber-500 transition-colors">Metallic Epoxy</Link></li>
+              <li><Link to="/flake-system.html" className="hover:text-amber-500 transition-colors">Flake System</Link></li>
+              <li><Link to="/quartz-system.html" className="hover:text-amber-500 transition-colors">Quartz System</Link></li>
+              <li><Link to="/pool-deck-resurfacing.html" className="hover:text-amber-500 transition-colors">Pool Deck Resurfacing</Link></li>
+              <li><Link to="/commercial-epoxy.html" className="hover:text-amber-500 transition-colors">Commercial Epoxy</Link></li>
+              <li><Link to="/industrial-epoxy.html" className="hover:text-amber-500 transition-colors">Industrial Epoxy</Link></li>
             </ul>
           </div>
 
@@ -47,13 +47,13 @@ const Footer = () => {
             <h4 className="font-bold mb-4 text-lg">Quick Links</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li><Link to="/" className="hover:text-amber-500 transition-colors">Home</Link></li>
-              <li><Link to="/services" className="hover:text-amber-500 transition-colors">All Services</Link></li>
-              <li><Link to="/gallery" className="hover:text-amber-500 transition-colors">Gallery</Link></li>
-              <li><Link to="/why" className="hover:text-amber-500 transition-colors">Why EpoxyArt33</Link></li>
-              <li><Link to="/faq" className="hover:text-amber-500 transition-colors">FAQ</Link></li>
-              <li><Link to="/blog" className="hover:text-amber-500 transition-colors">Blog</Link></li>
-              <li><Link to="/showroom" className="hover:text-amber-500 transition-colors">Showroom</Link></li>
-              <li><Link to="/privacy" className="hover:text-amber-500 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/services.html" className="hover:text-amber-500 transition-colors">All Services</Link></li>
+              <li><Link to="/gallery.html" className="hover:text-amber-500 transition-colors">Gallery</Link></li>
+              <li><Link to="/why-epoxyart33.html" className="hover:text-amber-500 transition-colors">Why EpoxyArt33</Link></li>
+              <li><Link to="/faq.html" className="hover:text-amber-500 transition-colors">FAQ</Link></li>
+              <li><Link to="/blog.html" className="hover:text-amber-500 transition-colors">Blog</Link></li>
+              <li><Link to="/showroom.html" className="hover:text-amber-500 transition-colors">Showroom</Link></li>
+              <li><Link to="/privacy.html" className="hover:text-amber-500 transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
