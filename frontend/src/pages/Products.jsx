@@ -32,10 +32,11 @@ const Products = () => {
       tagline: 'Industry Leader in Decorative Flooring',
       website: 'https://torginol.com',
       description: 'Torginol is the leading manufacturer of decorative flooring materials. With over 40 years of experience, their products are recognized worldwide for superior quality and exceptional durability.',
-      logo: '/images/logos/torginol-logo.svg',
-      color: 'from-blue-600 to-blue-800',
-      bgColor: 'bg-blue-50',
-      borderColor: 'border-blue-200',
+      logo: '/images/logos/torginol-logo.jpg',
+      hasRealLogo: true,
+      color: 'from-red-600 to-red-800',
+      bgColor: 'bg-red-50',
+      borderColor: 'border-red-200',
       products: [
         {
           name: 'Decorative Flakes',
@@ -81,7 +82,8 @@ const Products = () => {
       tagline: 'Premium Quality 100% Solids Epoxy with MVB',
       website: 'https://epoxychemtec.com',
       description: 'Chemtec is a Canadian manufacturer specializing in high-quality epoxy coatings. Their CHEM 100 line represents the best in 100% solids epoxy technology with built-in Moisture Vapor Barrier (MVB) protection.',
-      logo: '/images/logos/chemtec-logo.svg',
+      logo: '/images/logos/chemtec-products.jpg',
+      hasRealLogo: true,
       color: 'from-green-600 to-green-800',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
@@ -130,10 +132,11 @@ const Products = () => {
       tagline: '98% Solids Polyaspartic - Florida Technology',
       website: 'https://floridapaints.com',
       description: 'Florida Paints is an American manufacturer that produces Flo-Spartic, a 98.5% solids polyaspartic specifically designed to withstand Florida climate and areas with high UV exposure.',
-      logo: '/images/logos/florida-paint-logo.svg',
-      color: 'from-orange-500 to-red-600',
-      bgColor: 'bg-orange-50',
-      borderColor: 'border-orange-200',
+      logo: '/images/logos/florida-paints-logo.png',
+      hasRealLogo: true,
+      color: 'from-teal-500 to-teal-700',
+      bgColor: 'bg-teal-50',
+      borderColor: 'border-teal-200',
       products: [
         {
           name: 'Flo-Spartic 98% Solids',
@@ -170,6 +173,56 @@ const Products = () => {
             'Compatible with all systems'
           ],
           icon: Zap
+        }
+      ]
+    },
+    {
+      id: 'premera',
+      name: 'Premera',
+      tagline: 'Professional Polyaspartic & Polyurea Systems',
+      website: 'https://premeracoatings.com',
+      description: 'Premera specializes in advanced polyaspartic and polyurea coating systems designed for professional contractors. Their T2 MCM system delivers exceptional performance with fast cure times and superior durability.',
+      logo: '/images/logos/premera-t2-mcm.jpg',
+      hasRealLogo: true,
+      color: 'from-purple-600 to-purple-800',
+      bgColor: 'bg-purple-50',
+      borderColor: 'border-purple-200',
+      products: [
+        {
+          name: 'T2 MCM Polyaspartic',
+          description: 'High-performance polyaspartic coating with excellent UV stability and chemical resistance.',
+          benefits: [
+            'Superior UV stability',
+            'Fast 4-6 hour cure',
+            'Excellent chemical resistance',
+            'High gloss finish',
+            'Professional grade'
+          ],
+          icon: Sun
+        },
+        {
+          name: 'Polyurea Base Coat',
+          description: 'Fast-curing polyurea base coat for quick turnaround projects.',
+          benefits: [
+            'Ultra-fast cure time',
+            '100% solids formula',
+            'Excellent adhesion',
+            'Moisture tolerant',
+            'Wide application window'
+          ],
+          icon: Zap
+        },
+        {
+          name: 'Clear Top Coat',
+          description: 'Crystal clear polyaspartic topcoat for maximum protection and shine.',
+          benefits: [
+            'Crystal clear finish',
+            'UV stable - no yellowing',
+            'Scratch resistant',
+            'Easy to clean',
+            'Long-lasting gloss'
+          ],
+          icon: Sparkles
         }
       ]
     }
