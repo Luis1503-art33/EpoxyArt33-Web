@@ -3,7 +3,7 @@
 ## Testing Protocol
 - Testing Date: December 2024
 - Focus Area: Complete Website Testing - Homepage, Gallery, Service Pages, Navigation, Products Page
-- Test Environment: https://premium-floors-6.preview.emergentagent.com
+- Test Environment: https://seofloor-pro.preview.emergentagent.com
 
 ## Frontend Testing Tasks
 
