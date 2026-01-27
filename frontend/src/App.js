@@ -19,6 +19,7 @@ import ConcreteRepair from "./pages/ConcreteRepair";
 import DrivewayResurfacing from "./pages/DrivewayResurfacing";
 import Waterproofing from "./pages/Waterproofing";
 import UrethaneCement from "./pages/UrethaneCement";
+import GovernmentContracts from "./pages/GovernmentContracts";
 import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Products from "./pages/Products";
@@ -57,6 +58,7 @@ function App() {
           <Route path="/driveway-resurfacing.html" element={<DrivewayResurfacing />} />
           <Route path="/waterproofing.html" element={<Waterproofing />} />
           <Route path="/urethane-cement.html" element={<UrethaneCement />} />
+          <Route path="/government-contracts.html" element={<GovernmentContracts />} />
           
           {/* Additional Pages with .html */}
           <Route path="/why-epoxyart33.html" element={<WhyEpoxyArt33 />} />
@@ -83,6 +85,7 @@ function App() {
           <Route path="/driveway-resurfacing" element={<DrivewayResurfacing />} />
           <Route path="/waterproofing" element={<Waterproofing />} />
           <Route path="/urethane-cement" element={<UrethaneCement />} />
+          <Route path="/government-contracts" element={<GovernmentContracts />} />
           <Route path="/why" element={<WhyEpoxyArt33 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>

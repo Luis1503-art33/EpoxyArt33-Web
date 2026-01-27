@@ -91,6 +91,15 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="/government-contracts.html"
+              className={`font-medium transition-colors ${
+                isActive('/government-contracts.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
+              }`}
+            >
+              Government
+            </Link>
+
+            <Link
               to="/products.html"
               className={`font-medium transition-colors ${
                 isActive('/products.html') ? 'text-amber-700' : 'text-gray-700 hover:text-amber-700'
@@ -208,6 +217,14 @@ const Navbar = () => {
               className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
             >
               Why EpoxyArt33
+            </Link>
+
+            <Link
+              to="/government-contracts.html"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-gray-700 hover:text-amber-700 transition-colors font-medium"
+            >
+              Government Contracts
             </Link>
 
             <Link
