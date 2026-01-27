@@ -197,6 +197,78 @@ const PoolDeckResurfacing = () => {
         </div>
       </section>
 
+      {/* Featured Project: Tropical Breeze */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Project: Tropical Breeze</h2>
+            <p className="text-xl text-gray-600">Completed this week in Southwest Florida</p>
+          </div>
+          
+          {/* Technical Info Box */}
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-blue-900 mb-3">Color: Torginol Tropical Breeze</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              A beautiful blend of coastal colors perfect for pool areas. This flake system features blue, white, and sand tones that complement any Florida backyard while providing maximum slip resistance.
+            </p>
+          </div>
+
+          {/* Tropical Breeze Project Images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="group">
+              <img 
+                src="/images/gallery/pool-deck-tropical-1.jpg" 
+                alt="Pool Deck Tropical Breeze - Full View" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+              />
+              <p className="text-center text-gray-600 mt-3 font-semibold">
+                Tropical Breeze - Screened Lanai
+              </p>
+            </div>
+            <div className="group">
+              <img 
+                src="/images/gallery/pool-deck-tropical-2.jpg" 
+                alt="Pool Deck Tropical Breeze - Lanai View" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+              />
+              <p className="text-center text-gray-600 mt-3 font-semibold">
+                Slip-Resistant Finish
+              </p>
+            </div>
+            <div className="group">
+              <img 
+                src="/images/gallery/pool-deck-tropical-3.jpg" 
+                alt="Pool Deck Tropical Breeze Complete" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+              />
+              <p className="text-center text-gray-600 mt-3 font-semibold">
+                Full Pool Area Coverage
+              </p>
+            </div>
+            <div className="group">
+              <img 
+                src="/images/gallery/pool-deck-tropical-4.jpg" 
+                alt="Pool Deck Before Coating" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+              />
+              <p className="text-center text-gray-600 mt-3 font-semibold">
+                Before - Surface Preparation
+              </p>
+            </div>
+            <div className="group">
+              <img 
+                src="/images/gallery/pool-deck-tropical-5.jpg" 
+                alt="Pool Deck Fresh Installation" 
+                className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+              />
+              <p className="text-center text-gray-600 mt-3 font-semibold">
+                Fresh Installation Complete
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Recommended Systems */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
