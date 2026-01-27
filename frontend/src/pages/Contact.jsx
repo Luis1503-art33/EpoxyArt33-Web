@@ -110,9 +110,9 @@ const Contact = () => {
                 <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-7 h-7 text-amber-700" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">Service Area</h3>
-                <p className="text-gray-700 font-medium">Southwest Florida</p>
-                <p className="text-gray-600 text-sm mt-2">Naples, Marco Island, Fort Myers & more</p>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">Our Location</h3>
+                <p className="text-gray-700 font-medium">160 15th St SW<br />Naples, FL 34117</p>
+                <p className="text-gray-600 text-sm mt-2">Serving all of Southwest Florida</p>
               </CardContent>
             </Card>
           </div>
