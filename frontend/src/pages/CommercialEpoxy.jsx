@@ -248,7 +248,7 @@ const CommercialEpoxy = () => {
               <div className="group">
                 <img 
                   src="/images/gallery/restaurant-1.jpg" 
-                  alt="Restaurant Floor - MVB Solid Clear Finish" 
+                  alt="Restaurant epoxy floor Naples FL - MVB Solid Clear Finish for commercial dining" 
                   className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
                 />
                 <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -258,7 +258,7 @@ const CommercialEpoxy = () => {
               <div className="group">
                 <img 
                   src="/images/gallery/restaurant-2.jpg" 
-                  alt="Restaurant Dining Area Floor" 
+                  alt="Restaurant dining area epoxy flooring Fort Myers FL - UV-resistant urethane finish" 
                   className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
                 />
                 <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -268,7 +268,7 @@ const CommercialEpoxy = () => {
               <div className="group">
                 <img 
                   src="/images/gallery/restaurant-3.jpg" 
-                  alt="Restaurant Floor Clear Finish" 
+                  alt="Restaurant clear epoxy floor Southwest Florida - sleek commercial finish" 
                   className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
                 />
                 <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -278,7 +278,7 @@ const CommercialEpoxy = () => {
               <div className="group">
                 <img 
                   src="/images/gallery/restaurant-4.jpg" 
-                  alt="Restaurant Kitchen Prep Area" 
+                  alt="Restaurant kitchen prep area epoxy coating Naples FL - surface preparation" 
                   className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
                 />
                 <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -288,7 +288,7 @@ const CommercialEpoxy = () => {
               <div className="group">
                 <img 
                   src="/images/gallery/restaurant-5.jpg" 
-                  alt="Restaurant Floor Installation Process" 
+                  alt="Restaurant epoxy floor installation process SWFL - commercial flooring contractor" 
                   className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
                 />
                 <p className="text-center text-gray-600 mt-3 font-semibold">
