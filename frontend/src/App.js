@@ -16,6 +16,7 @@ import PoolDeckResurfacing from "./pages/PoolDeckResurfacing";
 import CommercialEpoxy from "./pages/CommercialEpoxy";
 import IndustrialEpoxy from "./pages/IndustrialEpoxy";
 import ConcreteRepair from "./pages/ConcreteRepair";
+import DrivewayResurfacing from "./pages/DrivewayResurfacing";
 import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Products from "./pages/Products";
@@ -51,6 +52,7 @@ function App() {
           <Route path="/commercial-epoxy.html" element={<CommercialEpoxy />} />
           <Route path="/industrial-epoxy.html" element={<IndustrialEpoxy />} />
           <Route path="/concrete-repair.html" element={<ConcreteRepair />} />
+          <Route path="/driveway-resurfacing.html" element={<DrivewayResurfacing />} />
           
           {/* Additional Pages with .html */}
           <Route path="/why-epoxyart33.html" element={<WhyEpoxyArt33 />} />
@@ -74,6 +76,7 @@ function App() {
           <Route path="/commercial-epoxy" element={<CommercialEpoxy />} />
           <Route path="/industrial-epoxy" element={<IndustrialEpoxy />} />
           <Route path="/concrete-repair" element={<ConcreteRepair />} />
+          <Route path="/driveway-resurfacing" element={<DrivewayResurfacing />} />
           <Route path="/why" element={<WhyEpoxyArt33 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>

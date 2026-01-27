@@ -18,6 +18,7 @@ const Navbar = () => {
     { name: 'Commercial Epoxy', path: '/commercial-epoxy.html' },
     { name: 'Industrial Epoxy', path: '/industrial-epoxy.html' },
     { name: 'Concrete Repair', path: '/concrete-repair.html' },
+    { name: 'Driveway Resurfacing', path: '/driveway-resurfacing.html' },
   ];
 
   const isActive = (path) => location.pathname === path || location.pathname === path.replace('.html', '');

@@ -262,6 +262,35 @@ export const galleryItems = [
     category: 'Industrial',
     image: '/images/gallery/industrial-warehouse.jpg',
     description: 'Solid color epoxy coating for warehouse facility'
+  },
+  // Driveways (4 images) - Residential
+  {
+    id: 27,
+    title: 'Diamond Pattern Driveway - Naples',
+    category: 'Residential',
+    image: '/images/gallery/driveway-1.jpg',
+    description: 'Stunning diamond pattern driveway with decorative Flake System'
+  },
+  {
+    id: 28,
+    title: 'Driveway Resurfacing In Progress',
+    category: 'Residential',
+    image: '/images/gallery/driveway-2.jpg',
+    description: 'EpoxyArt33 team applying precision diamond pattern'
+  },
+  {
+    id: 29,
+    title: 'Complete Driveway Transformation - SWFL',
+    category: 'Residential',
+    image: '/images/gallery/driveway-3.jpg',
+    description: 'Full driveway resurfacing with Polyaspartic coating'
+  },
+  {
+    id: 30,
+    title: 'Driveway Surface Preparation',
+    category: 'Residential',
+    image: '/images/gallery/driveway-4.jpg',
+    description: 'Diamond tape pattern preparation before coating application'
   }
 ];
 
