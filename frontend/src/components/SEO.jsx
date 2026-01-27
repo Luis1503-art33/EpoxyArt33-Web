@@ -5,12 +5,12 @@ const SEO = ({
   description = "Transform your floors with EpoxyArt33's premium epoxy solutions. Garage floors, pool decks, commercial & industrial flooring. 500+ projects completed in SWFL. Free estimates!",
   keywords = "epoxy flooring Naples, garage floor coating Fort Myers, pool deck resurfacing SWFL, metallic epoxy, commercial epoxy flooring, industrial epoxy, concrete repair, Torginol flakes, polyaspartic coating",
   image = "/images/projects/hero-metallic.jpg",
-  url = "https://epoxyart33.com",
+  url = "",
   type = "website"
 }) => {
-  const siteUrl = "https://epoxyart33.com";
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : "https://epoxyart33.com";
   const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
-  const fullUrl = url.startsWith('http') ? url : `${siteUrl}${url}`;
+  const fullUrl = url ? (url.startsWith('http') ? url : `${siteUrl}${url}`) : siteUrl;
 
   return (
     <Helmet>
