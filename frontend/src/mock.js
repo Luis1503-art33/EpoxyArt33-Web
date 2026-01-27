@@ -199,206 +199,206 @@ export const galleryItems = [
   },
   {
     id: 18,
-    title: 'Food Service Kitchen - SWFL',
+    title: 'Food Service Kitchen Epoxy Floor Bonita Springs FL',
     category: 'Commercial',
     image: '/images/gallery/kitchen-quartz-2.jpg',
-    description: 'Durable quartz epoxy for high-traffic kitchen'
+    description: 'Durable quartz epoxy flooring for high-traffic commercial kitchen in Bonita Springs Florida'
   },
   {
     id: 19,
-    title: 'Commercial Kitchen Installation',
+    title: 'Commercial Kitchen Epoxy Installation Estero FL',
     category: 'Commercial',
     image: '/images/gallery/kitchen-quartz-3.jpg',
-    description: 'Food-safe quartz system for commercial use'
+    description: 'Food-safe quartz epoxy system installation for commercial kitchen in Estero Florida'
   },
   // Commercial Flake & Solid Color (5 images) - Commercial
   {
     id: 20,
-    title: 'Commercial Space - Flake System',
+    title: 'Commercial Flake Epoxy Floor Naples FL',
     category: 'Commercial',
     image: '/images/gallery/commercial-flake-1.jpg',
-    description: 'Professional flake epoxy for commercial facility'
+    description: 'Professional flake epoxy flooring for commercial facility in Naples Florida'
   },
   {
     id: 21,
-    title: 'Retail Store - Flake Coating',
+    title: 'Retail Store Flake Floor Coating Fort Myers FL',
     category: 'Commercial',
     image: '/images/gallery/commercial-flake-2.jpg',
-    description: 'Decorative flake system for retail space'
+    description: 'Decorative flake epoxy system for retail space in Fort Myers Florida'
   },
   {
     id: 22,
-    title: 'Commercial Solid Color - Naples',
+    title: 'Commercial Solid Color Epoxy Naples FL',
     category: 'Commercial',
     image: '/images/gallery/commercial-solid-1.jpg',
-    description: 'Clean solid color epoxy for office space'
+    description: 'Clean solid color epoxy flooring for office space in Naples Florida'
   },
   {
     id: 23,
-    title: 'Professional Office Floor',
+    title: 'Professional Office Epoxy Floor Cape Coral FL',
     category: 'Commercial',
     image: '/images/gallery/commercial-solid-2.jpg',
-    description: 'Solid epoxy coating for commercial office'
+    description: 'Solid epoxy coating installation for commercial office in Cape Coral Florida'
   },
   {
     id: 24,
-    title: 'Commercial Facility - SWFL',
+    title: 'Commercial Epoxy Flooring Southwest Florida',
     category: 'Commercial',
     image: '/images/gallery/commercial-solid-3.jpg',
-    description: 'Durable solid color for commercial use'
+    description: 'Durable solid color epoxy coating for commercial facility in Southwest Florida'
   },
   // Commercial Metallic (1 image) - Commercial
   {
     id: 25,
-    title: 'Metallic Epoxy Commercial Space',
+    title: 'Metallic Epoxy Commercial Showroom Naples FL',
     category: 'Commercial',
     image: '/images/gallery/commercial-metallic.jpg',
-    description: 'Stunning metallic epoxy finish for commercial showroom'
+    description: 'Stunning metallic epoxy finish for commercial showroom in Naples Florida'
   },
   // Industrial (1 image) - Industrial
   {
     id: 26,
-    title: 'Industrial Warehouse Floor',
+    title: 'Industrial Warehouse Epoxy Floor Fort Myers FL',
     category: 'Industrial',
     image: '/images/gallery/industrial-warehouse.jpg',
-    description: 'Solid color epoxy coating for warehouse facility'
+    description: 'Heavy-duty solid color epoxy coating for warehouse facility in Fort Myers Florida'
   },
   // Driveways (4 images) - Residential
   {
     id: 27,
-    title: 'Diamond Pattern Driveway - Naples',
+    title: 'Diamond Pattern Driveway Resurfacing Naples FL',
     category: 'Residential',
     image: '/images/gallery/driveway-1.jpg',
-    description: 'Stunning diamond pattern driveway with decorative Flake System'
+    description: 'Stunning diamond pattern driveway resurfacing with decorative flake system in Naples Florida'
   },
   {
     id: 28,
-    title: 'Driveway Resurfacing In Progress',
+    title: 'Driveway Resurfacing Installation Fort Myers FL',
     category: 'Residential',
     image: '/images/gallery/driveway-2.jpg',
-    description: 'EpoxyArt33 team applying precision diamond pattern'
+    description: 'EpoxyArt33 team applying precision diamond pattern driveway coating in Fort Myers Florida'
   },
   {
     id: 29,
-    title: 'Complete Driveway Transformation - SWFL',
+    title: 'Complete Driveway Transformation Southwest Florida',
     category: 'Residential',
     image: '/images/gallery/driveway-3.jpg',
-    description: 'Full driveway resurfacing with Polyaspartic coating'
+    description: 'Full driveway resurfacing with Polyaspartic coating in Southwest Florida'
   },
   {
     id: 30,
-    title: 'Driveway Surface Preparation',
+    title: 'Driveway Surface Preparation Cape Coral FL',
     category: 'Residential',
     image: '/images/gallery/driveway-4.jpg',
-    description: 'Diamond tape pattern preparation before coating application'
+    description: 'Diamond tape pattern preparation before driveway coating application in Cape Coral Florida'
   },
   // Restaurant Project (5 images) - Commercial
   {
     id: 31,
-    title: 'Restaurant Floor - MVB Solid Clear',
+    title: 'Restaurant Epoxy Floor Naples FL - MVB Solid Clear',
     category: 'Commercial',
     image: '/images/gallery/restaurant-1.jpg',
-    description: 'MVB Solid 100% clear with High Wear Urethane topcoat - restaurant project'
+    description: 'MVB Solid 100% clear epoxy with High Wear Urethane topcoat for restaurant in Naples Florida'
   },
   {
     id: 32,
-    title: 'Restaurant Dining Area Floor',
+    title: 'Restaurant Dining Area Epoxy Floor Fort Myers FL',
     category: 'Commercial',
     image: '/images/gallery/restaurant-2.jpg',
-    description: 'Commercial restaurant flooring with UV-resistant urethane finish'
+    description: 'Commercial restaurant epoxy flooring with UV-resistant urethane finish in Fort Myers Florida'
   },
   {
     id: 33,
-    title: 'Restaurant Floor - Clear Finish',
+    title: 'Restaurant Clear Epoxy Finish Bonita Springs FL',
     category: 'Commercial',
     image: '/images/gallery/restaurant-3.jpg',
-    description: 'MVB Solid with clear topcoat - sleek commercial finish'
+    description: 'MVB Solid clear topcoat epoxy - sleek commercial restaurant finish in Bonita Springs Florida'
   },
   {
     id: 34,
-    title: 'Restaurant Kitchen Prep Area',
+    title: 'Restaurant Kitchen Epoxy Prep Area Naples FL',
     category: 'Commercial',
     image: '/images/gallery/restaurant-4.jpg',
-    description: 'Surface preparation before MVB Solid application'
+    description: 'Surface preparation before MVB Solid epoxy application in Naples restaurant'
   },
   {
     id: 35,
-    title: 'Restaurant Floor - Before & During',
+    title: 'Restaurant Floor Installation Process SWFL',
     category: 'Commercial',
     image: '/images/gallery/restaurant-5.jpg',
-    description: 'Commercial restaurant floor during installation process'
+    description: 'Commercial restaurant epoxy floor during installation process in Southwest Florida'
   },
   // Pool Deck Tropical Breeze Project (5 images) - Residential
   {
     id: 36,
-    title: 'Pool Deck - Tropical Breeze Color',
+    title: 'Pool Deck Resurfacing Naples FL - Tropical Breeze',
     category: 'Residential',
     image: '/images/gallery/pool-deck-tropical-1.jpg',
-    description: 'Pool deck resurfacing with Tropical Breeze flake system'
+    description: 'Pool deck resurfacing with Torginol Tropical Breeze flake system in Naples Florida'
   },
   {
     id: 37,
-    title: 'Screened Lanai Pool Deck - SWFL',
+    title: 'Screened Lanai Pool Deck Coating Marco Island FL',
     category: 'Residential',
     image: '/images/gallery/pool-deck-tropical-2.jpg',
-    description: 'Tropical Breeze finish with slip-resistant texture'
+    description: 'Tropical Breeze pool deck finish with slip-resistant texture in Marco Island Florida'
   },
   {
     id: 38,
-    title: 'Pool Deck Complete - Tropical Breeze',
+    title: 'Pool Deck Complete Transformation Bonita Springs FL',
     category: 'Residential',
     image: '/images/gallery/pool-deck-tropical-3.jpg',
-    description: 'Full pool deck transformation with Torginol Tropical Breeze'
+    description: 'Full pool deck transformation with Torginol Tropical Breeze in Bonita Springs Florida'
   },
   {
     id: 39,
-    title: 'Pool Area Before Application',
+    title: 'Pool Deck Surface Preparation Fort Myers FL',
     category: 'Residential',
     image: '/images/gallery/pool-deck-tropical-4.jpg',
-    description: 'Pool deck surface preparation before coating'
+    description: 'Pool deck surface preparation before coating application in Fort Myers Florida'
   },
   {
     id: 40,
-    title: 'Pool Deck Fresh Installation',
+    title: 'Pool Deck Fresh Installation Estero FL',
     category: 'Residential',
     image: '/images/gallery/pool-deck-tropical-5.jpg',
-    description: 'Recently completed pool deck with Tropical Breeze finish'
+    description: 'Recently completed pool deck with Tropical Breeze finish in Estero Florida'
   },
   // Urethane Cement Project (5 images) - Industrial
   {
     id: 41,
-    title: 'Urethane Cement - Commercial Kitchen',
+    title: 'Urethane Cement Commercial Kitchen Naples FL',
     category: 'Industrial',
     image: '/images/gallery/urethane-cement-1.jpg',
-    description: 'Duraflex urethane cement system for commercial kitchen'
+    description: 'Duraflex urethane cement system for commercial kitchen in Naples Florida'
   },
   {
     id: 42,
-    title: 'Food Service Area - Urethane Cement',
+    title: 'Food Service Urethane Cement Floor Fort Myers FL',
     category: 'Industrial',
     image: '/images/gallery/urethane-cement-2.jpg',
-    description: 'Heavy-duty flooring for food service applications'
+    description: 'Heavy-duty urethane cement flooring for food service applications in Fort Myers Florida'
   },
   {
     id: 43,
-    title: 'Industrial Urethane Cement Floor',
+    title: 'Industrial Urethane Cement Floor Cape Coral FL',
     category: 'Industrial',
     image: '/images/gallery/urethane-cement-3.jpg',
-    description: 'Duraflex system - thermal shock and chemical resistant'
+    description: 'Duraflex urethane cement system - thermal shock and chemical resistant in Cape Coral Florida'
   },
   {
     id: 44,
-    title: 'Urethane Cement Surface Prep',
+    title: 'Urethane Cement Surface Prep Bonita Springs FL',
     category: 'Industrial',
     image: '/images/gallery/urethane-cement-4.jpg',
-    description: 'Surface preparation for urethane cement installation'
+    description: 'Surface preparation for urethane cement installation in Bonita Springs Florida'
   },
   {
     id: 45,
-    title: 'Complete Urethane Cement Installation',
+    title: 'Complete Urethane Cement Installation SWFL',
     category: 'Industrial',
     image: '/images/gallery/urethane-cement-5.jpg',
-    description: 'Finished Duraflex urethane cement floor - seamless and sanitary'
+    description: 'Finished Duraflex urethane cement floor - seamless and sanitary in Southwest Florida'
   }
 ];
 
