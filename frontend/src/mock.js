@@ -327,6 +327,42 @@ export const galleryItems = [
     category: 'Commercial',
     image: '/images/gallery/restaurant-5.jpg',
     description: 'Commercial restaurant floor during installation process'
+  },
+  // Pool Deck Tropical Breeze Project (5 images) - Residential
+  {
+    id: 36,
+    title: 'Pool Deck - Tropical Breeze Color',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-tropical-1.jpg',
+    description: 'Pool deck resurfacing with Tropical Breeze flake system'
+  },
+  {
+    id: 37,
+    title: 'Screened Lanai Pool Deck - SWFL',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-tropical-2.jpg',
+    description: 'Tropical Breeze finish with slip-resistant texture'
+  },
+  {
+    id: 38,
+    title: 'Pool Deck Complete - Tropical Breeze',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-tropical-3.jpg',
+    description: 'Full pool deck transformation with Torginol Tropical Breeze'
+  },
+  {
+    id: 39,
+    title: 'Pool Area Before Application',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-tropical-4.jpg',
+    description: 'Pool deck surface preparation before coating'
+  },
+  {
+    id: 40,
+    title: 'Pool Deck Fresh Installation',
+    category: 'Residential',
+    image: '/images/gallery/pool-deck-tropical-5.jpg',
+    description: 'Recently completed pool deck with Tropical Breeze finish'
   }
 ];
 
