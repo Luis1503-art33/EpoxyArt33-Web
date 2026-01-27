@@ -78,13 +78,13 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 flex-shrink-0 text-amber-500" />
-                <span>Naples, FL 34102<br />Serving Southwest Florida</span>
+                <span>160 15th St SW<br />Naples, FL 34117<br />Serving Southwest Florida</span>
               </li>
             </ul>
             <div className="mt-4">
               <p className="text-xs text-gray-500 mb-2">Service Areas:</p>
               <p className="text-xs text-gray-400">
-                <Link to="/epoxy-flooring-naples.html" className="hover:text-amber-400">Naples</Link> • Marco Island • Estero • Bonita Springs • Fort Myers • Cape Coral • Collier County • Lee County
+                <Link to="/epoxy-flooring-naples.html" className="hover:text-amber-400">Naples</Link> • <Link to="/epoxy-flooring-marco-island.html" className="hover:text-amber-400">Marco Island</Link> • <Link to="/epoxy-flooring-estero.html" className="hover:text-amber-400">Estero</Link> • <Link to="/epoxy-flooring-bonita-springs.html" className="hover:text-amber-400">Bonita Springs</Link> • <Link to="/epoxy-flooring-fort-myers.html" className="hover:text-amber-400">Fort Myers</Link> • <Link to="/epoxy-flooring-cape-coral.html" className="hover:text-amber-400">Cape Coral</Link>
               </p>
             </div>
             <div className="mt-3">
