@@ -17,6 +17,8 @@ import CommercialEpoxy from "./pages/CommercialEpoxy";
 import IndustrialEpoxy from "./pages/IndustrialEpoxy";
 import ConcreteRepair from "./pages/ConcreteRepair";
 import DrivewayResurfacing from "./pages/DrivewayResurfacing";
+import Waterproofing from "./pages/Waterproofing";
+import UrethaneCement from "./pages/UrethaneCement";
 import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Products from "./pages/Products";
@@ -53,6 +55,8 @@ function App() {
           <Route path="/industrial-epoxy.html" element={<IndustrialEpoxy />} />
           <Route path="/concrete-repair.html" element={<ConcreteRepair />} />
           <Route path="/driveway-resurfacing.html" element={<DrivewayResurfacing />} />
+          <Route path="/waterproofing.html" element={<Waterproofing />} />
+          <Route path="/urethane-cement.html" element={<UrethaneCement />} />
           
           {/* Additional Pages with .html */}
           <Route path="/why-epoxyart33.html" element={<WhyEpoxyArt33 />} />
@@ -77,6 +81,8 @@ function App() {
           <Route path="/industrial-epoxy" element={<IndustrialEpoxy />} />
           <Route path="/concrete-repair" element={<ConcreteRepair />} />
           <Route path="/driveway-resurfacing" element={<DrivewayResurfacing />} />
+          <Route path="/waterproofing" element={<Waterproofing />} />
+          <Route path="/urethane-cement" element={<UrethaneCement />} />
           <Route path="/why" element={<WhyEpoxyArt33 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>

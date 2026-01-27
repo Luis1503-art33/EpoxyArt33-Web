@@ -40,6 +40,8 @@ const Footer = () => {
               <li><Link to="/commercial-epoxy.html" className="hover:text-amber-500 transition-colors">Commercial Epoxy</Link></li>
               <li><Link to="/industrial-epoxy.html" className="hover:text-amber-500 transition-colors">Industrial Epoxy</Link></li>
               <li><Link to="/driveway-resurfacing.html" className="hover:text-amber-500 transition-colors">Driveway Resurfacing</Link></li>
+              <li><Link to="/waterproofing.html" className="hover:text-amber-500 transition-colors">Waterproofing</Link></li>
+              <li><Link to="/urethane-cement.html" className="hover:text-amber-500 transition-colors">Urethane Cement</Link></li>
             </ul>
           </div>
 
