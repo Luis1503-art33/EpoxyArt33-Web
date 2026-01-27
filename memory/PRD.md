@@ -96,6 +96,15 @@ Professional website for EpoxyArt33, a premium epoxy flooring business serving S
 - New supplier section with 3 products
 - Urethane Cement Mortar, UC Slurry System, Anti-Slip Aggregate
 
+### Added: Credentials & Certifications Section
+- Updated `/why-epoxyart33.html` page with comprehensive credentials
+- OSHA 30 Certification showcase
+- Licensed & Insured (General Liability, Workers' Comp, FL Business License)
+- SAM.GOV Registration for government contracts
+- Additional credentials: LLC, Bonded, W-9, Manufacturer Trained
+- "We Serve All Sectors" section (Residential, Commercial, Government)
+- SEO updated with certification keywords
+
 ### Files Modified
 - `frontend/src/pages/DrivewayResurfacing.jsx` (NEW)
 - `frontend/src/App.js` - Added route
