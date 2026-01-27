@@ -346,7 +346,7 @@ const CommercialEpoxy = () => {
                 <h3 className="text-2xl font-bold mb-4 text-center">Flake System</h3>
                 <img 
                   src="/images/samples/targinol-orbit-310.jpg" 
-                  alt="Flake" 
+                  alt="Commercial flake epoxy flooring sample Naples FL - Torginol decorative flakes" 
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
                 <p className="text-gray-700 mb-4">
@@ -379,7 +379,7 @@ const CommercialEpoxy = () => {
                 <h3 className="text-2xl font-bold mb-4 text-center">Metallic System</h3>
                 <img 
                   src="/images/projects/metallic-silver-1.jpg" 
-                  alt="Metallic Epoxy for Commercial" 
+                  alt="Metallic epoxy flooring for commercial showroom Naples FL - 3D designer floors" 
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
                 <p className="text-gray-700 mb-4">
@@ -412,7 +412,7 @@ const CommercialEpoxy = () => {
                 <h3 className="text-2xl font-bold mb-4 text-center">Quartz System</h3>
                 <img 
                   src="/images/projects/hero-quartz.jpg" 
-                  alt="Quartz System for Commercial" 
+                  alt="Commercial quartz epoxy flooring Fort Myers FL - heavy-duty industrial floors" 
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
                 <p className="text-gray-700 mb-4">
