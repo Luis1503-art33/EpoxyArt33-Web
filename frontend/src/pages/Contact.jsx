@@ -231,32 +231,136 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Service Areas Section */}
+      {/* Service Areas Section with Map */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Areas We Serve</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="font-bold text-xl text-amber-700 mb-3">Collier County</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Naples</li>
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">Our Location & Service Areas</h2>
+          <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+            Based in Naples, FL, we proudly serve all of Southwest Florida including Collier County and Lee County.
+          </p>
+          
+          <div className="grid lg:grid-cols-2 gap-8 mb-10">
+            {/* Google Map Embed */}
+            <div className="rounded-xl overflow-hidden shadow-xl h-[400px]">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.5776!2d-81.7948!3d26.1420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzMxLjIiTiA4McKwNDcnNDEuMyJX!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }}
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="EpoxyArt33 Location - Naples FL"
+              ></iframe>
+            </div>
+            
+            {/* Business Info */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3 className="font-bold text-2xl text-gray-900 mb-6">EpoxyArt33 LLC</h3>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-amber-700" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Address</p>
+                    <p className="text-gray-600">160 15th St SW<br />Naples, FL 34117</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-amber-700" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Phone</p>
+                    <a href="tel:2392761462" className="text-amber-700 hover:text-amber-800">(239) 276-1462</a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-amber-700" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Email</p>
+                    <a href="mailto:epoxyfloorsolutions33@gmail.com" className="text-amber-700 hover:text-amber-800 break-all">epoxyfloorsolutions33@gmail.com</a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 text-amber-700" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Business Hours</p>
+                    <p className="text-gray-600">Monday - Saturday: 7:00 AM - 6:00 PM<br />Sunday: Closed</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a 
+                href="https://maps.app.goo.gl/oruJf8Y3W72c9wPT9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-amber-700 font-semibold hover:text-amber-800"
+              >
+                View on Google Maps <ChevronRight className="w-4 h-4 ml-1" />
+              </a>
+            </div>
+          </div>
+          
+          {/* Service Areas Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700">
+              <h3 className="font-bold text-xl text-gray-900 mb-3">Collier County</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>• Naples (34102, 34103, 34104, 34105, 34108, 34109, 34110, 34112, 34113, 34114, 34116, 34117, 34119, 34120)</li>
                 <li>• Marco Island</li>
                 <li>• Golden Gate</li>
                 <li>• Immokalee</li>
+                <li>• Ave Maria</li>
               </ul>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="font-bold text-xl text-amber-700 mb-3">Lee County</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700">
+              <h3 className="font-bold text-xl text-gray-900 mb-3">Lee County</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Fort Myers</li>
                 <li>• Cape Coral</li>
                 <li>• Estero</li>
                 <li>• Bonita Springs</li>
+                <li>• Lehigh Acres</li>
+                <li>• Fort Myers Beach</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700">
+              <h3 className="font-bold text-xl text-gray-900 mb-3">Naples Neighborhoods</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>• Old Naples</li>
+                <li>• Park Shore</li>
+                <li>• Pelican Bay</li>
+                <li>• Grey Oaks</li>
+                <li>• Quail West</li>
+                <li>• Tiburón</li>
+                <li>• Vineyards</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700">
+              <h3 className="font-bold text-xl text-gray-900 mb-3">Island & Coastal</h3>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>• Marco Island</li>
+                <li>• Sanibel Island</li>
+                <li>• Captiva Island</li>
+                <li>• Pine Island</li>
+                <li>• Vanderbilt Beach</li>
+                <li>• Naples Park</li>
               </ul>
             </div>
           </div>
-          <p className="text-center text-gray-600 mt-6">
-            Don't see your area? <a href="tel:2392761462" className="text-amber-700 font-semibold hover:text-amber-800">Call us</a> - we may still be able to help!
+          
+          <p className="text-center text-gray-600 mt-8">
+            Don't see your area? <a href="tel:2392761462" className="text-amber-700 font-semibold hover:text-amber-800">Call us at (239) 276-1462</a> - we may still be able to help!
           </p>
         </div>
       </section>
