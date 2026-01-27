@@ -218,32 +218,21 @@ Created 5 additional city landing pages for local SEO dominance:
 
 ## Backlog / Future Tasks
 
-### SEO Phase 4 - Local SEO (CRITICAL - P0)
-- **BLOCKER:** Need user's physical business address for NAP consistency
-- Add complete address to SchemaMarkup.jsx and Footer.jsx
-- Google Business Profile optimization recommendations
-
-### SEO Phase 5 - Technical SEO (P1)
-- Audit Core Web Vitals and site speed
-- Verify canonical tags across all pages
-- Check for crawl errors in Google Search Console
-
-### SEO Phase 6 - Content Authority (P1)
-- Expand FAQ.jsx with more questions
-- Add map and service area details to Contact.jsx
-
-### SEO Phase 7 - Competition Analysis (P2)
+### SEO Phase 7 - Competition Analysis (P1)
 - Provide detailed competitor analysis
-- Suggest creating project videos
+- Suggest creating project videos for YouTube/social media
 
 ### SEO Phase 8 - Action Plan & Maintenance (P2)
 - Deliver consolidated monthly SEO maintenance plan
+- Google Search Console monitoring recommendations
+- Google Business Profile optimization guide
 
 ### Other Tasks
 - Continue adding content as user requests
 - Add more project photos to gallery
 - Create additional blog posts for local SEO
-- Potentially add customer reviews/testimonials system
+- Consider adding customer reviews/testimonials system
+- Video content for services
 
 ## Notes
 - User communicates in Spanish
