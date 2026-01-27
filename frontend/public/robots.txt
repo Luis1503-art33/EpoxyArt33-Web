@@ -1,33 +1,54 @@
 # EpoxyArt33 - Robots.txt
 # https://epoxyart33.com/robots.txt
+# Optimizado para SEO - Enero 2025
 
 User-agent: *
 Allow: /
 
-# Priority Pages
-Allow: /
-Allow: /services
-Allow: /gallery
-Allow: /contact
-Allow: /blog
-Allow: /showroom
+# Páginas Principales (.html)
+Allow: /*.html$
+Allow: /services.html
+Allow: /gallery.html
+Allow: /contact.html
+Allow: /blog.html
+Allow: /showroom.html
+Allow: /products.html
+Allow: /faq.html
 
-# Service Pages
-Allow: /garage-floor-coating
-Allow: /metallic-epoxy
-Allow: /flake-system
-Allow: /quartz-system
-Allow: /pool-deck-resurfacing
-Allow: /commercial-epoxy
-Allow: /industrial-epoxy
-Allow: /concrete-repair
+# Páginas de Servicios (.html)
+Allow: /garage-floor-coating.html
+Allow: /metallic-epoxy.html
+Allow: /flake-system.html
+Allow: /quartz-system.html
+Allow: /pool-deck-resurfacing.html
+Allow: /commercial-epoxy.html
+Allow: /industrial-epoxy.html
+Allow: /concrete-repair.html
+Allow: /driveway-resurfacing.html
+Allow: /waterproofing.html
+Allow: /urethane-cement.html
 
-# Disallow admin/backend paths (if any)
+# Páginas Institucionales
+Allow: /why-epoxyart33.html
+Allow: /government-contracts.html
+Allow: /visualizer.html
+
+# Páginas de Ciudad (SEO Local)
+Allow: /epoxy-flooring-naples.html
+Allow: /epoxy-flooring-fort-myers.html
+Allow: /epoxy-flooring-cape-coral.html
+Allow: /epoxy-flooring-marco-island.html
+Allow: /epoxy-flooring-bonita-springs.html
+Allow: /epoxy-flooring-estero.html
+
+# Disallow - Rutas privadas
 Disallow: /api/
 Disallow: /admin/
 Disallow: /*.json$
+Disallow: /static/js/*.map
+Disallow: /static/css/*.map
 
-# Crawl-delay
+# Crawl-delay (opcional, no requerido para Googlebot)
 Crawl-delay: 0
 
 # Sitemap
