@@ -12,9 +12,9 @@ const WhyEpoxyArt33 = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Why Choose EpoxyArt33 | Best Epoxy Flooring Naples FL | SWFL"
-        description="Discover why 500+ SWFL clients choose EpoxyArt33. Premium materials, expert craftsmen, fast turnaround, quality guarantee. Naples, Fort Myers & Southwest Florida."
-        keywords="why choose EpoxyArt33, best epoxy company Naples, top flooring contractor Fort Myers, trusted epoxy installer SWFL, quality epoxy flooring, premium floor coating"
+        title="Why Choose EpoxyArt33 | OSHA Certified | Licensed & Insured | SAM.GOV Registered | Naples FL"
+        description="OSHA 30 certified, fully licensed & insured, SAM.GOV registered for government contracts. 500+ SWFL clients trust EpoxyArt33. Naples, Fort Myers & Southwest Florida."
+        keywords="why choose EpoxyArt33, OSHA certified epoxy contractor, licensed insured flooring Naples, SAM.GOV registered contractor, government epoxy contractor Florida, certified epoxy installer SWFL"
         url="/why"
       />
       <SchemaMarkup />
