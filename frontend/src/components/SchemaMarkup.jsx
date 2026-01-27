@@ -16,9 +16,10 @@ const SchemaMarkup = ({ data }) => {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "160 15th St SW",
       "addressLocality": "Naples",
       "addressRegion": "FL",
-      "postalCode": "34102",
+      "postalCode": "34117",
       "addressCountry": "US"
     },
     "geo": {
