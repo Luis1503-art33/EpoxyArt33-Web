@@ -77,125 +77,125 @@ export const galleryItems = [
   // Pool Decks (5 images) - Residential
   {
     id: 1,
-    title: 'Pool Deck Resurfacing - Naples',
+    title: 'Pool Deck Resurfacing Naples FL - Torginol Flake',
     category: 'Residential',
     image: '/images/gallery/pool-deck-1.jpg',
-    description: 'Beautiful flake system pool deck with slip-resistant finish'
+    description: 'Pool deck resurfacing in Naples FL with Torginol flake system and slip-resistant finish'
   },
   {
     id: 2,
-    title: 'Complete Pool Area - SWFL',
+    title: 'Pool Deck Coating Fort Myers - Complete Installation',
     category: 'Residential',
     image: '/images/gallery/pool-deck-2.jpg',
-    description: 'Full pool deck and lanai epoxy installation'
+    description: 'Full pool deck and lanai epoxy coating installation in Fort Myers FL'
   },
   {
     id: 3,
-    title: 'Screened Pool Enclosure',
+    title: 'Screened Lanai Pool Deck - Marco Island FL',
     category: 'Residential',
     image: '/images/gallery/pool-deck-3.jpg',
-    description: 'Premium flake epoxy for screened pool area'
+    description: 'Premium flake epoxy pool deck for screened lanai in Marco Island'
   },
   {
     id: 4,
-    title: 'Luxury Pool Deck - Marco Island',
+    title: 'Luxury Pool Deck Resurfacing Marco Island',
     category: 'Residential',
     image: '/images/gallery/pool-deck-4.jpg',
-    description: 'High-end pool deck with seamless flake finish'
+    description: 'High-end pool deck resurfacing with seamless flake finish Marco Island FL'
   },
   {
     id: 5,
-    title: 'Pool Deck Detail View',
+    title: 'Slip-Resistant Pool Deck Coating SWFL',
     category: 'Residential',
     image: '/images/gallery/pool-deck-5.jpg',
-    description: 'Close-up of slip-resistant pool deck coating'
+    description: 'Close-up of slip-resistant pool deck coating Southwest Florida'
   },
   // Garage Floors Flake (5 images) - Residential
   {
     id: 6,
-    title: 'Residential Garage - Naples',
+    title: 'Garage Floor Coating Naples FL - Flake System',
     category: 'Residential',
     image: '/images/gallery/garage-1.jpg',
-    description: 'Professional flake epoxy garage floor coating'
+    description: 'Professional flake epoxy garage floor coating in Naples Florida'
   },
   {
     id: 7,
-    title: 'Garage Floor Transformation',
+    title: 'Garage Floor Epoxy Bonita Springs - Before After',
     category: 'Residential',
     image: '/images/gallery/garage-2.jpg',
-    description: 'Complete garage floor makeover with flake system'
+    description: 'Complete garage floor transformation with flake system Bonita Springs FL'
   },
   {
     id: 8,
-    title: 'Modern Garage Floor - Fort Myers',
+    title: 'Modern Garage Floor Coating Fort Myers FL',
     category: 'Residential',
     image: '/images/gallery/garage-3.jpg',
-    description: 'Contemporary garage with durable flake coating'
+    description: 'Contemporary garage floor coating with durable flake system Fort Myers'
   },
   {
     id: 9,
-    title: 'Garage Floor Detail',
+    title: 'Residential Garage Epoxy Cape Coral FL',
     category: 'Residential',
     image: '/images/gallery/garage-4.jpg',
-    description: 'High-quality flake epoxy installation'
+    description: 'High-quality flake epoxy garage floor installation Cape Coral Florida'
   },
   {
     id: 10,
-    title: 'Professional Garage Coating',
+    title: 'Professional Garage Floor Coating Estero FL',
     category: 'Residential',
     image: '/images/gallery/garage-5.jpg',
-    description: 'Seamless garage floor with flake system'
+    description: 'Seamless garage floor with Torginol flake system Estero Florida'
   },
   // Metallic Epoxy Garages & Countertops (5 images) - Residential
   {
     id: 11,
-    title: 'Stunning Metallic Garage - Naples',
+    title: 'Metallic Epoxy Garage Floor Naples FL',
     category: 'Residential',
     image: '/images/gallery/metallic-garage-1.jpg',
-    description: 'Breathtaking metallic epoxy garage floor installation'
+    description: 'Stunning metallic epoxy garage floor installation in Naples Florida'
   },
   {
     id: 12,
-    title: 'Luxury Metallic Garage Floor',
+    title: 'Luxury Metallic Epoxy Floor Fort Myers',
     category: 'Residential',
     image: '/images/gallery/metallic-garage-2.jpg',
-    description: 'High-end metallic epoxy with 3D effects'
+    description: 'High-end metallic epoxy floor with 3D effects Fort Myers FL'
   },
   {
     id: 13,
-    title: 'Metallic Epoxy Showroom Garage',
+    title: 'Showroom Metallic Garage Floor SWFL',
     category: 'Residential',
     image: '/images/gallery/metallic-garage-3.jpg',
-    description: 'Premium metallic finish for luxury garage'
+    description: 'Premium metallic epoxy finish for showroom garage Southwest Florida'
   },
   {
     id: 14,
-    title: 'Custom Metallic Garage - Fort Myers',
+    title: 'Custom Metallic Epoxy Garage Cape Coral',
     category: 'Residential',
     image: '/images/gallery/metallic-garage-4.jpg',
-    description: 'Unique metallic epoxy garage design'
+    description: 'Unique custom metallic epoxy garage floor design Cape Coral FL'
   },
   {
     id: 15,
-    title: 'Metallic Epoxy Countertop',
+    title: 'Metallic Epoxy Countertop Naples FL',
     category: 'Residential',
     image: '/images/gallery/metallic-countertop.jpg',
-    description: 'Stunning metallic epoxy countertop installation'
+    description: 'Stunning metallic epoxy countertop installation Naples Florida'
   },
   // Commercial Kitchens (4 images) - Commercial
   {
     id: 16,
-    title: 'Commercial Kitchen Floor - Naples',
+    title: 'Commercial Kitchen Floor Naples - Quartz Epoxy',
     category: 'Commercial',
     image: '/images/gallery/commercial-kitchen.jpg',
-    description: 'Heavy-duty quartz epoxy system for restaurant kitchen'
+    description: 'Heavy-duty quartz epoxy floor system for restaurant kitchen Naples FL'
   },
   {
     id: 17,
-    title: 'Restaurant Kitchen - Fort Myers',
+    title: 'Restaurant Kitchen Flooring Fort Myers FL',
     category: 'Commercial',
     image: '/images/gallery/kitchen-quartz-1.jpg',
-    description: 'Professional quartz flooring for commercial kitchen'
+    description: 'Professional quartz epoxy flooring for commercial kitchen Fort Myers'
   },
   {
     id: 18,
