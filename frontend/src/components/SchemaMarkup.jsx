@@ -7,6 +7,7 @@ const SchemaMarkup = ({ data }) => {
     "@type": "LocalBusiness",
     "@id": "https://epoxyart33.com/#localbusiness",
     "name": "EpoxyArt33",
+    "alternateName": "EpoxyArt33 LLC",
     "image": "https://epoxyart33.com/images/projects/hero-metallic.jpg",
     "logo": "https://epoxyart33.com/logo.png",
     "url": "https://epoxyart33.com",
@@ -15,7 +16,6 @@ const SchemaMarkup = ({ data }) => {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "",
       "addressLocality": "Naples",
       "addressRegion": "FL",
       "postalCode": "34102",
@@ -35,21 +35,35 @@ const SchemaMarkup = ({ data }) => {
       }
     ],
     "areaServed": [
-      { "@type": "City", "name": "Naples" },
-      { "@type": "City", "name": "Marco Island" },
-      { "@type": "City", "name": "Fort Myers" },
-      { "@type": "City", "name": "Cape Coral" },
-      { "@type": "City", "name": "Bonita Springs" },
-      { "@type": "City", "name": "Estero" }
+      { "@type": "City", "name": "Naples", "containedInPlace": { "@type": "State", "name": "Florida" } },
+      { "@type": "City", "name": "Marco Island", "containedInPlace": { "@type": "State", "name": "Florida" } },
+      { "@type": "City", "name": "Fort Myers", "containedInPlace": { "@type": "State", "name": "Florida" } },
+      { "@type": "City", "name": "Cape Coral", "containedInPlace": { "@type": "State", "name": "Florida" } },
+      { "@type": "City", "name": "Bonita Springs", "containedInPlace": { "@type": "State", "name": "Florida" } },
+      { "@type": "City", "name": "Estero", "containedInPlace": { "@type": "State", "name": "Florida" } }
     ],
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61570171733397",
       "https://www.instagram.com/epoxyart_33/",
       "https://maps.app.goo.gl/oruJf8Y3W72c9wPT9"
     ],
-    "description": "Premium epoxy flooring solutions in Southwest Florida. Specializing in garage floors, metallic epoxy, pool decks, and commercial epoxy flooring.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Epoxy Flooring Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garage Floor Coating" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pool Deck Resurfacing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Metallic Epoxy Flooring" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Epoxy Flooring" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Epoxy Flooring" } }
+      ]
+    },
+    "description": "Naples #1 epoxy flooring contractor. Premium garage floors, pool decks, metallic epoxy & commercial coatings. OSHA 30 certified, licensed & insured. Serving Naples, Fort Myers, Marco Island & all of Southwest Florida.",
     "slogan": "Art Beneath Your Feet",
-    "foundingDate": "2022"
+    "foundingDate": "2022",
+    "knowsAbout": ["Epoxy Flooring", "Garage Floor Coating", "Pool Deck Resurfacing", "Metallic Epoxy", "Commercial Flooring", "Industrial Flooring", "Polyaspartic Coating", "Concrete Repair"],
+    "paymentAccepted": ["Cash", "Check", "Credit Card"],
+    "currenciesAccepted": "USD"
   };
 
   // If custom data is provided, merge it with context
