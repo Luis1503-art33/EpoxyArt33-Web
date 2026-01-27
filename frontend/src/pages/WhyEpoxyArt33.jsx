@@ -103,6 +103,221 @@ const WhyEpoxyArt33 = () => {
         </div>
       </section>
 
+      {/* Credentials & Certifications Section */}
+      <section className="py-16 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Credentials & Certifications</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              When you hire EpoxyArt33, you're hiring a fully licensed, insured, and certified professional contractor. 
+              Our credentials speak to our commitment to safety, quality, and professionalism.
+            </p>
+          </div>
+
+          {/* Main Credentials Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            {/* OSHA 30 Certification */}
+            <Card className="bg-white/10 backdrop-blur border-yellow-500/50 hover:border-yellow-400 transition-all hover:scale-105">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <HardHat className="w-8 h-8 text-black" />
+                </div>
+                <h3 className="text-2xl font-bold text-center text-yellow-400 mb-3">OSHA 30 Certified</h3>
+                <p className="text-gray-300 text-center mb-4">
+                  Our team holds OSHA 30-Hour Construction Safety certification, demonstrating advanced knowledge of workplace safety standards and hazard prevention.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-yellow-400 mt-0.5 flex-shrink-0" />
+                    <span>30-hour comprehensive safety training</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-yellow-400 mt-0.5 flex-shrink-0" />
+                    <span>Hazard identification & prevention</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-yellow-400 mt-0.5 flex-shrink-0" />
+                    <span>OSHA regulations compliance</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-yellow-400 mt-0.5 flex-shrink-0" />
+                    <span>Safe work environment guaranteed</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Licensed & Insured */}
+            <Card className="bg-white/10 backdrop-blur border-green-500/50 hover:border-green-400 transition-all hover:scale-105">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ShieldCheck className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-center text-green-400 mb-3">Fully Licensed & Insured</h3>
+                <p className="text-gray-300 text-center mb-4">
+                  We maintain comprehensive insurance coverage and all required business licenses, protecting you and your property throughout every project.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <span>General Liability Insurance</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <span>Workers' Compensation Coverage</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <span>Florida State Business License</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <span>Certificate of Insurance available</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* SAM.GOV Registered */}
+            <Card className="bg-white/10 backdrop-blur border-blue-500/50 hover:border-blue-400 transition-all hover:scale-105">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Landmark className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-center text-blue-400 mb-3">SAM.GOV Registered</h3>
+                <p className="text-gray-300 text-center mb-4">
+                  Registered in the System for Award Management (SAM.GOV), qualified to perform federal, state, and local government contract work.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Federal government contracts eligible</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>State & municipal projects qualified</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Verified business credentials</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-gray-300">
+                    <Check className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <span>Compliant with federal requirements</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Additional Credentials */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white/5 rounded-lg p-6 text-center border border-white/10 hover:border-white/30 transition-all">
+              <FileCheck className="w-10 h-10 text-yellow-400 mx-auto mb-3" />
+              <h4 className="font-bold text-white mb-2">LLC Registered</h4>
+              <p className="text-sm text-gray-400">Legally established Limited Liability Company in Florida</p>
+            </div>
+            
+            <div className="bg-white/5 rounded-lg p-6 text-center border border-white/10 hover:border-white/30 transition-all">
+              <Scale className="w-10 h-10 text-yellow-400 mx-auto mb-3" />
+              <h4 className="font-bold text-white mb-2">Bonded Contractor</h4>
+              <p className="text-sm text-gray-400">Financial guarantee of project completion and quality</p>
+            </div>
+            
+            <div className="bg-white/5 rounded-lg p-6 text-center border border-white/10 hover:border-white/30 transition-all">
+              <FileText className="w-10 h-10 text-yellow-400 mx-auto mb-3" />
+              <h4 className="font-bold text-white mb-2">W-9 on File</h4>
+              <p className="text-sm text-gray-400">Tax documentation ready for commercial & government clients</p>
+            </div>
+            
+            <div className="bg-white/5 rounded-lg p-6 text-center border border-white/10 hover:border-white/30 transition-all">
+              <BadgeCheck className="w-10 h-10 text-yellow-400 mx-auto mb-3" />
+              <h4 className="font-bold text-white mb-2">Manufacturer Trained</h4>
+              <p className="text-sm text-gray-400">Factory-trained on Torginol, Chemtec & premium products</p>
+            </div>
+          </div>
+
+          {/* Trust Statement */}
+          <div className="mt-12 text-center">
+            <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-4">Why Credentials Matter</h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                In the flooring industry, many contractors operate without proper licensing, insurance, or safety training. 
+                This puts property owners at risk. At EpoxyArt33, we invest in certifications and compliance because 
+                <strong className="text-white"> your safety and peace of mind are non-negotiable</strong>. 
+                When you hire us, you're hiring a legitimate, professional contractor who will be here for years to come.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">We Serve All Sectors</h2>
+            <p className="text-xl text-gray-600">From homeowners to government agencies</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="border-2 hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Residential</h3>
+                <p className="text-gray-600 mb-4">
+                  Homeowners throughout Naples, Fort Myers, and SWFL trust us with their garages, patios, and pool decks.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Garage floors</li>
+                  <li>• Pool decks</li>
+                  <li>• Driveways</li>
+                  <li>• Patios & lanais</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Commercial</h3>
+                <p className="text-gray-600 mb-4">
+                  Businesses rely on us for professional, durable floors that impress customers and handle heavy traffic.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Restaurants & kitchens</li>
+                  <li>• Retail stores</li>
+                  <li>• Warehouses</li>
+                  <li>• Office buildings</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Landmark className="w-8 h-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Government</h3>
+                <p className="text-gray-600 mb-4">
+                  SAM.GOV registered and qualified for federal, state, and municipal contract work.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Federal facilities</li>
+                  <li>• Municipal buildings</li>
+                  <li>• Schools & universities</li>
+                  <li>• Military installations</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
