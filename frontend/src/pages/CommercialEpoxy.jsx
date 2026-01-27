@@ -215,6 +215,123 @@ const CommercialEpoxy = () => {
         </div>
       </section>
 
+      {/* Restaurant Project Feature */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Project: Restaurant Floor</h2>
+            <p className="text-xl text-gray-600">MVB Solid 100% Clear + High Wear Urethane Topcoat</p>
+          </div>
+          
+          <div className="max-w-6xl mx-auto">
+            {/* Technical Info Box */}
+            <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-6 mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Technical Specifications</h3>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div>
+                  <p className="font-semibold text-gray-800">Base System:</p>
+                  <p className="text-gray-600">MVB (Moisture Vapor Barrier) Solid 100%</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-800">Finish:</p>
+                  <p className="text-gray-600">Clear Coat</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-800">Topcoat:</p>
+                  <p className="text-gray-600">High Wear Urethane</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Restaurant Project Images Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="group">
+                <img 
+                  src="/images/gallery/restaurant-1.jpg" 
+                  alt="Restaurant Floor - MVB Solid Clear Finish" 
+                  className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+                />
+                <p className="text-center text-gray-600 mt-3 font-semibold">
+                  MVB Solid Clear - Main Dining Area
+                </p>
+              </div>
+              <div className="group">
+                <img 
+                  src="/images/gallery/restaurant-2.jpg" 
+                  alt="Restaurant Dining Area Floor" 
+                  className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+                />
+                <p className="text-center text-gray-600 mt-3 font-semibold">
+                  High Wear Urethane Finish
+                </p>
+              </div>
+              <div className="group">
+                <img 
+                  src="/images/gallery/restaurant-3.jpg" 
+                  alt="Restaurant Floor Clear Finish" 
+                  className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+                />
+                <p className="text-center text-gray-600 mt-3 font-semibold">
+                  Clear Coat - Service Area
+                </p>
+              </div>
+              <div className="group">
+                <img 
+                  src="/images/gallery/restaurant-4.jpg" 
+                  alt="Restaurant Kitchen Prep Area" 
+                  className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+                />
+                <p className="text-center text-gray-600 mt-3 font-semibold">
+                  Kitchen Prep - Before Application
+                </p>
+              </div>
+              <div className="group">
+                <img 
+                  src="/images/gallery/restaurant-5.jpg" 
+                  alt="Restaurant Floor Installation Process" 
+                  className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
+                />
+                <p className="text-center text-gray-600 mt-3 font-semibold">
+                  Installation Process
+                </p>
+              </div>
+            </div>
+
+            {/* Benefits for restaurants */}
+            <div className="mt-10 grid md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Check className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h4 className="font-bold text-gray-800">Food Safe</h4>
+                <p className="text-sm text-gray-600">Meets health code requirements</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Check className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h4 className="font-bold text-gray-800">Easy Clean</h4>
+                <p className="text-sm text-gray-600">Seamless, non-porous surface</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Check className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h4 className="font-bold text-gray-800">Chemical Resistant</h4>
+                <p className="text-sm text-gray-600">Resists grease, oils, cleaners</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Check className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h4 className="font-bold text-gray-800">Durable</h4>
+                <p className="text-sm text-gray-600">High Wear Urethane protection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* System Options */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
