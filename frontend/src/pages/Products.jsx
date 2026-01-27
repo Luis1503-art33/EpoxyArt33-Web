@@ -472,22 +472,31 @@ const Products = () => {
               </motion.p>
 
               <motion.div
-                className="flex flex-wrap justify-center gap-4"
+                className="flex flex-wrap justify-center gap-3"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <Badge variant="outline" className="border-red-400 text-red-400 px-4 py-2">
-                  Torginol Partner
+                <Badge variant="outline" className="border-red-400 text-red-400 px-3 py-1.5 text-sm">
+                  Torginol
                 </Badge>
-                <Badge variant="outline" className="border-green-400 text-green-400 px-4 py-2">
-                  Chemtec Certified
+                <Badge variant="outline" className="border-green-400 text-green-400 px-3 py-1.5 text-sm">
+                  Chemtec
                 </Badge>
-                <Badge variant="outline" className="border-teal-400 text-teal-400 px-4 py-2">
-                  Florida Paints Pro
+                <Badge variant="outline" className="border-teal-400 text-teal-400 px-3 py-1.5 text-sm">
+                  Florida Paints
                 </Badge>
-                <Badge variant="outline" className="border-purple-400 text-purple-400 px-4 py-2">
-                  Premera Authorized
+                <Badge variant="outline" className="border-purple-400 text-purple-400 px-3 py-1.5 text-sm">
+                  Premera
+                </Badge>
+                <Badge variant="outline" className="border-blue-400 text-blue-400 px-3 py-1.5 text-sm">
+                  TREMCO
+                </Badge>
+                <Badge variant="outline" className="border-gray-400 text-gray-400 px-3 py-1.5 text-sm">
+                  Wolfpack
+                </Badge>
+                <Badge variant="outline" className="border-orange-400 text-orange-400 px-3 py-1.5 text-sm">
+                  EZ Concrete
                 </Badge>
               </motion.div>
             </div>
