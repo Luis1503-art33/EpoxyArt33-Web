@@ -12,9 +12,9 @@ const GarageFloorCoating = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Garage Floor Coating Naples FL | Epoxy Garage Floors SWFL | EpoxyArt33"
-        description="Premium garage floor coating in Naples, Fort Myers & SWFL. Flake, metallic & solid epoxy options. Slip-resistant, easy to clean. 1-day installation. Free estimates! (239) 276-1462"
-        keywords="garage floor coating Naples, epoxy garage floor Fort Myers, garage floor epoxy SWFL, Torginol flake garage, garage floor coating Cape Coral, residential garage epoxy, garage floor refinishing Naples"
+        title="Garage Floor Coating Naples FL | 1-Day Epoxy Installation | Free Quote"
+        description="Transform your Naples garage in just 1 day! Premium epoxy floor coating starting at $6/sq ft. Flake, metallic & solid color options. 15-year durability. OSHA certified. ☎️ (239) 276-1462"
+        keywords="garage floor coating Naples, epoxy garage floor Fort Myers, garage floor epoxy SWFL, Torginol flake garage, garage floor coating Cape Coral, residential garage epoxy, garage floor refinishing Naples, garage epoxy near me"
         url="/garage-floor-coating"
       />
       <SchemaMarkup 
@@ -38,7 +38,7 @@ const GarageFloorCoating = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Premium <span className="text-yellow-400">Garage Floor Coating</span> in SWFL
+              Garage Floor Coating Naples FL - Professional 1-Day Installation
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
               Transform your garage with professional epoxy coating. Durable, beautiful, and ready in just 1 day.
