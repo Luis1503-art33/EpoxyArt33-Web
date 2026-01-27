@@ -12,9 +12,9 @@ const PoolDeckResurfacing = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Pool Deck Resurfacing Naples FL | Epoxy Pool Decks SWFL | EpoxyArt33"
-        description="Slip-resistant pool deck resurfacing in Naples, Marco Island & SWFL. UV-resistant Polyaspartic coating won't yellow. Waterproof, beautiful & safe. Free quotes! (239) 276-1462"
-        keywords="pool deck resurfacing Naples, epoxy pool deck Fort Myers, pool deck coating SWFL, slip resistant pool deck, pool deck repair Marco Island, Polyaspartic pool deck, cool deck coating Naples"
+        title="Pool Deck Resurfacing Naples FL | Slip-Resistant Coating | Free Estimate"
+        description="Naples #1 pool deck resurfacing. Slip-resistant, UV-stable Polyaspartic coating that won't yellow. Cool to the touch in Florida sun. Marco Island, Fort Myers, SWFL. ☎️ (239) 276-1462"
+        keywords="pool deck resurfacing Naples, pool deck resurfacing naples fl, epoxy pool deck Fort Myers, pool deck coating SWFL, slip resistant pool deck, pool deck repair Marco Island, Polyaspartic pool deck, cool deck coating Naples, pool deck contractor near me"
         url="/pool-deck-resurfacing"
       />
       <SchemaMarkup 
@@ -38,7 +38,7 @@ const PoolDeckResurfacing = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-yellow-400">Pool Deck Resurfacing</span><br />Beautiful & Safe
+              Pool Deck Resurfacing Naples FL - Slip-Resistant & UV-Stable Coating
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
               Transform your pool area with slip-resistant, waterproof epoxy coating. Perfect for SWFL's sunny climate.
