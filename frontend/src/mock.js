@@ -363,6 +363,42 @@ export const galleryItems = [
     category: 'Residential',
     image: '/images/gallery/pool-deck-tropical-5.jpg',
     description: 'Recently completed pool deck with Tropical Breeze finish'
+  },
+  // Urethane Cement Project (5 images) - Industrial
+  {
+    id: 41,
+    title: 'Urethane Cement - Commercial Kitchen',
+    category: 'Industrial',
+    image: '/images/gallery/urethane-cement-1.jpg',
+    description: 'Duraflex urethane cement system for commercial kitchen'
+  },
+  {
+    id: 42,
+    title: 'Food Service Area - Urethane Cement',
+    category: 'Industrial',
+    image: '/images/gallery/urethane-cement-2.jpg',
+    description: 'Heavy-duty flooring for food service applications'
+  },
+  {
+    id: 43,
+    title: 'Industrial Urethane Cement Floor',
+    category: 'Industrial',
+    image: '/images/gallery/urethane-cement-3.jpg',
+    description: 'Duraflex system - thermal shock and chemical resistant'
+  },
+  {
+    id: 44,
+    title: 'Urethane Cement Surface Prep',
+    category: 'Industrial',
+    image: '/images/gallery/urethane-cement-4.jpg',
+    description: 'Surface preparation for urethane cement installation'
+  },
+  {
+    id: 45,
+    title: 'Complete Urethane Cement Installation',
+    category: 'Industrial',
+    image: '/images/gallery/urethane-cement-5.jpg',
+    description: 'Finished Duraflex urethane cement floor - seamless and sanitary'
   }
 ];
 
