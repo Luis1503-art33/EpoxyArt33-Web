@@ -184,7 +184,7 @@ const CommercialEpoxy = () => {
             <div>
               <img 
                 src="/images/projects/commercial-kitchen-1.jpg" 
-                alt="Commercial Kitchen Epoxy Floor" 
+                alt="Commercial kitchen epoxy floor installation in Naples FL - solid color system for restaurants" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl"
               />
               <p className="text-center text-gray-600 mt-4 font-semibold">
@@ -194,7 +194,7 @@ const CommercialEpoxy = () => {
             <div>
               <img 
                 src="/images/projects/commercial-hallway-1.jpg" 
-                alt="Commercial Hallway with Flake System" 
+                alt="Commercial hallway flake epoxy flooring in Fort Myers FL - decorative and durable" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl"
               />
               <p className="text-center text-gray-600 mt-4 font-semibold">
@@ -204,7 +204,7 @@ const CommercialEpoxy = () => {
             <div>
               <img 
                 src="/images/projects/commercial-kitchen-2.jpg" 
-                alt="Restaurant Kitchen Epoxy" 
+                alt="Restaurant kitchen epoxy flooring Naples FL - food-safe coating for commercial kitchens" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl"
               />
               <p className="text-center text-gray-600 mt-4 font-semibold">
