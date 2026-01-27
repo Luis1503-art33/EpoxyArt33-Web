@@ -1,16 +1,26 @@
 import { Helmet } from 'react-helmet-async';
 
 const SchemaMarkup = ({ data }) => {
+  // Get the current site URL dynamically
+  const getSiteUrl = () => {
+    if (typeof window !== 'undefined') {
+      return window.location.origin;
+    }
+    return "https://epoxyart33.com";
+  };
+
+  const siteUrl = getSiteUrl();
+
   // Default LocalBusiness schema WITHOUT aggregateRating/review
   const defaultLocalBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://epoxyart33.com/#localbusiness",
+    "@id": `${siteUrl}/#localbusiness`,
     "name": "EpoxyArt33",
     "alternateName": "EpoxyArt33 LLC",
-    "image": "https://epoxyart33.com/images/projects/hero-metallic.jpg",
-    "logo": "https://epoxyart33.com/logo.png",
-    "url": "https://epoxyart33.com",
+    "image": `${siteUrl}/images/projects/hero-metallic.jpg`,
+    "logo": `${siteUrl}/logo.png`,
+    "url": siteUrl,
     "telephone": "+1-239-276-1462",
     "email": "epoxyfloorsolutions33@gmail.com",
     "priceRange": "$$",
@@ -79,12 +89,12 @@ const SchemaMarkup = ({ data }) => {
       return {
         "@context": "https://schema.org",
         "@type": "Service",
-        "@id": data["@id"] || `https://epoxyart33.com/#service`,
+        "@id": data["@id"] || `${siteUrl}/#service`,
         "name": data.name,
         "description": data.description,
         "provider": {
           "@type": "LocalBusiness",
-          "@id": "https://epoxyart33.com/#localbusiness",
+          "@id": `${siteUrl}/#localbusiness`,
           "name": "EpoxyArt33"
         },
         "areaServed": data.areaServed || "Southwest Florida",
@@ -97,7 +107,7 @@ const SchemaMarkup = ({ data }) => {
       return {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": data["@id"] || "https://epoxyart33.com/faq#faqpage",
+        "@id": data["@id"] || `${siteUrl}/faq#faqpage`,
         "name": data.name,
         "description": data.description,
         "mainEntity": data.mainEntity || []
@@ -109,7 +119,7 @@ const SchemaMarkup = ({ data }) => {
       return {
         "@context": "https://schema.org",
         "@type": "ImageGallery",
-        "@id": data["@id"] || "https://epoxyart33.com/gallery#gallery",
+        "@id": data["@id"] || `${siteUrl}/gallery#gallery`,
         "name": data.name,
         "description": data.description
       };
@@ -120,7 +130,7 @@ const SchemaMarkup = ({ data }) => {
       return {
         "@context": "https://schema.org",
         "@type": "Blog",
-        "@id": data["@id"] || "https://epoxyart33.com/blog#blog",
+        "@id": data["@id"] || `${siteUrl}/blog#blog`,
         "name": data.name,
         "description": data.description
       };
@@ -131,7 +141,7 @@ const SchemaMarkup = ({ data }) => {
       return {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "@id": data["@id"] || `https://epoxyart33.com/blog#post`,
+        "@id": data["@id"] || `${siteUrl}/blog#post`,
         "headline": data.headline,
         "description": data.description,
         "author": data.author,
@@ -148,7 +158,7 @@ const SchemaMarkup = ({ data }) => {
       return {
         "@context": "https://schema.org",
         "@type": "Product",
-        "@id": data["@id"] || "https://epoxyart33.com/products#products",
+        "@id": data["@id"] || `${siteUrl}/products#products`,
         "name": data.name,
         "description": data.description,
         "brand": data.brand
