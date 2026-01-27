@@ -196,18 +196,31 @@ const FAQ = () => {
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto max-w-4xl">
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-2 border-gray-200 rounded-lg px-6 hover:border-yellow-600 transition-colors">
-                <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-yellow-700 py-4">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pb-4">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {categories.map((category) => (
+            <div key={category} className="mb-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-yellow-500">
+                {category === 'General' && '📋 General Questions'}
+                {category === 'Systems' && '🔧 Epoxy Systems & Products'}
+                {category === 'Maintenance' && '🧹 Maintenance & Care'}
+                {category === 'Cost' && '💰 Cost & Warranty'}
+                {category === 'Location' && '📍 Naples & SWFL Service Area'}
+                {category === 'Pool Deck' && '🏊 Pool Deck Questions'}
+                {category === 'Commercial' && '🏢 Commercial & Industrial'}
+              </h2>
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.filter(faq => faq.category === category).map((faq, index) => (
+                  <AccordionItem key={`${category}-${index}`} value={`${category}-${index}`} className="border-2 border-gray-200 rounded-lg px-6 hover:border-yellow-600 transition-colors">
+                    <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-yellow-700 py-4">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-600 pb-4">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          ))}
         </div>
       </section>
 
