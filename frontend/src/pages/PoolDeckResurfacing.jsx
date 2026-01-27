@@ -176,7 +176,7 @@ const PoolDeckResurfacing = () => {
             <div>
               <img 
                 src="/images/projects/pool-deck-1.jpg" 
-                alt="Pool Deck with Flake System - Full View" 
+                alt="Pool deck resurfacing Naples FL - flake system with slip-resistant finish" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
               <p className="text-center text-gray-600 mt-4 italic">
@@ -186,7 +186,7 @@ const PoolDeckResurfacing = () => {
             <div>
               <img 
                 src="/images/projects/pool-deck-2.jpg" 
-                alt="Pool Deck Flake System Close-up" 
+                alt="Pool deck flake epoxy coating Fort Myers FL - Torginol full broadcast system" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
               <p className="text-center text-gray-600 mt-4 italic">
