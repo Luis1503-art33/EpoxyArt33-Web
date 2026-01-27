@@ -365,28 +365,28 @@ const PoolDeckResurfacing = () => {
 
           <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="overflow-hidden hover:shadow-lg">
-              <img src="/images/samples/targinol-shorline-421.jpg" alt="Shoreline" className="w-full h-32 object-cover" />
+              <img src="/images/samples/targinol-shorline-421.jpg" alt="Shoreline pool deck flake color Naples FL - coastal blues and whites" className="w-full h-32 object-cover" />
               <CardContent className="pt-4 text-center">
                 <h3 className="font-bold">Shoreline</h3>
                 <p className="text-sm text-gray-600">Coastal Blues & Whites</p>
               </CardContent>
             </Card>
             <Card className="overflow-hidden hover:shadow-lg">
-              <img src="/images/samples/targinol-tidewave-807.jpg" alt="Tidewave" className="w-full h-32 object-cover" />
+              <img src="/images/samples/targinol-tidewave-807.jpg" alt="Tidewave pool deck color Fort Myers FL - ocean blue blend" className="w-full h-32 object-cover" />
               <CardContent className="pt-4 text-center">
                 <h3 className="font-bold">Tidewave</h3>
                 <p className="text-sm text-gray-600">Ocean Blue Blend</p>
               </CardContent>
             </Card>
             <Card className="overflow-hidden hover:shadow-lg">
-              <img src="/images/samples/targinol-bean-960.jpg" alt="Bean" className="w-full h-32 object-cover" />
+              <img src="/images/samples/targinol-bean-960.jpg" alt="Bean pool deck flake color Marco Island FL - warm sandy tones" className="w-full h-32 object-cover" />
               <CardContent className="pt-4 text-center">
                 <h3 className="font-bold">Bean</h3>
                 <p className="text-sm text-gray-600">Warm Sandy Tones</p>
               </CardContent>
             </Card>
             <Card className="overflow-hidden hover:shadow-lg">
-              <img src="/images/samples/targinol-orbit-310.jpg" alt="Orbit" className="w-full h-32 object-cover" />
+              <img src="/images/samples/targinol-orbit-310.jpg" alt="Orbit pool deck flake color Bonita Springs FL - modern gray mix" className="w-full h-32 object-cover" />
               <CardContent className="pt-4 text-center">
                 <h3 className="font-bold">Orbit</h3>
                 <p className="text-sm text-gray-600">Modern Gray Mix</p>
