@@ -65,6 +65,12 @@ Professional website for EpoxyArt33, a premium epoxy flooring business serving S
 - Navigation updated (Services dropdown + Footer)
 - Sitemap updated
 
+### Added: Restaurant Project Photos (5 images)
+- Added 5 photos of commercial restaurant floor project
+- Technical details: MVB Solid 100% clear + High Wear Urethane topcoat
+- Added to gallery under "Commercial" category
+- Images: restaurant-1.jpg through restaurant-5.jpg
+
 ### Files Modified
 - `frontend/src/pages/DrivewayResurfacing.jsx` (NEW)
 - `frontend/src/App.js` - Added route
