@@ -21,6 +21,11 @@ import Waterproofing from "./pages/Waterproofing";
 import UrethaneCement from "./pages/UrethaneCement";
 import GovernmentContracts from "./pages/GovernmentContracts";
 import EpoxyFlooringNaples from "./pages/EpoxyFlooringNaples";
+import EpoxyFlooringFortMyers from "./pages/EpoxyFlooringFortMyers";
+import EpoxyFlooringCapeCoral from "./pages/EpoxyFlooringCapeCoral";
+import EpoxyFlooringMarcoIsland from "./pages/EpoxyFlooringMarcoIsland";
+import EpoxyFlooringBonitaSprings from "./pages/EpoxyFlooringBonitaSprings";
+import EpoxyFlooringEstero from "./pages/EpoxyFlooringEstero";
 import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Products from "./pages/Products";
@@ -61,6 +66,11 @@ function App() {
           <Route path="/urethane-cement.html" element={<UrethaneCement />} />
           <Route path="/government-contracts.html" element={<GovernmentContracts />} />
           <Route path="/epoxy-flooring-naples.html" element={<EpoxyFlooringNaples />} />
+          <Route path="/epoxy-flooring-fort-myers.html" element={<EpoxyFlooringFortMyers />} />
+          <Route path="/epoxy-flooring-cape-coral.html" element={<EpoxyFlooringCapeCoral />} />
+          <Route path="/epoxy-flooring-marco-island.html" element={<EpoxyFlooringMarcoIsland />} />
+          <Route path="/epoxy-flooring-bonita-springs.html" element={<EpoxyFlooringBonitaSprings />} />
+          <Route path="/epoxy-flooring-estero.html" element={<EpoxyFlooringEstero />} />
           
           {/* Additional Pages with .html */}
           <Route path="/why-epoxyart33.html" element={<WhyEpoxyArt33 />} />
@@ -89,6 +99,11 @@ function App() {
           <Route path="/urethane-cement" element={<UrethaneCement />} />
           <Route path="/government-contracts" element={<GovernmentContracts />} />
           <Route path="/epoxy-flooring-naples" element={<EpoxyFlooringNaples />} />
+          <Route path="/epoxy-flooring-fort-myers" element={<EpoxyFlooringFortMyers />} />
+          <Route path="/epoxy-flooring-cape-coral" element={<EpoxyFlooringCapeCoral />} />
+          <Route path="/epoxy-flooring-marco-island" element={<EpoxyFlooringMarcoIsland />} />
+          <Route path="/epoxy-flooring-bonita-springs" element={<EpoxyFlooringBonitaSprings />} />
+          <Route path="/epoxy-flooring-estero" element={<EpoxyFlooringEstero />} />
           <Route path="/why" element={<WhyEpoxyArt33 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
