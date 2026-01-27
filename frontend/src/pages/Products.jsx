@@ -406,10 +406,10 @@ const Products = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
-        title="Premium Epoxy Products Naples FL | Torginol, Chemtec, Florida Paints | EpoxyArt33"
-        description="We use only premium epoxy products: Torginol flakes & quartz, Chemtec 100% solids epoxy with MVB, Florida Paints 98% polyaspartic. Professional-grade materials for lasting results in SWFL."
-        keywords="Torginol flakes Naples, Chemtec epoxy Fort Myers, Florida Paints polyaspartic, 100% solids epoxy, MVB moisture vapor barrier, premium epoxy products SWFL, professional floor coating materials"
-        url="/products"
+        title="Premium Epoxy Products & Equipment Naples FL | Torginol, Chemtec, TREMCO | EpoxyArt33"
+        description="Professional epoxy flooring products in Naples, Fort Myers & SWFL. Torginol flakes, Chemtec 100% solids epoxy, TREMCO Vulkem 350/351, Florida Paints polyaspartic. Wolfpack grinders & EZ Concrete tools."
+        keywords="Torginol flakes Naples, Chemtec epoxy Fort Myers, TREMCO Vulkem 350 351 SWFL, Florida Paints polyaspartic, Wolfpack concrete grinder, EZ Concrete Supply, MVB moisture vapor barrier, premium epoxy products Naples FL, professional floor coating materials Southwest Florida, epoxy flooring equipment"
+        url="/products.html"
       />
       <SchemaMarkup 
         data={{
