@@ -26,6 +26,8 @@ Professional website for EpoxyArt33, a premium epoxy flooring business serving S
 - ✅ Industrial Epoxy
 - ✅ Concrete Repair
 - ✅ **Driveway Resurfacing** (NEW - Jan 27, 2025)
+- ✅ **Waterproofing (TREMCO 350/351)** (NEW - Jan 27, 2025)
+- ✅ **Urethane Cement (Duraflex)** (NEW - Jan 27, 2025)
 
 ### Main Pages
 - ✅ Home (with 3D animations)
@@ -52,7 +54,8 @@ Professional website for EpoxyArt33, a premium epoxy flooring business serving S
 - Chemtec Products
 - Florida Paints
 - Premera
-- TREMCO
+- TREMCO (Waterproofing 350/351)
+- **Duraflex** (Urethane Cement) - NEW
 - Wolfpack Equipment
 - EZ Concrete Supply
 
@@ -70,6 +73,28 @@ Professional website for EpoxyArt33, a premium epoxy flooring business serving S
 - Technical details: MVB Solid 100% clear + High Wear Urethane topcoat
 - Added to gallery under "Commercial" category
 - Images: restaurant-1.jpg through restaurant-5.jpg
+
+### Added: Pool Deck Tropical Breeze Photos (5 images)
+- Added 5 photos of recent pool deck project
+- Color: Torginol Tropical Breeze
+- Added new section to PoolDeckResurfacing.jsx
+
+### Added: Waterproofing Service Page (TREMCO 350/351)
+- Created `/waterproofing.html` page
+- Applications: Balconies, terraces, walkways/corridors
+- Full technical specifications and benefits
+- Installation process documentation
+
+### Added: Urethane Cement Service Page (Duraflex)
+- Created `/urethane-cement.html` page
+- Applications: Commercial kitchens, food processing, breweries, industrial
+- Technical specifications: thermal shock, chemical resistance, FDA/USDA
+- 5 project photos added to gallery (urethane-cement-1.jpg through 5.jpg)
+- Comparison section: Urethane Cement vs Standard Epoxy
+
+### Added: Duraflex to Products Page
+- New supplier section with 3 products
+- Urethane Cement Mortar, UC Slurry System, Anti-Slip Aggregate
 
 ### Files Modified
 - `frontend/src/pages/DrivewayResurfacing.jsx` (NEW)
