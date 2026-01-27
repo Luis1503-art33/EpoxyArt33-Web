@@ -378,14 +378,6 @@ const Products = () => {
         }
       ]
     }
-            'Scratch resistant',
-            'Easy to clean',
-            'Long-lasting gloss'
-          ],
-          icon: Sparkles
-        }
-      ]
-    }
   ];
 
   const whyPremiumProducts = [
