@@ -21,7 +21,8 @@ import {
   Palette,
   Factory,
   ChevronRight,
-  ExternalLink
+  ExternalLink,
+  Flame
 } from 'lucide-react';
 
 const Products = () => {
