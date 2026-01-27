@@ -291,6 +291,42 @@ export const galleryItems = [
     category: 'Residential',
     image: '/images/gallery/driveway-4.jpg',
     description: 'Diamond tape pattern preparation before coating application'
+  },
+  // Restaurant Project (5 images) - Commercial
+  {
+    id: 31,
+    title: 'Restaurant Floor - MVB Solid Clear',
+    category: 'Commercial',
+    image: '/images/gallery/restaurant-1.jpg',
+    description: 'MVB Solid 100% clear with High Wear Urethane topcoat - restaurant project'
+  },
+  {
+    id: 32,
+    title: 'Restaurant Dining Area Floor',
+    category: 'Commercial',
+    image: '/images/gallery/restaurant-2.jpg',
+    description: 'Commercial restaurant flooring with UV-resistant urethane finish'
+  },
+  {
+    id: 33,
+    title: 'Restaurant Floor - Clear Finish',
+    category: 'Commercial',
+    image: '/images/gallery/restaurant-3.jpg',
+    description: 'MVB Solid with clear topcoat - sleek commercial finish'
+  },
+  {
+    id: 34,
+    title: 'Restaurant Kitchen Prep Area',
+    category: 'Commercial',
+    image: '/images/gallery/restaurant-4.jpg',
+    description: 'Surface preparation before MVB Solid application'
+  },
+  {
+    id: 35,
+    title: 'Restaurant Floor - Before & During',
+    category: 'Commercial',
+    image: '/images/gallery/restaurant-5.jpg',
+    description: 'Commercial restaurant floor during installation process'
   }
 ];
 
