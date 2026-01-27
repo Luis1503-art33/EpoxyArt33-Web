@@ -218,7 +218,7 @@ const PoolDeckResurfacing = () => {
             <div className="group">
               <img 
                 src="/images/gallery/pool-deck-tropical-1.jpg" 
-                alt="Pool Deck Tropical Breeze - Full View" 
+                alt="Pool deck Tropical Breeze coating Naples FL - screened lanai resurfacing" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
               />
               <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -228,7 +228,7 @@ const PoolDeckResurfacing = () => {
             <div className="group">
               <img 
                 src="/images/gallery/pool-deck-tropical-2.jpg" 
-                alt="Pool Deck Tropical Breeze - Lanai View" 
+                alt="Pool deck slip-resistant finish Marco Island FL - Torginol Tropical Breeze" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
               />
               <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -238,7 +238,7 @@ const PoolDeckResurfacing = () => {
             <div className="group">
               <img 
                 src="/images/gallery/pool-deck-tropical-3.jpg" 
-                alt="Pool Deck Tropical Breeze Complete" 
+                alt="Full pool deck resurfacing Bonita Springs FL - complete area coverage" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
               />
               <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -248,7 +248,7 @@ const PoolDeckResurfacing = () => {
             <div className="group">
               <img 
                 src="/images/gallery/pool-deck-tropical-4.jpg" 
-                alt="Pool Deck Before Coating" 
+                alt="Pool deck surface preparation Fort Myers FL - before coating application" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
               />
               <p className="text-center text-gray-600 mt-3 font-semibold">
@@ -258,7 +258,7 @@ const PoolDeckResurfacing = () => {
             <div className="group">
               <img 
                 src="/images/gallery/pool-deck-tropical-5.jpg" 
-                alt="Pool Deck Fresh Installation" 
+                alt="Pool deck fresh installation Southwest Florida - Tropical Breeze finish" 
                 className="w-full h-64 object-cover rounded-lg shadow-xl group-hover:shadow-2xl transition-shadow"
               />
               <p className="text-center text-gray-600 mt-3 font-semibold">
