@@ -32,6 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4 text-lg">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
+              <li><Link to="/epoxy-flooring-naples.html" className="hover:text-amber-500 transition-colors font-semibold text-amber-400">Epoxy Flooring Naples FL</Link></li>
               <li><Link to="/garage-floor-coating.html" className="hover:text-amber-500 transition-colors">Garage Floor Coating</Link></li>
               <li><Link to="/metallic-epoxy.html" className="hover:text-amber-500 transition-colors">Metallic Epoxy</Link></li>
               <li><Link to="/flake-system.html" className="hover:text-amber-500 transition-colors">Flake System</Link></li>
@@ -77,12 +78,17 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 flex-shrink-0 text-amber-500" />
-                <span>Serving Southwest Florida</span>
+                <span>Naples, FL 34102<br />Serving Southwest Florida</span>
               </li>
             </ul>
             <div className="mt-4">
               <p className="text-xs text-gray-500 mb-2">Service Areas:</p>
-              <p className="text-xs text-gray-400">Naples • Marco Island • Estero • Bonita Beach • Fort Myers • Cape Coral • SWFL</p>
+              <p className="text-xs text-gray-400">
+                <Link to="/epoxy-flooring-naples.html" className="hover:text-amber-400">Naples</Link> • Marco Island • Estero • Bonita Springs • Fort Myers • Cape Coral • Collier County • Lee County
+              </p>
+            </div>
+            <div className="mt-3">
+              <p className="text-xs text-gray-500">Hours: Mon-Sat 7AM-6PM</p>
             </div>
           </div>
         </div>
