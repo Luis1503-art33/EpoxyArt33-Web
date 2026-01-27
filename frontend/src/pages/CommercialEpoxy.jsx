@@ -12,9 +12,9 @@ const CommercialEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Commercial Epoxy Flooring Naples FL | Business Floors SWFL | EpoxyArt33"
-        description="Professional commercial epoxy flooring in Naples, Fort Myers & SWFL. Retail, offices, restaurants, showrooms. Durable, low maintenance, fast installation. Free quotes! (239) 276-1462"
-        keywords="commercial epoxy flooring Naples, business floor coating Fort Myers, retail epoxy floor SWFL, restaurant epoxy flooring, office epoxy floor Cape Coral, showroom flooring Naples, commercial floor coating"
+        title="Commercial Epoxy Flooring Naples & Fort Myers | Restaurant & Retail Floors"
+        description="Naples commercial epoxy flooring experts. Restaurants, retail, offices, warehouses. Fast installation, minimal downtime. Licensed & insured. ☎️ (239) 276-1462"
+        keywords="commercial epoxy flooring Naples, commercial epoxy flooring naples fl, business floor coating Fort Myers, retail epoxy floor SWFL, restaurant epoxy flooring, office epoxy floor Cape Coral, showroom flooring Naples, commercial floor coating, commercial epoxy contractor near me"
         url="/commercial-epoxy"
       />
       <SchemaMarkup 
@@ -38,7 +38,7 @@ const CommercialEpoxy = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-yellow-400">Commercial Epoxy</span> Flooring Solutions
+              Commercial Epoxy Flooring Naples FL - Restaurant, Retail & Office Floors
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
               Professional, durable floors for retail, offices, showrooms, and commercial spaces throughout SWFL.

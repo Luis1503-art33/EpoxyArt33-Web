@@ -12,9 +12,9 @@ const MetallicEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Metallic Epoxy Flooring Naples FL | 3D Metallic Floors SWFL | EpoxyArt33"
-        description="Stunning 3D metallic epoxy floors in Naples, Fort Myers & SWFL. Unique swirling patterns, luxury finishes. Perfect for homes, showrooms & commercial spaces. Free quotes! (239) 276-1462"
-        keywords="metallic epoxy Naples, 3D epoxy floor Fort Myers, metallic floor coating SWFL, luxury epoxy flooring, designer epoxy floors Cape Coral, metallic garage floor Naples, custom metallic epoxy"
+        title="Metallic Epoxy Flooring Naples FL | Stunning 3D Floors | Free Quote"
+        description="Luxury 3D metallic epoxy floors in Naples & Fort Myers. Unique swirling patterns, one-of-a-kind designs. Showrooms, homes, commercial. OSHA certified installers. ☎️ (239) 276-1462"
+        keywords="metallic epoxy Naples, metallic epoxy flooring naples fl, 3D epoxy floor Fort Myers, metallic floor coating SWFL, luxury epoxy flooring, designer epoxy floors Cape Coral, metallic garage floor Naples, custom metallic epoxy, metallic epoxy near me"
         url="/metallic-epoxy"
       />
       <SchemaMarkup 
@@ -39,10 +39,10 @@ const MetallicEpoxy = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Sparkles className="w-12 h-12 text-yellow-400" />
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                <span className="text-yellow-400">Metallic Epoxy</span> Flooring
-              </h1>
             </div>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Metallic Epoxy Flooring Naples FL - Stunning 3D Designer Floors
+            </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
               Create stunning 3D effects with luxury metallic epoxy floors. Unique, elegant, unforgettable.
             </p>
