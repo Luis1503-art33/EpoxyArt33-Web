@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Award, Users, Clock, Shield, Star, Heart, Wrench } from 'lucide-react';
+import { Check, Award, Users, Clock, Shield, Star, Heart, Wrench, FileCheck, Building2, BadgeCheck, Scale, HardHat, FileText, Landmark, ShieldCheck } from 'lucide-react';
 
 const WhyEpoxyArt33 = () => {
   return (
