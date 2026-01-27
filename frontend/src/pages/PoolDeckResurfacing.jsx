@@ -286,7 +286,7 @@ const PoolDeckResurfacing = () => {
                 <h3 className="text-2xl font-bold mb-4 text-center">Flake System with Extra Texture</h3>
                 <img 
                   src="/images/samples/targinol-shorline-421.jpg" 
-                  alt="Pool Deck Flake" 
+                  alt="Pool deck flake system Naples FL - slip-resistant Torginol coating" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-6">
@@ -323,7 +323,7 @@ const PoolDeckResurfacing = () => {
                 </div>
                 <img 
                   src="/images/projects/pool-deck-quartz.jpg" 
-                  alt="Pool Deck Quartz System" 
+                  alt="Pool deck quartz system Fort Myers FL - heavy-duty commercial-grade coating" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <ul className="space-y-2 mb-6">
