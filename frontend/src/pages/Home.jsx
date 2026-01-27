@@ -158,9 +158,9 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO 
-        title="EpoxyArt33 | Premium Epoxy Flooring Naples, Fort Myers, SWFL"
-        description="Transform your floors with EpoxyArt33's premium epoxy solutions. Garage floors, metallic epoxy, pool decks, commercial flooring. 500+ projects in Southwest Florida. Free estimates! Call (239) 276-1462"
-        keywords="epoxy flooring Naples FL, garage floor coating Fort Myers, pool deck resurfacing Marco Island, metallic epoxy SWFL, commercial epoxy flooring Cape Coral, industrial epoxy Bonita Springs, Torginol flakes, polyaspartic coating, concrete repair Naples"
+        title="Epoxy Flooring Naples FL | #1 Garage & Pool Deck Coating SWFL | EpoxyArt33"
+        description="Naples #1 epoxy flooring contractor. Garage floors, pool decks, metallic epoxy & commercial coatings. OSHA 30 certified, licensed & insured. 500+ projects in SWFL. Free quotes! ☎️ (239) 276-1462"
+        keywords="epoxy flooring Naples FL, epoxy flooring naples, garage floor coating Fort Myers, pool deck resurfacing Marco Island, metallic epoxy SWFL, commercial epoxy flooring Cape Coral, industrial epoxy Bonita Springs, epoxy contractor near me, Torginol flakes, polyaspartic coating"
         url="/"
       />
       <SchemaMarkup />
@@ -176,7 +176,7 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 px-4 py-1.5 text-base">
-                Premium Epoxy Flooring in SWFL
+                #1 Epoxy Flooring Contractor in Naples & SWFL
               </Badge>
             </motion.div>
             
@@ -186,14 +186,14 @@ const Home = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Art Beneath
+              Epoxy Flooring Naples FL
               <motion.span 
-                className="block text-amber-700"
+                className="block text-amber-700 text-4xl sm:text-5xl lg:text-6xl mt-2"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Your Feet
+                Premium Garage & Pool Deck Coating
               </motion.span>
             </motion.h1>
             
