@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const services = [
     { name: 'All Services', path: '/services.html' },
+    { name: 'Epoxy Flooring Naples', path: '/epoxy-flooring-naples.html' },
     { name: 'Garage Floor Coating', path: '/garage-floor-coating.html' },
     { name: 'Metallic Epoxy', path: '/metallic-epoxy.html' },
     { name: 'Flake System', path: '/flake-system.html' },
