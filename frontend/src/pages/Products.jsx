@@ -225,6 +225,166 @@ const Products = () => {
           icon: Sparkles
         }
       ]
+    },
+    {
+      id: 'tremco',
+      name: 'TREMCO',
+      tagline: 'Vulkem 350/351 Waterproofing System',
+      website: 'https://tremcosealants.com',
+      description: 'TREMCO is a global leader in sealants and waterproofing solutions. Their Vulkem 350/351 system provides premium moisture vapor barrier protection for concrete decks, balconies, pool decks, and outdoor areas in Southwest Florida.',
+      logo: null,
+      hasRealLogo: false,
+      color: 'from-blue-700 to-blue-900',
+      bgColor: 'bg-blue-50',
+      borderColor: 'border-blue-200',
+      products: [
+        {
+          name: 'Vulkem 350 Base Coat',
+          description: 'Two-component urethane base coat for seamless waterproofing membrane systems.',
+          benefits: [
+            '100% solids urethane',
+            'Seamless waterproof membrane',
+            'Crack-bridging capability',
+            'UV resistant',
+            'Ideal for pool decks Naples FL'
+          ],
+          icon: Droplets
+        },
+        {
+          name: 'Vulkem 351 Top Coat',
+          description: 'Durable wear surface topcoat with aggregate for slip resistance and UV protection.',
+          benefits: [
+            'Slip-resistant finish',
+            'UV stable top coat',
+            'Abrasion resistant',
+            'Chemical resistant',
+            'Perfect for SWFL climate'
+          ],
+          icon: Shield
+        },
+        {
+          name: 'TREMprime EP Primer',
+          description: '100% solids epoxy primer and moisture vapor barrier for high-moisture concrete.',
+          benefits: [
+            '100% solids epoxy',
+            'Blocks moisture vapor',
+            'High-moisture tolerance',
+            'Excellent adhesion',
+            'Essential for Florida concrete'
+          ],
+          icon: Zap
+        }
+      ]
+    },
+    {
+      id: 'wolfpack',
+      name: 'Wolfpack Equipment',
+      tagline: 'Professional Concrete Grinders & Surface Prep',
+      website: 'https://wolfpackequipment.com',
+      description: 'Wolfpack Equipment manufactures industrial-grade concrete grinders used by professionals across Southwest Florida. We use their equipment to deliver superior surface preparation for flawless epoxy installations.',
+      logo: null,
+      hasRealLogo: false,
+      color: 'from-gray-700 to-gray-900',
+      bgColor: 'bg-gray-100',
+      borderColor: 'border-gray-300',
+      isEquipment: true,
+      products: [
+        {
+          name: '25" Delta Grinder',
+          description: 'Professional 25-inch grinder with 3 heads for efficient large-area preparation.',
+          benefits: [
+            '25" grinding width',
+            '10 HP motor - 300-1800 RPM',
+            'Dustless operation',
+            'Ergonomic design',
+            'Perfect for garages Naples FL'
+          ],
+          icon: Factory
+        },
+        {
+          name: '27" Beta Grinder',
+          description: 'Heavy-duty 27-inch grinder for commercial and industrial projects.',
+          benefits: [
+            '27" working width',
+            '720 lbs grinding pressure',
+            '3-phase power option',
+            '7-gallon water tank',
+            'Commercial grade'
+          ],
+          icon: Factory
+        },
+        {
+          name: '20" Warrior Grinder',
+          description: 'Versatile 20-inch grinder ideal for residential garages and tight spaces.',
+          benefits: [
+            '20" grinding width',
+            'Variable speed control',
+            'Adjustable head pressure',
+            'Edge grinding capable',
+            'Residential specialist'
+          ],
+          icon: Factory
+        }
+      ]
+    },
+    {
+      id: 'ez-concrete',
+      name: 'EZ Concrete Supply',
+      tagline: 'Professional Tools & Application Equipment',
+      website: 'https://ez-concretesupply.com',
+      description: 'EZ Concrete Supply provides professional-grade tools and equipment for epoxy flooring contractors. From mixers to rollers, their products ensure consistent, high-quality installations throughout Naples, Fort Myers, and SWFL.',
+      logo: null,
+      hasRealLogo: false,
+      color: 'from-orange-600 to-orange-800',
+      bgColor: 'bg-orange-50',
+      borderColor: 'border-orange-200',
+      isEquipment: true,
+      products: [
+        {
+          name: 'Portamix Mixers',
+          description: 'Professional epoxy mixers for consistent, bubble-free mixing every time.',
+          benefits: [
+            'Variable speed control',
+            'Dust control options',
+            'Perfect epoxy consistency',
+            'Reduces air bubbles',
+            'Professional results'
+          ],
+          icon: Factory
+        },
+        {
+          name: 'EZ Epoxy Rollers',
+          description: 'Premium lint-free rollers designed specifically for epoxy and polyaspartic coatings.',
+          benefits: [
+            '3/8" nap - lint free',
+            'Dripless application',
+            'Even coat distribution',
+            'Works with all coatings',
+            'Professional finish'
+          ],
+          icon: Palette
+        },
+        {
+          name: 'Speed Squeegees',
+          description: '18-inch speed squeegees for fast, even epoxy application.',
+          benefits: [
+            '18" working width',
+            'Precise mil thickness',
+            'One-piece frame',
+            'Fast application',
+            'Consistent coverage'
+          ],
+          icon: Zap
+        }
+      ]
+    }
+            'Scratch resistant',
+            'Easy to clean',
+            'Long-lasting gloss'
+          ],
+          icon: Sparkles
+        }
+      ]
     }
   ];
 
