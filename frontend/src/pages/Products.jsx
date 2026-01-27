@@ -277,6 +277,56 @@ const Products = () => {
       ]
     },
     {
+      id: 'duraflex',
+      name: 'Duraflex',
+      tagline: 'Premium Urethane Cement Flooring Systems',
+      website: 'https://duraflexinc.com',
+      description: 'Duraflex is a leading manufacturer of urethane cement (cementitious urethane) flooring systems. Their products are the industry standard for food processing, commercial kitchens, breweries, and industrial facilities requiring extreme durability and thermal shock resistance.',
+      logo: null,
+      hasRealLogo: false,
+      color: 'from-yellow-600 to-yellow-800',
+      bgColor: 'bg-yellow-50',
+      borderColor: 'border-yellow-300',
+      products: [
+        {
+          name: 'Urethane Cement Mortar',
+          description: 'Heavy-duty cementitious urethane flooring system for extreme environments.',
+          benefits: [
+            'Thermal shock resistant (-40°F to 250°F)',
+            'Handles steam cleaning',
+            '8,000+ psi compressive strength',
+            'FDA/USDA approved',
+            'Perfect for commercial kitchens Naples FL'
+          ],
+          icon: Flame
+        },
+        {
+          name: 'UC Slurry System',
+          description: 'Self-leveling urethane cement slurry for smoother finish applications.',
+          benefits: [
+            'Seamless sanitary surface',
+            'Chemical resistant',
+            'Easy to clean',
+            'Ideal for food processing',
+            'No grout lines or seams'
+          ],
+          icon: Droplets
+        },
+        {
+          name: 'Anti-Slip Aggregate',
+          description: 'Broadcast aggregate system for maximum slip resistance in wet areas.',
+          benefits: [
+            'Slip-resistant in wet conditions',
+            'Integral to coating system',
+            'OSHA compliant',
+            'Perfect for breweries',
+            'Multiple texture options'
+          ],
+          icon: Shield
+        }
+      ]
+    },
+    {
       id: 'wolfpack',
       name: 'Wolfpack Equipment',
       tagline: 'Professional Concrete Grinders & Surface Prep',
