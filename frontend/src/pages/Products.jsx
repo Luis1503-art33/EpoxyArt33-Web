@@ -535,6 +535,9 @@ const Products = () => {
                 <Badge variant="outline" className="border-blue-400 text-blue-400 px-3 py-1.5 text-sm">
                   TREMCO
                 </Badge>
+                <Badge variant="outline" className="border-yellow-400 text-yellow-400 px-3 py-1.5 text-sm">
+                  Duraflex
+                </Badge>
                 <Badge variant="outline" className="border-gray-400 text-gray-400 px-3 py-1.5 text-sm">
                   Wolfpack
                 </Badge>
