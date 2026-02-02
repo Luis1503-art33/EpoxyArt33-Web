@@ -106,6 +106,7 @@ function App() {
           <Route path="/epoxy-flooring-marco-island" element={<EpoxyFlooringMarcoIsland />} />
           <Route path="/epoxy-flooring-bonita-springs" element={<EpoxyFlooringBonitaSprings />} />
           <Route path="/epoxy-flooring-estero" element={<EpoxyFlooringEstero />} />
+          <Route path="/epoxy-vs-polyaspartic" element={<EpoxyVsPolyaspartic />} />
           <Route path="/why" element={<WhyEpoxyArt33 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
