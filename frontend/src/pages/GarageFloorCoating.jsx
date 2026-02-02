@@ -148,7 +148,6 @@ const GarageFloorCoating = () => {
                 <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
                   <Clock className="w-6 h-6 text-yellow-600" />
                 </div>
-                </div>
                 <h3 className="text-xl font-bold mb-3">Fast Installation</h3>
                 <p className="text-gray-600">
                   Most garage floors completed in 1 day. Walk on it within 24 hours. Drive on it in 48-72 hours.
