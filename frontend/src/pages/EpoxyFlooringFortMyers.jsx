@@ -182,6 +182,27 @@ const EpoxyFlooringFortMyers = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Fort Myers Epoxy Flooring FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about epoxy flooring in Fort Myers, FL</p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-yellow-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-yellow-500 to-yellow-600">
         <div className="container mx-auto px-4 text-center">
