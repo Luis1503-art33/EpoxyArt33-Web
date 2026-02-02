@@ -9,12 +9,40 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Star, Shield, Phone, MapPin, Home, Building2, Droplets, Sparkles, Factory, ChevronRight, BadgeCheck, Anchor } from 'lucide-react';
 
 const EpoxyFlooringMarcoIsland = () => {
+  // FAQ Schema Data for Marco Island
+  const faqData = [
+    {
+      question: "Why choose EpoxyArt33 for Marco Island luxury homes?",
+      answer: "We specialize in high-end finishes for Marco Island estates. Our premium metallic and flake systems complement luxury waterfront homes. We understand island living demands - salt air, humidity, and hurricane resistance."
+    },
+    {
+      question: "Is epoxy flooring good for Marco Island salt air?",
+      answer: "Yes! We use specialized salt-resistant coatings and UV-stable polyaspartic topcoats designed for barrier island conditions. Our systems protect against corrosion from constant salt air exposure."
+    },
+    {
+      question: "How much does epoxy flooring cost on Marco Island?",
+      answer: "Marco Island epoxy flooring typically costs $6-18 per sq ft depending on the system. Our luxury metallic finishes and waterproofing services are popular choices for island estates."
+    },
+    {
+      question: "Do you offer waterproofing for Marco Island balconies?",
+      answer: "Absolutely! TREMCO 350/351 waterproofing is perfect for Marco Island balconies, terraces, and walkways. Critical for protecting the living space below from water damage."
+    },
+    {
+      question: "Can you coat Marco Island pool decks?",
+      answer: "Yes! Pool deck resurfacing is one of our specialties for Marco Island. We use slip-resistant, UV-stable coatings that handle constant sun and water exposure. Perfect for waterfront properties."
+    },
+    {
+      question: "How long does installation take on Marco Island?",
+      answer: "Most Marco Island projects are completed in 1-2 days. We understand island logistics and plan accordingly. Pool decks, garages, and balconies typically take 1 day each."
+    }
+  ];
+
   const services = [
     { title: 'Pool Deck Resurfacing', description: 'Slip-resistant coatings perfect for Marco Island waterfront homes.', link: '/pool-deck-resurfacing.html', icon: Droplets },
     { title: 'Garage Floor Coating', description: 'Transform your Marco Island garage with premium epoxy.', link: '/garage-floor-coating.html', icon: Home },
-    { title: 'Metallic Epoxy', description: 'Luxury 3D metallic effects for Marco Island estates.', link: '/metallic-epoxy.html', icon: Sparkles },
+    { title: 'Metallic Epoxy', description: 'Luxury 3D metallic effects for Marco Island estates.', link: '/metallic-epoxy-floors-naples-fl.html', icon: Sparkles },
     { title: 'Waterproofing', description: 'TREMCO 350/351 for balconies and terraces.', link: '/waterproofing.html', icon: Shield },
-    { title: 'Commercial Epoxy', description: 'Durable flooring for Marco Island businesses.', link: '/commercial-epoxy.html', icon: Building2 },
+    { title: 'Commercial Epoxy', description: 'Durable flooring for Marco Island businesses.', link: '/commercial-epoxy-flooring-naples-fl.html', icon: Building2 },
     { title: 'Driveway Resurfacing', description: 'Decorative patterns for Marco Island driveways.', link: '/driveway-resurfacing.html', icon: Factory }
   ];
 
@@ -28,7 +56,17 @@ const EpoxyFlooringMarcoIsland = () => {
         keywords="epoxy flooring marco island, epoxy flooring marco island fl, pool deck resurfacing marco island, garage floor coating marco island, waterproofing marco island, luxury epoxy flooring, epoxy contractor marco island"
         url="/epoxy-flooring-marco-island"
       />
-      <SchemaMarkup data={{ "@type": "Service", "@id": "https://epoxyart33.com/epoxy-flooring-marco-island#service", "name": "Epoxy Flooring Marco Island FL", "description": "Professional epoxy flooring for Marco Island luxury homes", "areaServed": { "@type": "City", "name": "Marco Island", "containedInPlace": { "@type": "State", "name": "Florida" } }, "serviceType": "Epoxy Flooring Installation" }} />
+      <SchemaMarkup 
+        data={{ 
+          "@type": "Service", 
+          "@id": "https://epoxyart33.com/epoxy-flooring-marco-island#service", 
+          "name": "Epoxy Flooring Marco Island FL", 
+          "description": "Professional epoxy flooring for Marco Island luxury homes", 
+          "areaServed": { "@type": "City", "name": "Marco Island", "containedInPlace": { "@type": "State", "name": "Florida" } }, 
+          "serviceType": "Epoxy Flooring Installation" 
+        }}
+        faqData={faqData}
+      />
       <Navbar />
       
       {/* Hero */}

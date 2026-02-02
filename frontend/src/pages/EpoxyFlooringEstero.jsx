@@ -9,11 +9,39 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Star, Shield, Phone, MapPin, Home, Building2, Droplets, Sparkles, Factory, ChevronRight, BadgeCheck } from 'lucide-react';
 
 const EpoxyFlooringEstero = () => {
+  // FAQ Schema Data for Estero
+  const faqData = [
+    {
+      question: "How much does epoxy flooring cost in Estero?",
+      answer: "Epoxy flooring in Estero typically costs $5-15 per sq ft. We serve Miromar Lakes, The Brooks, Grandezza, and all Estero communities. Free estimates with financing available."
+    },
+    {
+      question: "Do you serve Miromar Lakes and The Brooks?",
+      answer: "Yes! We've completed many projects in Miromar Lakes, The Brooks, Grandezza, Rapallo, and other premier Estero communities. We understand HOA requirements and deliver luxury finishes."
+    },
+    {
+      question: "Can you do commercial epoxy at Coconut Point?",
+      answer: "Absolutely! We serve Coconut Point businesses and retail spaces. Our commercial epoxy is durable, slip-resistant, and designed for high-traffic environments."
+    },
+    {
+      question: "Is epoxy flooring good for Estero lakefront homes?",
+      answer: "Yes! We use MVB moisture barrier that handles humidity from lakefront properties. Our UV-stable coatings won't yellow from Florida sun exposure."
+    },
+    {
+      question: "How long does Estero epoxy installation take?",
+      answer: "Most Estero garage floors are completed in 1 day. Pool decks take 1-2 days. You can walk on floors in 24 hours and drive on garage floors in 48-72 hours."
+    },
+    {
+      question: "Do you work with Estero HOAs?",
+      answer: "Yes! We're experienced with Estero community HOAs. Our professional finishes meet community standards, and we can provide documentation if required."
+    }
+  ];
+
   const services = [
     { title: 'Garage Floor Coating', description: 'Transform your Estero garage with premium epoxy coatings.', link: '/garage-floor-coating.html', icon: Home },
     { title: 'Pool Deck Resurfacing', description: 'Slip-resistant coatings for Estero pool areas.', link: '/pool-deck-resurfacing.html', icon: Droplets },
-    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Estero homes.', link: '/metallic-epoxy.html', icon: Sparkles },
-    { title: 'Commercial Epoxy', description: 'Durable flooring for Estero businesses at Coconut Point.', link: '/commercial-epoxy.html', icon: Building2 },
+    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Estero homes.', link: '/metallic-epoxy-floors-naples-fl.html', icon: Sparkles },
+    { title: 'Commercial Epoxy', description: 'Durable flooring for Estero businesses at Coconut Point.', link: '/commercial-epoxy-flooring-naples-fl.html', icon: Building2 },
     { title: 'Driveway Resurfacing', description: 'Decorative driveway coatings for Estero properties.', link: '/driveway-resurfacing.html', icon: Factory },
     { title: 'Concrete Repair', description: 'Fix cracks and damage before coating.', link: '/concrete-repair.html', icon: Shield }
   ];
@@ -28,7 +56,17 @@ const EpoxyFlooringEstero = () => {
         keywords="epoxy flooring estero, epoxy flooring estero fl, garage floor coating estero, pool deck resurfacing estero, metallic epoxy estero, epoxy contractor estero, miromar lakes flooring"
         url="/epoxy-flooring-estero"
       />
-      <SchemaMarkup data={{ "@type": "Service", "@id": "https://epoxyart33.com/epoxy-flooring-estero#service", "name": "Epoxy Flooring Estero FL", "description": "Professional epoxy flooring in Estero", "areaServed": { "@type": "City", "name": "Estero", "containedInPlace": { "@type": "State", "name": "Florida" } }, "serviceType": "Epoxy Flooring Installation" }} />
+      <SchemaMarkup 
+        data={{ 
+          "@type": "Service", 
+          "@id": "https://epoxyart33.com/epoxy-flooring-estero#service", 
+          "name": "Epoxy Flooring Estero FL", 
+          "description": "Professional epoxy flooring in Estero", 
+          "areaServed": { "@type": "City", "name": "Estero", "containedInPlace": { "@type": "State", "name": "Florida" } }, 
+          "serviceType": "Epoxy Flooring Installation" 
+        }}
+        faqData={faqData}
+      />
       <Navbar />
       
       {/* Hero */}

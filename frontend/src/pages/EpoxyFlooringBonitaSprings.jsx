@@ -9,11 +9,39 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Star, Shield, Phone, MapPin, Home, Building2, Droplets, Sparkles, Factory, ChevronRight, BadgeCheck } from 'lucide-react';
 
 const EpoxyFlooringBonitaSprings = () => {
+  // FAQ Schema Data for Bonita Springs
+  const faqData = [
+    {
+      question: "How much does epoxy flooring cost in Bonita Springs?",
+      answer: "Epoxy flooring in Bonita Springs typically costs $5-15 per sq ft. Garage flake systems start at $5-8/sq ft, metallic epoxy $8-15/sq ft. We offer free estimates for Bonita Bay, Pelican Landing, and all communities."
+    },
+    {
+      question: "Do you serve Bonita Bay and Pelican Landing?",
+      answer: "Absolutely! We've completed many projects in Bonita Bay, Pelican Landing, Spanish Wells, and other premier Bonita Springs communities. We're familiar with HOA requirements and deliver high-end finishes."
+    },
+    {
+      question: "Is epoxy flooring HOA-compliant in Bonita Springs?",
+      answer: "Yes! We work with Bonita Springs HOAs regularly. Our finishes are professional-grade and meet community standards. We can provide documentation if your HOA requires it."
+    },
+    {
+      question: "How long does Bonita Springs epoxy installation take?",
+      answer: "Most Bonita Springs garage floors are completed in 1 day. Pool decks take 1-2 days. You can walk on floors in 24 hours and drive on garage floors in 48-72 hours."
+    },
+    {
+      question: "Can you coat pool decks in Bonita Springs golf communities?",
+      answer: "Yes! Pool deck resurfacing is popular in Bonita Springs. We use slip-resistant, UV-stable coatings that handle Florida sun. Perfect for lanais overlooking the golf course."
+    },
+    {
+      question: "Do you offer financing in Bonita Springs?",
+      answer: "Yes! We offer financing options for Bonita Springs homeowners. Ask about payment plans during your free estimate. Transform your Bonita home today!"
+    }
+  ];
+
   const services = [
     { title: 'Garage Floor Coating', description: 'Transform your Bonita Springs garage with premium epoxy.', link: '/garage-floor-coating.html', icon: Home },
     { title: 'Pool Deck Resurfacing', description: 'Slip-resistant coatings for Bonita Springs pool areas.', link: '/pool-deck-resurfacing.html', icon: Droplets },
-    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Bonita Springs homes.', link: '/metallic-epoxy.html', icon: Sparkles },
-    { title: 'Commercial Epoxy', description: 'Durable flooring for Bonita Springs businesses.', link: '/commercial-epoxy.html', icon: Building2 },
+    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Bonita Springs homes.', link: '/metallic-epoxy-floors-naples-fl.html', icon: Sparkles },
+    { title: 'Commercial Epoxy', description: 'Durable flooring for Bonita Springs businesses.', link: '/commercial-epoxy-flooring-naples-fl.html', icon: Building2 },
     { title: 'Driveway Resurfacing', description: 'Decorative driveway coatings for Bonita Springs.', link: '/driveway-resurfacing.html', icon: Factory },
     { title: 'Concrete Repair', description: 'Fix cracks before coating application.', link: '/concrete-repair.html', icon: Shield }
   ];
@@ -28,7 +56,17 @@ const EpoxyFlooringBonitaSprings = () => {
         keywords="epoxy flooring bonita springs, epoxy flooring bonita springs fl, garage floor coating bonita springs, pool deck resurfacing bonita springs, metallic epoxy bonita springs, epoxy contractor bonita springs"
         url="/epoxy-flooring-bonita-springs"
       />
-      <SchemaMarkup data={{ "@type": "Service", "@id": "https://epoxyart33.com/epoxy-flooring-bonita-springs#service", "name": "Epoxy Flooring Bonita Springs FL", "description": "Professional epoxy flooring in Bonita Springs", "areaServed": { "@type": "City", "name": "Bonita Springs", "containedInPlace": { "@type": "State", "name": "Florida" } }, "serviceType": "Epoxy Flooring Installation" }} />
+      <SchemaMarkup 
+        data={{ 
+          "@type": "Service", 
+          "@id": "https://epoxyart33.com/epoxy-flooring-bonita-springs#service", 
+          "name": "Epoxy Flooring Bonita Springs FL", 
+          "description": "Professional epoxy flooring in Bonita Springs", 
+          "areaServed": { "@type": "City", "name": "Bonita Springs", "containedInPlace": { "@type": "State", "name": "Florida" } }, 
+          "serviceType": "Epoxy Flooring Installation" 
+        }}
+        faqData={faqData}
+      />
       <Navbar />
       
       {/* Hero */}
