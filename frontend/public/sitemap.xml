@@ -1,50 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
   <url>
     <loc>https://epoxyart33.com/</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Service Landing Pages (SEO Optimized URLs) -->
+  <url>
+    <loc>https://epoxyart33.com/garage-flake-floors-naples-fl.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://epoxyart33.com/metallic-epoxy-floors-naples-fl.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://epoxyart33.com/quartz-pool-deck-coatings-naples-fl.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://epoxyart33.com/commercial-epoxy-flooring-naples-fl.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://epoxyart33.com/urethane-cement-flooring-naples-fl.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <!-- Legacy Service URLs (Redirects) -->
   <url>
     <loc>https://epoxyart33.com/services.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://epoxyart33.com/garage-floor-coating.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://epoxyart33.com/metallic-epoxy.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://epoxyart33.com/flake-system.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://epoxyart33.com/quartz-system.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://epoxyart33.com/pool-deck-resurfacing.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://epoxyart33.com/commercial-epoxy.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
