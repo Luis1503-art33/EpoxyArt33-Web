@@ -10,6 +10,34 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Sparkles, Palette, Eye, Home, Building2, Shield, Phone, ChevronRight, Award, Clock } from 'lucide-react';
 
 const MetallicEpoxy = () => {
+  // FAQ Schema Data for Metallic Epoxy
+  const faqData = [
+    {
+      question: "How is metallic epoxy different from regular epoxy?",
+      answer: "Metallic epoxy uses special metallic pigments that create unique, three-dimensional swirling patterns as it cures. Unlike solid color or flake epoxy, each metallic floor is one-of-a-kind—no two floors look exactly alike."
+    },
+    {
+      question: "How long does metallic epoxy flooring last?",
+      answer: "When properly installed with UV-stable polyaspartic topcoat, metallic epoxy floors last 15-20+ years. Our installation includes diamond grinding, MVB primer, and multiple topcoat layers for maximum durability."
+    },
+    {
+      question: "Is metallic epoxy slippery?",
+      answer: "Metallic epoxy has a smooth, high-gloss finish. For areas where slip resistance is needed (like kitchens or bathrooms), we can add anti-slip additives to the topcoat without affecting the metallic look."
+    },
+    {
+      question: "Can metallic epoxy be used outdoors in Florida?",
+      answer: "Metallic epoxy is best for indoor applications. For outdoor areas like pool decks and patios, we recommend flake or quartz systems which handle UV exposure and temperature fluctuations better."
+    },
+    {
+      question: "How much does metallic epoxy flooring cost in Naples?",
+      answer: "Metallic epoxy is a premium system, typically $8-15 per sq ft depending on complexity and prep work. It costs more than flake systems but creates a truly unique luxury finish worth the investment."
+    },
+    {
+      question: "What colors are available for metallic epoxy?",
+      answer: "We offer unlimited color combinations—silver, gold, copper, blue ocean, pearl white, charcoal, and custom blends. We can create any color theme you envision, from subtle elegance to bold statement floors."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -27,6 +55,23 @@ const MetallicEpoxy = () => {
           "serviceType": "Metallic Epoxy Flooring"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
