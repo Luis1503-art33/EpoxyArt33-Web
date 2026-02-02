@@ -12,22 +12,28 @@ const UrethaneCement = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Urethane Cement Flooring Naples FL | Duraflex System | Commercial Kitchen Floors SWFL | EpoxyArt33"
-        description="Professional urethane cement flooring in Naples, Fort Myers & SWFL using Duraflex. Food processing, breweries, commercial kitchens. Extreme durability, thermal shock resistant. (239) 276-1462"
-        keywords="urethane cement flooring Naples, Duraflex flooring Fort Myers, commercial kitchen floor SWFL, food processing floor, brewery flooring, thermal shock resistant floor, cementitious urethane Naples"
+        title="Urethane Cement Flooring Naples FL | Commercial Kitchen Floor Coating"
+        description="Urethane cement flooring Naples FL. Commercial kitchens, food processing, breweries. Thermal shock resistant. USDA/FDA compliant. Duraflex system. ☎️ (239) 276-1462"
+        keywords="urethane cement flooring Naples FL, commercial kitchen flooring Naples, food processing floor coating Naples FL, brewery flooring Naples, cementitious urethane SWFL, Duraflex flooring Fort Myers, restaurant kitchen floor contractor"
         url="/urethane-cement"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/urethane-cement#service",
-          "name": "Urethane Cement Flooring",
-          "description": "Professional urethane cement flooring using Duraflex system for commercial kitchens, food processing, and industrial applications",
-          "areaServed": "Southwest Florida",
+          "name": "Urethane Cement Flooring Naples FL",
+          "description": "Professional urethane cement flooring for commercial kitchens, food processing and industrial facilities in Naples FL. Thermal shock and chemical resistant.",
+          "areaServed": "Naples, FL",
           "serviceType": "Urethane Cement Flooring"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-orange-700 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> USDA/FDA Compliant • Thermal Shock Resistant • Steam Clean Safe • Duraflex Certified Installer
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-20">
@@ -38,15 +44,18 @@ const UrethaneCement = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-yellow-400">Urethane Cement</span><br />Heavy-Duty Flooring
+              Urethane Cement Flooring Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Commercial Kitchen & Food Processing Floor Coating Specialists
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              The ultimate flooring solution for commercial kitchens, food processing, breweries, and industrial facilities. Powered by Duraflex.
+              The <strong className="text-white">industry-standard flooring</strong> for restaurants, breweries, and food facilities. Thermal shock resistant. USDA approved.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
-                  Get Free Quote
+                  Get Free Estimate
                 </Button>
               </Link>
               <a href="tel:239-276-1462">
@@ -59,16 +68,57 @@ const UrethaneCement = () => {
         </div>
       </section>
 
+      {/* Why Urethane Cement - Specs-driven */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Specs Call for Urethane Cement</h2>
+            <p className="text-xl text-gray-600">
+              Architects and engineers specify urethane cement for demanding environments because epoxy simply can't perform.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="border-2 border-orange-200 hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Thermometer className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Thermal Shock Resistant</h3>
+                <p className="text-gray-600">
+                  Withstands rapid temperature changes from -40°F to 250°F. Steam cleaning won't cause delamination.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-2 border-orange-200 hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Droplets className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Chemical Resistant</h3>
+                <p className="text-gray-600">
+                  Resists acids, caustics, solvents, and aggressive cleaning chemicals used in food facilities.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-2 border-orange-200 hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Shield className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">USDA/FDA Compliant</h3>
+                <p className="text-gray-600">
+                  Meets food safety regulations. Seamless, non-porous surface prevents bacterial growth.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* What is Urethane Cement */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">What is Urethane Cement?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">What is Urethane Cement Flooring?</h2>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
               <strong>Urethane Cement</strong> (also called cementitious urethane or urethane mortar) is the most durable flooring system available for demanding environments. It combines the strength of cement with the flexibility and chemical resistance of urethane.
             </p>
             <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-6 mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">We Use Duraflex Products</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">We Are Duraflex Certified Installers</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 <strong>Duraflex</strong> is a premium manufacturer of urethane cement flooring systems. Their products are specifically engineered for the most demanding applications - from commercial kitchens to food processing plants to heavy industrial facilities. When durability matters most, we specify Duraflex.
               </p>
