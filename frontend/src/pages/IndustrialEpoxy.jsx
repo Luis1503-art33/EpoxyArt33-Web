@@ -319,6 +319,130 @@ const IndustrialEpoxy = () => {
         </div>
       </section>
 
+      {/* Why EpoxyArt33 */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33 for Industrial Projects</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Factory className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Industrial Experience</h3>
+              <p className="text-gray-600">Warehouses, manufacturing, and heavy-traffic facilities</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Minimal Downtime</h3>
+              <p className="text-gray-600">Night/weekend installation and phased approach available</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">20+ Year Durability</h3>
+              <p className="text-gray-600">Heavy-duty systems built for demanding environments</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Licensed & Insured</h3>
+              <p className="text-gray-600">Full liability coverage and workers comp</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industrial Epoxy FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about industrial flooring</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-gray-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Areas: Naples, Fort Myers & SWFL</h2>
+            <p className="text-xl text-gray-600">Industrial flooring throughout Southwest Florida</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {['Naples', 'Fort Myers', 'Cape Coral', 'Lehigh Acres', 'Bonita Springs', 'Estero'].map((city) => (
+              <div key={city} className="bg-gray-50 rounded-lg p-4 text-center border-2 hover:border-gray-400 transition-colors">
+                <MapPin className="w-6 h-6 text-gray-600 mx-auto mb-2" />
+                <span className="font-semibold text-gray-800">{city}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Related Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/urethane-cement-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Factory className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Urethane Cement</h3>
+                  <p className="text-gray-600">For thermal shock and extreme chemicals</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Building2 className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Commercial Epoxy</h3>
+                  <p className="text-gray-600">Retail, office, and commercial spaces</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/quartz-pool-deck-coatings-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Quartz System</h3>
+                  <p className="text-gray-600">Heavy-duty broadcast quartz</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
