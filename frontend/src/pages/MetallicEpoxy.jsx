@@ -12,10 +12,10 @@ const MetallicEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Metallic Epoxy Flooring Naples FL | Luxury 3D Designer Floors"
-        description="Luxury metallic epoxy floors Naples FL. Stunning 3D effects, one-of-a-kind designs. Homes, showrooms, commercial. Free design consultation! ☎️ (239) 276-1462"
-        keywords="metallic epoxy flooring Naples FL, metallic epoxy floor Naples, 3D epoxy flooring near me, luxury epoxy floors Naples, designer epoxy flooring Naples FL, metallic floor coating Fort Myers, custom metallic epoxy SWFL"
-        url="/metallic-epoxy"
+        title="Metallic Epoxy Flooring Naples FL | 3D Designer Floors"
+        description="Metallic epoxy flooring in Naples, FL. Stunning 3D effects, one-of-a-kind designs. Homes, showrooms, commercial. Free design consultation! ☎️ (239) 276-1462"
+        keywords="metallic epoxy flooring Naples FL, metallic epoxy floor Naples, 3D epoxy flooring near me, luxury epoxy floors Naples, designer epoxy flooring Naples FL, metallic floor coating Fort Myers"
+        url="/metallic-epoxy-floors-naples-fl"
       />
       <SchemaMarkup 
         data={{
@@ -47,7 +47,7 @@ const MetallicEpoxy = () => {
               <Sparkles className="w-12 h-12 text-yellow-400" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Metallic Epoxy Flooring Naples FL
+              Metallic Epoxy Flooring in Naples, FL
             </h1>
             <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
               Luxury 3D Designer Floors That Are Truly One-of-a-Kind
