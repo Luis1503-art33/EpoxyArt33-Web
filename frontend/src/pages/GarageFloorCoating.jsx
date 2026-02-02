@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Star, Shield, Clock, Palette, Sparkles } from 'lucide-react';
+import { Check, Star, Shield, Clock, Palette, Sparkles, Phone, MapPin, Award, ChevronRight } from 'lucide-react';
 
 const GarageFloorCoating = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "How long does garage floor coating take to install in Naples?",
+      answer: "Most residential garage floor coatings are completed in just 1 day. You can walk on the floor in 24 hours and park your car in 48-72 hours. Full cure takes 7 days."
+    },
+    {
+      question: "Will epoxy garage floor coating peel from hot tires?",
+      answer: "Not with our system. We use polyaspartic topcoat specifically designed to resist hot tire pickup. Unlike big-box store kits, our commercial-grade coating handles hot tires without peeling."
+    },
+    {
+      question: "How long does a garage floor coating last in Florida?",
+      answer: "Our garage floor coatings last 15-20+ years in Naples and SWFL. The polyaspartic topcoat is UV-stable and won't yellow from Florida sun exposure."
+    },
+    {
+      question: "Do you offer financing for garage floor coating?",
+      answer: "Yes! We offer financing options to make your garage floor transformation affordable. Ask about our 0% interest payment plans during your free estimate."
+    },
+    {
+      question: "What preparation is needed for garage floor coating?",
+      answer: "We handle all prep work. This includes diamond grinding to CSP 2-3 profile, crack repair, and MVB moisture barrier application—critical steps that DIY kits skip."
+    },
+    {
+      question: "Can you coat a garage floor with moisture problems?",
+      answer: "Yes. Our MVB (Moisture Vapor Barrier) primer blocks up to 25 lbs of moisture vapor transmission. We test moisture levels and use appropriate primers for Florida's humid climate."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -26,6 +55,23 @@ const GarageFloorCoating = () => {
           "serviceType": "Garage Floor Epoxy Coating"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
