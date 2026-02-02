@@ -12,16 +12,16 @@ const UrethaneCement = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Urethane Cement Flooring Naples FL | Commercial Kitchen Floor Coating"
-        description="Urethane cement flooring Naples FL. Commercial kitchens, food processing, breweries. Thermal shock resistant. USDA/FDA compliant. Duraflex system. ☎️ (239) 276-1462"
+        title="Urethane Cement Flooring Naples FL | Commercial Kitchen Floors"
+        description="Urethane cement flooring for commercial facilities in Naples, FL. Restaurants, commercial kitchens, food processing. USDA/FDA compliant. Duraflex system. ☎️ (239) 276-1462"
         keywords="urethane cement flooring Naples FL, commercial kitchen flooring Naples, food processing floor coating Naples FL, brewery flooring Naples, cementitious urethane SWFL, Duraflex flooring Fort Myers, restaurant kitchen floor contractor"
-        url="/urethane-cement"
+        url="/urethane-cement-flooring-naples-fl"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "name": "Urethane Cement Flooring Naples FL",
-          "description": "Professional urethane cement flooring for commercial kitchens, food processing and industrial facilities in Naples FL. Thermal shock and chemical resistant.",
+          "name": "Urethane Cement Flooring for Commercial Facilities Naples FL",
+          "description": "Professional urethane cement flooring for commercial kitchens, food processing and industrial facilities in Naples FL. Thermal shock and chemical resistant. USDA approved.",
           "areaServed": "Naples, FL",
           "serviceType": "Urethane Cement Flooring"
         }}
@@ -44,10 +44,10 @@ const UrethaneCement = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Urethane Cement Flooring Naples FL
+              Urethane Cement Flooring for Commercial Facilities in Naples, FL
             </h1>
             <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
-              Commercial Kitchen & Food Processing Floor Coating Specialists
+              Restaurants • Commercial Kitchens • Food Processing • Heavy-Duty Specs
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
               The <strong className="text-white">industry-standard flooring</strong> for restaurants, breweries, and food facilities. Thermal shock resistant. USDA approved.
