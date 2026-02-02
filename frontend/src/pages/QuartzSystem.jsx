@@ -12,22 +12,28 @@ const QuartzSystem = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Quartz Epoxy System Naples FL | Heavy-Duty Flooring SWFL | EpoxyArt33"
-        description="Industrial-strength quartz epoxy flooring in Naples, Fort Myers & SWFL. Maximum durability for commercial kitchens, warehouses & high-traffic areas. Free quotes! (239) 276-1462"
-        keywords="quartz epoxy flooring Naples, quartz floor coating Fort Myers, heavy duty epoxy SWFL, commercial kitchen flooring, industrial quartz floor Cape Coral, broadcast quartz epoxy Naples, epoxy quartz system"
+        title="Quartz Epoxy Flooring Naples FL | Heavy-Duty Commercial Coating"
+        description="Quartz epoxy flooring Naples FL. Maximum durability for commercial kitchens, warehouses & high-traffic areas. Chemical resistant. Free estimate! ☎️ (239) 276-1462"
+        keywords="quartz epoxy flooring Naples FL, quartz floor coating Naples, heavy duty epoxy flooring Naples, commercial quartz flooring Fort Myers, broadcast quartz epoxy near me, industrial floor coating Naples FL"
         url="/quartz-system"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/quartz-system#service",
-          "name": "Quartz Epoxy System",
-          "description": "Industrial-strength quartz epoxy flooring for maximum durability",
-          "areaServed": "Southwest Florida",
+          "name": "Quartz Epoxy Flooring Naples FL",
+          "description": "Industrial-strength quartz epoxy flooring for commercial kitchens, warehouses and high-traffic areas in Naples FL.",
+          "areaServed": "Naples, FL",
           "serviceType": "Quartz Epoxy System"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-gray-800 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> Maximum Durability • Chemical Resistant • Impact Resistant • 20+ Year Lifespan
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-20">
@@ -38,15 +44,18 @@ const QuartzSystem = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-yellow-400">Quartz Epoxy System</span><br />The Ultimate in Durability
+              Quartz Epoxy Flooring Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Heavy-Duty Commercial Floor Coating for Maximum Durability
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Industrial-strength flooring for the toughest environments. Maximum impact and chemical resistance.
+              Industrial-strength flooring for the toughest environments. <strong className="text-white">20+ year lifespan. Chemical & impact resistant.</strong>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
-                  Get Free Quote
+                  Get Free Estimate
                 </Button>
               </Link>
               <a href="tel:239-276-1462">
