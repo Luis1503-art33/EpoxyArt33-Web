@@ -158,16 +158,23 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO 
-        title="Epoxy Flooring Naples FL | #1 Garage & Pool Deck Coating SWFL | EpoxyArt33"
-        description="Naples #1 epoxy flooring contractor. Garage floors, pool decks, metallic epoxy & commercial coatings. OSHA 30 certified, licensed & insured. 500+ projects in SWFL. Free quotes! ☎️ (239) 276-1462"
-        keywords="epoxy flooring Naples FL, epoxy flooring naples, garage floor coating Fort Myers, pool deck resurfacing Marco Island, metallic epoxy SWFL, commercial epoxy flooring Cape Coral, industrial epoxy Bonita Springs, epoxy contractor near me, Torginol flakes, polyaspartic coating"
+        title="Epoxy Flooring Naples FL | #1 Rated Garage Floor Coating Contractor"
+        description="Naples' top-rated epoxy flooring contractor. Garage floors, pool decks & commercial coatings. 15-Year Warranty. OSHA certified. Free estimates! ☎️ (239) 276-1462"
+        keywords="epoxy flooring Naples FL, garage floor coating Naples FL, epoxy floor installers near me, commercial epoxy flooring Naples, pool deck resurfacing Naples FL, metallic epoxy Naples, epoxy flooring companies near me, concrete coating Naples FL"
         url="/"
       />
       <SchemaMarkup />
       <Navbar />
 
+      {/* Trust Bar - Above the fold */}
+      <div className="bg-amber-700 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> 15-Year Warranty • OSHA 30 Certified • Licensed & Insured • Financing Available
+        </span>
+      </div>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -176,7 +183,7 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <Badge className="mb-6 bg-amber-100 text-amber-800 hover:bg-amber-200 px-4 py-1.5 text-base">
-                #1 Epoxy Flooring Contractor in Naples & SWFL
+                #1 Epoxy Flooring Contractor in Naples, FL
               </Badge>
             </motion.div>
             
@@ -186,25 +193,31 @@ const Home = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Epoxy Flooring Naples FL
-              <motion.span 
-                className="block text-amber-700 text-4xl sm:text-5xl lg:text-6xl mt-2"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-              >
-                Premium Garage & Pool Deck Coating
-              </motion.span>
+              Epoxy Flooring & Garage Floor Coating in Naples, FL
             </motion.h1>
             
             <motion.p 
-              className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+              className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Transform your floors with EpoxyArt33's premium epoxy solutions. Serving Naples, Marco Island, Fort Myers, and all of Southwest Florida.
+              Professional epoxy floor installers serving Naples, Fort Myers, Marco Island & Southwest Florida. 
+              <strong className="text-gray-900"> 1-Day installation. 15-Year durability. No hot tire pickup.</strong>
             </motion.p>
+
+            {/* Trust Signals */}
+            <motion.div 
+              className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-gray-600"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+            >
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> 500+ Projects</span>
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> 100% Solids Epoxy</span>
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> UV-Stable Topcoat</span>
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> Moisture Barrier Included</span>
+            </motion.div>
             
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -217,13 +230,13 @@ const Home = () => {
                   Get Free Estimate <ChevronRight className="ml-2" />
                 </Button>
               </motion.div>
-              <Link to="/gallery">
+              <a href="tel:2392761462">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 hover:border-amber-700 hover:text-amber-700 text-lg px-8 py-6">
-                    View Our Work
+                  <Button size="lg" variant="outline" className="border-2 border-amber-700 text-amber-700 hover:bg-amber-50 text-lg px-8 py-6">
+                    <Phone className="mr-2 w-5 h-5" /> (239) 276-1462
                   </Button>
                 </motion.div>
-              </Link>
+              </a>
             </motion.div>
           </div>
 
