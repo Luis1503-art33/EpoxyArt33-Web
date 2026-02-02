@@ -12,18 +12,18 @@ const FlakeSystem = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Flake Epoxy Flooring Naples FL | Torginol Chip Floor Coating"
-        description="Flake epoxy flooring Naples FL. Premium Torginol flakes, 200+ colors, slip-resistant. Perfect for garages & pool decks. Free estimate! ☎️ (239) 276-1462"
-        keywords="flake epoxy flooring Naples FL, Torginol flake floor Naples, chip floor coating Naples FL, decorative epoxy flakes Fort Myers, garage flake floor near me, vinyl chip flooring Naples, epoxy flake system SWFL"
-        url="/flake-system"
+        title="Garage Flake Floor Coatings Naples FL | Torginol Chip System"
+        description="Garage flake floor coatings in Naples, FL. Premium Torginol chips, 200+ colors, slip-resistant texture. Perfect for Florida garages. Free estimate! ☎️ (239) 276-1462"
+        keywords="garage flake floor Naples FL, flake epoxy flooring Naples, epoxy flake floors Naples FL, Torginol flake floor Naples, chip floor coating Naples FL, garage floor coating Naples, epoxy garage floor near me"
+        url="/garage-flake-floors-naples-fl"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "name": "Flake Epoxy Flooring Naples FL",
-          "description": "Decorative Torginol flake epoxy flooring with 200+ color options. Slip-resistant and easy to maintain.",
+          "name": "Garage Flake Floor Coatings Naples FL",
+          "description": "Premium Torginol flake epoxy flooring for garages in Naples FL. Slip-resistant and easy to maintain.",
           "areaServed": "Naples, FL",
-          "serviceType": "Flake Epoxy System"
+          "serviceType": "Garage Flake Floor Coating"
         }}
       />
       <Navbar />
@@ -44,10 +44,10 @@ const FlakeSystem = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Flake Epoxy Flooring Naples FL
+              Garage Flake Floor Coatings in Naples, FL
             </h1>
             <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
-              Premium Torginol Chip Floor Coating - 200+ Colors Available
+              Premium Torginol Chip System - 200+ Colors Available
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
               Beautiful, slip-resistant, and durable. <strong className="text-white">The #1 choice for Naples garages and pool decks.</strong>
