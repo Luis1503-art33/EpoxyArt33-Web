@@ -12,22 +12,28 @@ const PoolDeckResurfacing = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Pool Deck Resurfacing Naples FL | Slip-Resistant Coating | Free Estimate"
-        description="Naples #1 pool deck resurfacing. Slip-resistant, UV-stable Polyaspartic coating that won't yellow. Cool to the touch in Florida sun. Marco Island, Fort Myers, SWFL. ☎️ (239) 276-1462"
-        keywords="pool deck resurfacing Naples, pool deck resurfacing naples fl, epoxy pool deck Fort Myers, pool deck coating SWFL, slip resistant pool deck, pool deck repair Marco Island, Polyaspartic pool deck, cool deck coating Naples, pool deck contractor near me"
+        title="Pool Deck Resurfacing Naples FL | Slip-Resistant Coating Contractor"
+        description="Pool deck resurfacing Naples FL. Slip-resistant, UV-stable coating that won't yellow. Cool to touch in Florida heat. Marco Island, Fort Myers. Free estimate! ☎️ (239) 276-1462"
+        keywords="pool deck resurfacing Naples FL, pool deck coating Naples, pool deck contractor near me, slip resistant pool deck Naples, pool deck repair Naples FL, cool deck coating Naples, Polyaspartic pool deck Marco Island, pool deck resurfacing Fort Myers"
         url="/pool-deck-resurfacing"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/pool-deck-resurfacing#service",
-          "name": "Pool Deck Resurfacing",
-          "description": "Slip-resistant, UV-resistant pool deck resurfacing with Polyaspartic coating",
-          "areaServed": "Southwest Florida",
+          "name": "Pool Deck Resurfacing Naples FL",
+          "description": "Professional pool deck resurfacing with slip-resistant, UV-stable Polyaspartic coating. Cool to the touch even in Florida heat.",
+          "areaServed": "Naples, FL",
           "serviceType": "Pool Deck Resurfacing"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-blue-700 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> Slip-Resistant Texture • Won't Yellow in Florida Sun • Cool to the Touch • 10-Year Warranty
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20">
@@ -38,15 +44,18 @@ const PoolDeckResurfacing = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Pool Deck Resurfacing Naples FL - Slip-Resistant & UV-Stable Coating
+              Pool Deck Resurfacing Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Slip-Resistant Coating That Won't Yellow in Florida Sun
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Transform your pool area with slip-resistant, waterproof epoxy coating. Perfect for SWFL's sunny climate.
+              Transform your pool area. <strong className="text-white">Cool to walk on barefoot. Safe when wet. Beautiful for years.</strong>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
-                  Get Free Quote
+                  Get Free Estimate
                 </Button>
               </Link>
               <a href="tel:239-276-1462">
@@ -63,7 +72,7 @@ const PoolDeckResurfacing = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Why Our Pool Deck System is Different</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Why Naples Homeowners Choose Our Pool Deck Coating</h2>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
               Traditional concrete pool decks crack, stain, and become slippery when wet. Our specialized pool deck system uses <strong>Polyaspartic with color tint and Torginol flakes</strong> instead of traditional epoxy base. Why? Because Polyaspartic won't yellow or fade under Florida's intense UV rays.
             </p>
