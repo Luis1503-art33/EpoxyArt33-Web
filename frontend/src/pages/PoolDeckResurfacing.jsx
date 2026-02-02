@@ -53,24 +53,8 @@ const PoolDeckResurfacing = () => {
           "areaServed": "Naples, FL",
           "serviceType": "Pool Deck Resurfacing"
         }}
+        faqData={faqData}
       />
-      {/* FAQ Schema */}
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqData.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })}
-        </script>
-      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
