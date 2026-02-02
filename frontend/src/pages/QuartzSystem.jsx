@@ -12,16 +12,16 @@ const QuartzSystem = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Quartz Epoxy Flooring Naples FL | Heavy-Duty Commercial Coating"
-        description="Quartz epoxy flooring Naples FL. Maximum durability for commercial kitchens, warehouses & high-traffic areas. Chemical resistant. Free estimate! ☎️ (239) 276-1462"
-        keywords="quartz epoxy flooring Naples FL, quartz floor coating Naples, heavy duty epoxy flooring Naples, commercial quartz flooring Fort Myers, broadcast quartz epoxy near me, industrial floor coating Naples FL"
-        url="/quartz-system"
+        title="Quartz & Pool Deck Epoxy Coatings Naples FL | Heavy-Duty System"
+        description="Quartz and pool deck epoxy coatings in Naples, FL. Maximum durability for commercial kitchens, pool decks & high-traffic areas. Free estimate! ☎️ (239) 276-1462"
+        keywords="quartz epoxy flooring Naples FL, pool deck coating Naples FL, quartz floor coating Naples, heavy duty epoxy flooring Naples, commercial quartz flooring Fort Myers, broadcast quartz epoxy near me"
+        url="/quartz-pool-deck-coatings-naples-fl"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "name": "Quartz Epoxy Flooring Naples FL",
-          "description": "Industrial-strength quartz epoxy flooring for commercial kitchens, warehouses and high-traffic areas in Naples FL.",
+          "name": "Quartz & Pool Deck Epoxy Coatings Naples FL",
+          "description": "Industrial-strength quartz epoxy flooring and pool deck coatings for commercial and residential applications in Naples FL.",
           "areaServed": "Naples, FL",
           "serviceType": "Quartz Epoxy System"
         }}
@@ -44,7 +44,7 @@ const QuartzSystem = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Quartz Epoxy Flooring Naples FL
+              Quartz & Pool Deck Epoxy Coatings in Naples, FL
             </h1>
             <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
               Heavy-Duty Commercial Floor Coating for Maximum Durability
