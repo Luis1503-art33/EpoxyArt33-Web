@@ -518,8 +518,8 @@ const Home = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-amber-700">
         <div className="container mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Proudly Serving Southwest Florida</h2>
-            <p className="text-xl text-amber-100 mb-6">Naples • Marco Island • Estero • Bonita Beach • Fort Myers • Cape Coral • SWFL</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Serving Naples, Marco Island & SWFL</h2>
+            <p className="text-xl text-amber-100 mb-6">Naples • Marco Island • Estero • Bonita Springs • Fort Myers • Cape Coral • Collier County • Lee County</p>
             <a href="tel:2392761462">
               <Button size="lg" className="bg-white text-amber-700 hover:bg-gray-100">
                 <Phone className="mr-2" />
