@@ -3,22 +3,48 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
-        <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-        <title>Emergent | Fullstack App</title>
+        <meta name="theme-color" content="#B45309" />
+        
+        <!-- SEO Meta Tags (Default - Updated by React Helmet) -->
+        <title>Epoxy Flooring Naples FL | Garage Floor Coatings | EpoxyArt33</title>
+        <meta name="description" content="Professional epoxy flooring & garage floor coatings in Naples, FL. Residential & commercial systems. Flake, metallic, quartz floors. Free estimates. Financing available. Call (239) 276-1462" />
+        <meta name="keywords" content="epoxy flooring Naples FL, garage floor coating Naples, epoxy floor installers near me, commercial epoxy flooring Naples, pool deck resurfacing Naples FL, metallic epoxy Naples" />
+        <meta name="author" content="EpoxyArt33 LLC" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://epoxyart33.com/" />
+        <meta property="og:title" content="Epoxy Flooring Naples FL | Garage Floor Coatings | EpoxyArt33" />
+        <meta property="og:description" content="Professional epoxy flooring & garage floor coatings in Naples, FL. Residential & commercial systems. Free estimates. Financing available." />
+        <meta property="og:image" content="https://epoxyart33.com/images/projects/hero-metallic.jpg" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="EpoxyArt33" />
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Epoxy Flooring Naples FL | Garage Floor Coatings | EpoxyArt33" />
+        <meta name="twitter:description" content="Professional epoxy flooring & garage floor coatings in Naples, FL. Residential & commercial systems. Free estimates." />
+        <meta name="twitter:image" content="https://epoxyart33.com/images/projects/hero-metallic.jpg" />
+        
+        <!-- Geo Tags for Local SEO -->
+        <meta name="geo.region" content="US-FL" />
+        <meta name="geo.placename" content="Naples" />
+        <meta name="geo.position" content="26.1420;-81.7948" />
+        <meta name="ICBM" content="26.1420, -81.7948" />
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://epoxyart33.com/" />
+        
+        <!-- Favicon -->
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        
+        <!-- Preconnect for Performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
         These two scripts have been added for the testing, please do not edit or remove them
@@ -48,20 +74,88 @@
                 document.head.appendChild(tailwindScript);
             }
         </script>
+        
+        <!-- Structured Data - LocalBusiness (Visible to Google in HTML) -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://epoxyart33.com/#localbusiness",
+            "name": "EpoxyArt33",
+            "alternateName": "EpoxyArt33 LLC",
+            "description": "Professional epoxy flooring & garage floor coatings in Naples, FL. Residential & commercial systems including flake, metallic, quartz, and urethane cement floors.",
+            "url": "https://epoxyart33.com",
+            "telephone": "+1-239-276-1462",
+            "email": "epoxyfloorsolutions33@gmail.com",
+            "image": "https://epoxyart33.com/images/projects/hero-metallic.jpg",
+            "logo": "https://epoxyart33.com/logo.png",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "160 15th St SW",
+                "addressLocality": "Naples",
+                "addressRegion": "FL",
+                "postalCode": "34117",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 26.1420,
+                "longitude": -81.7948
+            },
+            "areaServed": [
+                {"@type": "City", "name": "Naples", "containedInPlace": {"@type": "State", "name": "Florida"}},
+                {"@type": "City", "name": "Marco Island", "containedInPlace": {"@type": "State", "name": "Florida"}},
+                {"@type": "City", "name": "Fort Myers", "containedInPlace": {"@type": "State", "name": "Florida"}},
+                {"@type": "City", "name": "Cape Coral", "containedInPlace": {"@type": "State", "name": "Florida"}},
+                {"@type": "City", "name": "Bonita Springs", "containedInPlace": {"@type": "State", "name": "Florida"}},
+                {"@type": "City", "name": "Estero", "containedInPlace": {"@type": "State", "name": "Florida"}}
+            ],
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "07:00",
+                "closes": "18:00"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61570171733397",
+                "https://www.instagram.com/epoxyart_33/"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Epoxy Flooring Services",
+                "itemListElement": [
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Garage Floor Coating"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pool Deck Resurfacing"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Metallic Epoxy Flooring"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Epoxy Flooring"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Urethane Cement Flooring"}}
+                ]
+            },
+            "paymentAccepted": ["Cash", "Check", "Credit Card"],
+            "currenciesAccepted": "USD"
+        }
+        </script>
     </head>
     <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <noscript>
+            <!-- SEO Content for Non-JS Crawlers -->
+            <h1>Epoxy Flooring & Garage Floor Coatings in Naples, FL</h1>
+            <p>EpoxyArt33 is Naples' premier epoxy flooring contractor. We specialize in garage floor coatings, pool deck resurfacing, metallic epoxy, and commercial flooring solutions.</p>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Garage Flake Floor Coatings - Naples FL</li>
+                <li>Metallic Epoxy Flooring - Naples FL</li>
+                <li>Quartz & Pool Deck Coatings - Naples FL</li>
+                <li>Commercial Epoxy Flooring - Naples FL</li>
+                <li>Urethane Cement Flooring - Naples FL</li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>Phone: (239) 276-1462</p>
+            <p>Address: 160 15th St SW, Naples, FL 34117</p>
+            <p>Serving Naples, Marco Island, Fort Myers, Cape Coral, Bonita Springs & Estero</p>
+        </noscript>
         <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
         <a
             id="emergent-badge"
             target="_blank"
@@ -92,6 +186,7 @@
                 <img
                     style="width: 20px; height: 20px; margin-right: 8px"
                     src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4"
+                    alt="Emergent"
                 />
                 <p
                     style="
@@ -173,7 +268,7 @@
             })(document, window.posthog || []);
             posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
                 api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+                person_profiles: "identified_only",
             });
         </script>
     </body>
