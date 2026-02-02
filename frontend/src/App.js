@@ -72,6 +72,7 @@ function App() {
           <Route path="/epoxy-flooring-marco-island.html" element={<EpoxyFlooringMarcoIsland />} />
           <Route path="/epoxy-flooring-bonita-springs.html" element={<EpoxyFlooringBonitaSprings />} />
           <Route path="/epoxy-flooring-estero.html" element={<EpoxyFlooringEstero />} />
+          <Route path="/epoxy-vs-polyaspartic.html" element={<EpoxyVsPolyaspartic />} />
           
           {/* Additional Pages with .html */}
           <Route path="/why-epoxyart33.html" element={<WhyEpoxyArt33 />} />
