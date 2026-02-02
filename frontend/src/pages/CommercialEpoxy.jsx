@@ -6,28 +6,34 @@ import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Building2, Store, Trophy, Clock } from 'lucide-react';
+import { Check, Building2, Store, Trophy, Clock, Shield } from 'lucide-react';
 
 const CommercialEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Commercial Epoxy Flooring Naples & Fort Myers | Restaurant & Retail Floors"
-        description="Naples commercial epoxy flooring experts. Restaurants, retail, offices, warehouses. Fast installation, minimal downtime. Licensed & insured. ☎️ (239) 276-1462"
-        keywords="commercial epoxy flooring Naples, commercial epoxy flooring naples fl, business floor coating Fort Myers, retail epoxy floor SWFL, restaurant epoxy flooring, office epoxy floor Cape Coral, showroom flooring Naples, commercial floor coating, commercial epoxy contractor near me"
+        title="Commercial Epoxy Flooring Naples FL | Business Floor Coating Contractor"
+        description="Commercial epoxy flooring Naples FL. Restaurants, retail, warehouses. Minimal downtime, weekend installation available. Licensed & insured. Free estimate! ☎️ (239) 276-1462"
+        keywords="commercial epoxy flooring Naples FL, commercial floor coating Naples, business epoxy flooring near me, restaurant floor coating Naples, retail epoxy floor Fort Myers, commercial epoxy contractor Naples FL, warehouse flooring Naples"
         url="/commercial-epoxy"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/commercial-epoxy#service",
-          "name": "Commercial Epoxy Flooring",
-          "description": "Professional epoxy flooring solutions for commercial businesses",
-          "areaServed": "Southwest Florida",
+          "name": "Commercial Epoxy Flooring Naples FL",
+          "description": "Professional commercial epoxy flooring for restaurants, retail stores, warehouses and offices in Naples FL. Weekend installation available.",
+          "areaServed": "Naples, FL",
           "serviceType": "Commercial Epoxy Flooring"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-blue-800 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> Licensed & Insured • Weekend Installation • Minimal Downtime • Financing Available
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-20">
@@ -38,15 +44,18 @@ const CommercialEpoxy = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Commercial Epoxy Flooring Naples FL - Restaurant, Retail & Office Floors
+              Commercial Epoxy Flooring Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Restaurant, Retail & Warehouse Floor Coating Contractors
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Professional, durable floors for retail, offices, showrooms, and commercial spaces throughout SWFL.
+              Professional commercial flooring with <strong className="text-white">minimal business disruption</strong>. Weekend installation available.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
-                  Get Free Quote
+                  Get Free Estimate
                 </Button>
               </Link>
               <a href="tel:239-276-1462">
@@ -63,9 +72,9 @@ const CommercialEpoxy = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Businesses Choose Epoxy Flooring</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Naples Businesses Choose Our Commercial Epoxy</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Your floors are one of the first things customers notice. Make the right impression with beautiful, professional epoxy flooring.
+              Your floors impact customer perception, employee safety, and maintenance costs. Invest in flooring that works as hard as you do.
             </p>
           </div>
 
