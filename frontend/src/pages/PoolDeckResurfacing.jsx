@@ -463,7 +463,8 @@ const PoolDeckResurfacing = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Pool Deck Installation Process</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Professional Pool Deck Installation Process</h2>
+            <p className="text-xl text-gray-600">Proper preparation ensures your pool deck coating lasts 10+ years</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -471,30 +472,154 @@ const PoolDeckResurfacing = () => {
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-2">Grind & Repair</h3>
-              <p className="text-gray-600">Diamond grind concrete and repair any cracks or damage</p>
+              <h3 className="text-xl font-bold mb-2">Diamond Grinding (CSP 2-3)</h3>
+              <p className="text-gray-600">Creates optimal profile for coating adhesion—removes stains and contamination</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-bold mb-2">MVB Primer</h3>
-              <p className="text-gray-600">Moisture Vapor Barrier for humidity control and maximum adhesion</p>
+              <h3 className="text-xl font-bold mb-2">MVB Moisture Barrier</h3>
+              <p className="text-gray-600">Blocks moisture vapor from Florida humidity—prevents delamination</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-bold mb-2">Polyaspartic + Flake/Quartz</h3>
-              <p className="text-gray-600">Polyaspartic with color tint and flakes or Quartz - prevents yellowing from sun</p>
+              <h3 className="text-xl font-bold mb-2">Base Coat + Aggregate</h3>
+              <p className="text-gray-600">Polyaspartic with color tint and slip-resistant aggregate broadcast</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 4
               </div>
-              <h3 className="text-xl font-bold mb-2">Clear Polyaspartic Seal</h3>
-              <p className="text-gray-600">UV-resistant Polyaspartic topcoat for long-lasting beauty and sun protection</p>
+              <h3 className="text-xl font-bold mb-2">UV-Stable Topcoat</h3>
+              <p className="text-gray-600">Clear polyaspartic seal that won't yellow from Florida sun</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why EpoxyArt33 */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33 for Pool Deck Coating</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Sun className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">UV-Stable Formula</h3>
+              <p className="text-gray-600">Won't yellow or fade from constant Florida sun exposure</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">10-Year Warranty</h3>
+              <p className="text-gray-600">Comprehensive coverage for peace of mind</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Family Safe</h3>
+              <p className="text-gray-600">Slip-resistant texture keeps kids and guests safe</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Fast Installation</h3>
+              <p className="text-gray-600">Most pool decks done in 1-2 days</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Pool Deck Resurfacing FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about pool deck coating in Naples, FL</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-blue-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Areas: Naples, Marco Island & SWFL</h2>
+            <p className="text-xl text-gray-600">Professional pool deck resurfacing throughout Southwest Florida</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {['Naples', 'Marco Island', 'Fort Myers', 'Cape Coral', 'Bonita Springs', 'Estero'].map((city) => (
+              <div key={city} className="bg-white rounded-lg p-4 text-center border-2 hover:border-blue-400 transition-colors">
+                <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
+                <span className="font-semibold text-gray-800">{city}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Related Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/quartz-pool-deck-coatings-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-blue-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600">Quartz System</h3>
+                  <p className="text-gray-600">Heavy-duty pool deck option</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/garage-flake-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-blue-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600">Garage Floors</h3>
+                  <p className="text-gray-600">Complete your outdoor space</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/driveway-resurfacing.html" className="group">
+              <Card className="border-2 hover:border-blue-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Droplets className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600">Driveway</h3>
+                  <p className="text-gray-600">Match your pool deck</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
