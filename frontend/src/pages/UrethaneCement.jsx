@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Flame, Droplets, Shield, Factory, Utensils, Snowflake, Thermometer } from 'lucide-react';
+import { Check, Flame, Droplets, Shield, Factory, Utensils, Snowflake, Thermometer, Phone, ChevronRight, Building2, Sparkles } from 'lucide-react';
 
 const UrethaneCement = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "What is the difference between urethane cement and regular epoxy?",
+      answer: "Urethane cement can withstand thermal shock (steam cleaning, hot water) without delaminating—epoxy cannot. It's also more chemical resistant and can be applied to damp concrete. It's the industry standard for commercial kitchens and food facilities."
+    },
+    {
+      question: "Is urethane cement flooring USDA approved for food facilities?",
+      answer: "Yes. Our Duraflex urethane cement system is USDA/FDA approved for food contact areas. The seamless, non-porous surface prevents bacterial growth and is easy to sanitize."
+    },
+    {
+      question: "Can urethane cement be steam cleaned?",
+      answer: "Absolutely. Unlike epoxy, urethane cement is specifically designed for thermal shock resistance from -40°F to 250°F. You can steam clean daily without any risk of delamination or damage."
+    },
+    {
+      question: "How long does urethane cement flooring last?",
+      answer: "Properly installed urethane cement floors last 25+ years in demanding commercial kitchen and food processing environments. It's more durable than any epoxy system for these applications."
+    },
+    {
+      question: "How much does urethane cement flooring cost?",
+      answer: "Urethane cement typically costs $12-20 per sq ft—more than standard epoxy. However, its durability in commercial kitchens makes it far more cost-effective long-term. Standard epoxy in a kitchen environment often fails within 2-5 years."
+    },
+    {
+      question: "Can urethane cement be applied to damp concrete?",
+      answer: "Yes. Unlike epoxy which requires completely dry concrete, urethane cement can be applied to green or damp concrete. This is a major advantage for new construction and areas with moisture issues."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -26,6 +55,23 @@ const UrethaneCement = () => {
           "serviceType": "Urethane Cement Flooring"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
