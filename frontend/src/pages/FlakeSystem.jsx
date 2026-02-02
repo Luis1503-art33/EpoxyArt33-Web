@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Shield, Sparkles, Home, Droplets } from 'lucide-react';
+import { Check, Shield, Sparkles, Home, Droplets, Phone, ChevronRight, Award, Clock } from 'lucide-react';
 
 const FlakeSystem = () => {
   return (
