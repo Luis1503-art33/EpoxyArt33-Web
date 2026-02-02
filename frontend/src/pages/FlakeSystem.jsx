@@ -340,32 +340,225 @@ const FlakeSystem = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="text-center">
               <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🚗</span>
+                <Home className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Garages</h3>
               <p className="text-gray-600">The #1 choice for residential and commercial garages</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🏊</span>
+                <Droplets className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Pool Decks</h3>
               <p className="text-gray-600">Slip-resistant and waterproof for safe pool areas</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🏠</span>
+                <Home className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Patios & Porches</h3>
               <p className="text-gray-600">Outdoor living spaces that can handle the elements</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🏭</span>
+                <Shield className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Commercial Spaces</h3>
               <p className="text-gray-600">Showrooms, workshops, and retail environments</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Installation Process - Technical SEO Content */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Our Professional Installation Process</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Proper preparation is 90% of a successful epoxy floor. Here's how we ensure your flake floor lasts 15+ years in Florida's demanding climate.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">1</div>
+              <h3 className="text-xl font-bold mb-3">Diamond Grinding (CSP 2-3)</h3>
+              <p className="text-gray-300">
+                We use industrial diamond grinders to create a <strong>CSP 2-3 profile</strong>—the optimal texture for epoxy adhesion. This is far superior to acid etching and ensures permanent bonding.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">2</div>
+              <h3 className="text-xl font-bold mb-3">Crack & Surface Repair</h3>
+              <p className="text-gray-300">
+                All cracks, spalls, and divots are filled with epoxy crack filler and ground smooth. This creates a seamless canvas and prevents future cracking.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">3</div>
+              <h3 className="text-xl font-bold mb-3">MVB Moisture Barrier</h3>
+              <p className="text-gray-300">
+                Our <strong>Moisture Vapor Barrier (MVB)</strong> primer blocks up to 25 lbs of moisture transmission—critical for Florida's high humidity and prevents delamination.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">4</div>
+              <h3 className="text-xl font-bold mb-3">100% Solids Epoxy Base</h3>
+              <p className="text-gray-300">
+                We apply <strong>Chemtec 100% solids epoxy</strong>—not the water-based products from big box stores. Zero solvents means maximum durability and chemical resistance.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">5</div>
+              <h3 className="text-xl font-bold mb-3">Torginol Flake Broadcast</h3>
+              <p className="text-gray-300">
+                Premium <strong>Torginol decorative flakes</strong> are broadcast onto wet epoxy for full coverage. 200+ color blends available to match your style.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">6</div>
+              <h3 className="text-xl font-bold mb-3">Polyaspartic Clear Coat</h3>
+              <p className="text-gray-300">
+                Final seal with <strong>UV-stable polyaspartic topcoat</strong>—resists hot tire pickup, yellowing, and abrasion. This is what makes our floors last 15-20 years.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <p className="text-yellow-400 text-lg font-semibold mb-4">Most installations completed in just 1 day!</p>
+            <Link to="/contact.html">
+              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+                <Phone className="w-5 h-5 mr-2" /> Get Free Estimate
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why EpoxyArt33 */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Naples Homeowners Choose EpoxyArt33</h2>
+            <p className="text-xl text-gray-600">The difference between a floor that lasts 5 years vs 15+ years</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Commercial-Grade Materials</h3>
+              <p className="text-gray-600">100% solids Chemtec epoxy + Torginol flakes—same products used in commercial applications.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">15-Year Warranty</h3>
+              <p className="text-gray-600">We stand behind our work with comprehensive warranty coverage. Built to last.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">1-Day Installation</h3>
+              <p className="text-gray-600">Most projects completed in 1 day. Walk in 24hrs, drive in 48-72hrs.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="w-8 h-8 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">No Hot Tire Pickup</h3>
+              <p className="text-gray-600">Polyaspartic topcoat prevents peeling from hot tires—unlike DIY kits.</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/why-epoxyart33.html">
+              <Button variant="outline" className="border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-black font-bold">
+                Learn More About Us <ChevronRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-gray-600">Common questions about flake epoxy floors in Naples, FL</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-yellow-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/faq.html">
+              <Button variant="outline" className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100">
+                View All FAQs <ChevronRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services - Internal Linking */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Explore Our Other Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/metallic-epoxy-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Metallic Epoxy Floors</h3>
+                  <p className="text-gray-600">Stunning 3D designer floors for luxury spaces</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/quartz-pool-deck-coatings-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Droplets className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Quartz & Pool Deck</h3>
+                  <p className="text-gray-600">Heavy-duty coatings for pool areas and commercial</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Commercial Epoxy</h3>
+                  <p className="text-gray-600">Professional flooring for businesses and retail</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
