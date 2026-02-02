@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Factory, Zap, Shield, Wrench, Clock, Award } from 'lucide-react';
+import { Check, Factory, Zap, Shield, Wrench, Clock, Award, MapPin, Phone, ChevronRight, Building2, Sparkles } from 'lucide-react';
 
 const IndustrialEpoxy = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "What is industrial epoxy flooring best suited for?",
+      answer: "Industrial epoxy is designed for warehouses, manufacturing facilities, distribution centers, and factories. It handles forklift traffic, heavy equipment, chemical exposure, and high-impact operations that would destroy standard flooring."
+    },
+    {
+      question: "How long does industrial epoxy flooring last?",
+      answer: "Properly installed industrial epoxy flooring lasts 20+ years in demanding environments. Key factors include proper surface preparation (CSP 3-4), correct system selection, and application by experienced contractors."
+    },
+    {
+      question: "Can you install industrial epoxy while the facility is operating?",
+      answer: "Yes, we offer phased installation to minimize downtime. We can work nights, weekends, or section-by-section to keep your operation running. Contact us to discuss your specific needs."
+    },
+    {
+      question: "Is industrial epoxy flooring chemical resistant?",
+      answer: "Yes. Industrial epoxy resists a wide range of chemicals including oils, solvents, acids, and cleaning agents. For extreme chemical exposure (food processing, pharmaceuticals), we recommend urethane cement systems."
+    },
+    {
+      question: "How much does industrial epoxy flooring cost per square foot?",
+      answer: "Industrial epoxy typically costs $4-10 per sq ft depending on system thickness, prep work required, and facility conditions. Large facilities benefit from better pricing. Contact us for a free site assessment and custom quote."
+    },
+    {
+      question: "Do you work with general contractors and facility managers?",
+      answer: "Absolutely. We work with GCs, property managers, and facility directors throughout SWFL. We provide competitive bids, coordinate schedules, and carry full liability and workers' comp insurance."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -27,6 +56,23 @@ const IndustrialEpoxy = () => {
           "serviceType": "Industrial Epoxy Flooring"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
       
       {/* Hero Section */}
