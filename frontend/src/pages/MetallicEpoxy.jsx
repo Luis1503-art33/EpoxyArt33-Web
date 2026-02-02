@@ -6,28 +6,34 @@ import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Sparkles, Palette, Eye, Home, Building2 } from 'lucide-react';
+import { Check, Sparkles, Palette, Eye, Home, Building2, Shield } from 'lucide-react';
 
 const MetallicEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Metallic Epoxy Flooring Naples FL | Stunning 3D Floors | Free Quote"
-        description="Luxury 3D metallic epoxy floors in Naples & Fort Myers. Unique swirling patterns, one-of-a-kind designs. Showrooms, homes, commercial. OSHA certified installers. ☎️ (239) 276-1462"
-        keywords="metallic epoxy Naples, metallic epoxy flooring naples fl, 3D epoxy floor Fort Myers, metallic floor coating SWFL, luxury epoxy flooring, designer epoxy floors Cape Coral, metallic garage floor Naples, custom metallic epoxy, metallic epoxy near me"
+        title="Metallic Epoxy Flooring Naples FL | Luxury 3D Designer Floors"
+        description="Luxury metallic epoxy floors Naples FL. Stunning 3D effects, one-of-a-kind designs. Homes, showrooms, commercial. Free design consultation! ☎️ (239) 276-1462"
+        keywords="metallic epoxy flooring Naples FL, metallic epoxy floor Naples, 3D epoxy flooring near me, luxury epoxy floors Naples, designer epoxy flooring Naples FL, metallic floor coating Fort Myers, custom metallic epoxy SWFL"
         url="/metallic-epoxy"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/metallic-epoxy#service",
-          "name": "Metallic Epoxy Flooring",
-          "description": "Luxury 3D metallic epoxy flooring with stunning visual effects",
-          "areaServed": "Southwest Florida",
+          "name": "Metallic Epoxy Flooring Naples FL",
+          "description": "Luxury 3D metallic epoxy flooring with stunning visual effects. One-of-a-kind designer floors for homes and businesses in Naples FL.",
+          "areaServed": "Naples, FL",
           "serviceType": "Metallic Epoxy Flooring"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-purple-800 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> One-of-a-Kind Designs • UV-Stable Finish • 15-Year Durability • Free Design Consultation
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-20">
@@ -41,15 +47,18 @@ const MetallicEpoxy = () => {
               <Sparkles className="w-12 h-12 text-yellow-400" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Metallic Epoxy Flooring Naples FL - Stunning 3D Designer Floors
+              Metallic Epoxy Flooring Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Luxury 3D Designer Floors That Are Truly One-of-a-Kind
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Create stunning 3D effects with luxury metallic epoxy floors. Unique, elegant, unforgettable.
+              Transform any space into a work of art. <strong className="text-white">Each floor is unique—no two are ever the same.</strong>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
-                  Get Free Quote
+                  Free Design Consultation
                 </Button>
               </Link>
               <a href="tel:239-276-1462">
