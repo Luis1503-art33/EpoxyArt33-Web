@@ -26,6 +26,7 @@ import EpoxyFlooringCapeCoral from "./pages/EpoxyFlooringCapeCoral";
 import EpoxyFlooringMarcoIsland from "./pages/EpoxyFlooringMarcoIsland";
 import EpoxyFlooringBonitaSprings from "./pages/EpoxyFlooringBonitaSprings";
 import EpoxyFlooringEstero from "./pages/EpoxyFlooringEstero";
+import EpoxyVsPolyaspartic from "./pages/EpoxyVsPolyaspartic";
 import WhyEpoxyArt33 from "./pages/WhyEpoxyArt33";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Products from "./pages/Products";
