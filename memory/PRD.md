@@ -60,32 +60,72 @@ Professional website for EpoxyArt33, a premium epoxy flooring business serving S
 - Wolfpack Equipment
 - EZ Concrete Supply
 
-## Recent Changes (Jan 27, 2025)
+## Recent Changes (Feb 2, 2025)
 
-### SEO OPTIMIZATION - ALL PHASES COMPLETE
+### COMPREHENSIVE SEO OVERHAUL - EXPERT LEVEL
 
-#### Phase 3 - Alt Text Optimization ✅
-- Updated 28 gallery items (IDs 18-45) with locally-optimized titles and descriptions
-- Optimized all images in CommercialEpoxy.jsx and PoolDeckResurfacing.jsx
-- Added city names: Naples, Fort Myers, Cape Coral, Marco Island, Bonita Springs, Estero, SWFL
+#### Phase 1: Auditoría y Corrección de Titles/Metas/H1s
+Optimizados TODOS los títulos para alta intención transaccional:
 
-#### Phase 4 - Local SEO (NAP Consistency) ✅
-- **Address Added:** 160 15th St SW, Naples, FL 34117
-- Updated SchemaMarkup.jsx with complete streetAddress
-- Updated Footer.jsx with full address and city page links
-- Updated Contact.jsx with Google Maps embed and detailed service areas
+**Páginas Principales (Formato: Keyword Principal + Location + USP)**
+| Página | Nuevo Title (≤60 chars) |
+|--------|-------------------------|
+| Home | Epoxy Flooring Naples FL \| #1 Rated Garage Floor Coating Contractor |
+| Garage Floor | Garage Floor Coating Naples FL \| Epoxy Floor Installers Near Me |
+| Commercial | Commercial Epoxy Flooring Naples FL \| Business Floor Coating |
+| Metallic | Metallic Epoxy Flooring Naples FL \| Luxury 3D Designer Floors |
+| Pool Deck | Pool Deck Resurfacing Naples FL \| Slip-Resistant Coating |
+| Quartz | Quartz Epoxy Flooring Naples FL \| Heavy-Duty Commercial |
+| Flake | Flake Epoxy Flooring Naples FL \| Torginol Chip Floor Coating |
+| Concrete Repair | Concrete Repair Naples FL \| Crack Repair & Moisture Mitigation |
+| Urethane Cement | Urethane Cement Flooring Naples FL \| Commercial Kitchen Floor |
 
-#### Phase 5 - Technical SEO ✅
-- Expanded FAQ.jsx from 15 to 29 questions organized by category
-- Categories: General, Systems, Maintenance, Cost, Location, Pool Deck, Commercial
-- Added location-specific questions for Naples/SWFL SEO
+#### Phase 2: Trust Bars y Garantías Visibles
+- Agregadas barras de confianza en TODAS las páginas de servicio
+- Garantía de 15 años prominente above the fold
+- OSHA 30 certified, Licensed & Insured
+- Financing Available en todas las páginas
 
-#### Phase 6 - Content Authority ✅
-- Contact page now includes:
-  - Google Maps embed
-  - Full business info (address, phone, email, hours)
-  - Detailed service areas by county and neighborhood
-  - Links to all city landing pages
+#### Phase 3: Contenido Técnico Diferenciador
+**NUEVO contenido que competidores NO tienen:**
+- Sección "Our Professional Installation Process" (5 pasos técnicos)
+- Diamond Grinding (CSP 2-3 profile)
+- MVB Moisture Barrier (blocks up to 25 lbs)
+- 100% Solids Epoxy (Chemtec)
+- Polyaspartic UV-stable topcoat
+
+**Objeciones atacadas:**
+- Hot tire pickup resistance
+- UV yellowing prevention
+- Florida humidity/moisture issues
+- DIY kits vs professional comparison
+
+#### Phase 4: Schema Markup Dinámico
+- SchemaMarkup.jsx actualizado para usar URLs dinámicas
+- Eliminadas URLs hardcodeadas (epoxyart33.com)
+- Dirección completa: 160 15th St SW, Naples, FL 34117
+
+#### Phase 5: Deployment Fix
+- Creado `/app/frontend/.yarnrc` con `ignore-engines true`
+- Resuelve incompatibilidad camera-controls@3.1.2 vs Node 20
+- Limpieza de .gitignore corrupto
+
+### Keywords Implementados por Intención
+
+**Alta Intención (Transaccional):**
+- epoxy flooring Naples FL
+- garage floor coating Naples FL
+- epoxy floor installers near me
+- commercial epoxy flooring Naples
+
+**Media Intención:**
+- metallic epoxy floor Naples
+- pool deck resurfacing Naples FL
+- flake epoxy flooring Naples
+
+**Informacional (Soporte):**
+- concrete repair Naples FL
+- moisture mitigation Naples
 
 ### SEO OPTIMIZATION - PHASE 1 COMPLETE
 Implemented comprehensive SEO strategy for #1 ranking in Naples/SWFL:
