@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Shield, Zap, Factory, Sparkles, Building2 } from 'lucide-react';
+import { Check, Shield, Zap, Factory, Sparkles, Building2, Phone, ChevronRight, Award, Droplets } from 'lucide-react';
 
 const QuartzSystem = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "What is the difference between quartz and flake epoxy flooring?",
+      answer: "Quartz systems use crusite quartz aggregate for maximum hardness and chemical resistance—ideal for commercial kitchens and pool decks. Flake systems use decorative vinyl chips for aesthetics—best for garages. Quartz is harder and more durable but costs more."
+    },
+    {
+      question: "Is quartz epoxy good for pool decks in Florida?",
+      answer: "Yes! Quartz epoxy is excellent for Florida pool decks. It's UV-stable, slip-resistant when textured, and handles constant water exposure. The textured surface provides better traction than smooth concrete."
+    },
+    {
+      question: "How long does quartz epoxy flooring last?",
+      answer: "Quartz epoxy systems typically last 20+ years in commercial environments when properly installed. The quartz aggregate is harder than concrete and extremely resistant to wear, chemicals, and impacts."
+    },
+    {
+      question: "Can quartz epoxy be used in commercial kitchens?",
+      answer: "Absolutely. Quartz epoxy is the preferred choice for commercial kitchens because it resists hot liquids, grease, acids, and heavy equipment. However, for areas with extreme thermal shock (steam cleaning), urethane cement may be better."
+    },
+    {
+      question: "Is quartz epoxy flooring slip-resistant?",
+      answer: "Yes, when broadcast to saturation, quartz creates a textured surface that provides excellent slip resistance—even when wet. This makes it ideal for pool decks, commercial kitchens, and areas prone to moisture."
+    },
+    {
+      question: "How much does quartz epoxy cost compared to flake?",
+      answer: "Quartz systems typically cost 20-30% more than flake systems due to the premium aggregate material and thicker application. However, the increased durability often makes it more cost-effective long-term for commercial applications."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -26,6 +55,23 @@ const QuartzSystem = () => {
           "serviceType": "Quartz Epoxy System"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
