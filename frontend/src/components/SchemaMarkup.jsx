@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SchemaMarkup = ({ data }) => {
+const SchemaMarkup = ({ data, faqData }) => {
   // Get the current site URL dynamically
   const getSiteUrl = () => {
     if (typeof window !== 'undefined') {
@@ -75,6 +75,25 @@ const SchemaMarkup = ({ data }) => {
     "knowsAbout": ["Epoxy Flooring", "Garage Floor Coating", "Pool Deck Resurfacing", "Metallic Epoxy", "Commercial Flooring", "Industrial Flooring", "Polyaspartic Coating", "Concrete Repair"],
     "paymentAccepted": ["Cash", "Check", "Credit Card"],
     "currenciesAccepted": "USD"
+  };
+
+  // Build FAQPage schema if faqData is provided
+  const buildFaqSchema = () => {
+    if (!faqData || !Array.isArray(faqData) || faqData.length === 0) {
+      return null;
+    }
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqData.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    };
   };
 
   // If custom data is provided, merge it with context
@@ -169,11 +188,19 @@ const SchemaMarkup = ({ data }) => {
     return defaultLocalBusinessSchema;
   };
 
+  const mainSchema = getSchema();
+  const faqSchema = buildFaqSchema();
+
   return (
     <Helmet>
       <script type="application/ld+json">
-        {JSON.stringify(getSchema())}
+        {JSON.stringify(mainSchema)}
       </script>
+      {faqSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      )}
     </Helmet>
   );
 };
