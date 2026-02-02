@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Wrench, Shield, Clock, Award, Users, Star } from 'lucide-react';
+import { Check, Wrench, Shield, Clock, Award, Users, Star, MapPin, Phone, Sparkles, Building2 } from 'lucide-react';
 
 const ConcreteRepair = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "Why is concrete repair necessary before epoxy coating?",
+      answer: "Cracks, spalling, and moisture issues will cause epoxy to fail prematurely. Proper concrete repair ensures your epoxy coating bonds correctly and lasts 15+ years instead of peeling within months."
+    },
+    {
+      question: "What is MVB moisture barrier and why do I need it in Florida?",
+      answer: "MVB (Moisture Vapor Barrier) is a special primer that blocks moisture from the concrete slab. Florida's high humidity and water table push moisture through concrete, causing epoxy to bubble and delaminate. MVB prevents this."
+    },
+    {
+      question: "Can you fix large cracks in my garage floor?",
+      answer: "Yes. We use epoxy crack filler and routing techniques to repair cracks of all sizes. For structural cracks, we may recommend additional reinforcement. All repairs are ground smooth before coating."
+    },
+    {
+      question: "How long does concrete repair take?",
+      answer: "Most residential concrete repair is completed in a few hours as part of our epoxy installation process. Extensive repairs may require an additional day of prep work."
+    },
+    {
+      question: "What causes concrete to spall in Florida?",
+      answer: "Spalling is usually caused by moisture penetration, freeze-thaw cycles (rare in FL), or poor concrete mix. Salt air near the coast also accelerates concrete deterioration. We remove loose material and fill with polymer-modified repair mortar."
+    },
+    {
+      question: "Do you offer concrete repair without epoxy coating?",
+      answer: "Yes, we can perform standalone concrete repair services. However, applying a protective coating after repair significantly extends the life of the concrete and prevents future damage."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -26,6 +55,23 @@ const ConcreteRepair = () => {
           "serviceType": "Concrete Repair"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
