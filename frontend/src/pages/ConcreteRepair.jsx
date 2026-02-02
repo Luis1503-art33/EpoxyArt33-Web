@@ -442,6 +442,86 @@ const ConcreteRepair = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Concrete Repair FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about concrete repair in Naples, FL</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-gray-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Areas: Naples, Marco Island & SWFL</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {['Naples', 'Marco Island', 'Fort Myers', 'Cape Coral', 'Bonita Springs', 'Estero'].map((city) => (
+              <div key={city} className="bg-gray-50 rounded-lg p-4 text-center border-2 hover:border-gray-400 transition-colors">
+                <MapPin className="w-6 h-6 text-gray-600 mx-auto mb-2" />
+                <span className="font-semibold text-gray-800">{city}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Related Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/garage-flake-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Garage Flake Floors</h3>
+                  <p className="text-gray-600">Complete after repair</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/garage-floor-coating.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Garage Floor Coating</h3>
+                  <p className="text-gray-600">Protect repaired concrete</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Building2 className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Commercial Floors</h3>
+                  <p className="text-gray-600">Industrial repair solutions</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
@@ -452,12 +532,12 @@ const ConcreteRepair = () => {
             Free inspection and repair quote. Serving all of SWFL.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact">
+            <Link to="/contact.html">
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white font-bold text-lg px-8">
                 Request Free Assessment
               </Button>
             </Link>
-            <Link to="/services">
+            <Link to="/services.html">
               <Button size="lg" variant="outline" className="border-2 border-black text-black hover:bg-black hover:text-white font-bold text-lg px-8">
                 View All Services
               </Button>
