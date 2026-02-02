@@ -12,15 +12,15 @@ const CommercialEpoxy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Commercial Epoxy Flooring Naples FL | Business Floor Coating Contractor"
-        description="Commercial epoxy flooring Naples FL. Restaurants, retail, warehouses. Minimal downtime, weekend installation available. Licensed & insured. Free estimate! ☎️ (239) 276-1462"
-        keywords="commercial epoxy flooring Naples FL, commercial floor coating Naples, business epoxy flooring near me, restaurant floor coating Naples, retail epoxy floor Fort Myers, commercial epoxy contractor Naples FL, warehouse flooring Naples"
-        url="/commercial-epoxy"
+        title="Commercial Epoxy Flooring Contractors Naples FL | Business Floors"
+        description="Commercial epoxy flooring contractors in Naples, FL. Restaurants, retail, warehouses. Minimal downtime, weekend installation. Licensed & insured. Free estimate! ☎️ (239) 276-1462"
+        keywords="commercial epoxy flooring Naples FL, commercial floor coating Naples, business epoxy flooring near me, restaurant floor coating Naples, retail epoxy floor Fort Myers, commercial epoxy contractor Naples FL"
+        url="/commercial-epoxy-flooring-naples-fl"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "name": "Commercial Epoxy Flooring Naples FL",
+          "name": "Commercial Epoxy Flooring Contractors Naples FL",
           "description": "Professional commercial epoxy flooring for restaurants, retail stores, warehouses and offices in Naples FL. Weekend installation available.",
           "areaServed": "Naples, FL",
           "serviceType": "Commercial Epoxy Flooring"
@@ -44,10 +44,10 @@ const CommercialEpoxy = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Commercial Epoxy Flooring Naples FL
+              Commercial Epoxy Flooring Contractors in Naples, FL
             </h1>
             <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
-              Restaurant, Retail & Warehouse Floor Coating Contractors
+              Restaurant, Retail & Warehouse Floor Coating Specialists
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
               Professional commercial flooring with <strong className="text-white">minimal business disruption</strong>. Weekend installation available.
