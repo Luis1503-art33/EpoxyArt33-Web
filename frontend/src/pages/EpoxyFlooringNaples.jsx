@@ -90,17 +90,16 @@ const EpoxyFlooringNaples = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Epoxy Flooring Naples FL | #1 Garage & Pool Deck Coating | EpoxyArt33"
-        description="Naples #1 epoxy flooring contractor. Garage floors, pool decks, metallic epoxy & commercial coatings. OSHA 30 certified, licensed & insured. 500+ projects. Free quotes! ☎️ (239) 276-1462"
-        keywords="epoxy flooring naples fl, epoxy flooring naples, garage floor coating naples, pool deck resurfacing naples, metallic epoxy naples, commercial epoxy naples, epoxy contractor naples fl, floor coating naples florida"
+        title="Epoxy Flooring Naples FL | #1 Rated Floor Coating Contractor"
+        description="Naples' top-rated epoxy flooring contractor. Garage floors, pool decks, commercial coatings. 15-year warranty. OSHA certified. Free estimate! ☎️ (239) 276-1462"
+        keywords="epoxy flooring naples fl, epoxy flooring naples, garage floor coating naples fl, pool deck resurfacing naples fl, metallic epoxy naples fl, commercial epoxy flooring naples, epoxy floor installers near me naples, concrete coating naples florida"
         url="/epoxy-flooring-naples"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/epoxy-flooring-naples#service",
           "name": "Epoxy Flooring Naples FL",
-          "description": "Professional epoxy flooring installation services in Naples, Florida. Garage floors, pool decks, metallic epoxy, commercial and industrial coatings.",
+          "description": "Professional epoxy flooring installation in Naples FL. Garage floors, pool decks, metallic epoxy, commercial coatings. 15-year warranty. OSHA certified.",
           "areaServed": {
             "@type": "City",
             "name": "Naples",
@@ -113,6 +112,13 @@ const EpoxyFlooringNaples = () => {
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-amber-700 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> Naples' #1 Rated • 15-Year Warranty • 500+ Local Projects • Free Estimates
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-24">
@@ -124,13 +130,16 @@ const EpoxyFlooringNaples = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <MapPin className="w-6 h-6 text-yellow-400" />
-              <span className="text-yellow-400 font-semibold text-lg">Serving Naples, FL & Collier County</span>
+              <span className="text-yellow-400 font-semibold text-lg">160 15th St SW, Naples, FL 34117</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Epoxy Flooring Naples FL - Professional Installation & Coating Services
+              Epoxy Flooring Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              #1 Rated Garage & Pool Deck Coating Contractor
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Naples' trusted epoxy flooring contractor. Transform your garage, pool deck, or commercial space with premium coatings that last 15-20+ years.
+              Naples' most trusted epoxy flooring contractor. <strong className="text-white">15-year warranty. 1-day installation. No hot tire pickup.</strong>
             </p>
             <div className="flex flex-wrap gap-4 justify-center mb-8">
               <Link to="/contact.html">
