@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Truck, Sun, Shield, Home, Sparkles } from 'lucide-react';
+import { Check, Truck, Sun, Shield, Home, Sparkles, MapPin, Phone, Award, Clock, Droplets } from 'lucide-react';
 
 const DrivewayResurfacing = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "How long does driveway resurfacing last in Florida?",
+      answer: "Our UV-stable polyaspartic driveway coatings last 10-15+ years in Naples and SWFL. The formula is designed to resist Florida sun, rain, and tire traffic without yellowing or peeling."
+    },
+    {
+      question: "Can you resurface a cracked driveway?",
+      answer: "Yes. We repair cracks, fill joints, and level uneven areas before applying the coating. Minor cracks are invisible after resurfacing. For severely damaged driveways, we may recommend partial replacement."
+    },
+    {
+      question: "What patterns and colors are available for driveway resurfacing?",
+      answer: "We offer solid colors, decorative flake patterns, and faux tile/stone designs. Popular choices include tan, gray, terracotta, and custom blends that complement your home's exterior."
+    },
+    {
+      question: "How long does driveway resurfacing take?",
+      answer: "Most residential driveways are completed in 1-2 days. You can walk on the surface in 24 hours and drive on it in 48-72 hours. Full cure takes 7 days."
+    },
+    {
+      question: "Is driveway resurfacing slip-resistant?",
+      answer: "Yes. We can add anti-slip texture to the topcoat for safety, especially important for sloped driveways. The texture provides traction even when wet from Florida rain."
+    },
+    {
+      question: "How much does driveway resurfacing cost in Naples?",
+      answer: "Driveway resurfacing typically costs $6-12 per sq ft depending on size, condition, and decorative pattern chosen. Contact us for a free on-site estimate."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -27,6 +56,23 @@ const DrivewayResurfacing = () => {
           "serviceType": "Driveway Resurfacing"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
       
       {/* Hero Section */}
