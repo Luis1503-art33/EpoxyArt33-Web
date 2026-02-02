@@ -158,9 +158,9 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO 
-        title="Epoxy Flooring Naples FL | #1 Rated Garage Floor Coating Contractor"
-        description="Naples' top-rated epoxy flooring contractor. Garage floors, pool decks & commercial coatings. 15-Year Warranty. OSHA certified. Free estimates! ☎️ (239) 276-1462"
-        keywords="epoxy flooring Naples FL, garage floor coating Naples FL, epoxy floor installers near me, commercial epoxy flooring Naples, pool deck resurfacing Naples FL, metallic epoxy Naples, epoxy flooring companies near me, concrete coating Naples FL"
+        title="Epoxy Flooring Naples FL | Garage Floor Coatings | EpoxyArt33"
+        description="Professional epoxy flooring & garage floor coatings in Naples, FL. Residential & commercial systems. Flake, metallic, quartz floors. Free estimates. Financing available. Call (239) 276-1462"
+        keywords="epoxy flooring Naples FL, garage floor coating Naples, epoxy floor installers near me, commercial epoxy flooring Naples, pool deck resurfacing Naples FL, metallic epoxy Naples, flake epoxy floors Naples"
         url="/"
       />
       <SchemaMarkup />
@@ -168,13 +168,13 @@ const Home = () => {
 
       {/* Trust Bar - Above the fold */}
       <div className="bg-amber-700 text-white py-2 text-center text-sm font-medium">
-        <span className="inline-flex items-center gap-2">
-          <Shield className="w-4 h-4" /> 15-Year Warranty • OSHA 30 Certified • Licensed & Insured • Financing Available
+        <span className="inline-flex items-center gap-2 flex-wrap justify-center">
+          <Shield className="w-4 h-4" /> 15-Year Warranty • OSHA 30 Certified • Licensed & Insured • <strong>Financing Available</strong>
         </span>
       </div>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -187,13 +187,14 @@ const Home = () => {
               </Badge>
             </motion.div>
             
+            {/* H1 - Exact match keyword */}
             <motion.h1 
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Epoxy Flooring & Garage Floor Coating in Naples, FL
+              Epoxy Flooring & Garage Floor Coatings in Naples, FL
             </motion.h1>
             
             <motion.p 
@@ -202,7 +203,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Professional epoxy floor installers serving Naples, Fort Myers, Marco Island & Southwest Florida. 
+              Professional epoxy floor installers serving Naples, Marco Island, Fort Myers & Southwest Florida. 
               <strong className="text-gray-900"> 1-Day installation. 15-Year durability. No hot tire pickup.</strong>
             </motion.p>
 
@@ -213,7 +214,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> 500+ Projects</span>
+              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> 500+ Projects Completed</span>
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> 100% Solids Epoxy</span>
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> UV-Stable Topcoat</span>
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-green-600" /> Moisture Barrier Included</span>
