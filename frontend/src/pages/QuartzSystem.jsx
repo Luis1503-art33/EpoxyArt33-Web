@@ -336,13 +336,172 @@ const QuartzSystem = () => {
               <p className="text-gray-600">Food-safe, easy to sanitize</p>
             </div>
             <div className="bg-white p-6 rounded-lg border-2 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold mb-2">Airplane Hangars</h3>
-              <p className="text-gray-600">Heavy aircraft and equipment</p>
+              <h3 className="text-xl font-bold mb-2">Pool Decks & Patios</h3>
+              <p className="text-gray-600">Slip-resistant, UV-stable for Florida sun</p>
             </div>
             <div className="bg-white p-6 rounded-lg border-2 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold mb-2">Medical Facilities</h3>
               <p className="text-gray-600">Sterile, non-porous surfaces</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Installation Process */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Our Quartz System Installation Process</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Professional installation is critical for industrial-grade quartz systems to perform for 20+ years.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">1</div>
+              <h3 className="text-xl font-bold mb-3">Diamond Grinding</h3>
+              <p className="text-gray-300">CSP 3-4 profile for heavy-duty systems. Creates optimal texture for maximum adhesion.</p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">2</div>
+              <h3 className="text-xl font-bold mb-3">MVB Primer</h3>
+              <p className="text-gray-300">Moisture Vapor Barrier blocks moisture—critical for Florida's humid climate and pool deck applications.</p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">3</div>
+              <h3 className="text-xl font-bold mb-3">Quartz Broadcast</h3>
+              <p className="text-gray-300">Multiple layers of 100% solids epoxy with quartz aggregate broadcast to saturation.</p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">4</div>
+              <h3 className="text-xl font-bold mb-3">Clear Topcoat</h3>
+              <p className="text-gray-300">UV-stable polyaspartic or polyurethane seal coat for durability and easy cleaning.</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/contact.html">
+              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+                <Phone className="w-5 h-5 mr-2" /> Get Free Site Assessment
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why EpoxyArt33 */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33 for Quartz Systems</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Industrial Experience</h3>
+              <p className="text-gray-600">Experience with commercial kitchens, pool decks, and industrial facilities.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">20-Year Durability</h3>
+              <p className="text-gray-600">Our quartz systems are built to last decades in demanding environments.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Licensed & Insured</h3>
+              <p className="text-gray-600">Full liability coverage and workers' comp for your protection.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Droplets className="w-8 h-8 text-gray-700" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Pool Deck Experts</h3>
+              <p className="text-gray-600">Specialized in Florida pool deck coatings that handle sun and water.</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/why-epoxyart33.html">
+              <Button variant="outline" className="border-2 border-gray-400 text-gray-700 hover:bg-gray-100 font-bold">
+                Learn More About Us <ChevronRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Quartz System FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about quartz epoxy flooring</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-gray-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Explore Our Other Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/garage-flake-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Garage Flake Floors</h3>
+                  <p className="text-gray-600">Decorative, slip-resistant garage flooring</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/urethane-cement-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Factory className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Urethane Cement</h3>
+                  <p className="text-gray-600">For commercial kitchens with thermal shock</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Building2 className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Commercial Epoxy</h3>
+                  <p className="text-gray-600">Professional flooring for businesses</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
