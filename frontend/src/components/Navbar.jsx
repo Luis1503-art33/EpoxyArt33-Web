@@ -11,17 +11,17 @@ const Navbar = () => {
   const services = [
     { name: 'All Services', path: '/services.html' },
     { name: 'Epoxy Flooring Naples', path: '/epoxy-flooring-naples.html' },
+    { name: 'Garage Flake Floors', path: '/garage-flake-floors-naples-fl.html' },
+    { name: 'Metallic Epoxy Floors', path: '/metallic-epoxy-floors-naples-fl.html' },
+    { name: 'Quartz & Pool Deck', path: '/quartz-pool-deck-coatings-naples-fl.html' },
+    { name: 'Commercial Epoxy', path: '/commercial-epoxy-flooring-naples-fl.html' },
+    { name: 'Urethane Cement', path: '/urethane-cement-flooring-naples-fl.html' },
     { name: 'Garage Floor Coating', path: '/garage-floor-coating.html' },
-    { name: 'Metallic Epoxy', path: '/metallic-epoxy.html' },
-    { name: 'Flake System', path: '/flake-system.html' },
-    { name: 'Quartz System', path: '/quartz-system.html' },
     { name: 'Pool Deck Resurfacing', path: '/pool-deck-resurfacing.html' },
-    { name: 'Commercial Epoxy', path: '/commercial-epoxy.html' },
     { name: 'Industrial Epoxy', path: '/industrial-epoxy.html' },
     { name: 'Concrete Repair', path: '/concrete-repair.html' },
     { name: 'Driveway Resurfacing', path: '/driveway-resurfacing.html' },
     { name: 'Waterproofing (TREMCO)', path: '/waterproofing.html' },
-    { name: 'Urethane Cement', path: '/urethane-cement.html' },
   ];
 
   const isActive = (path) => location.pathname === path || location.pathname === path.replace('.html', '');

@@ -33,16 +33,15 @@ const Footer = () => {
             <h4 className="font-bold mb-4 text-lg">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li><Link to="/epoxy-flooring-naples.html" className="hover:text-amber-500 transition-colors font-semibold text-amber-400">Epoxy Flooring Naples FL</Link></li>
-              <li><Link to="/garage-floor-coating.html" className="hover:text-amber-500 transition-colors">Garage Floor Coating</Link></li>
-              <li><Link to="/metallic-epoxy.html" className="hover:text-amber-500 transition-colors">Metallic Epoxy</Link></li>
-              <li><Link to="/flake-system.html" className="hover:text-amber-500 transition-colors">Flake System</Link></li>
-              <li><Link to="/quartz-system.html" className="hover:text-amber-500 transition-colors">Quartz System</Link></li>
+              <li><Link to="/garage-flake-floors-naples-fl.html" className="hover:text-amber-500 transition-colors">Garage Flake Floors</Link></li>
+              <li><Link to="/metallic-epoxy-floors-naples-fl.html" className="hover:text-amber-500 transition-colors">Metallic Epoxy Floors</Link></li>
+              <li><Link to="/quartz-pool-deck-coatings-naples-fl.html" className="hover:text-amber-500 transition-colors">Quartz & Pool Deck Coatings</Link></li>
+              <li><Link to="/commercial-epoxy-flooring-naples-fl.html" className="hover:text-amber-500 transition-colors">Commercial Epoxy</Link></li>
+              <li><Link to="/urethane-cement-flooring-naples-fl.html" className="hover:text-amber-500 transition-colors">Urethane Cement</Link></li>
               <li><Link to="/pool-deck-resurfacing.html" className="hover:text-amber-500 transition-colors">Pool Deck Resurfacing</Link></li>
-              <li><Link to="/commercial-epoxy.html" className="hover:text-amber-500 transition-colors">Commercial Epoxy</Link></li>
               <li><Link to="/industrial-epoxy.html" className="hover:text-amber-500 transition-colors">Industrial Epoxy</Link></li>
               <li><Link to="/driveway-resurfacing.html" className="hover:text-amber-500 transition-colors">Driveway Resurfacing</Link></li>
               <li><Link to="/waterproofing.html" className="hover:text-amber-500 transition-colors">Waterproofing</Link></li>
-              <li><Link to="/urethane-cement.html" className="hover:text-amber-500 transition-colors">Urethane Cement</Link></li>
             </ul>
           </div>
 
