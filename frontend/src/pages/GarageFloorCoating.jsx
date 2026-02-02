@@ -367,8 +367,8 @@ const GarageFloorCoating = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Installation Process</h2>
-            <p className="text-xl text-gray-600">Professional results, guaranteed</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Professional Installation Process</h2>
+            <p className="text-xl text-gray-600">The difference between a floor that lasts 5 years vs 15+ years</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -376,24 +376,24 @@ const GarageFloorCoating = () => {
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-2">Grind & Repair</h3>
-              <p className="text-gray-600">Diamond grind concrete and repair any cracks or damage</p>
+              <h3 className="text-xl font-bold mb-2">Diamond Grinding (CSP 2-3)</h3>
+              <p className="text-gray-600">Industrial diamond grinders create optimal texture for permanent adhesion—not acid etching</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-bold mb-2">Primer Application</h3>
-              <p className="text-gray-600">MVB primer for humidity control and maximum adhesion</p>
+              <h3 className="text-xl font-bold mb-2">MVB Moisture Barrier</h3>
+              <p className="text-gray-600">Blocks up to 25 lbs of moisture—critical for Florida humidity and prevents delamination</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-bold mb-2">Epoxy & Flakes</h3>
-              <p className="text-gray-600">100% solid epoxy base with your chosen Torginol flake color</p>
+              <h3 className="text-xl font-bold mb-2">100% Solids Epoxy + Flakes</h3>
+              <p className="text-gray-600">Chemtec commercial-grade epoxy with Torginol decorative flakes—200+ colors</p>
             </div>
             
             <div className="text-center">
@@ -401,8 +401,137 @@ const GarageFloorCoating = () => {
                 4
               </div>
               <h3 className="text-xl font-bold mb-2">Polyaspartic Topcoat</h3>
-              <p className="text-gray-600">UV-resistant, high-gloss Polyaspartic seal</p>
+              <p className="text-gray-600">UV-stable, resists hot tire pickup, high-gloss finish that lasts 15+ years</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why EpoxyArt33 Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33 in Naples, FL</h2>
+            <p className="text-xl text-gray-600">We are not a franchise. We are local flooring experts who stand behind every job.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Commercial-Grade Materials</h3>
+              <p className="text-gray-600">Chemtec 100% solids epoxy + Torginol flakes—same products used by industrial contractors</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">15-Year Warranty</h3>
+              <p className="text-gray-600">We stand behind our work with comprehensive warranty coverage</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">1-Day Installation</h3>
+              <p className="text-gray-600">Most garage floors completed in a single day. Park in 48-72 hours</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Financing Available</h3>
+              <p className="text-gray-600">Affordable payment plans to transform your garage today</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Garage Floor Coating FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about garage floor coating in Naples, FL</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-yellow-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Areas: Naples, Marco Island & SWFL</h2>
+            <p className="text-xl text-gray-600">Professional garage floor coating throughout Southwest Florida</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {['Naples', 'Marco Island', 'Fort Myers', 'Cape Coral', 'Bonita Springs', 'Estero'].map((city) => (
+              <div key={city} className="bg-white rounded-lg p-4 text-center border-2 hover:border-yellow-400 transition-colors">
+                <MapPin className="w-6 h-6 text-yellow-600 mx-auto mb-2" />
+                <span className="font-semibold text-gray-800">{city}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-gray-600">Also serving: Golden Gate, North Naples, Pelican Bay, Vanderbilt Beach, Ave Maria, Immokalee, Lehigh Acres</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Explore Our Other Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/garage-flake-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Flake System</h3>
+                  <p className="text-gray-600">Premium Torginol flake floors</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/metallic-epoxy-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Star className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Metallic Epoxy</h3>
+                  <p className="text-gray-600">Stunning 3D designer floors</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/pool-deck-resurfacing.html" className="group">
+              <Card className="border-2 hover:border-yellow-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-yellow-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-yellow-600">Pool Deck</h3>
+                  <p className="text-gray-600">Slip-resistant coatings</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
