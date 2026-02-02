@@ -293,8 +293,8 @@ const Home = () => {
         <div className="container mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Specialized epoxy solutions for every need in Southwest Florida</p>
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Residential & Commercial Epoxy Flooring Solutions</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Specialized epoxy systems for every need in Naples, Marco Island & Southwest Florida</p>
             </div>
           </ScrollReveal>
 
