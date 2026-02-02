@@ -362,6 +362,129 @@ const Waterproofing = () => {
         </div>
       </section>
 
+      {/* Why EpoxyArt33 */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33 for Waterproofing</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">TREMCO Certified</h3>
+              <p className="text-gray-600">Professional application of premium TREMCO systems</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">15-Year Protection</h3>
+              <p className="text-gray-600">Long-lasting waterproofing for Florida weather</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building2 className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Commercial & Residential</h3>
+              <p className="text-gray-600">From condos to commercial buildings</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Fast Turnaround</h3>
+              <p className="text-gray-600">Minimize disruption to your property</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Waterproofing FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about waterproofing in Naples, FL</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-blue-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Areas: Naples, Marco Island & SWFL</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {['Naples', 'Marco Island', 'Fort Myers', 'Cape Coral', 'Bonita Springs', 'Estero'].map((city) => (
+              <div key={city} className="bg-white rounded-lg p-4 text-center border-2 hover:border-blue-400 transition-colors">
+                <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
+                <span className="font-semibold text-gray-800">{city}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Related Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/pool-deck-resurfacing.html" className="group">
+              <Card className="border-2 hover:border-blue-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Droplets className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600">Pool Deck</h3>
+                  <p className="text-gray-600">Waterproof + beautiful</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/concrete-repair.html" className="group">
+              <Card className="border-2 hover:border-blue-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600">Concrete Repair</h3>
+                  <p className="text-gray-600">Fix before waterproofing</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-blue-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Building2 className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600">Commercial</h3>
+                  <p className="text-gray-600">Building solutions</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="container mx-auto px-4 text-center">
@@ -372,7 +495,7 @@ const Waterproofing = () => {
             Protect your balconies, terraces, and walkways with professional TREMCO waterproofing. Serving Naples, Fort Myers, and all of SWFL.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/contact">
+            <Link to="/contact.html">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
                 Get Free Assessment
               </Button>
