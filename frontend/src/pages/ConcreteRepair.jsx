@@ -12,22 +12,28 @@ const ConcreteRepair = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Concrete Repair Naples FL | Crack Repair & Restoration SWFL | EpoxyArt33"
-        description="Professional concrete repair in Naples, Fort Myers & SWFL. Fix cracks, spalling, uneven slabs before epoxy coating. Complete repair + epoxy packages. Free assessment! (239) 276-1462"
-        keywords="concrete repair Naples, crack repair Fort Myers, concrete restoration SWFL, spalling repair, concrete leveling Cape Coral, garage floor repair Naples, concrete crack filling"
+        title="Concrete Repair Naples FL | Crack Repair & Moisture Mitigation"
+        description="Concrete repair Naples FL. Fix cracks, spalling, moisture issues before epoxy coating. MVB moisture barrier for high humidity. Free assessment! ☎️ (239) 276-1462"
+        keywords="concrete repair Naples FL, crack repair Naples, concrete restoration Naples FL, spalling repair Fort Myers, moisture mitigation Naples, garage floor repair Naples FL, concrete crack filling SWFL, MVB moisture barrier"
         url="/concrete-repair"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/concrete-repair#service",
-          "name": "Concrete Repair & Restoration",
-          "description": "Professional concrete repair services including crack filling, spalling repair, and surface restoration",
-          "areaServed": "Southwest Florida",
+          "name": "Concrete Repair & Moisture Mitigation Naples FL",
+          "description": "Professional concrete repair and moisture mitigation services. Crack filling, spalling repair, and MVB moisture barrier installation.",
+          "areaServed": "Naples, FL",
           "serviceType": "Concrete Repair"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-gray-700 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> Moisture Vapor Barrier (MVB) • Crack & Spall Repair • Diamond Grinding • Complete Prep Packages
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-20">
@@ -35,10 +41,13 @@ const ConcreteRepair = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-yellow-400">Concrete Repair</span><br />& Restoration
+              Concrete Repair & Moisture Mitigation Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Fix Cracks, Spalling & Moisture Issues Before Epoxy Coating
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Fix cracks, spalling, and damaged concrete before applying epoxy. Professional repair services in SWFL.
+              Proper preparation is 90% of a successful epoxy floor. <strong className="text-white">We fix the problems that cause epoxy failure.</strong>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
@@ -52,6 +61,41 @@ const ConcreteRepair = () => {
                 </Button>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Moisture Mitigation Section - NEW */}
+      <section className="py-16 bg-yellow-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Why Moisture Mitigation Matters in Florida</h2>
+            <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+              Florida's high humidity and water table cause significant <strong>moisture vapor transmission</strong> through concrete. This moisture can cause epoxy to:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                <h3 className="font-bold text-lg mb-2 text-red-700">Without MVB Primer:</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Bubbling and blistering</li>
+                  <li>• Delamination (peeling)</li>
+                  <li>• White discoloration</li>
+                  <li>• Complete coating failure</li>
+                </ul>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                <h3 className="font-bold text-lg mb-2 text-green-700">With Our MVB System:</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Blocks up to 25 lbs moisture vapor</li>
+                  <li>• Prevents delamination</li>
+                  <li>• Extends coating life 15+ years</li>
+                  <li>• Warranty-backed protection</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-lg text-gray-700 text-center">
+              <strong>We include MVB moisture barrier on EVERY job</strong> — it's not an upsell, it's proper preparation.
+            </p>
           </div>
         </div>
       </section>
