@@ -539,44 +539,22 @@ const EpoxyFlooringNaples = () => {
       {/* FAQ Section for Naples */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions - Epoxy Flooring Naples
             </h2>
-            
-            <div className="space-y-6">
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">How long does epoxy flooring last in Naples?</h3>
-                <p className="text-gray-700">
-                  With proper installation and our premium materials, epoxy flooring in Naples typically lasts 15-20+ years. 
-                  Our UV-resistant topcoats are specifically chosen to withstand Naples' intense sunshine without yellowing.
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Is epoxy flooring good for Naples humidity?</h3>
-                <p className="text-gray-700">
-                  Absolutely! We use moisture vapor barrier (MVB) primers specifically designed for Florida's humid climate. 
-                  This prevents the peeling and bubbling that occurs when moisture is trapped under the coating.
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">How quickly can you complete a Naples garage floor?</h3>
-                <p className="text-gray-700">
-                  Most Naples garage floors can be completed in 1-2 days. The floor is typically ready for light foot traffic 
-                  within 24 hours and vehicle traffic within 72 hours, depending on the system chosen.
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Do you offer free estimates in Naples?</h3>
-                <p className="text-gray-700">
-                  Yes! We offer completely free, no-obligation estimates for all Naples properties. We'll visit your home or business, 
-                  assess the concrete condition, discuss your options, and provide a detailed written quote.
-                </p>
-              </div>
-            </div>
+            <p className="text-xl text-gray-600">Common questions about epoxy flooring in Naples, FL</p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-amber-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
