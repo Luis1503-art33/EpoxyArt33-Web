@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Sparkles, Palette, Eye, Home, Building2, Shield } from 'lucide-react';
+import { Check, Sparkles, Palette, Eye, Home, Building2, Shield, Phone, ChevronRight, Award, Clock } from 'lucide-react';
 
 const MetallicEpoxy = () => {
   return (
