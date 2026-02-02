@@ -12,22 +12,28 @@ const FlakeSystem = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
-        title="Torginol Flake Epoxy System Naples FL | Chip Flooring SWFL | EpoxyArt33"
-        description="Premium Torginol flake epoxy flooring in Naples, Fort Myers & SWFL. Hundreds of colors, slip-resistant, easy to clean. Perfect for garages & pool decks. Free quotes! (239) 276-1462"
-        keywords="flake epoxy flooring Naples, Torginol flakes Fort Myers, chip floor coating SWFL, decorative epoxy flakes, garage flake floor Cape Coral, vinyl chip flooring Naples, epoxy flake system"
+        title="Flake Epoxy Flooring Naples FL | Torginol Chip Floor Coating"
+        description="Flake epoxy flooring Naples FL. Premium Torginol flakes, 200+ colors, slip-resistant. Perfect for garages & pool decks. Free estimate! ☎️ (239) 276-1462"
+        keywords="flake epoxy flooring Naples FL, Torginol flake floor Naples, chip floor coating Naples FL, decorative epoxy flakes Fort Myers, garage flake floor near me, vinyl chip flooring Naples, epoxy flake system SWFL"
         url="/flake-system"
       />
       <SchemaMarkup 
         data={{
           "@type": "Service",
-          "@id": "https://epoxyart33.com/flake-system#service",
-          "name": "Torginol Flake Epoxy System",
-          "description": "Decorative flake epoxy flooring with hundreds of color options",
-          "areaServed": "Southwest Florida",
+          "name": "Flake Epoxy Flooring Naples FL",
+          "description": "Decorative Torginol flake epoxy flooring with 200+ color options. Slip-resistant and easy to maintain.",
+          "areaServed": "Naples, FL",
           "serviceType": "Flake Epoxy System"
         }}
       />
       <Navbar />
+
+      {/* Trust Bar */}
+      <div className="bg-amber-700 text-white py-2 text-center text-sm font-medium">
+        <span className="inline-flex items-center gap-2">
+          <Shield className="w-4 h-4" /> 200+ Color Options • Slip-Resistant Texture • UV-Stable • Premium Torginol Flakes
+        </span>
+      </div>
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white py-20">
@@ -38,15 +44,18 @@ const FlakeSystem = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-yellow-400">Torginol Flake</span> Epoxy System
+              Flake Epoxy Flooring Naples FL
             </h1>
+            <h2 className="text-2xl md:text-3xl mb-6 text-yellow-400 font-semibold">
+              Premium Torginol Chip Floor Coating - 200+ Colors Available
+            </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Beautiful, slip-resistant, and durable. The perfect flooring solution for garages, pool decks, and more.
+              Beautiful, slip-resistant, and durable. <strong className="text-white">The #1 choice for Naples garages and pool decks.</strong>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8">
-                  Get Free Quote
+                  Get Free Estimate
                 </Button>
               </Link>
               <Link to="/showroom">
