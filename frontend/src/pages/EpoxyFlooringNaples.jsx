@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
@@ -25,6 +26,34 @@ import {
 } from 'lucide-react';
 
 const EpoxyFlooringNaples = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "What is the best epoxy flooring for Naples, FL garages?",
+      answer: "For Naples garages, we recommend our flake epoxy system with polyaspartic topcoat. It resists hot tire pickup, UV yellowing, and Florida humidity. The MVB moisture barrier is essential due to Naples' high water table."
+    },
+    {
+      question: "How much does epoxy flooring cost in Naples?",
+      answer: "Epoxy flooring in Naples typically costs $5-15 per sq ft depending on the system. Flake systems start around $5-8/sq ft, metallic $8-15/sq ft. We offer free estimates and financing options."
+    },
+    {
+      question: "How long does epoxy flooring last in Florida weather?",
+      answer: "With proper installation and UV-stable topcoat, epoxy flooring lasts 15-20+ years in Naples. Key factors are professional prep work (diamond grinding, MVB primer) and quality materials."
+    },
+    {
+      question: "Do you serve all of Naples and Collier County?",
+      answer: "Yes! We serve all Naples neighborhoods including North Naples, East Naples, Golden Gate, Pelican Bay, Park Shore, Vanderbilt Beach, and surrounding Collier County areas."
+    },
+    {
+      question: "Can epoxy flooring handle Naples humidity?",
+      answer: "Yes, when installed correctly. We always use MVB (Moisture Vapor Barrier) primer that blocks moisture from the slab—critical for Florida's humid climate. This prevents bubbling and delamination."
+    },
+    {
+      question: "How long does epoxy installation take in Naples?",
+      answer: "Most residential projects (garages, patios) are completed in 1 day. Commercial projects typically take 2-3 days. You can walk on floors in 24 hours and park vehicles in 48-72 hours."
+    }
+  ];
+
   const services = [
     {
       title: 'Garage Floor Coating',
@@ -41,13 +70,13 @@ const EpoxyFlooringNaples = () => {
     {
       title: 'Metallic Epoxy',
       description: 'Stunning 3D metallic effects that make your Naples home stand out.',
-      link: '/metallic-epoxy.html',
+      link: '/metallic-epoxy-floors-naples-fl.html',
       icon: Sparkles
     },
     {
       title: 'Commercial Epoxy',
       description: 'Durable flooring solutions for Naples restaurants, retail, and offices.',
-      link: '/commercial-epoxy.html',
+      link: '/commercial-epoxy-flooring-naples-fl.html',
       icon: Building2
     },
     {
