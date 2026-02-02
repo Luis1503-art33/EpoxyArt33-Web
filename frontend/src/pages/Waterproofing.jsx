@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Droplets, Shield, Sun, Building2, Timer, Award } from 'lucide-react';
+import { Check, Droplets, Shield, Sun, Building2, Timer, Award, MapPin, Phone, Clock, Sparkles } from 'lucide-react';
 
 const Waterproofing = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "What is TREMCO 350/351 waterproofing system?",
+      answer: "TREMCO 350/351 is a premium traffic-bearing waterproofing membrane system. The 350 is a polyurethane base coat and 351 is a wear-resistant topcoat. Together they provide waterproofing plus a durable walking surface for balconies and terraces."
+    },
+    {
+      question: "How long does waterproofing last in Florida?",
+      answer: "TREMCO waterproofing systems typically last 15-20+ years with proper installation. The system is designed for Florida's heavy rainfall, UV exposure, and temperature variations."
+    },
+    {
+      question: "Can you waterproof an existing balcony or terrace?",
+      answer: "Yes. We can apply waterproofing over existing concrete surfaces after proper preparation. For failing waterproofing, we remove the old membrane and apply a new system."
+    },
+    {
+      question: "What areas can be waterproofed?",
+      answer: "We waterproof balconies, terraces, walkways, parking structures, rooftop decks, and any exterior surface above living space. If water can penetrate and cause damage below, we can waterproof it."
+    },
+    {
+      question: "Is waterproofing slip-resistant?",
+      answer: "Yes. The TREMCO 351 topcoat includes slip-resistant texture for safety. This is critical for exterior surfaces that get wet from rain or pool splash."
+    },
+    {
+      question: "How much does waterproofing cost in Naples?",
+      answer: "Waterproofing typically costs $10-20 per sq ft depending on substrate condition and accessibility. Contact us for a free assessment and custom quote for your project."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -27,6 +56,23 @@ const Waterproofing = () => {
           "serviceType": "Waterproofing"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
       
       {/* Hero Section */}
