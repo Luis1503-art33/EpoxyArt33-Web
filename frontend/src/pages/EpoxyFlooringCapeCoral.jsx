@@ -9,11 +9,39 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Star, Shield, Phone, MapPin, Home, Building2, Droplets, Sparkles, Factory, ChevronRight, BadgeCheck } from 'lucide-react';
 
 const EpoxyFlooringCapeCoral = () => {
+  // FAQ Schema Data for Cape Coral
+  const faqData = [
+    {
+      question: "How much does epoxy flooring cost in Cape Coral?",
+      answer: "Epoxy flooring in Cape Coral typically costs $5-15 per sq ft. Garage flake floors start at $5-8/sq ft, metallic epoxy $8-15/sq ft. We offer free estimates and financing options for Cape Coral homeowners."
+    },
+    {
+      question: "Is epoxy flooring good for Cape Coral canal homes?",
+      answer: "Yes! Cape Coral's 400+ miles of canals mean high humidity and potential salt air exposure. We use MVB moisture barrier and salt-resistant coatings specifically designed for waterfront properties."
+    },
+    {
+      question: "Do you serve all Cape Coral neighborhoods?",
+      answer: "Yes! We serve all Cape Coral areas including North and South Cape, Pelican, Burnt Store, Sandoval, Tarpon Point, Yacht Club, and all communities. We also serve nearby Fort Myers and Bonita Springs."
+    },
+    {
+      question: "How long does epoxy installation take in Cape Coral?",
+      answer: "Most Cape Coral garage floors are completed in 1 day. Pool decks take 1-2 days. You can walk on floors in 24 hours and drive on garage floors in 48-72 hours."
+    },
+    {
+      question: "Can epoxy handle Cape Coral's hurricane season?",
+      answer: "Absolutely! Our coatings are hurricane-tested and designed for Southwest Florida weather. The seamless, waterproof surface actually helps protect your concrete from storm damage."
+    },
+    {
+      question: "Do you offer financing for Cape Coral projects?",
+      answer: "Yes! We offer financing options to make epoxy flooring affordable. Ask about our payment plans during your free estimate. Transform your Cape Coral home today!"
+    }
+  ];
+
   const services = [
     { title: 'Garage Floor Coating', description: 'Transform your Cape Coral garage with premium epoxy coatings.', link: '/garage-floor-coating.html', icon: Home },
     { title: 'Pool Deck Resurfacing', description: 'Slip-resistant coatings perfect for Cape Coral pool areas.', link: '/pool-deck-resurfacing.html', icon: Droplets },
-    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Cape Coral homes.', link: '/metallic-epoxy.html', icon: Sparkles },
-    { title: 'Commercial Epoxy', description: 'Durable flooring for Cape Coral businesses.', link: '/commercial-epoxy.html', icon: Building2 },
+    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Cape Coral homes.', link: '/metallic-epoxy-floors-naples-fl.html', icon: Sparkles },
+    { title: 'Commercial Epoxy', description: 'Durable flooring for Cape Coral businesses.', link: '/commercial-epoxy-flooring-naples-fl.html', icon: Building2 },
     { title: 'Industrial Epoxy', description: 'Heavy-duty coatings for Cape Coral warehouses.', link: '/industrial-epoxy.html', icon: Factory },
     { title: 'Concrete Repair', description: 'Fix cracks and damage before coating.', link: '/concrete-repair.html', icon: Shield }
   ];
@@ -28,7 +56,17 @@ const EpoxyFlooringCapeCoral = () => {
         keywords="epoxy flooring cape coral, epoxy flooring cape coral fl, garage floor coating cape coral, pool deck resurfacing cape coral, metallic epoxy cape coral, commercial epoxy cape coral, epoxy contractor cape coral"
         url="/epoxy-flooring-cape-coral"
       />
-      <SchemaMarkup data={{ "@type": "Service", "@id": "https://epoxyart33.com/epoxy-flooring-cape-coral#service", "name": "Epoxy Flooring Cape Coral FL", "description": "Professional epoxy flooring installation in Cape Coral, Florida", "areaServed": { "@type": "City", "name": "Cape Coral", "containedInPlace": { "@type": "State", "name": "Florida" } }, "serviceType": "Epoxy Flooring Installation" }} />
+      <SchemaMarkup 
+        data={{ 
+          "@type": "Service", 
+          "@id": "https://epoxyart33.com/epoxy-flooring-cape-coral#service", 
+          "name": "Epoxy Flooring Cape Coral FL", 
+          "description": "Professional epoxy flooring installation in Cape Coral, Florida", 
+          "areaServed": { "@type": "City", "name": "Cape Coral", "containedInPlace": { "@type": "State", "name": "Florida" } }, 
+          "serviceType": "Epoxy Flooring Installation" 
+        }}
+        faqData={faqData}
+      />
       <Navbar />
       
       {/* Hero */}
