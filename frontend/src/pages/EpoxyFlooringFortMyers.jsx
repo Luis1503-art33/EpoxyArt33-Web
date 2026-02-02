@@ -9,11 +9,39 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Star, Shield, Clock, Phone, MapPin, Award, Home, Building2, Droplets, Sparkles, Factory, ChevronRight, BadgeCheck } from 'lucide-react';
 
 const EpoxyFlooringFortMyers = () => {
+  // FAQ Schema Data for Fort Myers
+  const faqData = [
+    {
+      question: "How much does epoxy flooring cost in Fort Myers?",
+      answer: "Epoxy flooring in Fort Myers typically costs $5-15 per sq ft depending on the system. Garage flake floors start at $5-8/sq ft, metallic epoxy $8-15/sq ft. We offer free estimates and financing options for Lee County residents."
+    },
+    {
+      question: "How long does epoxy flooring last in Fort Myers weather?",
+      answer: "With proper installation using UV-stable polyaspartic topcoat and MVB moisture barrier, epoxy floors last 15-20+ years in Fort Myers. Our coatings are specifically designed for Lee County's humidity and intense sun."
+    },
+    {
+      question: "Do you serve all Fort Myers neighborhoods?",
+      answer: "Yes! We serve all Fort Myers areas including Downtown, Fort Myers Beach, Gateway, McGregor, San Carlos Park, and all Lee County communities. We also serve nearby Cape Coral, Bonita Springs, and Estero."
+    },
+    {
+      question: "Can you install epoxy on my Fort Myers pool deck?",
+      answer: "Absolutely! Pool deck coating is one of our specialties. We use slip-resistant, UV-stable polyaspartic that handles Florida sun and constant water exposure. Perfect for Fort Myers waterfront homes."
+    },
+    {
+      question: "How long does Fort Myers epoxy installation take?",
+      answer: "Most Fort Myers garage floors are completed in 1 day. Pool decks and larger projects take 1-2 days. You can walk on floors in 24 hours and drive on garage floors in 48-72 hours."
+    },
+    {
+      question: "Is epoxy flooring good for Fort Myers humidity?",
+      answer: "Yes, when installed correctly. We always apply MVB (Moisture Vapor Barrier) primer that blocks moisture from Lee County's humid climate. This prevents the bubbling and peeling that happens with DIY kits."
+    }
+  ];
+
   const services = [
     { title: 'Garage Floor Coating', description: 'Transform your Fort Myers garage with premium epoxy. Flake, metallic, or solid color.', link: '/garage-floor-coating.html', icon: Home },
     { title: 'Pool Deck Resurfacing', description: 'Slip-resistant coatings perfect for Fort Myers pool areas and lanais.', link: '/pool-deck-resurfacing.html', icon: Droplets },
-    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Fort Myers homes and businesses.', link: '/metallic-epoxy.html', icon: Sparkles },
-    { title: 'Commercial Epoxy', description: 'Durable flooring for Fort Myers restaurants, retail, and offices.', link: '/commercial-epoxy.html', icon: Building2 },
+    { title: 'Metallic Epoxy', description: 'Stunning 3D metallic effects for Fort Myers homes and businesses.', link: '/metallic-epoxy-floors-naples-fl.html', icon: Sparkles },
+    { title: 'Commercial Epoxy', description: 'Durable flooring for Fort Myers restaurants, retail, and offices.', link: '/commercial-epoxy-flooring-naples-fl.html', icon: Building2 },
     { title: 'Industrial Epoxy', description: 'Heavy-duty coatings for Fort Myers warehouses and manufacturing.', link: '/industrial-epoxy.html', icon: Factory },
     { title: 'Concrete Repair', description: 'Fix cracks and damage before coating. Essential for Lee County concrete.', link: '/concrete-repair.html', icon: Shield }
   ];
@@ -28,7 +56,17 @@ const EpoxyFlooringFortMyers = () => {
         keywords="epoxy flooring fort myers, epoxy flooring fort myers fl, garage floor coating fort myers, pool deck resurfacing fort myers, metallic epoxy fort myers, commercial epoxy lee county, epoxy contractor fort myers"
         url="/epoxy-flooring-fort-myers"
       />
-      <SchemaMarkup data={{ "@type": "Service", "@id": "https://epoxyart33.com/epoxy-flooring-fort-myers#service", "name": "Epoxy Flooring Fort Myers FL", "description": "Professional epoxy flooring installation in Fort Myers, Florida", "areaServed": { "@type": "City", "name": "Fort Myers", "containedInPlace": { "@type": "State", "name": "Florida" } }, "serviceType": "Epoxy Flooring Installation" }} />
+      <SchemaMarkup 
+        data={{ 
+          "@type": "Service", 
+          "@id": "https://epoxyart33.com/epoxy-flooring-fort-myers#service", 
+          "name": "Epoxy Flooring Fort Myers FL", 
+          "description": "Professional epoxy flooring installation in Fort Myers, Florida", 
+          "areaServed": { "@type": "City", "name": "Fort Myers", "containedInPlace": { "@type": "State", "name": "Florida" } }, 
+          "serviceType": "Epoxy Flooring Installation" 
+        }}
+        faqData={faqData}
+      />
       <Navbar />
       
       {/* Hero */}
