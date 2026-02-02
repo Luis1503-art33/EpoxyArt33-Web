@@ -400,6 +400,165 @@ const MetallicEpoxy = () => {
         </div>
       </section>
 
+      {/* Our Installation Process */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Our Metallic Epoxy Installation Process</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Creating a stunning metallic floor requires precision and expertise. Here's our proven process.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">1</div>
+              <h3 className="text-xl font-bold mb-3">Diamond Grinding</h3>
+              <p className="text-gray-300">CSP 2-3 profile for maximum adhesion. Essential for metallic systems to bond properly.</p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">2</div>
+              <h3 className="text-xl font-bold mb-3">MVB Primer</h3>
+              <p className="text-gray-300">Moisture Vapor Barrier prevents bubbles and delamination—critical in Florida's humidity.</p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">3</div>
+              <h3 className="text-xl font-bold mb-3">Metallic Epoxy Application</h3>
+              <p className="text-gray-300">100% solids epoxy with metallic pigments carefully manipulated for unique 3D effects.</p>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-6">
+              <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 font-bold text-black text-xl">4</div>
+              <h3 className="text-xl font-bold mb-3">UV-Stable Topcoat</h3>
+              <p className="text-gray-300">Polyaspartic clear coat protects the metallic beauty and prevents yellowing.</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/contact.html">
+              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
+                <Phone className="w-5 h-5 mr-2" /> Schedule Free Consultation
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why EpoxyArt33 */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33 for Metallic Epoxy</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Sparkles className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Artistic Expertise</h3>
+              <p className="text-gray-600">We treat each floor as a work of art, not just a coating job.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Premium Materials</h3>
+              <p className="text-gray-600">Only the highest quality metallic pigments and 100% solids epoxy.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">15-Year Warranty</h3>
+              <p className="text-gray-600">We stand behind the beauty and durability of every metallic floor.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Palette className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Custom Designs</h3>
+              <p className="text-gray-600">Unlimited color combinations to match your vision.</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/why-epoxyart33.html">
+              <Button variant="outline" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white font-bold">
+                Learn More About Us <ChevronRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Metallic Epoxy FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about metallic epoxy flooring</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-purple-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Explore Our Other Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/garage-flake-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-purple-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600">Garage Flake Floors</h3>
+                  <p className="text-gray-600">Durable, slip-resistant floors for garages</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-purple-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Building2 className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600">Commercial Epoxy</h3>
+                  <p className="text-gray-600">Professional flooring for businesses</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/quartz-pool-deck-coatings-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-purple-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-purple-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600">Quartz & Pool Deck</h3>
+                  <p className="text-gray-600">Heavy-duty outdoor coatings</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-yellow-400 to-yellow-500">
         <div className="container mx-auto px-4 text-center">
