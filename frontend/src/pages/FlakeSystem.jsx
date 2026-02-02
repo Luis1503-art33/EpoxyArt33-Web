@@ -10,6 +10,34 @@ import { Card, CardContent } from '../components/ui/card';
 import { Check, Shield, Sparkles, Home, Droplets, Phone, ChevronRight, Award, Clock } from 'lucide-react';
 
 const FlakeSystem = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "How long does a flake epoxy floor last in Naples, FL?",
+      answer: "With proper installation using 100% solids epoxy and polyaspartic topcoat, flake floors last 15-20+ years in Naples. Our UV-stable topcoat prevents yellowing from Florida sun exposure."
+    },
+    {
+      question: "Will my garage floor coating peel from hot tires?",
+      answer: "No. We use polyaspartic topcoat specifically designed to resist hot tire pickup. Unlike DIY kits, our commercial-grade system handles the heat from hot tires without peeling or discoloring."
+    },
+    {
+      question: "How do you prepare the concrete before coating?",
+      answer: "We diamond grind the concrete to CSP 2-3 profile (not acid etch) for maximum adhesion. Then we repair all cracks and apply MVB (Moisture Vapor Barrier) primer—critical for Florida's humidity."
+    },
+    {
+      question: "Can you coat a garage floor with moisture issues?",
+      answer: "Yes. Our MVB primer blocks up to 25 lbs of moisture vapor transmission, making it ideal for Florida slabs. We test moisture levels before installation and use appropriate primers."
+    },
+    {
+      question: "How long until I can park on my new garage floor?",
+      answer: "Light foot traffic in 24 hours. You can park vehicles on the floor after 48-72 hours. Full cure takes 7 days, but normal use can begin within 3 days."
+    },
+    {
+      question: "What's the difference between flake and metallic epoxy?",
+      answer: "Flake epoxy uses colored chips for texture and slip resistance—ideal for garages and pool decks. Metallic creates smooth, 3D swirled effects for a luxury look—better for interior living spaces and showrooms."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -27,6 +55,23 @@ const FlakeSystem = () => {
           "serviceType": "Garage Flake Floor Coating"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
