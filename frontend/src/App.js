@@ -55,16 +55,21 @@ function App() {
           
           {/* Service Pages with .html */}
           <Route path="/garage-floor-coating.html" element={<GarageFloorCoating />} />
+          <Route path="/garage-flake-floors-naples-fl.html" element={<FlakeSystem />} />
           <Route path="/metallic-epoxy.html" element={<MetallicEpoxy />} />
+          <Route path="/metallic-epoxy-floors-naples-fl.html" element={<MetallicEpoxy />} />
           <Route path="/flake-system.html" element={<FlakeSystem />} />
           <Route path="/quartz-system.html" element={<QuartzSystem />} />
+          <Route path="/quartz-pool-deck-coatings-naples-fl.html" element={<QuartzSystem />} />
           <Route path="/pool-deck-resurfacing.html" element={<PoolDeckResurfacing />} />
           <Route path="/commercial-epoxy.html" element={<CommercialEpoxy />} />
+          <Route path="/commercial-epoxy-flooring-naples-fl.html" element={<CommercialEpoxy />} />
           <Route path="/industrial-epoxy.html" element={<IndustrialEpoxy />} />
           <Route path="/concrete-repair.html" element={<ConcreteRepair />} />
           <Route path="/driveway-resurfacing.html" element={<DrivewayResurfacing />} />
           <Route path="/waterproofing.html" element={<Waterproofing />} />
           <Route path="/urethane-cement.html" element={<UrethaneCement />} />
+          <Route path="/urethane-cement-flooring-naples-fl.html" element={<UrethaneCement />} />
           <Route path="/government-contracts.html" element={<GovernmentContracts />} />
           <Route path="/epoxy-flooring-naples.html" element={<EpoxyFlooringNaples />} />
           <Route path="/epoxy-flooring-fort-myers.html" element={<EpoxyFlooringFortMyers />} />
