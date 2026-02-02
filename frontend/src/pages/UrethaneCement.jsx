@@ -490,6 +490,68 @@ const UrethaneCement = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Urethane Cement FAQs</h2>
+            <p className="text-xl text-gray-600">Common questions about urethane cement flooring</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqData.map((faq, index) => (
+              <Card key={index} className="border-2 hover:border-orange-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Related Services</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Link to="/commercial-epoxy-flooring-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-orange-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Building2 className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-600">Commercial Epoxy</h3>
+                  <p className="text-gray-600">For retail, offices, and commercial spaces</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/quartz-pool-deck-coatings-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-orange-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-600">Quartz System</h3>
+                  <p className="text-gray-600">Heavy-duty industrial flooring</p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/garage-flake-floors-naples-fl.html" className="group">
+              <Card className="border-2 hover:border-orange-400 hover:shadow-xl transition-all h-full">
+                <CardContent className="p-6 text-center">
+                  <Sparkles className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-600">Flake System</h3>
+                  <p className="text-gray-600">Decorative flooring for garages</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900">
         <div className="container mx-auto px-4 text-center">
