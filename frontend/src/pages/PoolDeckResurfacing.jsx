@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Droplets, Sun, Shield, Users, Sparkles } from 'lucide-react';
+import { Check, Droplets, Sun, Shield, Users, Sparkles, Phone, MapPin, Award, Clock, ChevronRight } from 'lucide-react';
 
 const PoolDeckResurfacing = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "How long does pool deck resurfacing last in Florida?",
+      answer: "Our polyaspartic pool deck coatings last 10-15+ years in Naples and SWFL. The UV-stable formula won't yellow or fade from constant Florida sun exposure, and the slip-resistant texture maintains its grip."
+    },
+    {
+      question: "Is the pool deck coating slip-resistant when wet?",
+      answer: "Yes! Safety is our top priority. We add anti-slip aggregate to the topcoat that provides excellent traction even when wet. Perfect for families with children."
+    },
+    {
+      question: "Will the pool deck coating stay cool in Florida heat?",
+      answer: "Our light-colored coatings reflect heat better than dark concrete, staying noticeably cooler underfoot. While no coating is completely cool, ours is much more comfortable than bare concrete in summer."
+    },
+    {
+      question: "How long does pool deck resurfacing take?",
+      answer: "Most residential pool decks are completed in 1-2 days. You can walk on the surface in 24 hours. We recommend waiting 3-5 days before filling furniture to allow full cure."
+    },
+    {
+      question: "Can you resurface a pool deck with cracks and stains?",
+      answer: "Absolutely. We repair all cracks, fill divots, and completely transform the surface. Our diamond grinding removes stains and creates the perfect profile for coating adhesion."
+    },
+    {
+      question: "What colors are available for pool deck coating?",
+      answer: "We offer a wide range of colors from classic tan and gray to custom blends. Lighter colors are most popular for staying cool. We bring samples to your free estimate."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -26,6 +55,23 @@ const PoolDeckResurfacing = () => {
           "serviceType": "Pool Deck Resurfacing"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
