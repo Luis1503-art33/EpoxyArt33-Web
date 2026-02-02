@@ -416,7 +416,7 @@ const Home = () => {
       </section>
 
       {/* Before/After Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
         <div className="container mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
@@ -427,13 +427,7 @@ const Home = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                See the <motion.span 
-                  className="text-yellow-600"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                >Transformation</motion.span>
+                Garage Floor Coatings Built for Florida Conditions
               </motion.h2>
               <motion.p 
                 className="text-xl text-gray-600 max-w-2xl mx-auto"
@@ -442,7 +436,7 @@ const Home = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                From dull, damaged concrete to stunning epoxy floors. Slide to see the difference.
+                Our systems are designed to withstand Florida's heat, humidity, and UV exposure. Slide to see the transformation.
               </motion.p>
             </div>
           </ScrollReveal>
