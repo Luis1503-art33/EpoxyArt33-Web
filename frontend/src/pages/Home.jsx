@@ -361,6 +361,49 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Our Installation Process - SEO H2 */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+        <div className="container mx-auto">
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-4">Our Epoxy Installation Process</h2>
+              <p className="text-xl text-gray-300 max-w-2xl mx-auto">Professional preparation is 90% of a successful epoxy floor. Here's how we ensure lasting results.</p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+            {[
+              { step: 1, title: 'Diamond Grinding', desc: 'CSP 2-3 profile with industrial grinders for maximum adhesion' },
+              { step: 2, title: 'Crack & Surface Repair', desc: 'Fill all cracks, spalls, and divots with epoxy filler' },
+              { step: 3, title: 'Moisture Vapor Barrier', desc: 'MVB primer blocks up to 25 lbs moisture - critical for Florida' },
+              { step: 4, title: '100% Solids Epoxy Base', desc: 'Chemtec industrial-grade epoxy with zero water/solvents' },
+              { step: 5, title: 'Decorative Layer', desc: 'Torginol flakes, metallic pigments, or quartz broadcast' },
+              { step: 6, title: 'Polyaspartic Topcoat', desc: 'UV-stable, hot tire resistant clear coat for 15+ years' }
+            ].map((item, index) => (
+              <ScrollReveal key={index} delay={index * 0.1} direction="up">
+                <div className="text-center">
+                  <div className="w-14 h-14 bg-amber-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+                    {item.step}
+                  </div>
+                  <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                  <p className="text-gray-400 text-sm">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.4}>
+            <div className="text-center mt-12">
+              <Link to="/contact">
+                <Button size="lg" className="bg-amber-700 hover:bg-amber-800 text-white">
+                  Get Free Estimate <ChevronRight className="ml-2" />
+                </Button>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="container mx-auto">
