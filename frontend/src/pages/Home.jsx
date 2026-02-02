@@ -366,17 +366,17 @@ const Home = () => {
         <div className="container mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Choose EpoxyArt33?</h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Experience the difference that quality and expertise make</p>
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Why Homeowners & Contractors Choose EpoxyArt33</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">Experience the difference that quality materials and expert installation make</p>
             </div>
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
-              { icon: Award, title: 'Premium Quality Materials', desc: 'We use only the highest-grade epoxy systems that ensure longevity and beauty.' },
-              { icon: Users, title: 'Expert Installation', desc: 'Our skilled technicians bring 3+ years of specialized experience to every project.' },
-              { icon: Shield, title: 'Satisfaction Guaranteed', desc: 'We stand behind our work with comprehensive warranty coverage for your peace of mind.' },
-              { icon: Clock, title: 'Fast Turnaround', desc: 'Most projects completed within 1 day with minimal disruption to your schedule.' }
+              { icon: Award, title: 'Commercial-Grade Materials', desc: 'We use 100% solids Chemtec epoxy and Torginol flakes - the same products used in commercial applications.' },
+              { icon: Users, title: 'Expert Installation', desc: 'Our OSHA 30 certified technicians bring professional expertise to every residential and commercial project.' },
+              { icon: Shield, title: '15-Year Warranty', desc: 'We stand behind our work with comprehensive warranty coverage. Our floors are built to last.' },
+              { icon: Clock, title: '1-Day Installation', desc: 'Most projects completed in just 1 day. Walk on it within 24 hours, drive on it within 48-72 hours.' }
             ].map((benefit, index) => {
               const Icon = benefit.icon;
               return (
@@ -405,7 +405,7 @@ const Home = () => {
             <div className="text-center mt-12">
               <Link to="/why">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-amber-700 shadow-lg">
+                  <Button size="lg" variant="outline" className="border-2 border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white shadow-lg">
                     Learn More About Us <ChevronRight className="ml-2" />
                   </Button>
                 </motion.div>
