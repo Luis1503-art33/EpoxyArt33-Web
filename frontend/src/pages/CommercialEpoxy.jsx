@@ -1,14 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
-import { Check, Building2, Store, Trophy, Clock, Shield } from 'lucide-react';
+import { Check, Building2, Store, Trophy, Clock, Shield, Phone, ChevronRight, Award, Factory, Sparkles } from 'lucide-react';
 
 const CommercialEpoxy = () => {
+  // FAQ Schema Data
+  const faqData = [
+    {
+      question: "Can you install commercial epoxy floors on weekends to minimize business disruption?",
+      answer: "Yes! We offer weekend and after-hours installation for businesses that can't afford downtime. Most commercial projects are completed in 1-2 days, and you can resume light traffic within 24 hours."
+    },
+    {
+      question: "How long does commercial epoxy flooring last?",
+      answer: "Commercial epoxy floors typically last 15-20 years with proper installation and maintenance. High-traffic areas may need a topcoat refresh after 7-10 years, but the base system remains intact."
+    },
+    {
+      question: "What commercial epoxy system is best for restaurants?",
+      answer: "For restaurants, we recommend quartz or flake systems for dining areas (slip-resistant, decorative) and urethane cement for kitchens (thermal shock and chemical resistant). We'll assess your needs during our free site visit."
+    },
+    {
+      question: "Is commercial epoxy flooring slip-resistant?",
+      answer: "Yes, when specified correctly. We can add anti-slip aggregates to the topcoat or use textured systems like quartz or flake broadcast. We always consider safety for your employees and customers."
+    },
+    {
+      question: "How much does commercial epoxy flooring cost in Naples?",
+      answer: "Commercial epoxy typically costs $4-12 per sq ft depending on the system, prep work required, and square footage. Larger areas benefit from better pricing. Contact us for a free site assessment and custom quote."
+    },
+    {
+      question: "Do you work with general contractors and property managers?",
+      answer: "Absolutely. We work with GCs, property managers, and facility directors throughout SWFL. We provide competitive bids, coordinate schedules, and carry full liability and workers' comp insurance."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <SEO 
@@ -26,6 +55,23 @@ const CommercialEpoxy = () => {
           "serviceType": "Commercial Epoxy Flooring"
         }}
       />
+      {/* FAQ Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       <Navbar />
 
       {/* Trust Bar */}
